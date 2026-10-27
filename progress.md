@@ -12,7 +12,7 @@ Fonte única de execução. [GDD](GDD.md) · [Decisões](decisoes.md) · [Spec](
 
 | ID | Tarefa | Estado | Evidência |
 | --- | --- | --- | --- |
-| WB-25 | Publicar no GitHub e manter sincronizado | em andamento; push inicial em execução | Repositório local na raiz deste projeto; origin rafaelfrecceiro/wizards-battle, branch main. 2.191 arquivos revisados; saves/logs/dependências/builds/segredos excluídos. npm test: 540/540 em 19 arquivos; npm run typecheck aprovado em 27/10/2026. Automação horária ativa: sincronizar-wizards-battle-com-github. Falta confirmar push remoto. |
+| WB-25 | Publicar no GitHub e manter sincronizado | concluida; sincronização recorrente ativa | Commit inicial 208b6e5 publicado em origin/main, upstream configurado. 2.191 arquivos; saves/logs/dependências/builds/segredos excluídos. npm test: 540/540 em 19 arquivos; npm run typecheck aprovado em 27/10/2026. Automação horária ativa: sincronizar-wizards-battle-com-github; exige ambiente local disponível. Divergências/falhas geram aviso, sem force-push. |
 
 ## Entrega atual — WB-24 / WB-D27, 24/10/2026
 
