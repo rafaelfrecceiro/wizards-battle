@@ -1,0 +1,24 @@
+{
+  "homeOriginalSha256": "D5D58CDC69ED627D31F95C521AFC565DB0B18226186A117BA6D3DA49D39A1429",
+  "homeProductionSha256": "D5D58CDC69ED627D31F95C521AFC565DB0B18226186A117BA6D3DA49D39A1429",
+  "identical": true,
+  "cardsUnchanged": true,
+  "cardsChecked": 80,
+  "assets": [
+    {
+      "file": "santuario-colecao.png",
+      "bytes": 2717297,
+      "sha256": "EAFA3C3567EFFE27B4CA6189E35DB8511565D721599835AD02725D6D439F1D6E"
+    },
+    {
+      "file": "santuario-decks.png",
+      "bytes": 2585225,
+      "sha256": "7D2572C4311B588666F2A12FE766BA8806DB768911DF203B0FBCD9558BC6C566"
+    },
+    {
+      "file": "santuario-home.png",
+      "bytes": 2888064,
+      "sha256": "D5D58CDC69ED627D31F95C521AFC565DB0B18226186A117BA6D3DA49D39A1429"
+    }
+  ]
+}

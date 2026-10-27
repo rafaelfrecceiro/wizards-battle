@@ -1,0 +1,27 @@
+{
+  "base": "http://127.0.0.1:4181",
+  "checks": [
+    {
+      "path": "index.html",
+      "bytes": 390,
+      "status": 200
+    },
+    {
+      "path": "arte/santuario-home.png",
+      "bytes": 2888064,
+      "status": 200
+    },
+    {
+      "path": "arte/santuario-decks.png",
+      "bytes": 2585225,
+      "status": 200
+    },
+    {
+      "path": "arte/santuario-colecao.png",
+      "bytes": 2717297,
+      "status": 200
+    }
+  ],
+  "cards": 80,
+  "cardsMatch": true
+}

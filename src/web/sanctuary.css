@@ -1,0 +1,62 @@
+/* Home usa o PNG aprovado integralmente: sem regeneração, corte ou troca de símbolos. */
+.app:not(.in-game){height:100dvh;min-height:0;overflow:hidden;background:#10151c}
+.app:not(.in-game)>.masthead{display:none}
+.sanctuary{height:100dvh;display:grid;place-items:center;position:relative;isolation:isolate;background:#10151c}
+.sanctuary::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(#0e161e50,#0e161e80),url('/arte/santuario-home.png') center/cover;filter:blur(16px);opacity:.65}
+.sanctuary-scene{position:relative;width:min(100vw,177.6833dvh);aspect-ratio:1672/941;max-height:100dvh;box-shadow:0 0 65px #000a;container-type:inline-size}
+.sanctuary-art{display:block;width:100%;height:100%;user-select:none;pointer-events:none}
+.sanctuary-destination{position:absolute;appearance:none;background:transparent;border:1px solid transparent;color:transparent;border-radius:25%;padding:0;box-shadow:none;transition:box-shadow .18s,background .18s,border-color .18s;cursor:pointer}
+.sanctuary-destination span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.sanctuary-destination:hover{background:#ffcf6520;border-color:#ffd37c80;box-shadow:0 0 30px #ffad4745,inset 0 0 18px #ffda7944}
+.sanctuary-destination:active{background:#ffdc7440}
+.sanctuary-destination:focus-visible{outline:3px solid #adf6ff;outline-offset:5px;background:#f8d16a18;box-shadow:0 0 28px #8ff0ff77}
+.sanctuary-play{left:34%;top:63%;width:32%;height:19%;border-radius:40%}
+.sanctuary-decks{left:7%;top:54%;width:23%;height:14%}
+.sanctuary-collection{left:74%;top:61%;width:22%;height:15%}
+.sanctuary-guide{left:73%;top:23%;width:23%;height:15%}
+.sanctuary-active-deck{position:absolute;left:38.8%;top:84.5%;width:23.5%;height:4.8%;display:flex;align-items:center;justify-content:space-between;gap:10px;background:linear-gradient(100deg,#211a17,#100f10);border:1px solid #8b663c;box-shadow:inset 0 0 0 1px #30251c;color:#f1dfb7;padding:0 1%;font:clamp(10px,1.08cqw,20px) Georgia,serif;clip-path:polygon(3% 0,97% 0,100% 50%,97% 100%,3% 100%,0 50%)}
+.sanctuary-active-deck>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sanctuary-active-deck em{font:inherit;white-space:nowrap;color:#e0b973}.sanctuary-active-deck:hover{background:#3f2a19}
+.sanctuary-version{position:absolute;bottom:9px;right:14px;color:#e9cd99b0;font-size:10px;letter-spacing:.15em;text-shadow:0 1px 3px #000;background:#13171c85;padding:5px 9px;border-radius:3px}
+.sanctuary-setup-overlay{background:#0b1219;backdrop-filter:none;padding:20px}
+.sanctuary-setup{width:min(900px,96vw);max-height:94dvh;overflow:auto;position:relative;padding:20px 28px 26px;color:#f3e7cb;background:linear-gradient(145deg,#23333f,#14212c 55%,#101a23);border:2px solid #a57a3d;outline:1px solid #e6c688;outline-offset:4px;border-radius:8px;box-shadow:0 25px 100px #000c,inset 0 0 50px #c0872312}
+.sanctuary-return{font-size:14px;color:#e7c790;margin:0 0 14px}
+.sanctuary-setup .lobby-panel{max-height:none;overflow:visible;width:100%;border:0;background:none;padding:0;box-shadow:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+.sanctuary-setup .lobby-panel>.eyebrow,.sanctuary-setup .lobby-panel>h2,.sanctuary-setup .lobby-panel>p,.sanctuary-setup .lobby-custom-decks,.sanctuary-setup .enter,.sanctuary-setup .lobby-foot{grid-column:1/-1}
+.sanctuary-setup .lobby-panel h2{font-size:34px;margin:0;color:#f8dfac}
+.sanctuary-setup .deck-choice{margin:0;padding:14px;border-color:#9c7c4c88;background:linear-gradient(120deg,#28333b,#192630)}
+.sanctuary-setup .deck-choice strong{font-size:24px}.sanctuary-setup .deck-choice small{font-size:13px}
+.sanctuary-setup .lobby-custom-decks{padding:12px 0 6px;margin:0;display:grid;grid-template-columns:1fr auto;gap:8px 16px}
+.sanctuary-setup .lobby-custom-decks label{grid-column:1/-1}
+.sanctuary-setup .lobby-panel>label{align-self:center;font-size:14px;color:#dbc493}
+.sanctuary-setup .lobby-panel select{font-size:15px;min-height:42px;padding:10px;background:#111b24;color:#f5e7cd;border-color:#b78d5266}
+.sanctuary-setup .variant-note{font-size:13px;line-height:1.5;margin:4px 0}
+.sanctuary-setup .enter{margin:4px 0 0;padding:16px;font-size:17px}.sanctuary-setup .lobby-foot{margin:0;text-align:center}
+/* WB-D21: menus de ardósia opaca; sem cenário ou vidro atrás da leitura. */
+.deck-overlay,.collection-overlay{background:#0b1219;backdrop-filter:none}
+.deck-manager{background:linear-gradient(145deg,#23333f,#14212c 55%,#101a23);border:2px solid #ad8449;outline:1px solid #d5ae67;outline-offset:4px;border-radius:7px;box-shadow:0 25px 100px #000d,inset 0 0 60px #d59b3322;color:#f0e3ca}
+.collection-panel{background:linear-gradient(145deg,#23333f,#14212c 55%,#101a23);border:2px solid #ad8449;outline:1px solid #d5ae67;outline-offset:4px;border-radius:7px;box-shadow:0 25px 100px #000d,inset 0 0 60px #d59b3322;color:#f0e3ca}
+.deck-manager-header,.collection-header{border-bottom:1px solid #b792525c;background:linear-gradient(90deg,#1d2d39,#15222d);padding:14px 15px 18px;border-radius:4px}
+.deck-manager-header h1,.collection-header h1{color:#f4db9f;text-shadow:0 2px 5px #000;font-size:34px}
+.deck-manager-header p,.collection-header p{color:#d2c9b8;font-size:14px}
+.deck-library,.deck-editor{background:#111c27;border:1px solid #ae874848;border-radius:6px;padding:14px}
+.saved-deck,.model-deck{background:linear-gradient(120deg,#302f29,#172630);border-color:#b98d475c;color:#efdfbd}
+.saved-deck.active{background:linear-gradient(120deg,#4b3d29,#21323d);border-color:#e2b960;box-shadow:inset 3px 0 #e2b960}
+.deck-manager label,.collection-filters label{color:#ecd2a0;font-size:14px}
+.deck-manager input,.deck-manager select,.collection-filters input,.collection-filters select{background:#101c28;color:#f6e7c8;border-color:#b592556f;font-size:14px}
+.deck-pool-grid article,.collection-card{background:#101b25;border-color:#a17d456d}
+.deck-pool-grid article:hover,.collection-card:hover{border-color:#e7bd73;box-shadow:0 0 18px #b87a252c}
+.deck-pool-grid article>p,.saved-deck small,.deck-library>p{color:#d0c5b2}.deck-pool-grid article>strong{color:#f5e4c3}
+.deck-pool-grid article>button{background:linear-gradient(#503c22,#2d261e);border-color:#b38b4d88;color:#f0d7a2}
+.deck-editor .empty-deck{color:#ccc4b5}.deck-manager-body{padding-top:15px}
+.deck-entries{scrollbar-color:#a2824e #111b23}.deck-pool-grid,.collection-grid,.collection-results{scrollbar-color:#a2824e #111b23}
+.edition-banner{background:linear-gradient(100deg,#423622,#142432);border-color:#b38b4d66;color:#f0d49c}
+.collection-detail{background:#101b25;border:1px solid #a17d4566;border-radius:5px;padding:18px}
+.guide{background:linear-gradient(145deg,#23333f,#14212c 55%,#101a23);border:2px solid #ad8449;color:#f1e2c7}
+.guide h2,.guide h3{color:#f4dca9}.guide-zones article{background:#14212d;border-color:#a17d4566}
+.school-progression{display:flex;gap:14px;align-items:center;border-left:1px solid #be985d40;padding-left:14px}.school-progression>small{font-size:10px;letter-spacing:.12em;color:#d5b982}.school-progression .school b{font-size:22px}.school-progression .school small{font-size:11px}.school-presence.has-progression{gap:13px}.school-presence.has-progression .school b{font-size:16px}.school-presence.has-progression .school small{font-size:10px}.presence-label{font-size:10px;letter-spacing:.1em;color:#aebfc3;margin-right:2px}
+.rule-note{background:#13242c;border:1px solid #a7864e66;border-radius:5px;padding:12px;color:#e4d4b4;font-size:14px;line-height:1.5}
+@media(max-height:760px){.deck-manager,.collection-panel{height:96dvh;padding:15px}.deck-manager-header,.collection-header{padding:6px 10px 10px}.deck-manager-header h1,.collection-header h1{font-size:28px}.sanctuary-setup{padding:14px 22px}.sanctuary-setup .lobby-panel{gap:6px 14px}.sanctuary-setup .deck-choice{padding:10px}.sanctuary-setup .lobby-panel h2{font-size:28px}.sanctuary-setup .lobby-panel>p{margin:0}.sanctuary-version{font-size:9px}}
+@media(max-width:1150px){.school-progression{gap:8px;padding-left:8px}.school-progression .school{min-width:26px}.school-progression .school b{font-size:19px}.school-presence.has-progression{gap:7px}.school-presence.has-progression .school{min-width:24px}}
+@media(prefers-reduced-motion:reduce){.sanctuary-destination{transition:none}}
+
+.sanctuary-setup .deck-choice.active{background:linear-gradient(120deg,#4b3c27,#22343e);border-color:#dfbb75;box-shadow:inset 3px 0 #dfbb75}

@@ -1,0 +1,68 @@
+{
+  "version": "wb-0.6.0/rules-ves-complete/ac500ad45d98/7e65b53aa899",
+  "requests": 622,
+  "results": [
+    {
+      "deck": "Queimada",
+      "opponent": "Pira",
+      "custom": false,
+      "actions": 68,
+      "turns": 14,
+      "privateDecisions": 0,
+      "winner": 0,
+      "replay": true
+    },
+    {
+      "deck": "Pira",
+      "opponent": "Vapor",
+      "custom": true,
+      "actions": 55,
+      "turns": 11,
+      "privateDecisions": 0,
+      "winner": 0,
+      "replay": true
+    },
+    {
+      "deck": "Vapor",
+      "opponent": "Decomposição",
+      "custom": false,
+      "actions": 81,
+      "turns": 16,
+      "privateDecisions": 3,
+      "winner": 0,
+      "replay": true
+    },
+    {
+      "deck": "Decomposição",
+      "opponent": "Estações",
+      "custom": true,
+      "actions": 197,
+      "turns": 47,
+      "privateDecisions": 2,
+      "winner": 1,
+      "replay": true
+    },
+    {
+      "deck": "Estações",
+      "opponent": "Ilusão",
+      "custom": false,
+      "actions": 110,
+      "turns": 23,
+      "privateDecisions": 5,
+      "winner": 0,
+      "replay": true
+    },
+    {
+      "deck": "Ilusão",
+      "opponent": "Queimada",
+      "custom": true,
+      "actions": 77,
+      "turns": 15,
+      "privateDecisions": 0,
+      "winner": 1,
+      "replay": true
+    }
+  ],
+  "privacy": true,
+  "atomicErrors": true
+}

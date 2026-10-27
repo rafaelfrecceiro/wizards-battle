@@ -1,0 +1,35 @@
+[
+  {
+    "url": "http://127.0.0.1:4183/api/health",
+    "health": {
+      "ok": true,
+      "name": "Wizards Battle",
+      "version": "wb-0.7.0/rules-ves-friends/ac500ad45d98/7e65b53aa899",
+      "sessions": 4,
+      "appVersion": "0.7.0"
+    },
+    "status": 200
+  },
+  {
+    "url": "http://192.168.15.27:4183/api/health",
+    "health": {
+      "ok": true,
+      "name": "Wizards Battle",
+      "version": "wb-0.7.0/rules-ves-friends/ac500ad45d98/7e65b53aa899",
+      "sessions": 4,
+      "appVersion": "0.7.0"
+    },
+    "status": 200
+  },
+  {
+    "url": "https://pretty-packet-fleece-thermal.trycloudflare.com/api/health",
+    "health": {
+      "ok": true,
+      "name": "Wizards Battle",
+      "version": "wb-0.7.0/rules-ves-friends/ac500ad45d98/7e65b53aa899",
+      "sessions": 4,
+      "appVersion": "0.7.0"
+    },
+    "status": 200
+  }
+]

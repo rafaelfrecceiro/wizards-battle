@@ -1,0 +1,100 @@
+import {spawn,type ChildProcess} from 'node:child_process';
+import {createServer} from 'node:net';
+import {mkdirSync,mkdtempSync,writeFileSync} from 'node:fs';
+import {resolve} from 'node:path';
+import {randomBytes,createHash} from 'node:crypto';
+import {readFileSync} from 'node:fs';
+import {terrasDecks} from '../engine/decks';
+import {chooseBot} from '../engine/bot';
+import edition from '../data/terras-despertas.json';
+import {once} from 'node:events';
+import {replay} from '../engine/engine';
+import type {Game} from '../engine/types';
+const output=resolve('../qa/terras-v110');mkdirSync(output,{recursive:true});
+const folder=mkdtempSync(resolve(output,'http-'));
+const port=await new Promise<number>(done=>{const s=createServer();s.listen(0,'127.0.0.1',()=>{const p=(s.address() as {port:number}).port;s.close(()=>done(p))})});
+let child:ChildProcess|undefined;const base=`http://127.0.0.1:${port}`,checks:string[]=[];let requests=0;
+function assert(ok:unknown,message:string){if(!ok)throw Error(message);checks.push(message)}
+async function start(){
+  child=spawn(process.execPath,['node_modules/tsx/dist/cli.mjs','server/index.ts','--production'],{cwd:process.cwd(),env:{...process.env,WB_PORT:String(port),WB_HOST:'127.0.0.1',WB_SAVE_PATH:resolve(folder,'rooms.sqlite')},stdio:['ignore','pipe','pipe'],windowsHide:true});
+  let ready=false;child.stdout?.on('data',c=>{if(String(c).includes('Wizards Battle:'))ready=true});child.stderr?.on('data',c=>process.stderr.write(c));
+  for(let n=0;n<100;n++){if(ready)return;if(child.exitCode!==null)throw Error('Servidor de QA encerrou');await new Promise(r=>setTimeout(r,100))}throw Error('Servidor não iniciou');
+}
+async function stop(){if(child&&child.exitCode===null){const done=once(child,'exit');child.kill();await done}}
+async function call(path:string,body?:unknown,token=''){
+  requests++;const r=await fetch(`${base}/api/${path}`,{method:body===undefined?'GET':'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${token}`},body:body===undefined?undefined:JSON.stringify(body)});
+  return {status:r.status,data:await r.json()};
+}
+async function action(token:string,action:unknown){const state=(await call('state',undefined,token)).data;const result=await call('action',{action,requestId:randomBytes(12).toString('hex'),revision:state.revision},token);assert(result.status===200,'ação legal aceita');return result.data}
+try{
+  await start();assert((await call('health')).data.appVersion==='0.11.0','servidor 0.11 isolado');
+  assert((await call('new',{deck:'Pira',energyRule:'forjada'})).status===400,'regra forjada rejeitada');
+  assert((await call('new',{deck:'Pira',variant:'base-0.3',energyRule:'reserve-v1'})).status===400,'combinação incompatível rejeitada');
+  assert((await call('decks')).data.length===6,'API sem conjunto continua compatível com VES');
+  assert((await call('decks?cardPool=terras-v1')).data.length===12,'edição completa oferece seis decks VES e seis TDP');
+  for(const deck of terrasDecks){
+    const trial=await call('new',{deck:deck.name,cardPool:'terras-v1',energyRule:'reserve-v1'});
+    assert(trial.status===200&&trial.data.view.cardPool==='terras-v1','modelo completo aceito: '+deck.name);
+  }
+  assert((await call('new',{customDeck:terrasDecks[0],cardPool:'ves'})).status===400,'nova edição bloqueada em conjunto exclusivo VES');
+  const h=(await call('rooms/create',{deck:terrasDecks[0].name,cardPool:'terras-v1',energyRule:'reserve-v1'})).data;
+  const info=(await call(`rooms/info?code=${h.room.code}`)).data;
+  assert(info.cardPool==='terras-v1'&&info.energyRule==='reserve-v1'&&JSON.stringify(Object.keys(info).sort())===JSON.stringify(['cardPool','energyRule','full','variant']),'convite publica somente regras e disponibilidade');
+  assert((await call('rooms/join',{deck:'Ilusão',code:h.room.code})).status===400,'confirmação da reserva é obrigatória no convite');
+  const b=(await call('rooms/join',{deck:terrasDecks[1].name,code:h.room.code,cardPool:'terras-v1',energyRule:'reserve-v1'})).data,tokens=[h.token,b.token];
+  assert(Array.isArray(b.view.feedback)&&b.view.feedbackSeq>0,'servidor publica a linha numerada de acontecimentos');
+  const rivalFeedback=JSON.stringify(b.view.feedback.filter((e:any)=>e.kind==='draw'&&e.target?.seat===0));
+  assert(!rivalFeedback.includes('"card"')&&!rivalFeedback.includes('"uid"')&&!rivalFeedback.includes('"name"'),'feedback de compra rival oculta identidade e UID');
+  assert(b.view.energyRule==='reserve-v1'&&b.view.players[0].hand.length===0,'convidado herda reserva sem receber mão rival');
+  for(const t of tokens)await action(t,{kind:'mulligan',choice:'keep'});
+  const first=(await call('state',undefined,h.token)).data.view.active,token=tokens[first],other=tokens[1-first];
+  const state=(await call('state',undefined,token)).data;
+  const hand=state.view.players[first].hand;
+  const best=hand.find((x:any)=>x.definition.essence.generation===1&&x.definition.essence.duration===3)??hand[0];
+  const sacrificed=await action(token,{kind:'sacrifice',uid:best.uid});
+  assert(sacrificed.view.feedback.some((e:any)=>e.kind==='sacrifice'&&e.target?.uid===best.uid),'sacrifício publica carta e destino corretos');
+  const generated=sacrificed.view.players[first].energy;
+  await action(token,{kind:'advance'});const ended=await action(token,{kind:'advance'});
+  assert(generated>0&&ended.view.players[first].energy===generated,'saldo atravessa encerramento e fica público no turno rival');
+  const snapshot=JSON.stringify(ended.view);await stop();await start();
+  assert(JSON.stringify((await call('state',undefined,token)).data.view)===snapshot,'reinício real recupera saldo, regra e estado exatos');
+  await action(other,{kind:'advance'});const next=await action(other,{kind:'advance'});
+  const expected=generated+(sacrificed.view.players[first].sources.length?best.definition.essence.generation:0);
+  assert(next.view.players[first].energy===expected,'despertar soma geração ao saldo conservado');
+  await action(token,{kind:'concede'});const record=(await call('replay',{},token)).data;
+  const reconstructed=replay({version:record.version,config:record.config,history:record.actions} as Game);
+  assert((reconstructed.feedbackSeq??0)>0&&reconstructed.feedback!.some(e=>e.kind==='sacrifice'),'replay reconstrói acontecimentos e causas');
+  assert(record.config.energyRule==='reserve-v1'&&reconstructed.winner!==null&&reconstructed.players[first].energy===expected,'replay HTTP conserva regra e saldo');
+  for(const t of tokens){const s=(await call('state',undefined,t)).data;assert((await call('rematch',{requestId:randomBytes(12).toString('hex'),revision:s.revision},t)).status===200,'revanche aceita')}
+  const rematch=(await call('state',undefined,token)).data.view;
+  assert(rematch.energyRule==='reserve-v1'&&rematch.players.every((p:any)=>p.energy===0),'revanche mantém regra e inicia reservas novas');
+  for(const t of tokens)await action(t,{kind:'mulligan',choice:'keep'});
+  for(let n=0;n<80;n++){
+    const snapshot=(await call('state',undefined,tokens[0])).data;
+    if(snapshot.view.winner!==null)break;
+    const owner=snapshot.view.pending?.owner??snapshot.view.active;
+    const own=(await call('state',undefined,tokens[owner])).data;
+    const option=chooseBot(own.view);assert(option,'bot recebe ação legal pelo próprio assento');
+    await action(tokens[owner],option!.action);
+    if(n===40){
+      const before=await Promise.all(tokens.map(async t=>JSON.stringify((await call('state',undefined,t)).data.view)));
+      await stop();await start();
+      for(const [i,t]of tokens.entries())assert(JSON.stringify((await call('state',undefined,t)).data.view)===before[i],'reinício preserva visão do assento '+i+' com cartas TDP');
+    }
+  }
+  const played=(await call('state',undefined,tokens[0])).data;
+  if(played.view.winner===null)await action(tokens[0],{kind:'concede'});
+  const completeRecord=(await call('replay',{},tokens[0])).data;
+  const complete=replay({version:completeRecord.version,config:completeRecord.config,history:completeRecord.actions} as Game);
+  assert(complete.config.cardPool==='terras-v1'&&Object.keys(complete.metrics.casts).some(id=>id.startsWith('TDP-')),'cartas novas foram conjuradas no servidor e reconstruídas em replay');
+  for(const card of edition.cards){
+    const response=await fetch(base+'/cartas/'+card.id+'.png');
+    const actual=Buffer.from(await response.arrayBuffer()),expected=readFileSync('public/cartas/'+card.id+'.png');
+    assert(response.status===200&&response.headers.get('content-type')==='image/png'&&createHash('sha256').update(actual).digest('hex')===createHash('sha256').update(expected).digest('hex'),'frente final servida: '+card.id);
+  }
+  const plain=(await call('new',{deck:'Pira',energyRule:'turn'})).data;
+  assert(plain.view.energyRule==='turn','regra anterior permanece selecionável');
+  const html=await(await fetch(base)).text();assert(html.includes('/assets/main-'),'build novo é servido');
+  writeFileSync(resolve(output,'http.json'),JSON.stringify({success:true,requests,checks,folder,firstSource:best.card,generated,nextEnergy:expected},null,2));
+  console.log(JSON.stringify({success:true,requests,checks:checks.length,generated,nextEnergy:expected}));
+}finally{await stop()}

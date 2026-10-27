@@ -1,0 +1,17 @@
+{
+  "source": "arte\\referencia-fixa\\prototipo-aprovado.png",
+  "box": [
+    547,
+    839,
+    986,
+    872
+  ],
+  "source_school": "Maré",
+  "target_school": "Maré",
+  "polygon": null,
+  "native_size": [
+    439,
+    33
+  ],
+  "method": "PDF vector component rendered once with PDFium at native 1 px/pt, transparent background; original PNG unmodified"
+}

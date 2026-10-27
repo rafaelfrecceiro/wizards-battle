@@ -1,0 +1,341 @@
+[
+  {
+    "name": "Terras — Manada do Vale",
+    "cards": [
+      {
+        "id": "VES-009",
+        "copies": 2
+      },
+      {
+        "id": "VES-011",
+        "copies": 2
+      },
+      {
+        "id": "VES-012",
+        "copies": 1
+      },
+      {
+        "id": "VES-025",
+        "copies": 1
+      },
+      {
+        "id": "VES-036",
+        "copies": 2
+      },
+      {
+        "id": "VES-040",
+        "copies": 2
+      },
+      {
+        "id": "VES-041",
+        "copies": 1
+      },
+      {
+        "id": "VES-069",
+        "copies": 2
+      },
+      {
+        "id": "VES-039",
+        "copies": 1
+      },
+      {
+        "id": "VES-010",
+        "copies": 1
+      },
+      {
+        "id": "VES-026",
+        "copies": 1
+      },
+      {
+        "id": "VES-032",
+        "copies": 2
+      },
+      {
+        "id": "VES-042",
+        "copies": 1
+      },
+      {
+        "id": "VES-043",
+        "copies": 1
+      },
+      {
+        "id": "VES-070",
+        "copies": 1
+      },
+      {
+        "id": "VES-007",
+        "copies": 1
+      },
+      {
+        "id": "VES-033",
+        "copies": 1
+      },
+      {
+        "id": "VES-034",
+        "copies": 1
+      },
+      {
+        "id": "VES-044",
+        "copies": 2
+      },
+      {
+        "id": "VES-022",
+        "copies": 1
+      },
+      {
+        "id": "VES-035",
+        "copies": 1
+      },
+      {
+        "id": "VES-045",
+        "copies": 1
+      },
+      {
+        "id": "VES-046",
+        "copies": 1
+      },
+      {
+        "id": "TD-P01",
+        "copies": 2
+      },
+      {
+        "id": "TD-P02",
+        "copies": 2
+      },
+      {
+        "id": "TD-P05",
+        "copies": 2
+      },
+      {
+        "id": "TD-P11",
+        "copies": 2
+      },
+      {
+        "id": "TD-P12",
+        "copies": 2
+      }
+    ]
+  },
+  {
+    "name": "Terras — Nascentes Vivas",
+    "cards": [
+      {
+        "id": "VES-011",
+        "copies": 2
+      },
+      {
+        "id": "VES-012",
+        "copies": 1
+      },
+      {
+        "id": "VES-018",
+        "copies": 2
+      },
+      {
+        "id": "VES-036",
+        "copies": 3
+      },
+      {
+        "id": "VES-038",
+        "copies": 1
+      },
+      {
+        "id": "VES-039",
+        "copies": 1
+      },
+      {
+        "id": "VES-040",
+        "copies": 1
+      },
+      {
+        "id": "VES-058",
+        "copies": 1
+      },
+      {
+        "id": "VES-062",
+        "copies": 1
+      },
+      {
+        "id": "VES-077",
+        "copies": 3
+      },
+      {
+        "id": "VES-042",
+        "copies": 2
+      },
+      {
+        "id": "VES-064",
+        "copies": 3
+      },
+      {
+        "id": "VES-065",
+        "copies": 1
+      },
+      {
+        "id": "VES-066",
+        "copies": 1
+      },
+      {
+        "id": "VES-078",
+        "copies": 2
+      },
+      {
+        "id": "VES-045",
+        "copies": 2
+      },
+      {
+        "id": "VES-046",
+        "copies": 1
+      },
+      {
+        "id": "VES-068",
+        "copies": 1
+      },
+      {
+        "id": "TD-P04",
+        "copies": 2
+      },
+      {
+        "id": "TD-P06",
+        "copies": 2
+      },
+      {
+        "id": "TD-P08",
+        "copies": 2
+      },
+      {
+        "id": "TD-P10",
+        "copies": 2
+      },
+      {
+        "id": "TD-P02",
+        "copies": 1
+      },
+      {
+        "id": "TD-P05",
+        "copies": 1
+      },
+      {
+        "id": "TD-P11",
+        "copies": 1
+      }
+    ]
+  },
+  {
+    "name": "Terras — Nomes e Brasas",
+    "cards": [
+      {
+        "id": "VES-002",
+        "copies": 1
+      },
+      {
+        "id": "VES-004",
+        "copies": 2
+      },
+      {
+        "id": "VES-009",
+        "copies": 2
+      },
+      {
+        "id": "VES-025",
+        "copies": 2
+      },
+      {
+        "id": "VES-027",
+        "copies": 1
+      },
+      {
+        "id": "VES-047",
+        "copies": 2
+      },
+      {
+        "id": "VES-048",
+        "copies": 2
+      },
+      {
+        "id": "VES-049",
+        "copies": 1
+      },
+      {
+        "id": "VES-052",
+        "copies": 1
+      },
+      {
+        "id": "VES-071",
+        "copies": 2
+      },
+      {
+        "id": "VES-029",
+        "copies": 1
+      },
+      {
+        "id": "VES-016",
+        "copies": 1
+      },
+      {
+        "id": "VES-031",
+        "copies": 1
+      },
+      {
+        "id": "VES-032",
+        "copies": 2
+      },
+      {
+        "id": "VES-054",
+        "copies": 1
+      },
+      {
+        "id": "VES-072",
+        "copies": 1
+      },
+      {
+        "id": "VES-033",
+        "copies": 1
+      },
+      {
+        "id": "VES-034",
+        "copies": 1
+      },
+      {
+        "id": "VES-055",
+        "copies": 1
+      },
+      {
+        "id": "VES-056",
+        "copies": 2
+      },
+      {
+        "id": "VES-017",
+        "copies": 1
+      },
+      {
+        "id": "VES-022",
+        "copies": 1
+      },
+      {
+        "id": "VES-035",
+        "copies": 1
+      },
+      {
+        "id": "TD-P03",
+        "copies": 2
+      },
+      {
+        "id": "TD-P07",
+        "copies": 2
+      },
+      {
+        "id": "TD-P09",
+        "copies": 2
+      },
+      {
+        "id": "TD-P12",
+        "copies": 2
+      },
+      {
+        "id": "TD-P01",
+        "copies": 1
+      }
+    ]
+  }
+]

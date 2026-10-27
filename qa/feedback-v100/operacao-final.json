@@ -1,0 +1,32 @@
+{
+  "current": {
+    "ok": true,
+    "name": "Wizards Battle",
+    "version": "wb-0.10.0/rules-feedback-01/ac500ad45d98/7e65b53aa899/522260ac54af/66929d1d5a72",
+    "sessions": 0,
+    "appVersion": "0.10.0"
+  },
+  "oldEnergy": {
+    "ok": true,
+    "name": "Wizards Battle",
+    "version": "wb-0.9.0/rules-energy-reserve-01/ac500ad45d98/7e65b53aa899/522260ac54af/66929d1d5a72",
+    "sessions": 1,
+    "appVersion": "0.9.0"
+  },
+  "oldTdp": {
+    "ok": true,
+    "name": "Wizards Battle",
+    "version": "wb-0.8.0/rules-terras-pilot-02/ac500ad45d98/7e65b53aa899/522260ac54af/66929d1d5a72",
+    "sessions": 2,
+    "appVersion": "0.8.0"
+  },
+  "testsPassed": 421,
+  "testsFailed": 0,
+  "games": 36,
+  "actions": 4829,
+  "frentes": {
+    "checked": 92,
+    "changed": []
+  },
+  "browser": "Desabilitado no Work; sem inspeção gráfica real."
+}

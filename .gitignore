@@ -1,0 +1,17 @@
+saves/
+logs/
+node_modules/
+dist/
+dist-v*/
+coverage/
+*.log
+*.tsbuildinfo
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*

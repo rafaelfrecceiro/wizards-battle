@@ -1,0 +1,23 @@
+{
+  "cards": 80,
+  "cardsUnchanged": true,
+  "assets": [
+    {
+      "sha256": "FA76E01791C1DC9EA67D004BE04ED7EE119A603BCCE700F68BB489376F8DC437",
+      "file": "atlas-tabuleiro.png",
+      "bytes": 2634389
+    },
+    {
+      "sha256": "7B0B6BD1AF2B55A501D02CE44A6B8B805FF9B5321D6B7D7C1480BF00C88CB180",
+      "file": "atlas-maga.png",
+      "bytes": 2537110
+    },
+    {
+      "sha256": "97F207385C074206CF7C7139D3A61696C6B417186EFC1C0486C84981168C41CE",
+      "file": "atlas-automato.png",
+      "bytes": 2579483
+    }
+  ],
+  "oldBundlePreserved": true,
+  "serverVersion": "wb-0.5.0/rules-escolas-v1/ac500ad45d98/7e65b53aa899"
+}

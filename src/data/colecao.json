@@ -1,0 +1,666 @@
+{
+  "schemaVersion": 1,
+  "classificationStatus": "initial-review",
+  "editions": [
+    {
+      "code": "VES",
+      "name": "O Coração de Véspera",
+      "order": 1,
+      "cardCount": 80,
+      "symbol": "vespera-heart",
+      "theme": "Uma cidade sustentada por um coração mecânico em colapso; Chama, Raiz, Sombra e Maré disputam seu futuro.",
+      "mechanics": [
+        "Ímpeto",
+        "Alcance",
+        "Guardião",
+        "Emboscada",
+        "Suporte",
+        "Essência",
+        "Cinzas",
+        "Prenúncio"
+      ]
+    }
+  ],
+  "printings": [
+    {
+      "id": "VES-001",
+      "cardId": "VES-001",
+      "edition": "VES",
+      "number": 1,
+      "rarity": "rare",
+      "designNote": "Protagonista híbrida com duas ações de entrada: controle e duração de fontes."
+    },
+    {
+      "id": "VES-002",
+      "cardId": "VES-002",
+      "edition": "VES",
+      "number": 2,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-003",
+      "cardId": "VES-003",
+      "edition": "VES",
+      "number": 3,
+      "rarity": "uncommon",
+      "designNote": "Suporte recorrente de cura para manter a frente."
+    },
+    {
+      "id": "VES-004",
+      "cardId": "VES-004",
+      "edition": "VES",
+      "number": 4,
+      "rarity": "uncommon",
+      "designNote": "Converte estoque de Cinzas em pressão recorrente."
+    },
+    {
+      "id": "VES-005",
+      "cardId": "VES-005",
+      "edition": "VES",
+      "number": 5,
+      "rarity": "common",
+      "designNote": "Resposta pontual condicionada à ação do rival."
+    },
+    {
+      "id": "VES-006",
+      "cardId": "VES-006",
+      "edition": "VES",
+      "number": 6,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-007",
+      "cardId": "VES-007",
+      "edition": "VES",
+      "number": 7,
+      "rarity": "uncommon",
+      "designNote": "Cura recorrente de uma fileira inteira."
+    },
+    {
+      "id": "VES-008",
+      "cardId": "VES-008",
+      "edition": "VES",
+      "number": 8,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-009",
+      "cardId": "VES-009",
+      "edition": "VES",
+      "number": 9,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-010",
+      "cardId": "VES-010",
+      "edition": "VES",
+      "number": 10,
+      "rarity": "rare",
+      "designNote": "Suporte que aumenta a força de toda a frente de Chama."
+    },
+    {
+      "id": "VES-011",
+      "cardId": "VES-011",
+      "edition": "VES",
+      "number": 11,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-012",
+      "cardId": "VES-012",
+      "edition": "VES",
+      "number": 12,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-013",
+      "cardId": "VES-013",
+      "edition": "VES",
+      "number": 13,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-014",
+      "cardId": "VES-014",
+      "edition": "VES",
+      "number": 14,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-015",
+      "cardId": "VES-015",
+      "edition": "VES",
+      "number": 15,
+      "rarity": "uncommon",
+      "designNote": "Ameaça de Sombra com Alcance e compromisso elevado na curva."
+    },
+    {
+      "id": "VES-016",
+      "cardId": "VES-016",
+      "edition": "VES",
+      "number": 16,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-017",
+      "cardId": "VES-017",
+      "edition": "VES",
+      "number": 17,
+      "rarity": "common",
+      "designNote": "Resposta pontual condicionada à ação do rival."
+    },
+    {
+      "id": "VES-018",
+      "cardId": "VES-018",
+      "edition": "VES",
+      "number": 18,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-019",
+      "cardId": "VES-019",
+      "edition": "VES",
+      "number": 19,
+      "rarity": "uncommon",
+      "designNote": "Suporte de seleção recorrente do topo."
+    },
+    {
+      "id": "VES-020",
+      "cardId": "VES-020",
+      "edition": "VES",
+      "number": 20,
+      "rarity": "uncommon",
+      "designNote": "Combina corpo e retorno de alvo pequeno na entrada."
+    },
+    {
+      "id": "VES-021",
+      "cardId": "VES-021",
+      "edition": "VES",
+      "number": 21,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-022",
+      "cardId": "VES-022",
+      "edition": "VES",
+      "number": 22,
+      "rarity": "common",
+      "designNote": "Resposta pontual condicionada à ação do rival."
+    },
+    {
+      "id": "VES-023",
+      "cardId": "VES-023",
+      "edition": "VES",
+      "number": 23,
+      "rarity": "uncommon",
+      "designNote": "Guardião híbrido que conecta Chama e Raiz."
+    },
+    {
+      "id": "VES-024",
+      "cardId": "VES-024",
+      "edition": "VES",
+      "number": 24,
+      "rarity": "rare",
+      "designNote": "Encantamento híbrido com informação recorrente e pressão por Cinzas."
+    },
+    {
+      "id": "VES-025",
+      "cardId": "VES-025",
+      "edition": "VES",
+      "number": 25,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-026",
+      "cardId": "VES-026",
+      "edition": "VES",
+      "number": 26,
+      "rarity": "uncommon",
+      "designNote": "Suporte de dano recorrente contra a frente."
+    },
+    {
+      "id": "VES-027",
+      "cardId": "VES-027",
+      "edition": "VES",
+      "number": 27,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-028",
+      "cardId": "VES-028",
+      "edition": "VES",
+      "number": 28,
+      "rarity": "uncommon",
+      "designNote": "Pressiona fontes ao entrar, mantendo presença no campo."
+    },
+    {
+      "id": "VES-029",
+      "cardId": "VES-029",
+      "edition": "VES",
+      "number": 29,
+      "rarity": "rare",
+      "designNote": "Grande finalizador de Chama com dano de entrada."
+    },
+    {
+      "id": "VES-030",
+      "cardId": "VES-030",
+      "edition": "VES",
+      "number": 30,
+      "rarity": "uncommon",
+      "designNote": "Altera a economia da primeira Magia de Chama."
+    },
+    {
+      "id": "VES-031",
+      "cardId": "VES-031",
+      "edition": "VES",
+      "number": 31,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-032",
+      "cardId": "VES-032",
+      "edition": "VES",
+      "number": 32,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-033",
+      "cardId": "VES-033",
+      "edition": "VES",
+      "number": 33,
+      "rarity": "uncommon",
+      "designNote": "Recompensa uma sequência de conjurações com pressão recorrente."
+    },
+    {
+      "id": "VES-034",
+      "cardId": "VES-034",
+      "edition": "VES",
+      "number": 34,
+      "rarity": "uncommon",
+      "designNote": "Concede Ímpeto à frente inteira de Chama."
+    },
+    {
+      "id": "VES-035",
+      "cardId": "VES-035",
+      "edition": "VES",
+      "number": 35,
+      "rarity": "common",
+      "designNote": "Resposta pontual condicionada à ação do rival."
+    },
+    {
+      "id": "VES-036",
+      "cardId": "VES-036",
+      "edition": "VES",
+      "number": 36,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-037",
+      "cardId": "VES-037",
+      "edition": "VES",
+      "number": 37,
+      "rarity": "uncommon",
+      "designNote": "Emboscada introduz decisões especiais de fileira e reposicionamento."
+    },
+    {
+      "id": "VES-038",
+      "cardId": "VES-038",
+      "edition": "VES",
+      "number": 38,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-039",
+      "cardId": "VES-039",
+      "edition": "VES",
+      "number": 39,
+      "rarity": "rare",
+      "designNote": "Grande Guardião de Raiz para estabilizar o campo."
+    },
+    {
+      "id": "VES-040",
+      "cardId": "VES-040",
+      "edition": "VES",
+      "number": 40,
+      "rarity": "uncommon",
+      "designNote": "Transforma dano persistente em bônus de força para a frente."
+    },
+    {
+      "id": "VES-041",
+      "cardId": "VES-041",
+      "edition": "VES",
+      "number": 41,
+      "rarity": "uncommon",
+      "designNote": "Motor de compra condicionado a um Guardião na frente."
+    },
+    {
+      "id": "VES-042",
+      "cardId": "VES-042",
+      "edition": "VES",
+      "number": 42,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-043",
+      "cardId": "VES-043",
+      "edition": "VES",
+      "number": 43,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-044",
+      "cardId": "VES-044",
+      "edition": "VES",
+      "number": 44,
+      "rarity": "common",
+      "designNote": "Sustentação simples da estratégia, com condição acessível."
+    },
+    {
+      "id": "VES-045",
+      "cardId": "VES-045",
+      "edition": "VES",
+      "number": 45,
+      "rarity": "common",
+      "designNote": "Resposta pontual condicionada à ação do rival."
+    },
+    {
+      "id": "VES-046",
+      "cardId": "VES-046",
+      "edition": "VES",
+      "number": 46,
+      "rarity": "common",
+      "designNote": "Resposta pontual condicionada à ação do rival."
+    },
+    {
+      "id": "VES-047",
+      "cardId": "VES-047",
+      "edition": "VES",
+      "number": 47,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-048",
+      "cardId": "VES-048",
+      "edition": "VES",
+      "number": 48,
+      "rarity": "uncommon",
+      "designNote": "Concede Alcance à frente de Sombra e conecta as fileiras."
+    },
+    {
+      "id": "VES-049",
+      "cardId": "VES-049",
+      "edition": "VES",
+      "number": 49,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-050",
+      "cardId": "VES-050",
+      "edition": "VES",
+      "number": 50,
+      "rarity": "rare",
+      "designNote": "Finalizador de Sombra que converte Cinzas em dano adicional."
+    },
+    {
+      "id": "VES-051",
+      "cardId": "VES-051",
+      "edition": "VES",
+      "number": 51,
+      "rarity": "rare",
+      "designNote": "Motor recorrente de compra condicionado a Cinzas e mão reduzida."
+    },
+    {
+      "id": "VES-052",
+      "cardId": "VES-052",
+      "edition": "VES",
+      "number": 52,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-053",
+      "cardId": "VES-053",
+      "edition": "VES",
+      "number": 53,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-054",
+      "cardId": "VES-054",
+      "edition": "VES",
+      "number": 54,
+      "rarity": "uncommon",
+      "designNote": "Troca Cinzas por vantagem de cartas com custo adicional."
+    },
+    {
+      "id": "VES-055",
+      "cardId": "VES-055",
+      "edition": "VES",
+      "number": 55,
+      "rarity": "uncommon",
+      "designNote": "Recompensa mortes próprias com pressão recorrente."
+    },
+    {
+      "id": "VES-056",
+      "cardId": "VES-056",
+      "edition": "VES",
+      "number": 56,
+      "rarity": "uncommon",
+      "designNote": "Recompensa mortes próprias com compra recorrente."
+    },
+    {
+      "id": "VES-057",
+      "cardId": "VES-057",
+      "edition": "VES",
+      "number": 57,
+      "rarity": "common",
+      "designNote": "Resposta pontual condicionada à ação do rival."
+    },
+    {
+      "id": "VES-058",
+      "cardId": "VES-058",
+      "edition": "VES",
+      "number": 58,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-059",
+      "cardId": "VES-059",
+      "edition": "VES",
+      "number": 59,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-060",
+      "cardId": "VES-060",
+      "edition": "VES",
+      "number": 60,
+      "rarity": "uncommon",
+      "designNote": "Recicla efeitos de entrada com retorno de monstro próprio."
+    },
+    {
+      "id": "VES-061",
+      "cardId": "VES-061",
+      "edition": "VES",
+      "number": 61,
+      "rarity": "rare",
+      "designNote": "Finalizador de Maré com resposta a Encantamento na entrada."
+    },
+    {
+      "id": "VES-062",
+      "cardId": "VES-062",
+      "edition": "VES",
+      "number": 62,
+      "rarity": "uncommon",
+      "designNote": "Suporte que conserva energia entre turnos."
+    },
+    {
+      "id": "VES-063",
+      "cardId": "VES-063",
+      "edition": "VES",
+      "number": 63,
+      "rarity": "rare",
+      "designNote": "Motor recorrente de compra sustentado por fontes."
+    },
+    {
+      "id": "VES-064",
+      "cardId": "VES-064",
+      "edition": "VES",
+      "number": 64,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-065",
+      "cardId": "VES-065",
+      "edition": "VES",
+      "number": 65,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-066",
+      "cardId": "VES-066",
+      "edition": "VES",
+      "number": 66,
+      "rarity": "uncommon",
+      "designNote": "Motor de compra ligado ao reposicionamento."
+    },
+    {
+      "id": "VES-067",
+      "cardId": "VES-067",
+      "edition": "VES",
+      "number": 67,
+      "rarity": "uncommon",
+      "designNote": "Motor de duração de fontes ligado à primeira Magia de Maré."
+    },
+    {
+      "id": "VES-068",
+      "cardId": "VES-068",
+      "edition": "VES",
+      "number": 68,
+      "rarity": "common",
+      "designNote": "Resposta pontual condicionada à ação do rival."
+    },
+    {
+      "id": "VES-069",
+      "cardId": "VES-069",
+      "edition": "VES",
+      "number": 69,
+      "rarity": "rare",
+      "designNote": "Ameaça híbrida que transforma outro monstro em remoção."
+    },
+    {
+      "id": "VES-070",
+      "cardId": "VES-070",
+      "edition": "VES",
+      "number": 70,
+      "rarity": "uncommon",
+      "designNote": "Combina sacrifício, dano e Vida para um arquétipo híbrido."
+    },
+    {
+      "id": "VES-071",
+      "cardId": "VES-071",
+      "edition": "VES",
+      "number": 71,
+      "rarity": "rare",
+      "designNote": "Ameaça híbrida com Ímpeto e conversão opcional de Cinzas em dano."
+    },
+    {
+      "id": "VES-072",
+      "cardId": "VES-072",
+      "edition": "VES",
+      "number": 72,
+      "rarity": "uncommon",
+      "designNote": "Converte Cinzas em dano direto de encerramento."
+    },
+    {
+      "id": "VES-073",
+      "cardId": "VES-073",
+      "edition": "VES",
+      "number": 73,
+      "rarity": "common",
+      "designNote": "Peça de curva e presença; efeito individual ou palavra-chave acessível."
+    },
+    {
+      "id": "VES-074",
+      "cardId": "VES-074",
+      "edition": "VES",
+      "number": 74,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-075",
+      "cardId": "VES-075",
+      "edition": "VES",
+      "number": 75,
+      "rarity": "uncommon",
+      "designNote": "Guardião condicional que conecta Cinzas à defesa."
+    },
+    {
+      "id": "VES-076",
+      "cardId": "VES-076",
+      "edition": "VES",
+      "number": 76,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    },
+    {
+      "id": "VES-077",
+      "cardId": "VES-077",
+      "edition": "VES",
+      "number": 77,
+      "rarity": "rare",
+      "designNote": "Dupla função híbrida: Guardião na frente ou cura coletiva na retaguarda."
+    },
+    {
+      "id": "VES-078",
+      "cardId": "VES-078",
+      "edition": "VES",
+      "number": 78,
+      "rarity": "uncommon",
+      "designNote": "Encantamento híbrido que recompensa reposicionar com cura e Vida."
+    },
+    {
+      "id": "VES-079",
+      "cardId": "VES-079",
+      "edition": "VES",
+      "number": 79,
+      "rarity": "uncommon",
+      "designNote": "Combina Alcance e informação sobre o Véu."
+    },
+    {
+      "id": "VES-080",
+      "cardId": "VES-080",
+      "edition": "VES",
+      "number": 80,
+      "rarity": "common",
+      "designNote": "Resposta ou recurso direto que sustenta o funcionamento do deck."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "As Terras Despertas",
+  "version": "design-0.1",
+  "state": "propostas-nao-jogaveis",
+  "date": "2026-10-24",
+  "rulesNote": "Na variante escolas-v1, os requisitos impressos são de Escola permanente. Ressonância verifica a Presença atual na resolução; a própria carta já em campo pode contar. Textos, valores, raridades e artes são propostas sem playtest.",
+  "cards": [
+    {
+      "id": "TD-P01", "name": "Lince da Pedra Quente", "type": "Monstro", "schools": ["Chama"], "cost": 4, "presence": {"Chama": 2}, "force": 3, "vigor": 3, "essence": {"generation": 2, "duration": 1}, "support": false, "vigil": null, "keywords": [], "rarity": "Incomum",
+      "text": "Ao entrar, outro monstro seu ganha +1 de Força até o encerramento.\nRessonância — Com Presença de Chama 3, ele também ganha Ímpeto até o encerramento.",
+      "role": "Investida preparada; o próprio Lince não recebe o efeito.", "flavor": "A primeira pedra que se move já é tarde demais.", "artIndex": 0
+    },
+    {
+      "id": "TD-P02", "name": "Javali das Raízes Altas", "type": "Monstro", "schools": ["Raiz"], "cost": 3, "presence": {"Raiz": 2}, "force": 2, "vigor": 4, "essence": {"generation": 1, "duration": 3}, "support": false, "vigil": null, "keywords": ["Guardião"], "rarity": "Comum",
+      "text": "Guardião.", "role": "Defensor simples para sustentar uma formação; referência de corpo sem Ressonância.", "flavor": "A trilha pertence a quem consegue mantê-la aberta.", "artIndex": 1
+    },
+    {
+      "id": "TD-P03", "name": "Predador dos Nomes Vazios", "type": "Monstro", "schools": ["Sombra"], "cost": 4, "presence": {"Sombra": 2}, "force": 3, "vigor": 3, "essence": {"generation": 2, "duration": 2}, "support": false, "vigil": null, "keywords": [], "rarity": "Incomum",
+      "text": "Ao entrar, você pode gastar 2 Cinzas para causar 2 de dano a um monstro na frente inimiga.", "role": "Converte um recurso finito em pressão imediata; pagamento opcional na habilidade, não na conjuração.", "flavor": "Ele fareja os lugares onde alguém deixou de ser lembrado.", "artIndex": 2
+    },
+    {
+      "id": "TD-P04", "name": "Garça dos Espelhos d’Água", "type": "Monstro", "schools": ["Maré"], "cost": 3, "presence": {"Maré": 2}, "force": 2, "vigor": 3, "essence": {"generation": 1, "duration": 3}, "support": false, "vigil": null, "keywords": ["Alcance"], "rarity": "Comum",
+      "text": "Alcance.", "role": "Ameaça aos suportes rivais sem exigir uma formação grande.", "flavor": "Sua sombra chega à outra margem antes de suas asas.", "artIndex": 3
+    },
+    {
+      "id": "TD-P05", "name": "Guardião das Raízes Suspensas", "type": "Monstro", "schools": ["Raiz"], "cost": 3, "presence": {"Raiz": 2}, "force": 1, "vigor": 4, "essence": {"generation": 1, "duration": 3}, "support": true, "vigil": null, "keywords": [], "rarity": "Incomum",
+      "text": "Suporte: no seu encerramento, cure até 1 de dano de um monstro seu na frente.\nRessonância — Com Presença de Raiz 3, cure até 2 em vez disso.", "role": "Recompensa manter o campo, mas não traz de volta aliados destruídos.", "flavor": "O vale oferece abrigo a quem aprende a esperar.", "artIndex": 4
+    },
+    {
+      "id": "TD-P06", "name": "Lia, Cartógrafa das Passagens", "type": "Monstro", "schools": ["Maré"], "cost": 3, "presence": {"Maré": 2}, "force": 1, "vigor": 4, "essence": {"generation": 1, "duration": 2}, "support": false, "vigil": null, "keywords": [], "rarity": "Incomum",
+      "text": "Ao entrar, olhe as 2 cartas do topo do seu baralho. Coloque quantas quiser no fundo e devolva as demais ao topo, na ordem que escolher.", "role": "Seleção de compras para preparar a próxima jogada; não compra cartas nem gera energia.", "flavor": "Um mapa bom registra também por onde não passar.", "artIndex": 5
+    },
+    {
+      "id": "TD-P07", "name": "Catadora de Nomes Perdidos", "type": "Monstro", "schools": ["Sombra"], "cost": 5, "presence": {"Sombra": 3}, "force": 2, "vigor": 4, "essence": {"generation": 1, "duration": 3}, "support": false, "vigil": null, "keywords": [], "rarity": "Rara",
+      "text": "Ao entrar, você pode gastar 2 outras Cinzas para devolver um Monstro de custo até 2 das suas Cinzas à mão.\nRessonância — Com Presença de Sombra 3, o limite é 4.", "role": "Recuperação seletiva com gasto real; a carta recuperada não pode pagar o próprio efeito. O custo 5 exclui a Catadora do limite 4.", "flavor": "Ninguém atravessa o vale sem deixar um nome para trás.", "artIndex": 6
+    },
+    {
+      "id": "TD-P08", "name": "Santuário da Primeira Chuva", "type": "Encantamento", "schools": ["Raiz", "Maré"], "cost": 2, "presence": {"Raiz": 1, "Maré": 1}, "force": null, "vigor": null, "essence": {"generation": 1, "duration": 3}, "support": false, "vigil": null, "keywords": [], "rarity": "Incomum",
+      "text": "No seu encerramento, com Presença de Raiz 2 e Maré 2, olhe a carta do topo do seu baralho. Você pode colocá-la no fundo.", "role": "Apoio híbrido de seleção, sem compra automática; cada cópia tem um gatilho de encerramento.", "flavor": "A água encontra quem conserva seus caminhos.", "artIndex": 7
+    },
+    {
+      "id": "TD-P09", "name": "Quebrar o Círculo", "type": "Magia", "schools": ["Chama", "Sombra"], "cost": 2, "presence": {"Chama": 1, "Sombra": 1}, "force": null, "vigor": null, "essence": {"generation": 2, "duration": 1}, "support": false, "vigil": null, "keywords": [], "rarity": "Comum",
+      "text": "Destrua um Encantamento inimigo de custo 3 ou menos.", "role": "Resposta acessível que funciona sem Presença alta; não atinge monstros de Suporte.", "flavor": "Toda barreira foi erguida por mãos que podiam tremer.", "artIndex": 8
+    },
+    {
+      "id": "TD-P10", "name": "Bruma entre as Passagens", "type": "Magia", "schools": ["Maré"], "cost": 2, "presence": {"Maré": 1}, "force": null, "vigor": null, "essence": {"generation": 1, "duration": 3}, "support": false, "vigil": null, "keywords": [], "rarity": "Comum",
+      "text": "Devolva um monstro inimigo de custo 3 ou menos para a mão do dono.", "role": "Ganha tempo e retira Presença, mas permite ao rival rejogar e avançar Escola novamente.", "flavor": "O que se perde na neblina nem sempre deixou de existir.", "artIndex": 9
+    },
+    {
+      "id": "TD-P11", "name": "Raízes sob o Acampamento", "type": "Magia", "schools": ["Raiz"], "cost": 1, "presence": {"Raiz": 1}, "force": null, "vigor": null, "essence": {"generation": 1, "duration": 4}, "support": false, "vigil": null, "keywords": [], "rarity": "Comum",
+      "text": "Cure até 2 de dano de um monstro seu.", "role": "Recuperação barata e fonte duradoura; não recupera monstro destruído nem Vida do mago.", "flavor": "Uma noite segura começa muito abaixo da fogueira.", "artIndex": 10
+    },
+    {
+      "id": "TD-P12", "name": "Faísca de Sinalização", "type": "Magia", "schools": ["Chama"], "cost": 2, "presence": {"Chama": 1}, "force": null, "vigor": null, "essence": {"generation": 2, "duration": 1}, "support": false, "vigil": null, "keywords": [], "rarity": "Comum",
+      "text": "Cause 2 de dano a um monstro na frente inimiga.\nRessonância — Com Presença de Chama 3, cause 3 em vez disso.", "role": "Exemplo direto de Ressonância; comparação editorial com A Última Descarga de VES ainda precisa de playtest.", "flavor": "Que a luz encontre primeiro quem precisa voltar.", "artIndex": 11
+    }
+  ]
+}

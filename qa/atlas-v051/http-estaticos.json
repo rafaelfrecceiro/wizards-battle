@@ -1,0 +1,32 @@
+[
+  {
+    "path": "index.html",
+    "bytes": 388,
+    "status": 200
+  },
+  {
+    "path": "atlas-preview.html",
+    "bytes": 473,
+    "status": 200
+  },
+  {
+    "path": "arte/atlas-tabuleiro.png",
+    "bytes": 2634389,
+    "status": 200
+  },
+  {
+    "path": "arte/atlas-maga.png",
+    "bytes": 2537110,
+    "status": 200
+  },
+  {
+    "path": "arte/atlas-automato.png",
+    "bytes": 2579483,
+    "status": 200
+  },
+  {
+    "path": "assets/index-CwTfMMU8.js",
+    "bytes": 342264,
+    "status": 200
+  }
+]

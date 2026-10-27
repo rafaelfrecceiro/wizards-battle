@@ -1,0 +1,744 @@
+[
+  {
+    "name": "Queimada",
+    "schools": [
+      "Chama",
+      "Raiz"
+    ],
+    "cards": [
+      {
+        "id": "VES-002",
+        "copies": 2
+      },
+      {
+        "id": "VES-003",
+        "copies": 2
+      },
+      {
+        "id": "VES-009",
+        "copies": 2
+      },
+      {
+        "id": "VES-011",
+        "copies": 2
+      },
+      {
+        "id": "VES-012",
+        "copies": 1
+      },
+      {
+        "id": "VES-023",
+        "copies": 1
+      },
+      {
+        "id": "VES-025",
+        "copies": 1
+      },
+      {
+        "id": "VES-036",
+        "copies": 2
+      },
+      {
+        "id": "VES-037",
+        "copies": 1
+      },
+      {
+        "id": "VES-040",
+        "copies": 2
+      },
+      {
+        "id": "VES-041",
+        "copies": 1
+      },
+      {
+        "id": "VES-069",
+        "copies": 2
+      },
+      {
+        "id": "VES-039",
+        "copies": 1
+      },
+      {
+        "id": "VES-010",
+        "copies": 1
+      },
+      {
+        "id": "VES-026",
+        "copies": 1
+      },
+      {
+        "id": "VES-006",
+        "copies": 2
+      },
+      {
+        "id": "VES-013",
+        "copies": 2
+      },
+      {
+        "id": "VES-032",
+        "copies": 2
+      },
+      {
+        "id": "VES-042",
+        "copies": 1
+      },
+      {
+        "id": "VES-043",
+        "copies": 1
+      },
+      {
+        "id": "VES-070",
+        "copies": 1
+      },
+      {
+        "id": "VES-007",
+        "copies": 1
+      },
+      {
+        "id": "VES-033",
+        "copies": 1
+      },
+      {
+        "id": "VES-034",
+        "copies": 1
+      },
+      {
+        "id": "VES-044",
+        "copies": 2
+      },
+      {
+        "id": "VES-022",
+        "copies": 1
+      },
+      {
+        "id": "VES-035",
+        "copies": 1
+      },
+      {
+        "id": "VES-045",
+        "copies": 1
+      },
+      {
+        "id": "VES-046",
+        "copies": 1
+      }
+    ]
+  },
+  {
+    "name": "Pira",
+    "schools": [
+      "Chama",
+      "Sombra"
+    ],
+    "cards": [
+      {
+        "id": "VES-002",
+        "copies": 2
+      },
+      {
+        "id": "VES-004",
+        "copies": 2
+      },
+      {
+        "id": "VES-009",
+        "copies": 2
+      },
+      {
+        "id": "VES-025",
+        "copies": 2
+      },
+      {
+        "id": "VES-027",
+        "copies": 1
+      },
+      {
+        "id": "VES-028",
+        "copies": 1
+      },
+      {
+        "id": "VES-047",
+        "copies": 2
+      },
+      {
+        "id": "VES-048",
+        "copies": 2
+      },
+      {
+        "id": "VES-049",
+        "copies": 1
+      },
+      {
+        "id": "VES-050",
+        "copies": 1
+      },
+      {
+        "id": "VES-051",
+        "copies": 1
+      },
+      {
+        "id": "VES-052",
+        "copies": 2
+      },
+      {
+        "id": "VES-071",
+        "copies": 2
+      },
+      {
+        "id": "VES-029",
+        "copies": 1
+      },
+      {
+        "id": "VES-006",
+        "copies": 2
+      },
+      {
+        "id": "VES-016",
+        "copies": 1
+      },
+      {
+        "id": "VES-031",
+        "copies": 1
+      },
+      {
+        "id": "VES-032",
+        "copies": 2
+      },
+      {
+        "id": "VES-053",
+        "copies": 1
+      },
+      {
+        "id": "VES-054",
+        "copies": 1
+      },
+      {
+        "id": "VES-072",
+        "copies": 1
+      },
+      {
+        "id": "VES-033",
+        "copies": 1
+      },
+      {
+        "id": "VES-034",
+        "copies": 1
+      },
+      {
+        "id": "VES-055",
+        "copies": 1
+      },
+      {
+        "id": "VES-056",
+        "copies": 2
+      },
+      {
+        "id": "VES-017",
+        "copies": 1
+      },
+      {
+        "id": "VES-022",
+        "copies": 1
+      },
+      {
+        "id": "VES-035",
+        "copies": 1
+      },
+      {
+        "id": "VES-057",
+        "copies": 1
+      }
+    ]
+  },
+  {
+    "name": "Vapor",
+    "schools": [
+      "Chama",
+      "Maré"
+    ],
+    "cards": [
+      {
+        "id": "VES-001",
+        "copies": 2
+      },
+      {
+        "id": "VES-002",
+        "copies": 2
+      },
+      {
+        "id": "VES-009",
+        "copies": 2
+      },
+      {
+        "id": "VES-019",
+        "copies": 1
+      },
+      {
+        "id": "VES-025",
+        "copies": 2
+      },
+      {
+        "id": "VES-027",
+        "copies": 1
+      },
+      {
+        "id": "VES-030",
+        "copies": 1
+      },
+      {
+        "id": "VES-018",
+        "copies": 2
+      },
+      {
+        "id": "VES-058",
+        "copies": 2
+      },
+      {
+        "id": "VES-059",
+        "copies": 1
+      },
+      {
+        "id": "VES-060",
+        "copies": 1
+      },
+      {
+        "id": "VES-062",
+        "copies": 2
+      },
+      {
+        "id": "VES-073",
+        "copies": 2
+      },
+      {
+        "id": "VES-020",
+        "copies": 1
+      },
+      {
+        "id": "VES-006",
+        "copies": 1
+      },
+      {
+        "id": "VES-021",
+        "copies": 1
+      },
+      {
+        "id": "VES-031",
+        "copies": 1
+      },
+      {
+        "id": "VES-032",
+        "copies": 2
+      },
+      {
+        "id": "VES-064",
+        "copies": 2
+      },
+      {
+        "id": "VES-065",
+        "copies": 1
+      },
+      {
+        "id": "VES-074",
+        "copies": 1
+      },
+      {
+        "id": "VES-033",
+        "copies": 1
+      },
+      {
+        "id": "VES-034",
+        "copies": 1
+      },
+      {
+        "id": "VES-066",
+        "copies": 1
+      },
+      {
+        "id": "VES-067",
+        "copies": 2
+      },
+      {
+        "id": "VES-005",
+        "copies": 1
+      },
+      {
+        "id": "VES-022",
+        "copies": 1
+      },
+      {
+        "id": "VES-035",
+        "copies": 1
+      },
+      {
+        "id": "VES-068",
+        "copies": 1
+      }
+    ]
+  },
+  {
+    "name": "Decomposição",
+    "schools": [
+      "Raiz",
+      "Sombra"
+    ],
+    "cards": [
+      {
+        "id": "VES-003",
+        "copies": 2
+      },
+      {
+        "id": "VES-004",
+        "copies": 2
+      },
+      {
+        "id": "VES-011",
+        "copies": 2
+      },
+      {
+        "id": "VES-012",
+        "copies": 1
+      },
+      {
+        "id": "VES-036",
+        "copies": 2
+      },
+      {
+        "id": "VES-037",
+        "copies": 1
+      },
+      {
+        "id": "VES-040",
+        "copies": 1
+      },
+      {
+        "id": "VES-041",
+        "copies": 1
+      },
+      {
+        "id": "VES-047",
+        "copies": 2
+      },
+      {
+        "id": "VES-048",
+        "copies": 1
+      },
+      {
+        "id": "VES-049",
+        "copies": 1
+      },
+      {
+        "id": "VES-050",
+        "copies": 1
+      },
+      {
+        "id": "VES-051",
+        "copies": 1
+      },
+      {
+        "id": "VES-052",
+        "copies": 2
+      },
+      {
+        "id": "VES-075",
+        "copies": 2
+      },
+      {
+        "id": "VES-008",
+        "copies": 2
+      },
+      {
+        "id": "VES-013",
+        "copies": 1
+      },
+      {
+        "id": "VES-016",
+        "copies": 1
+      },
+      {
+        "id": "VES-042",
+        "copies": 1
+      },
+      {
+        "id": "VES-043",
+        "copies": 1
+      },
+      {
+        "id": "VES-053",
+        "copies": 1
+      },
+      {
+        "id": "VES-054",
+        "copies": 1
+      },
+      {
+        "id": "VES-076",
+        "copies": 1
+      },
+      {
+        "id": "VES-007",
+        "copies": 1
+      },
+      {
+        "id": "VES-044",
+        "copies": 1
+      },
+      {
+        "id": "VES-055",
+        "copies": 1
+      },
+      {
+        "id": "VES-056",
+        "copies": 2
+      },
+      {
+        "id": "VES-017",
+        "copies": 1
+      },
+      {
+        "id": "VES-045",
+        "copies": 1
+      },
+      {
+        "id": "VES-046",
+        "copies": 1
+      },
+      {
+        "id": "VES-057",
+        "copies": 1
+      }
+    ]
+  },
+  {
+    "name": "Estações",
+    "schools": [
+      "Raiz",
+      "Maré"
+    ],
+    "cards": [
+      {
+        "id": "VES-003",
+        "copies": 1
+      },
+      {
+        "id": "VES-011",
+        "copies": 2
+      },
+      {
+        "id": "VES-012",
+        "copies": 1
+      },
+      {
+        "id": "VES-018",
+        "copies": 2
+      },
+      {
+        "id": "VES-036",
+        "copies": 3
+      },
+      {
+        "id": "VES-038",
+        "copies": 2
+      },
+      {
+        "id": "VES-039",
+        "copies": 1
+      },
+      {
+        "id": "VES-040",
+        "copies": 1
+      },
+      {
+        "id": "VES-058",
+        "copies": 3
+      },
+      {
+        "id": "VES-059",
+        "copies": 1
+      },
+      {
+        "id": "VES-060",
+        "copies": 1
+      },
+      {
+        "id": "VES-062",
+        "copies": 1
+      },
+      {
+        "id": "VES-077",
+        "copies": 3
+      },
+      {
+        "id": "VES-021",
+        "copies": 2
+      },
+      {
+        "id": "VES-042",
+        "copies": 3
+      },
+      {
+        "id": "VES-064",
+        "copies": 3
+      },
+      {
+        "id": "VES-065",
+        "copies": 1
+      },
+      {
+        "id": "VES-044",
+        "copies": 2
+      },
+      {
+        "id": "VES-066",
+        "copies": 1
+      },
+      {
+        "id": "VES-078",
+        "copies": 2
+      },
+      {
+        "id": "VES-045",
+        "copies": 2
+      },
+      {
+        "id": "VES-046",
+        "copies": 1
+      },
+      {
+        "id": "VES-068",
+        "copies": 1
+      }
+    ]
+  },
+  {
+    "name": "Ilusão",
+    "schools": [
+      "Sombra",
+      "Maré"
+    ],
+    "cards": [
+      {
+        "id": "VES-004",
+        "copies": 2
+      },
+      {
+        "id": "VES-014",
+        "copies": 2
+      },
+      {
+        "id": "VES-015",
+        "copies": 1
+      },
+      {
+        "id": "VES-018",
+        "copies": 2
+      },
+      {
+        "id": "VES-019",
+        "copies": 1
+      },
+      {
+        "id": "VES-061",
+        "copies": 1
+      },
+      {
+        "id": "VES-047",
+        "copies": 2
+      },
+      {
+        "id": "VES-048",
+        "copies": 1
+      },
+      {
+        "id": "VES-049",
+        "copies": 1
+      },
+      {
+        "id": "VES-050",
+        "copies": 1
+      },
+      {
+        "id": "VES-051",
+        "copies": 1
+      },
+      {
+        "id": "VES-052",
+        "copies": 1
+      },
+      {
+        "id": "VES-058",
+        "copies": 2
+      },
+      {
+        "id": "VES-062",
+        "copies": 1
+      },
+      {
+        "id": "VES-063",
+        "copies": 1
+      },
+      {
+        "id": "VES-079",
+        "copies": 2
+      },
+      {
+        "id": "VES-016",
+        "copies": 1
+      },
+      {
+        "id": "VES-021",
+        "copies": 2
+      },
+      {
+        "id": "VES-053",
+        "copies": 1
+      },
+      {
+        "id": "VES-054",
+        "copies": 1
+      },
+      {
+        "id": "VES-064",
+        "copies": 1
+      },
+      {
+        "id": "VES-065",
+        "copies": 1
+      },
+      {
+        "id": "VES-080",
+        "copies": 2
+      },
+      {
+        "id": "VES-024",
+        "copies": 2
+      },
+      {
+        "id": "VES-055",
+        "copies": 1
+      },
+      {
+        "id": "VES-056",
+        "copies": 1
+      },
+      {
+        "id": "VES-066",
+        "copies": 1
+      },
+      {
+        "id": "VES-005",
+        "copies": 1
+      },
+      {
+        "id": "VES-017",
+        "copies": 1
+      },
+      {
+        "id": "VES-057",
+        "copies": 1
+      },
+      {
+        "id": "VES-068",
+        "copies": 1
+      }
+    ]
+  }
+]

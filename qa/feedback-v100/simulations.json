@@ -1,0 +1,532 @@
+{
+  "success": true,
+  "version": "wb-0.10.0/rules-feedback-01/ac500ad45d98/7e65b53aa899/522260ac54af/66929d1d5a72",
+  "games": 36,
+  "totalActions": 4829,
+  "kinds": {
+    "phase": 1028,
+    "draw": 1231,
+    "sacrifice": 853,
+    "cast": 754,
+    "attack": 1206,
+    "damage": 1031,
+    "energy": 1214,
+    "death": 377,
+    "expire": 794,
+    "arm": 75,
+    "reveal": 496,
+    "heal": 69,
+    "boost": 135,
+    "move": 33,
+    "recover": 11,
+    "discard": 30
+  },
+  "elapsedMs": 27801,
+  "method": "Nove modelos × duas iniciativas × duas regras de energia; cada ação também aplicada ao motor congelado 0.9, jogadores/RNG/vencedor idênticos. Não mede diversão/FPS.",
+  "results": [
+    {
+      "decks": [
+        "Queimada",
+        "Estações"
+      ],
+      "first": 0,
+      "energyRule": "turn",
+      "steps": 95,
+      "turns": 20,
+      "winner": 1,
+      "events": 192,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Queimada",
+        "Estações"
+      ],
+      "first": 0,
+      "energyRule": "reserve-v1",
+      "steps": 149,
+      "turns": 31,
+      "winner": 0,
+      "events": 314,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Queimada",
+        "Estações"
+      ],
+      "first": 1,
+      "energyRule": "turn",
+      "steps": 170,
+      "turns": 37,
+      "winner": 1,
+      "events": 343,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Queimada",
+        "Estações"
+      ],
+      "first": 1,
+      "energyRule": "reserve-v1",
+      "steps": 250,
+      "turns": 55,
+      "winner": 1,
+      "events": 503,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Pira",
+        "Ilusão"
+      ],
+      "first": 0,
+      "energyRule": "turn",
+      "steps": 149,
+      "turns": 35,
+      "winner": 0,
+      "events": 302,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Pira",
+        "Ilusão"
+      ],
+      "first": 0,
+      "energyRule": "reserve-v1",
+      "steps": 56,
+      "turns": 11,
+      "winner": 0,
+      "events": 114,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Pira",
+        "Ilusão"
+      ],
+      "first": 1,
+      "energyRule": "turn",
+      "steps": 81,
+      "turns": 18,
+      "winner": 0,
+      "events": 156,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Pira",
+        "Ilusão"
+      ],
+      "first": 1,
+      "energyRule": "reserve-v1",
+      "steps": 144,
+      "turns": 27,
+      "winner": 1,
+      "events": 313,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Vapor",
+        "Terras — Manada do Vale"
+      ],
+      "first": 0,
+      "energyRule": "turn",
+      "steps": 89,
+      "turns": 16,
+      "winner": 1,
+      "events": 191,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Vapor",
+        "Terras — Manada do Vale"
+      ],
+      "first": 0,
+      "energyRule": "reserve-v1",
+      "steps": 95,
+      "turns": 20,
+      "winner": 1,
+      "events": 194,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Vapor",
+        "Terras — Manada do Vale"
+      ],
+      "first": 1,
+      "energyRule": "turn",
+      "steps": 74,
+      "turns": 14,
+      "winner": 0,
+      "events": 146,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Vapor",
+        "Terras — Manada do Vale"
+      ],
+      "first": 1,
+      "energyRule": "reserve-v1",
+      "steps": 103,
+      "turns": 21,
+      "winner": 1,
+      "events": 209,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Decomposição",
+        "Terras — Nascentes Vivas"
+      ],
+      "first": 0,
+      "energyRule": "turn",
+      "steps": 150,
+      "turns": 30,
+      "winner": 1,
+      "events": 291,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Decomposição",
+        "Terras — Nascentes Vivas"
+      ],
+      "first": 0,
+      "energyRule": "reserve-v1",
+      "steps": 251,
+      "turns": 48,
+      "winner": 1,
+      "events": 496,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Decomposição",
+        "Terras — Nascentes Vivas"
+      ],
+      "first": 1,
+      "energyRule": "turn",
+      "steps": 105,
+      "turns": 21,
+      "winner": 1,
+      "events": 208,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Decomposição",
+        "Terras — Nascentes Vivas"
+      ],
+      "first": 1,
+      "energyRule": "reserve-v1",
+      "steps": 144,
+      "turns": 29,
+      "winner": 1,
+      "events": 305,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Estações",
+        "Terras — Nomes e Brasas"
+      ],
+      "first": 0,
+      "energyRule": "turn",
+      "steps": 75,
+      "turns": 16,
+      "winner": 1,
+      "events": 153,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Estações",
+        "Terras — Nomes e Brasas"
+      ],
+      "first": 0,
+      "energyRule": "reserve-v1",
+      "steps": 123,
+      "turns": 27,
+      "winner": 0,
+      "events": 254,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Estações",
+        "Terras — Nomes e Brasas"
+      ],
+      "first": 1,
+      "energyRule": "turn",
+      "steps": 168,
+      "turns": 42,
+      "winner": 0,
+      "events": 340,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Estações",
+        "Terras — Nomes e Brasas"
+      ],
+      "first": 1,
+      "energyRule": "reserve-v1",
+      "steps": 52,
+      "turns": 9,
+      "winner": 1,
+      "events": 108,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Ilusão",
+        "Queimada"
+      ],
+      "first": 0,
+      "energyRule": "turn",
+      "steps": 104,
+      "turns": 24,
+      "winner": 1,
+      "events": 210,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Ilusão",
+        "Queimada"
+      ],
+      "first": 0,
+      "energyRule": "reserve-v1",
+      "steps": 194,
+      "turns": 46,
+      "winner": 1,
+      "events": 416,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Ilusão",
+        "Queimada"
+      ],
+      "first": 1,
+      "energyRule": "turn",
+      "steps": 117,
+      "turns": 22,
+      "winner": 0,
+      "events": 232,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Ilusão",
+        "Queimada"
+      ],
+      "first": 1,
+      "energyRule": "reserve-v1",
+      "steps": 175,
+      "turns": 39,
+      "winner": 1,
+      "events": 337,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Terras — Manada do Vale",
+        "Pira"
+      ],
+      "first": 0,
+      "energyRule": "turn",
+      "steps": 168,
+      "turns": 42,
+      "winner": 1,
+      "events": 347,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Terras — Manada do Vale",
+        "Pira"
+      ],
+      "first": 0,
+      "energyRule": "reserve-v1",
+      "steps": 210,
+      "turns": 45,
+      "winner": 0,
+      "events": 437,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Terras — Manada do Vale",
+        "Pira"
+      ],
+      "first": 1,
+      "energyRule": "turn",
+      "steps": 190,
+      "turns": 50,
+      "winner": 0,
+      "events": 381,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Terras — Manada do Vale",
+        "Pira"
+      ],
+      "first": 1,
+      "energyRule": "reserve-v1",
+      "steps": 138,
+      "turns": 31,
+      "winner": 1,
+      "events": 307,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Terras — Nascentes Vivas",
+        "Vapor"
+      ],
+      "first": 0,
+      "energyRule": "turn",
+      "steps": 132,
+      "turns": 28,
+      "winner": 1,
+      "events": 263,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Terras — Nascentes Vivas",
+        "Vapor"
+      ],
+      "first": 0,
+      "energyRule": "reserve-v1",
+      "steps": 186,
+      "turns": 33,
+      "winner": 0,
+      "events": 350,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Terras — Nascentes Vivas",
+        "Vapor"
+      ],
+      "first": 1,
+      "energyRule": "turn",
+      "steps": 169,
+      "turns": 29,
+      "winner": 1,
+      "events": 311,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Terras — Nascentes Vivas",
+        "Vapor"
+      ],
+      "first": 1,
+      "energyRule": "reserve-v1",
+      "steps": 134,
+      "turns": 31,
+      "winner": 1,
+      "events": 270,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Terras — Nomes e Brasas",
+        "Decomposição"
+      ],
+      "first": 0,
+      "energyRule": "turn",
+      "steps": 77,
+      "turns": 13,
+      "winner": 0,
+      "events": 160,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Terras — Nomes e Brasas",
+        "Decomposição"
+      ],
+      "first": 0,
+      "energyRule": "reserve-v1",
+      "steps": 78,
+      "turns": 17,
+      "winner": 0,
+      "events": 161,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Terras — Nomes e Brasas",
+        "Decomposição"
+      ],
+      "first": 1,
+      "energyRule": "turn",
+      "steps": 86,
+      "turns": 18,
+      "winner": 0,
+      "events": 184,
+      "identicalRules": true,
+      "exactReplay": true
+    },
+    {
+      "decks": [
+        "Terras — Nomes e Brasas",
+        "Decomposição"
+      ],
+      "first": 1,
+      "energyRule": "reserve-v1",
+      "steps": 148,
+      "turns": 33,
+      "winner": 1,
+      "events": 343,
+      "identicalRules": true,
+      "exactReplay": true
+    }
+  ]
+}

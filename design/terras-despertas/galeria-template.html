@@ -1,0 +1,67 @@
+<div id="td-card-gallery">
+  <style>
+    #td-card-gallery .td-controls{display:flex;align-items:end;flex-wrap:wrap;gap:10px;margin-bottom:18px;padding-right:90px}
+    #td-card-gallery .td-picker{flex:1 1 240px;min-width:0}
+    #td-card-gallery .td-stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:center}
+    #td-card-gallery .td-image{display:block;width:100%;max-width:350px;height:auto;margin:auto}
+    #td-card-gallery .td-copy{min-width:0;overflow-wrap:anywhere}
+    #td-card-gallery .td-copy p{margin:12px 0}
+    #td-card-gallery .td-rules{white-space:pre-line}
+    #td-card-gallery .td-thumbs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-top:20px}
+    #td-card-gallery .td-thumbs button{display:block;min-width:0;padding:0;background:transparent;border:0;color:var(--foreground)}
+    #td-card-gallery .td-thumbs img{display:block;width:100%;height:auto}
+    #td-card-gallery .td-thumbs button[aria-pressed=true]{outline:2px solid var(--ring);outline-offset:3px}
+    @media(max-width:550px){#td-card-gallery .td-stage{grid-template-columns:minmax(0,1fr)}#td-card-gallery .td-thumbs{grid-template-columns:repeat(4,minmax(0,1fr))}#td-card-gallery .td-controls{padding-right:0}}
+  </style>
+  <div class="td-controls">
+    <div class="td-picker"><label class="form-label" for="td-card-choice">As Terras Despertas · 12 propostas</label><select id="td-card-choice" class="form-select"></select></div>
+    <button type="button" class="btn" id="td-previous">Anterior</button>
+    <button type="button" class="btn" id="td-next">Próxima</button>
+  </div>
+  <div class="td-stage">
+    <img id="td-card-image" class="td-image" alt="" width="536" height="749">
+    <div class="td-copy" aria-live="polite" aria-atomic="true">
+      <span class="text-small" id="td-card-count"></span>
+      <h3 id="td-card-title"></h3>
+      <p id="td-card-type"></p>
+      <p id="td-card-stats"></p>
+      <p class="td-rules" id="td-card-rules"></p>
+      <p><em id="td-card-flavor"></em></p>
+      <p class="text-small" id="td-card-role"></p>
+    </div>
+  </div>
+  <div class="td-thumbs" id="td-card-thumbs" role="group" aria-label="Escolher uma das doze cartas"></div>
+  <script>
+    (()=>{
+      const root=document.getElementById('td-card-gallery');
+      const cards=__TD_CARDS_DATA__;
+      const query=(id)=>root.querySelector('#'+id);
+      const picker=query('td-card-choice');
+      let selected=0;
+      const saved=window.openai?.widgetState?.privateContent?.selected;
+      if(Number.isInteger(saved)&&saved>=0&&saved<cards.length)selected=saved;
+      for(const [index,card] of cards.entries()){
+        const option=document.createElement('option');option.value=String(index);option.textContent=card.name;picker.append(option);
+        const button=document.createElement('button');button.type='button';button.className='cursor-interaction';button.setAttribute('aria-label',card.id+' — '+card.name);button.setAttribute('aria-pressed','false');
+        const image=document.createElement('img');image.src=card.image;image.alt=card.name;image.width=536;image.height=749;button.append(image);
+        button.addEventListener('click',()=>show(index,true));query('td-card-thumbs').append(button);
+      }
+      function show(index,remember=false){
+        selected=(index+cards.length)%cards.length;const card=cards[selected];picker.value=String(selected);
+        query('td-card-image').src=card.image;query('td-card-image').alt='Carta proposta: '+card.name;
+        query('td-card-count').textContent=(selected+1)+' de '+cards.length+' · '+card.id+' · '+card.rarity;
+        query('td-card-title').textContent=card.name;
+        query('td-card-type').textContent=card.type+' · '+card.schools.join(' / ')+' · Custo '+card.cost;
+        query('td-card-stats').textContent='Escola: '+Object.entries(card.presence).map(([s,n])=>s+' '+n).join(' + ')+' · Essência '+card.essence.generation+'×'+card.essence.duration+(card.force===null?'':' · Força/Vigor '+card.force+'/'+card.vigor);
+        query('td-card-rules').textContent=card.text;
+        query('td-card-flavor').textContent='“'+card.flavor+'”';query('td-card-role').textContent=card.role;
+        [...query('td-card-thumbs').children].forEach((button,i)=>button.setAttribute('aria-pressed',String(i===selected)));
+        if(remember&&window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{cardId:card.id,cardName:card.name},privateContent:{selected}}).catch(()=>{});
+      }
+      picker.addEventListener('change',()=>show(Number(picker.value),true));
+      query('td-previous').addEventListener('click',()=>show(selected-1,true));query('td-next').addEventListener('click',()=>show(selected+1,true));
+      window.addEventListener('openai:set_globals',(event)=>{const s=event.detail?.globals?.widgetState?.privateContent?.selected;if(Number.isInteger(s)&&s>=0&&s<cards.length)show(s);});
+      show(selected);
+    })();
+  </script>
+</div>

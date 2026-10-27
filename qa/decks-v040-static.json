@@ -1,0 +1,55 @@
+{
+  "servers": [
+    {
+      "port": 4180,
+      "ui": "0.4.0",
+      "health": {
+        "ok": true,
+        "name": "Wizards Battle",
+        "version": "wb-0.4.0/rules-0.3-custom-decks/ac500ad45d98/7e65b53aa899",
+        "sessions": 2
+      },
+      "assets": [
+        {
+          "path": "/assets/index-BzQXON-4.js",
+          "status": 200,
+          "bytes": 337434,
+          "igualAoBuild": true
+        },
+        {
+          "path": "/assets/index-QcVtKfKt.css",
+          "status": 200,
+          "bytes": 49926,
+          "igualAoBuild": true
+        }
+      ]
+    },
+    {
+      "port": 4179,
+      "ui": "0.3.0",
+      "health": {
+        "ok": true,
+        "name": "Wizards Battle",
+        "version": "wb-0.2.0/rules-0.3-trigger-order/ac500ad45d98/7e65b53aa899",
+        "sessions": 4
+      },
+      "assets": [
+        {
+          "path": "/assets/index-DPE_CV1Q.js",
+          "status": 200,
+          "bytes": 321441,
+          "igualAoBuild": true
+        },
+        {
+          "path": "/assets/index-zbnwWxia.css",
+          "status": 200,
+          "bytes": 42437,
+          "igualAoBuild": true
+        }
+      ]
+    }
+  ],
+  "oldServerPreserved": true,
+  "originalArtHashes": 80,
+  "buildCopiesMatchOriginals": true
+}

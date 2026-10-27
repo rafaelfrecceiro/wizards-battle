@@ -1,0 +1,8 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>QA de layout — Wizards Battle</title><style>body{margin:0}iframe{border:0;display:block}</style><iframe title="Mesa real em resolução de QA" id="mesa"></iframe><script>
+const p=new URLSearchParams(location.search),w=Number(p.get('w')),h=Number(p.get('h'));
+if([1280,1366,1920].includes(w)&&[720,768,900,1080].includes(h)){
+  document.body.style.width=w+'px';document.body.style.height=h+'px';
+  const f=document.getElementById('mesa');f.width=w;f.height=h;
+  f.src=p.get('fixture')==='1'?'/atlas-preview.html?cheio=1':'/?qa=frames';
+}
+</script></html>

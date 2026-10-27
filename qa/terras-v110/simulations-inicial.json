@@ -1,0 +1,2595 @@
+{
+  "success": true,
+  "version": "wb-0.11.0/rules-terras-complete-01/ac500ad45d98/7e65b53aa899/e9b22e9dd270/d78efce249da",
+  "games": 144,
+  "actions": 19262,
+  "elapsedMs": 81673,
+  "method": "Seis decks TDP × doze adversários VES/TDP × duas iniciativas; regra reserva. Estado/privacidade/conservação/replay; não demonstra equilíbrio humano.",
+  "editionCast": 60,
+  "missing": [],
+  "casts": {
+    "TDP-030": 38,
+    "VES-009": 25,
+    "TDP-024": 135,
+    "VES-036": 45,
+    "VES-046": 17,
+    "TDP-016": 51,
+    "VES-025": 26,
+    "VES-032": 18,
+    "TDP-014": 98,
+    "VES-003": 15,
+    "TDP-018": 31,
+    "VES-002": 40,
+    "VES-041": 6,
+    "TDP-052": 6,
+    "VES-011": 43,
+    "TDP-029": 67,
+    "TDP-027": 30,
+    "VES-040": 28,
+    "VES-006": 8,
+    "TD-P02": 37,
+    "VES-034": 14,
+    "VES-045": 21,
+    "TD-P11": 9,
+    "VES-069": 3,
+    "TD-P01": 52,
+    "TDP-017": 38,
+    "VES-047": 42,
+    "VES-017": 15,
+    "TD-P12": 12,
+    "VES-016": 11,
+    "VES-035": 6,
+    "VES-052": 20,
+    "VES-056": 3,
+    "VES-031": 6,
+    "VES-071": 4,
+    "TDP-023": 148,
+    "VES-062": 24,
+    "VES-001": 5,
+    "VES-033": 5,
+    "VES-067": 2,
+    "TDP-013": 117,
+    "VES-019": 7,
+    "VES-022": 9,
+    "VES-060": 6,
+    "TDP-021": 49,
+    "VES-058": 45,
+    "VES-073": 4,
+    "VES-048": 18,
+    "VES-054": 4,
+    "VES-037": 6,
+    "VES-057": 12,
+    "VES-004": 21,
+    "TDP-026": 58,
+    "TDP-025": 16,
+    "VES-049": 9,
+    "VES-044": 14,
+    "VES-007": 5,
+    "VES-055": 3,
+    "VES-076": 1,
+    "VES-018": 35,
+    "VES-064": 31,
+    "VES-021": 14,
+    "VES-042": 10,
+    "VES-039": 2,
+    "VES-014": 14,
+    "VES-066": 4,
+    "VES-068": 12,
+    "VES-080": 14,
+    "VES-079": 7,
+    "TDP-032": 174,
+    "TDP-035": 56,
+    "TDP-037": 26,
+    "TDP-038": 38,
+    "TDP-041": 93,
+    "TDP-040": 71,
+    "TD-P07": 25,
+    "TDP-039": 91,
+    "TDP-033": 30,
+    "TDP-051": 5,
+    "TDP-020": 37,
+    "TDP-028": 19,
+    "TDP-034": 26,
+    "TDP-045": 45,
+    "TDP-031": 33,
+    "TDP-042": 130,
+    "TDP-050": 33,
+    "TDP-048": 33,
+    "TD-P06": 103,
+    "TD-P05": 39,
+    "TD-P08": 34,
+    "TDP-036": 13,
+    "TDP-055": 10,
+    "TDP-049": 43,
+    "TDP-058": 12,
+    "TDP-022": 24,
+    "TDP-043": 55,
+    "TD-P04": 41,
+    "TD-P10": 13,
+    "TDP-060": 17,
+    "TD-P03": 26,
+    "TDP-015": 10,
+    "VES-028": 2,
+    "VES-051": 8,
+    "VES-053": 10,
+    "TDP-053": 7,
+    "VES-038": 6,
+    "VES-077": 3,
+    "VES-012": 2,
+    "VES-061": 1,
+    "VES-015": 3,
+    "TD-P09": 3,
+    "TDP-057": 10,
+    "TDP-059": 14,
+    "TDP-047": 3,
+    "TDP-054": 8,
+    "VES-023": 1,
+    "VES-026": 4,
+    "VES-070": 2,
+    "VES-027": 3,
+    "VES-030": 4,
+    "VES-020": 2,
+    "TDP-044": 9,
+    "VES-075": 4,
+    "VES-059": 6,
+    "VES-065": 3,
+    "VES-063": 3,
+    "VES-005": 4,
+    "VES-010": 2,
+    "TDP-056": 1,
+    "VES-050": 1,
+    "VES-008": 1,
+    "TDP-019": 2,
+    "TDP-046": 1
+  },
+  "results": [
+    {
+      "config": {
+        "seed": 1110000,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Queimada"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 20,
+      "actions": 95,
+      "events": 204
+    },
+    {
+      "config": {
+        "seed": 1110001,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Queimada"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 18,
+      "actions": 86,
+      "events": 188
+    },
+    {
+      "config": {
+        "seed": 1110100,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Pira"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 10,
+      "actions": 57,
+      "events": 120
+    },
+    {
+      "config": {
+        "seed": 1110101,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Pira"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 89,
+      "events": 187
+    },
+    {
+      "config": {
+        "seed": 1110200,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Vapor"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 12,
+      "actions": 70,
+      "events": 152
+    },
+    {
+      "config": {
+        "seed": 1110201,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Vapor"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 115,
+      "events": 232
+    },
+    {
+      "config": {
+        "seed": 1110300,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Decomposição"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 35,
+      "actions": 160,
+      "events": 360
+    },
+    {
+      "config": {
+        "seed": 1110301,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Decomposição"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 33,
+      "actions": 141,
+      "events": 341
+    },
+    {
+      "config": {
+        "seed": 1110400,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Estações"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 94,
+      "events": 196
+    },
+    {
+      "config": {
+        "seed": 1110401,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Estações"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 29,
+      "actions": 146,
+      "events": 308
+    },
+    {
+      "config": {
+        "seed": 1110500,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Ilusão"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 14,
+      "actions": 84,
+      "events": 183
+    },
+    {
+      "config": {
+        "seed": 1110501,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Ilusão"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 34,
+      "actions": 169,
+      "events": 335
+    },
+    {
+      "config": {
+        "seed": 1110600,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Manada do Vale"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 38,
+      "actions": 181,
+      "events": 382
+    },
+    {
+      "config": {
+        "seed": 1110601,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Manada do Vale"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 24,
+      "actions": 118,
+      "events": 258
+    },
+    {
+      "config": {
+        "seed": 1110700,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Nomes e Brasas"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 38,
+      "actions": 193,
+      "events": 423
+    },
+    {
+      "config": {
+        "seed": 1110701,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Nomes e Brasas"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 33,
+      "actions": 175,
+      "events": 362
+    },
+    {
+      "config": {
+        "seed": 1110800,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Nascentes Vivas"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 17,
+      "actions": 99,
+      "events": 215
+    },
+    {
+      "config": {
+        "seed": 1110801,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Nascentes Vivas"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 29,
+      "actions": 158,
+      "events": 316
+    },
+    {
+      "config": {
+        "seed": 1110900,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Última Semente"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 85,
+      "events": 182
+    },
+    {
+      "config": {
+        "seed": 1110901,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Última Semente"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 45,
+      "actions": 332,
+      "events": 585
+    },
+    {
+      "config": {
+        "seed": 1111000,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Correntes de Brasa"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 79,
+      "events": 177
+    },
+    {
+      "config": {
+        "seed": 1111001,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Correntes de Brasa"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 109,
+      "events": 237
+    },
+    {
+      "config": {
+        "seed": 1111100,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Caminhos do Crepúsculo"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 115,
+      "events": 228
+    },
+    {
+      "config": {
+        "seed": 1111101,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Caminhos do Crepúsculo"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 106,
+      "events": 231
+    },
+    {
+      "config": {
+        "seed": 1120000,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Queimada"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 101,
+      "events": 217
+    },
+    {
+      "config": {
+        "seed": 1120001,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Queimada"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 76,
+      "events": 169
+    },
+    {
+      "config": {
+        "seed": 1120100,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Pira"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 82,
+      "events": 172
+    },
+    {
+      "config": {
+        "seed": 1120101,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Pira"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 78,
+      "events": 169
+    },
+    {
+      "config": {
+        "seed": 1120200,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Vapor"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 14,
+      "actions": 73,
+      "events": 148
+    },
+    {
+      "config": {
+        "seed": 1120201,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Vapor"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 96,
+      "events": 217
+    },
+    {
+      "config": {
+        "seed": 1120300,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Decomposição"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 26,
+      "actions": 119,
+      "events": 246
+    },
+    {
+      "config": {
+        "seed": 1120301,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Decomposição"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 84,
+      "events": 174
+    },
+    {
+      "config": {
+        "seed": 1120400,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Estações"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 29,
+      "actions": 165,
+      "events": 354
+    },
+    {
+      "config": {
+        "seed": 1120401,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Estações"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 49,
+      "actions": 260,
+      "events": 496
+    },
+    {
+      "config": {
+        "seed": 1120500,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Ilusão"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 26,
+      "actions": 118,
+      "events": 234
+    },
+    {
+      "config": {
+        "seed": 1120501,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Ilusão"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 27,
+      "actions": 133,
+      "events": 274
+    },
+    {
+      "config": {
+        "seed": 1120600,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Manada do Vale"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 27,
+      "actions": 139,
+      "events": 296
+    },
+    {
+      "config": {
+        "seed": 1120601,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Manada do Vale"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 42,
+      "actions": 214,
+      "events": 441
+    },
+    {
+      "config": {
+        "seed": 1120700,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Nomes e Brasas"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 32,
+      "actions": 136,
+      "events": 255
+    },
+    {
+      "config": {
+        "seed": 1120701,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Nomes e Brasas"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 75,
+      "events": 158
+    },
+    {
+      "config": {
+        "seed": 1120800,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Nascentes Vivas"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 43,
+      "actions": 211,
+      "events": 447
+    },
+    {
+      "config": {
+        "seed": 1120801,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Nascentes Vivas"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 32,
+      "actions": 169,
+      "events": 326
+    },
+    {
+      "config": {
+        "seed": 1120900,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Última Semente"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 13,
+      "actions": 74,
+      "events": 149
+    },
+    {
+      "config": {
+        "seed": 1120901,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Última Semente"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 18,
+      "actions": 102,
+      "events": 222
+    },
+    {
+      "config": {
+        "seed": 1121000,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Correntes de Brasa"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 90,
+      "events": 172
+    },
+    {
+      "config": {
+        "seed": 1121001,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Correntes de Brasa"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 22,
+      "actions": 110,
+      "events": 225
+    },
+    {
+      "config": {
+        "seed": 1121100,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Caminhos do Crepúsculo"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 24,
+      "actions": 114,
+      "events": 224
+    },
+    {
+      "config": {
+        "seed": 1121101,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Caminhos do Crepúsculo"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 34,
+      "actions": 165,
+      "events": 317
+    },
+    {
+      "config": {
+        "seed": 1130000,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Queimada"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 33,
+      "actions": 185,
+      "events": 342
+    },
+    {
+      "config": {
+        "seed": 1130001,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Queimada"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 57,
+      "actions": 259,
+      "events": 559
+    },
+    {
+      "config": {
+        "seed": 1130100,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Pira"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 89,
+      "events": 196
+    },
+    {
+      "config": {
+        "seed": 1130101,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Pira"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 93,
+      "events": 200
+    },
+    {
+      "config": {
+        "seed": 1130200,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Vapor"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 40,
+      "actions": 195,
+      "events": 394
+    },
+    {
+      "config": {
+        "seed": 1130201,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Vapor"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 46,
+      "actions": 245,
+      "events": 476
+    },
+    {
+      "config": {
+        "seed": 1130300,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Decomposição"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 12,
+      "actions": 70,
+      "events": 144
+    },
+    {
+      "config": {
+        "seed": 1130301,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Decomposição"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 24,
+      "actions": 117,
+      "events": 262
+    },
+    {
+      "config": {
+        "seed": 1130400,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Estações"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 20,
+      "actions": 118,
+      "events": 241
+    },
+    {
+      "config": {
+        "seed": 1130401,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Estações"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 33,
+      "actions": 166,
+      "events": 337
+    },
+    {
+      "config": {
+        "seed": 1130500,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Ilusão"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 46,
+      "actions": 211,
+      "events": 448
+    },
+    {
+      "config": {
+        "seed": 1130501,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Ilusão"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 34,
+      "actions": 169,
+      "events": 341
+    },
+    {
+      "config": {
+        "seed": 1130600,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Manada do Vale"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 25,
+      "actions": 153,
+      "events": 293
+    },
+    {
+      "config": {
+        "seed": 1130601,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Manada do Vale"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 36,
+      "actions": 179,
+      "events": 338
+    },
+    {
+      "config": {
+        "seed": 1130700,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Nomes e Brasas"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 82,
+      "events": 171
+    },
+    {
+      "config": {
+        "seed": 1130701,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Nomes e Brasas"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 98,
+      "events": 188
+    },
+    {
+      "config": {
+        "seed": 1130800,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Nascentes Vivas"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 44,
+      "actions": 260,
+      "events": 483
+    },
+    {
+      "config": {
+        "seed": 1130801,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Nascentes Vivas"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 61,
+      "actions": 363,
+      "events": 658
+    },
+    {
+      "config": {
+        "seed": 1130900,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Última Semente"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 96,
+      "events": 209
+    },
+    {
+      "config": {
+        "seed": 1130901,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Última Semente"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 24,
+      "actions": 148,
+      "events": 313
+    },
+    {
+      "config": {
+        "seed": 1131000,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Correntes de Brasa"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 31,
+      "actions": 167,
+      "events": 360
+    },
+    {
+      "config": {
+        "seed": 1131001,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Correntes de Brasa"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 29,
+      "actions": 131,
+      "events": 279
+    },
+    {
+      "config": {
+        "seed": 1131100,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Caminhos do Crepúsculo"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 47,
+      "actions": 300,
+      "events": 496
+    },
+    {
+      "config": {
+        "seed": 1131101,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Caminhos do Crepúsculo"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 32,
+      "actions": 183,
+      "events": 353
+    },
+    {
+      "config": {
+        "seed": 1140000,
+        "decks": [
+          "Terras — Última Semente",
+          "Queimada"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 10,
+      "actions": 58,
+      "events": 133
+    },
+    {
+      "config": {
+        "seed": 1140001,
+        "decks": [
+          "Terras — Última Semente",
+          "Queimada"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 27,
+      "actions": 125,
+      "events": 273
+    },
+    {
+      "config": {
+        "seed": 1140100,
+        "decks": [
+          "Terras — Última Semente",
+          "Pira"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 87,
+      "events": 186
+    },
+    {
+      "config": {
+        "seed": 1140101,
+        "decks": [
+          "Terras — Última Semente",
+          "Pira"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 73,
+      "events": 160
+    },
+    {
+      "config": {
+        "seed": 1140200,
+        "decks": [
+          "Terras — Última Semente",
+          "Vapor"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 28,
+      "actions": 156,
+      "events": 325
+    },
+    {
+      "config": {
+        "seed": 1140201,
+        "decks": [
+          "Terras — Última Semente",
+          "Vapor"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 74,
+      "events": 165
+    },
+    {
+      "config": {
+        "seed": 1140300,
+        "decks": [
+          "Terras — Última Semente",
+          "Decomposição"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 14,
+      "actions": 75,
+      "events": 148
+    },
+    {
+      "config": {
+        "seed": 1140301,
+        "decks": [
+          "Terras — Última Semente",
+          "Decomposição"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 11,
+      "actions": 70,
+      "events": 141
+    },
+    {
+      "config": {
+        "seed": 1140400,
+        "decks": [
+          "Terras — Última Semente",
+          "Estações"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 105,
+      "events": 237
+    },
+    {
+      "config": {
+        "seed": 1140401,
+        "decks": [
+          "Terras — Última Semente",
+          "Estações"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 17,
+      "actions": 112,
+      "events": 226
+    },
+    {
+      "config": {
+        "seed": 1140500,
+        "decks": [
+          "Terras — Última Semente",
+          "Ilusão"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 55,
+      "actions": 264,
+      "events": 528
+    },
+    {
+      "config": {
+        "seed": 1140501,
+        "decks": [
+          "Terras — Última Semente",
+          "Ilusão"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 120,
+      "events": 272
+    },
+    {
+      "config": {
+        "seed": 1140600,
+        "decks": [
+          "Terras — Última Semente",
+          "Terras — Manada do Vale"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 16,
+      "actions": 101,
+      "events": 221
+    },
+    {
+      "config": {
+        "seed": 1140601,
+        "decks": [
+          "Terras — Última Semente",
+          "Terras — Manada do Vale"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 69,
+      "events": 143
+    },
+    {
+      "config": {
+        "seed": 1140700,
+        "decks": [
+          "Terras — Última Semente",
+          "Terras — Nomes e Brasas"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 16,
+      "actions": 76,
+      "events": 155
+    },
+    {
+      "config": {
+        "seed": 1140701,
+        "decks": [
+          "Terras — Última Semente",
+          "Terras — Nomes e Brasas"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 16,
+      "actions": 84,
+      "events": 185
+    },
+    {
+      "config": {
+        "seed": 1140800,
+        "decks": [
+          "Terras — Última Semente",
+          "Terras — Nascentes Vivas"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 93,
+      "events": 195
+    },
+    {
+      "config": {
+        "seed": 1140801,
+        "decks": [
+          "Terras — Última Semente",
+          "Terras — Nascentes Vivas"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 50,
+      "actions": 313,
+      "events": 589
+    },
+    {
+      "config": {
+        "seed": 1140900,
+        "decks": [
+          "Terras — Última Semente",
+          "Terras — Última Semente"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 38,
+      "actions": 291,
+      "events": 592
+    },
+    {
+      "config": {
+        "seed": 1140901,
+        "decks": [
+          "Terras — Última Semente",
+          "Terras — Última Semente"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 84,
+      "events": 169
+    },
+    {
+      "config": {
+        "seed": 1141000,
+        "decks": [
+          "Terras — Última Semente",
+          "Terras — Correntes de Brasa"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 49,
+      "actions": 261,
+      "events": 511
+    },
+    {
+      "config": {
+        "seed": 1141001,
+        "decks": [
+          "Terras — Última Semente",
+          "Terras — Correntes de Brasa"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 79,
+      "events": 170
+    },
+    {
+      "config": {
+        "seed": 1141100,
+        "decks": [
+          "Terras — Última Semente",
+          "Terras — Caminhos do Crepúsculo"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 44,
+      "actions": 275,
+      "events": 546
+    },
+    {
+      "config": {
+        "seed": 1141101,
+        "decks": [
+          "Terras — Última Semente",
+          "Terras — Caminhos do Crepúsculo"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 36,
+      "actions": 249,
+      "events": 434
+    },
+    {
+      "config": {
+        "seed": 1150000,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Queimada"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 17,
+      "actions": 81,
+      "events": 166
+    },
+    {
+      "config": {
+        "seed": 1150001,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Queimada"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 68,
+      "events": 141
+    },
+    {
+      "config": {
+        "seed": 1150100,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Pira"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 20,
+      "actions": 100,
+      "events": 216
+    },
+    {
+      "config": {
+        "seed": 1150101,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Pira"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 35,
+      "actions": 147,
+      "events": 284
+    },
+    {
+      "config": {
+        "seed": 1150200,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Vapor"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 31,
+      "actions": 136,
+      "events": 286
+    },
+    {
+      "config": {
+        "seed": 1150201,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Vapor"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 11,
+      "actions": 60,
+      "events": 125
+    },
+    {
+      "config": {
+        "seed": 1150300,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Decomposição"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 28,
+      "actions": 123,
+      "events": 250
+    },
+    {
+      "config": {
+        "seed": 1150301,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Decomposição"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 116,
+      "events": 242
+    },
+    {
+      "config": {
+        "seed": 1150400,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Estações"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 22,
+      "actions": 105,
+      "events": 211
+    },
+    {
+      "config": {
+        "seed": 1150401,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Estações"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 33,
+      "actions": 157,
+      "events": 335
+    },
+    {
+      "config": {
+        "seed": 1150500,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Ilusão"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 20,
+      "actions": 96,
+      "events": 202
+    },
+    {
+      "config": {
+        "seed": 1150501,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Ilusão"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 39,
+      "actions": 161,
+      "events": 320
+    },
+    {
+      "config": {
+        "seed": 1150600,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Terras — Manada do Vale"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 28,
+      "actions": 153,
+      "events": 307
+    },
+    {
+      "config": {
+        "seed": 1150601,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Terras — Manada do Vale"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 114,
+      "events": 235
+    },
+    {
+      "config": {
+        "seed": 1150700,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Terras — Nomes e Brasas"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 28,
+      "actions": 134,
+      "events": 271
+    },
+    {
+      "config": {
+        "seed": 1150701,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Terras — Nomes e Brasas"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 120,
+      "events": 258
+    },
+    {
+      "config": {
+        "seed": 1150800,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Terras — Nascentes Vivas"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 76,
+      "events": 165
+    },
+    {
+      "config": {
+        "seed": 1150801,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Terras — Nascentes Vivas"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 31,
+      "actions": 141,
+      "events": 303
+    },
+    {
+      "config": {
+        "seed": 1150900,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Terras — Última Semente"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 13,
+      "actions": 70,
+      "events": 152
+    },
+    {
+      "config": {
+        "seed": 1150901,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Terras — Última Semente"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 30,
+      "actions": 127,
+      "events": 284
+    },
+    {
+      "config": {
+        "seed": 1151000,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Terras — Correntes de Brasa"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 52,
+      "actions": 214,
+      "events": 419
+    },
+    {
+      "config": {
+        "seed": 1151001,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Terras — Correntes de Brasa"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 75,
+      "events": 153
+    },
+    {
+      "config": {
+        "seed": 1151100,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Terras — Caminhos do Crepúsculo"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 25,
+      "actions": 119,
+      "events": 230
+    },
+    {
+      "config": {
+        "seed": 1151101,
+        "decks": [
+          "Terras — Correntes de Brasa",
+          "Terras — Caminhos do Crepúsculo"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 18,
+      "actions": 96,
+      "events": 187
+    },
+    {
+      "config": {
+        "seed": 1160000,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Queimada"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 50,
+      "actions": 237,
+      "events": 463
+    },
+    {
+      "config": {
+        "seed": 1160001,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Queimada"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 87,
+      "events": 189
+    },
+    {
+      "config": {
+        "seed": 1160100,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Pira"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 14,
+      "actions": 77,
+      "events": 170
+    },
+    {
+      "config": {
+        "seed": 1160101,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Pira"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 9,
+      "actions": 53,
+      "events": 115
+    },
+    {
+      "config": {
+        "seed": 1160200,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Vapor"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 20,
+      "actions": 99,
+      "events": 215
+    },
+    {
+      "config": {
+        "seed": 1160201,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Vapor"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 106,
+      "events": 199
+    },
+    {
+      "config": {
+        "seed": 1160300,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Decomposição"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 13,
+      "actions": 68,
+      "events": 136
+    },
+    {
+      "config": {
+        "seed": 1160301,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Decomposição"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 95,
+      "events": 199
+    },
+    {
+      "config": {
+        "seed": 1160400,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Estações"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 94,
+      "events": 199
+    },
+    {
+      "config": {
+        "seed": 1160401,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Estações"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 71,
+      "events": 140
+    },
+    {
+      "config": {
+        "seed": 1160500,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Ilusão"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 22,
+      "actions": 127,
+      "events": 244
+    },
+    {
+      "config": {
+        "seed": 1160501,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Ilusão"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 72,
+      "events": 147
+    },
+    {
+      "config": {
+        "seed": 1160600,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Terras — Manada do Vale"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 24,
+      "actions": 147,
+      "events": 260
+    },
+    {
+      "config": {
+        "seed": 1160601,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Terras — Manada do Vale"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 17,
+      "actions": 102,
+      "events": 216
+    },
+    {
+      "config": {
+        "seed": 1160700,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Terras — Nomes e Brasas"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 40,
+      "actions": 185,
+      "events": 355
+    },
+    {
+      "config": {
+        "seed": 1160701,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Terras — Nomes e Brasas"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 34,
+      "actions": 149,
+      "events": 292
+    },
+    {
+      "config": {
+        "seed": 1160800,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Terras — Nascentes Vivas"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 24,
+      "actions": 150,
+      "events": 294
+    },
+    {
+      "config": {
+        "seed": 1160801,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Terras — Nascentes Vivas"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 25,
+      "actions": 155,
+      "events": 308
+    },
+    {
+      "config": {
+        "seed": 1160900,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Terras — Última Semente"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 96,
+      "events": 210
+    },
+    {
+      "config": {
+        "seed": 1160901,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Terras — Última Semente"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 33,
+      "actions": 219,
+      "events": 474
+    },
+    {
+      "config": {
+        "seed": 1161000,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Terras — Correntes de Brasa"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 40,
+      "actions": 186,
+      "events": 374
+    },
+    {
+      "config": {
+        "seed": 1161001,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Terras — Correntes de Brasa"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 29,
+      "actions": 165,
+      "events": 304
+    },
+    {
+      "config": {
+        "seed": 1161100,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Terras — Caminhos do Crepúsculo"
+        ],
+        "first": 0,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 0,
+      "turns": 29,
+      "actions": 147,
+      "events": 302
+    },
+    {
+      "config": {
+        "seed": 1161101,
+        "decks": [
+          "Terras — Caminhos do Crepúsculo",
+          "Terras — Caminhos do Crepúsculo"
+        ],
+        "first": 1,
+        "variant": "escolas-v1",
+        "energyRule": "reserve-v1",
+        "cardPool": "terras-v1"
+      },
+      "winner": 1,
+      "turns": 33,
+      "actions": 175,
+      "events": 338
+    }
+  ]
+}

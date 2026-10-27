@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "requests": 26,
+  "checks": [
+    "versão 0.7 em processo isolado",
+    "sem credencial não acessa mesa",
+    "origem externa bloqueada",
+    "lista ilegal rejeitada",
+    "anfitrião aguarda sem mão/seed",
+    "entrada concorrente reserva um único assento",
+    "convidado recebe somente sua mão",
+    "bot proibido em sala humana",
+    "duplo envio não duplica ação",
+    "ação atrasada bloqueada",
+    "replay bloqueado antes do término",
+    "reinício real preserva partida e revisão",
+    "recibo sobrevive a reinício",
+    "concessão resolve vitória do convidado",
+    "replay HTTP reproduz concessão",
+    "revanche começa somente após dois aceites",
+    "duelo solo também sobrevive ao reinício",
+    "build isolado servido por HTTP"
+  ],
+  "folder": "C:\\Users\\rafaf\\Documents\\Projects\\Pessoal\\Hub\\GamesCodex\\projetos\\wizards-battle\\qa\\amigos-v070\\http-isolado-uTdCHt"
+}

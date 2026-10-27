@@ -1,0 +1,17 @@
+{
+  "source": "arte\\referencia-fixa\\prototipo-aprovado.png",
+  "box": [
+    524,
+    46,
+    1000,
+    755
+  ],
+  "source_school": null,
+  "target_school": null,
+  "polygon": null,
+  "native_size": [
+    476,
+    709
+  ],
+  "method": "PDF vector component rendered once with PDFium at native 1 px/pt, transparent background; original PNG unmodified"
+}

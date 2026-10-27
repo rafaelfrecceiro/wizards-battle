@@ -1,0 +1,115 @@
+{
+  "edition": {
+    "code": "TDP",
+    "name": "As Terras Despertas — piloto experimental",
+    "order": 2,
+    "cardCount": 12,
+    "symbol": "terras-pilot",
+    "theme": "Expedições num território vivo depois de Véspera; lote de 12 em teste.",
+    "mechanics": [
+      "Ressonância",
+      "Presença",
+      "Suporte",
+      "Cinzas"
+    ],
+    "experimental": true
+  },
+  "printings": [
+    {
+      "id": "TD-P01",
+      "cardId": "TD-P01",
+      "edition": "TDP",
+      "number": 1,
+      "rarity": "uncommon",
+      "designNote": "Investida preparada; o próprio Lince não recebe o efeito."
+    },
+    {
+      "id": "TD-P02",
+      "cardId": "TD-P02",
+      "edition": "TDP",
+      "number": 2,
+      "rarity": "common",
+      "designNote": "Defensor simples para sustentar uma formação; referência de corpo sem Ressonância."
+    },
+    {
+      "id": "TD-P03",
+      "cardId": "TD-P03",
+      "edition": "TDP",
+      "number": 3,
+      "rarity": "uncommon",
+      "designNote": "Converte um recurso finito em pressão imediata; pagamento opcional na habilidade, não na conjuração."
+    },
+    {
+      "id": "TD-P04",
+      "cardId": "TD-P04",
+      "edition": "TDP",
+      "number": 4,
+      "rarity": "uncommon",
+      "designNote": "Alcance e retorno preparado de um aliado pequeno; diferença de custo/corpo em relação ao Lanceiro das Correntes e à Condutora do Refluxo."
+    },
+    {
+      "id": "TD-P05",
+      "cardId": "TD-P05",
+      "edition": "TDP",
+      "number": 5,
+      "rarity": "uncommon",
+      "designNote": "Recompensa manter o campo, mas não traz de volta aliados destruídos."
+    },
+    {
+      "id": "TD-P06",
+      "cardId": "TD-P06",
+      "edition": "TDP",
+      "number": 6,
+      "rarity": "uncommon",
+      "designNote": "Seleção de compras para preparar a próxima jogada; não compra cartas nem gera energia."
+    },
+    {
+      "id": "TD-P07",
+      "cardId": "TD-P07",
+      "edition": "TDP",
+      "number": 7,
+      "rarity": "rare",
+      "designNote": "Recuperação seletiva com gasto real; a carta recuperada não pode pagar o próprio efeito. O custo 5 exclui a Catadora do limite 4."
+    },
+    {
+      "id": "TD-P08",
+      "cardId": "TD-P08",
+      "edition": "TDP",
+      "number": 8,
+      "rarity": "uncommon",
+      "designNote": "Apoio híbrido de seleção, sem compra automática; cada cópia tem um gatilho de encerramento."
+    },
+    {
+      "id": "TD-P09",
+      "cardId": "TD-P09",
+      "edition": "TDP",
+      "number": 9,
+      "rarity": "common",
+      "designNote": "Resposta acessível que funciona sem Presença alta; não atinge monstros de Suporte."
+    },
+    {
+      "id": "TD-P10",
+      "cardId": "TD-P10",
+      "edition": "TDP",
+      "number": 10,
+      "rarity": "common",
+      "designNote": "Ganha tempo e retira Presença, mas permite ao rival rejogar e avançar Escola novamente."
+    },
+    {
+      "id": "TD-P11",
+      "cardId": "TD-P11",
+      "edition": "TDP",
+      "number": 11,
+      "rarity": "common",
+      "designNote": "Recuperação distribuída para um campo ferido; distingue-se da cura concentrada de Passagem Viva e da cura recorrente de Jardim nas Engrenagens."
+    },
+    {
+      "id": "TD-P12",
+      "cardId": "TD-P12",
+      "edition": "TDP",
+      "number": 12,
+      "rarity": "common",
+      "designNote": "Exemplo direto de Ressonância; comparação editorial com A Última Descarga de VES ainda precisa de playtest."
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "status": "propostas-nao-jogaveis",
+  "generator": "image_gen built-in",
+  "sourceAtlas": "C:\\Users\\rafaf\\.codex\\generated_images\\01a16a00-43f5-7453-bea2-a8a019e71410\\exec-e4580141-b71e-4d77-8cf2-7c813d75cbb9.png",
+  "reference": "C:\\Users\\rafaf\\Documents\\Projects\\Pessoal\\Hub\\GamesCodex\\ideias\\duelo-de-magos\\arte\\referencia-fixa\\prototipo-aprovado.png",
+  "referenceSha256": "dd840a66d00b853e1586f474668512be0a04bee07423da8ebf1df994ed533617",
+  "cards": [
+    {
+      "id": "TD-P01",
+      "png": "TD-P01.png",
+      "sha256": "67c969834e5633065e49670f108f0694c72f419fa8e1c46f23143825a7b85438",
+      "width": 536,
+      "height": 749,
+      "artBox": [
+        2.0,
+        2.0,
+        360.0,
+        360.0
+      ],
+      "metrics": {
+        "rules_font_pt": 9.2,
+        "rules_height_mm": 18.7,
+        "art_height_mm": 39.89,
+        "effective_image_dpi": 214,
+        "template": "componentes-fixos",
+        "type_component": "Monstro",
+        "essence_component": "r1-espiral-original",
+        "school_components": [
+          "Chama"
+        ]
+      }
+    },
+    {
+      "id": "TD-P02",
+      "png": "TD-P02.png",
+      "sha256": "af4c1a97565ea04756ab7550dbc2bd6a50777b275cf05f7c446219db3d534467",
+      "width": 536,
+      "height": 749,
+      "artBox": [
+        364.0,
+        2.0,
+        722.0,
+        360.0
+      ],
+      "metrics": {
+        "rules_font_pt": 9.2,
+        "rules_height_mm": 3.74,
+        "art_height_mm": 44.19,
+        "effective_image_dpi": 193,
+        "template": "componentes-fixos",
+        "type_component": "Monstro",
+        "essence_component": "r1-espiral-original",
+        "school_components": [
+          "Raiz"
+        ]
+      }
+    },
+    {
+      "id": "TD-P03",
+      "png": "TD-P03.png",
+      "sha256": "20b1793a478e4adab4ca9da9cc89164418fba73ecf69535eef11fe407cc41bf7",
+      "width": 536,
+      "height": 749,
+      "artBox": [
+        726.0,
+        2.0,
+        1084.0,
+        360.0
+      ],
+      "metrics": {
+        "rules_font_pt": 9.2,
+        "rules_height_mm": 11.22,
+        "art_height_mm": 44.19,
+        "effective_image_dpi": 193,
+        "template": "componentes-fixos",
+        "type_component": "Monstro",
+        "essence_component": "r1-espiral-original",
+        "school_components": [
+          "Sombra"
+        ]
+      }
+    },
+    {
+      "id": "TD-P04",
+      "png": "TD-P04.png",
+      "sha256": "e08df944a0e6741197e7c24a6944c3e7daba4860015ff6e9e8a9b2968dd4c7d4",
+      "width": 536,
+      "height": 749,
+      "artBox": [
+        1088.0,
+        2.0,
+        1446.0,
+        360.0
+      ],
+      "metrics": {
+        "rules_font_pt": 9.2,
+        "rules_height_mm": 3.74,
+        "art_height_mm": 44.19,
+        "effective_image_dpi": 193,
+        "template": "componentes-fixos",
+        "type_component": "Monstro",
+        "essence_component": "r1-espiral-original",
+        "school_components": [
+          "Maré"
+        ]
+      }
+    },
+    {
+      "id": "TD-P05",
+      "png": "TD-P05.png",
+      "sha256": "4e04302110d09a550f59b37bdd4ac8f5240f1d35e495f9d9418d56f34f96deac",
+      "width": 536,
+      "height": 749,
+      "artBox": [
+        2.0,
+        364.0,
+        360.0,
+        722.0
+      ],
+      "metrics": {
+        "rules_font_pt": 9.2,
+        "rules_height_mm": 18.7,
+        "art_height_mm": 39.89,
+        "effective_image_dpi": 214,
+        "template": "componentes-fixos",
+        "type_component": "Monstro",
+        "essence_component": "r1-espiral-original",
+        "school_components": [
+          "Raiz"
+        ]
+      }
+    },
+    {
+      "id": "TD-P06",
+      "png": "TD-P06.png",
+      "sha256": "94554071ce4405b80b8f3400ece537a3e2d68706f3afbfa3e29a9fa9cbb13d5a",
+      "width": 536,
+      "height": 749,
+      "artBox": [
+        364.0,
+        364.0,
+        722.0,
+        722.0
+      ],
+      "metrics": {
+        "rules_font_pt": 9.2,
+        "rules_height_mm": 14.96,
+        "art_height_mm": 43.63,
+        "effective_image_dpi": 195,
+        "template": "componentes-fixos",
+        "type_component": "Monstro",
+        "essence_component": "r1-espiral-original",
+        "school_components": [
+          "Maré"
+        ]
+      }
+    },
+    {
+      "id": "TD-P07",
+      "png": "TD-P07.png",
+      "sha256": "4b7cc4d3d3e089b4f33d110fb0b6a09398a5c7f63bd29cd29ad8e341aacc77ae",
+      "width": 536,
+      "height": 749,
+      "artBox": [
+        726.0,
+        364.0,
+        1084.0,
+        722.0
+      ],
+      "metrics": {
+        "rules_font_pt": 9.2,
+        "rules_height_mm": 18.7,
+        "art_height_mm": 39.89,
+        "effective_image_dpi": 214,
+        "template": "componentes-fixos",
+        "type_component": "Monstro",
+        "essence_component": "r1-espiral-original",
+        "school_components": [
+          "Sombra"
+        ]
+      }
+    },
+    {
+      "id": "TD-P08",
+      "png": "TD-P08.png",
+      "sha256": "f6ecd16d4b7784af9dcb7841802861c912ebfaf2abaf37e735705f5c7f518a93",
+      "width": 536,
+      "height": 749,
+      "artBox": [
+        1088.0,
+        364.0,
+        1446.0,
+        722.0
+      ],
+      "metrics": {
+        "rules_font_pt": 9.2,
+        "rules_height_mm": 14.96,
+        "art_height_mm": 43.63,
+        "effective_image_dpi": 195,
+        "template": "componentes-fixos",
+        "type_component": "Encantamento",
+        "essence_component": "r1-espiral-original",
+        "school_components": [
+          "Raiz",
+          "Maré"
+        ]
+      }
+    },
+    {
+      "id": "TD-P09",
+      "png": "TD-P09.png",
+      "sha256": "98d587a60d49a5635d86b442d20be1110b2fac036b5ac22714afd694ebe86846",
+      "width": 536,
+      "height": 749,
+      "artBox": [
+        2.0,
+        726.0,
+        360.0,
+        1084.0
+      ],
+      "metrics": {
+        "rules_font_pt": 9.2,
+        "rules_height_mm": 7.48,
+        "art_height_mm": 44.19,
+        "effective_image_dpi": 193,
+        "template": "componentes-fixos",
+        "type_component": "Magia",
+        "essence_component": "r1-espiral-original",
+        "school_components": [
+          "Chama",
+          "Sombra"
+        ]
+      }
+    },
+    {
+      "id": "TD-P10",
+      "png": "TD-P10.png",
+      "sha256": "5f20ecaa27012e47534d7995ac2dc0e36eeb35a7a1a026dd75477fbee676e698",
+      "width": 536,
+      "height": 749,
+      "artBox": [
+        364.0,
+        726.0,
+        722.0,
+        1084.0
+      ],
+      "metrics": {
+        "rules_font_pt": 9.2,
+        "rules_height_mm": 7.48,
+        "art_height_mm": 44.19,
+        "effective_image_dpi": 193,
+        "template": "componentes-fixos",
+        "type_component": "Magia",
+        "essence_component": "r1-espiral-original",
+        "school_components": [
+          "Maré"
+        ]
+      }
+    },
+    {
+      "id": "TD-P11",
+      "png": "TD-P11.png",
+      "sha256": "7b9f3fbd551d273665eeeb702ee59732f29175d79263088728bdc3e09423f887",
+      "width": 536,
+      "height": 749,
+      "artBox": [
+        726.0,
+        726.0,
+        1084.0,
+        1084.0
+      ],
+      "metrics": {
+        "rules_font_pt": 9.2,
+        "rules_height_mm": 3.74,
+        "art_height_mm": 44.19,
+        "effective_image_dpi": 193,
+        "template": "componentes-fixos",
+        "type_component": "Magia",
+        "essence_component": "r1-espiral-original",
+        "school_components": [
+          "Raiz"
+        ]
+      }
+    },
+    {
+      "id": "TD-P12",
+      "png": "TD-P12.png",
+      "sha256": "325b73aac1a5e096ecf601fe76d0a426d75f8419d0b3b3336ab7bcb8c4467b2c",
+      "width": 536,
+      "height": 749,
+      "artBox": [
+        1088.0,
+        726.0,
+        1446.0,
+        1084.0
+      ],
+      "metrics": {
+        "rules_font_pt": 9.2,
+        "rules_height_mm": 14.96,
+        "art_height_mm": 43.63,
+        "effective_image_dpi": 195,
+        "template": "componentes-fixos",
+        "type_component": "Magia",
+        "essence_component": "r1-espiral-original",
+        "school_components": [
+          "Chama"
+        ]
+      }
+    }
+  ],
+  "galleryBytes": 964770
+}

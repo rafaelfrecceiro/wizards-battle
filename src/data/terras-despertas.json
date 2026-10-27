@@ -1,0 +1,2434 @@
+{
+  "title": "As Terras Despertas",
+  "version": "1.0.0",
+  "state": "published",
+  "edition": "TDP",
+  "cardPool": "terras-v1",
+  "date": "2026-10-24",
+  "rulesNote": "Edição completa de 60 cartas. Escola permanente permite conjurar; Presença atual condiciona Ressonância.",
+  "cards": [
+    {
+      "id": "TD-P01",
+      "name": "Lince da Pedra Quente",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 4,
+      "presence": {
+        "Chama": 2
+      },
+      "force": 3,
+      "vigor": 3,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Ao entrar, outro monstro seu ganha +1 de Força até o encerramento.\nRessonância — Com Presença de Chama 3, ele também ganha Ímpeto até o encerramento.",
+      "role": "Investida preparada; o próprio Lince não recebe o efeito.",
+      "flavor": "A primeira pedra que se move já é tarde demais.",
+      "artIndex": 0,
+      "fx": {
+        "enter": [
+          {
+            "op": "boost",
+            "n": 1,
+            "target": "own_monster",
+            "exclude_self": true,
+            "resonance": {
+              "presence": {
+                "Chama": 3
+              },
+              "haste": true
+            }
+          }
+        ]
+      },
+      "state": "published-1.0",
+      "number": 1
+    },
+    {
+      "id": "TD-P02",
+      "name": "Javali das Raízes Altas",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 3,
+      "presence": {
+        "Raiz": 2
+      },
+      "force": 2,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Guardião"
+      ],
+      "rarity": "Comum",
+      "text": "Guardião.",
+      "role": "Defensor simples para sustentar uma formação; referência de corpo sem Ressonância.",
+      "flavor": "A trilha pertence a quem consegue mantê-la aberta.",
+      "artIndex": 1,
+      "fx": {},
+      "state": "published-1.0",
+      "number": 2
+    },
+    {
+      "id": "TD-P03",
+      "name": "Predador dos Nomes Vazios",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 4,
+      "presence": {
+        "Sombra": 2
+      },
+      "force": 3,
+      "vigor": 3,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Ao entrar, você pode gastar 2 Cinzas para causar 2 de dano a um monstro na frente inimiga.",
+      "role": "Converte um recurso finito em pressão imediata; pagamento opcional na habilidade, não na conjuração.",
+      "flavor": "Ele fareja os lugares onde alguém deixou de ser lembrado.",
+      "artIndex": 2,
+      "fx": {
+        "enter": [
+          {
+            "op": "spend_damage",
+            "n": 2,
+            "target": "enemy_front",
+            "ashes": 2
+          }
+        ]
+      },
+      "state": "published-1.0",
+      "number": 3
+    },
+    {
+      "id": "TD-P04",
+      "name": "Garça dos Espelhos d’Água",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 4,
+      "presence": {
+        "Maré": 2
+      },
+      "force": 2,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Alcance"
+      ],
+      "rarity": "Incomum",
+      "text": "Alcance.\nRessonância — Ao entrar, com Presença de Maré 3, você pode devolver outro monstro seu de custo 2 ou menos à mão.",
+      "role": "Alcance e retorno preparado de um aliado pequeno; diferença de custo/corpo em relação ao Lanceiro das Correntes e à Condutora do Refluxo.",
+      "flavor": "Sua sombra chega à outra margem antes de suas asas.",
+      "artIndex": 3,
+      "fx": {
+        "enter": [
+          {
+            "op": "bounce",
+            "n": 0,
+            "target": "own_monster",
+            "max_cost": 2,
+            "exclude_self": true,
+            "optional": true,
+            "presence_min": {
+              "Maré": 3
+            }
+          }
+        ]
+      },
+      "state": "published-1.0",
+      "number": 4
+    },
+    {
+      "id": "TD-P05",
+      "name": "Guardião das Raízes Suspensas",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 4,
+      "presence": {
+        "Raiz": 2
+      },
+      "force": 1,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": true,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Suporte: no seu encerramento, cure até 1 de dano de um monstro seu na frente.\nRessonância — Com Presença de Raiz 3, cure até 2 em vez disso.",
+      "role": "Recompensa manter o campo, mas não traz de volta aliados destruídos.",
+      "flavor": "O vale oferece abrigo a quem aprende a esperar.",
+      "artIndex": 4,
+      "fx": {
+        "support_end": [
+          {
+            "op": "heal",
+            "n": 1,
+            "target": "own_front",
+            "up_to": true,
+            "resonance": {
+              "presence": {
+                "Raiz": 3
+              },
+              "n": 2
+            }
+          }
+        ]
+      },
+      "state": "published-1.0",
+      "number": 5
+    },
+    {
+      "id": "TD-P06",
+      "name": "Lia, Cartógrafa das Passagens",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Maré": 2
+      },
+      "force": 1,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 2
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Ao entrar, olhe as 2 cartas do topo do seu baralho. Coloque quantas quiser no fundo e devolva as demais ao topo, na ordem que escolher.",
+      "role": "Seleção de compras para preparar a próxima jogada; não compra cartas nem gera energia.",
+      "flavor": "Um mapa bom registra também por onde não passar.",
+      "artIndex": 5,
+      "fx": {
+        "enter": [
+          {
+            "op": "survey",
+            "n": 2,
+            "target": "own"
+          }
+        ]
+      },
+      "state": "published-1.0",
+      "number": 6
+    },
+    {
+      "id": "TD-P07",
+      "name": "Catadora de Nomes Perdidos",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 5,
+      "presence": {
+        "Sombra": 3
+      },
+      "force": 2,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Rara",
+      "text": "Ao entrar, você pode gastar 2 outras Cinzas para devolver um Monstro de custo até 2 das suas Cinzas à mão.\nRessonância — Com Presença de Sombra 3, o limite é 4.",
+      "role": "Recuperação seletiva com gasto real; a carta recuperada não pode pagar o próprio efeito. O custo 5 exclui a Catadora do limite 4.",
+      "flavor": "Ninguém atravessa o vale sem deixar um nome para trás.",
+      "artIndex": 6,
+      "fx": {
+        "enter": [
+          {
+            "op": "recover_ashes",
+            "n": 0,
+            "target": "own_ashes",
+            "max_cost": 2,
+            "ashes": 2,
+            "optional": true,
+            "resonance": {
+              "presence": {
+                "Sombra": 3
+              },
+              "max_cost": 4
+            }
+          }
+        ]
+      },
+      "state": "published-1.0",
+      "number": 7
+    },
+    {
+      "id": "TD-P08",
+      "name": "Santuário da Primeira Chuva",
+      "type": "Encantamento",
+      "schools": [
+        "Raiz",
+        "Maré"
+      ],
+      "cost": 2,
+      "presence": {
+        "Raiz": 1,
+        "Maré": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "No seu encerramento, se tiver Presença de Raiz 2 e Maré 2, olhe a carta do topo do seu baralho. Você pode colocá-la no fundo.",
+      "role": "Apoio híbrido de seleção, sem compra automática; cada cópia tem um gatilho de encerramento.",
+      "flavor": "A água encontra quem conserva seus caminhos.",
+      "artIndex": 7,
+      "fx": {
+        "enchant_end": [
+          {
+            "op": "scry",
+            "n": 1,
+            "target": "own",
+            "presence_min": {
+              "Raiz": 2,
+              "Maré": 2
+            }
+          }
+        ]
+      },
+      "state": "published-1.0",
+      "number": 8
+    },
+    {
+      "id": "TD-P09",
+      "name": "Quebrar o Círculo",
+      "type": "Magia",
+      "schools": [
+        "Chama",
+        "Sombra"
+      ],
+      "cost": 2,
+      "presence": {
+        "Chama": 1,
+        "Sombra": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Destrua um Encantamento inimigo de custo 3 ou menos.",
+      "role": "Resposta acessível que funciona sem Presença alta; não atinge monstros de Suporte.",
+      "flavor": "Toda barreira foi erguida por mãos que podiam tremer.",
+      "artIndex": 8,
+      "fx": {
+        "cast": [
+          {
+            "op": "destroy_enchant",
+            "n": 0,
+            "target": "enemy_enchant",
+            "max_cost": 3
+          }
+        ]
+      },
+      "state": "published-1.0",
+      "number": 9
+    },
+    {
+      "id": "TD-P10",
+      "name": "Bruma entre as Passagens",
+      "type": "Magia",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 2,
+      "presence": {
+        "Maré": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Devolva um monstro inimigo de custo 3 ou menos para a mão do dono.",
+      "role": "Ganha tempo e retira Presença, mas permite ao rival rejogar e avançar Escola novamente.",
+      "flavor": "O que se perde na neblina nem sempre deixou de existir.",
+      "artIndex": 9,
+      "fx": {
+        "cast": [
+          {
+            "op": "bounce",
+            "n": 0,
+            "target": "enemy_monster",
+            "max_cost": 3
+          }
+        ]
+      },
+      "state": "published-1.0",
+      "number": 10
+    },
+    {
+      "id": "TD-P11",
+      "name": "Raízes sob o Acampamento",
+      "type": "Magia",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 2,
+      "presence": {
+        "Raiz": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 4
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Cure 1 de dano de cada monstro seu.",
+      "role": "Recuperação distribuída para um campo ferido; distingue-se da cura concentrada de Passagem Viva e da cura recorrente de Jardim nas Engrenagens.",
+      "flavor": "Uma noite segura começa muito abaixo da fogueira.",
+      "artIndex": 10,
+      "fx": {
+        "cast": [
+          {
+            "op": "heal_all",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "state": "published-1.0",
+      "number": 11
+    },
+    {
+      "id": "TD-P12",
+      "name": "Faísca de Sinalização",
+      "type": "Magia",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 2,
+      "presence": {
+        "Chama": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Cause 2 de dano a um monstro na frente inimiga.\nRessonância — Com Presença de Chama 3, cause 3 em vez disso.",
+      "role": "Exemplo direto de Ressonância; comparação editorial com A Última Descarga de VES ainda precisa de playtest.",
+      "flavor": "Que a luz encontre primeiro quem precisa voltar.",
+      "artIndex": 11,
+      "fx": {
+        "cast": [
+          {
+            "op": "damage",
+            "n": 2,
+            "target": "enemy_front",
+            "resonance": {
+              "presence": {
+                "Chama": 3
+              },
+              "n": 3
+            }
+          }
+        ]
+      },
+      "state": "published-1.0",
+      "number": 12
+    },
+    {
+      "id": "TDP-013",
+      "name": "Batedor das Lanternas",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 1,
+      "presence": {
+        "Chama": 1
+      },
+      "force": 1,
+      "vigor": 1,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Ímpeto"
+      ],
+      "rarity": "Comum",
+      "text": "Ímpeto.",
+      "fx": {},
+      "scene": "Young adult expedition scout in an ochre hood, running with a small flame lantern over a stony trail.",
+      "role": "Ímpeto.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 13
+    },
+    {
+      "id": "TDP-014",
+      "name": "Salamandra da Cinza Clara",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 1
+      },
+      "force": 2,
+      "vigor": 2,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Ao entrar, cause 1 de dano a um monstro na frente inimiga.\nRessonância — Com Presença de Chama 3, cause 2 em vez disso.",
+      "fx": {
+        "enter": [
+          {
+            "op": "damage",
+            "n": 1,
+            "target": "enemy_front",
+            "resonance": {
+              "presence": {
+                "Chama": 3
+              },
+              "n": 2
+            }
+          }
+        ]
+      },
+      "scene": "A squat orange fire salamander with pale ash spots, lifting its head to spit a bright ember.",
+      "role": "Ao entrar, cause 1 de dano a um monstro na frente inimiga.\nRessonância — Com Presença de Chama 3, cause 2 em vez disso.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 14
+    },
+    {
+      "id": "TDP-015",
+      "name": "Grifo do Sol Partido",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 6,
+      "presence": {
+        "Chama": 3
+      },
+      "force": 4,
+      "vigor": 4,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Alcance"
+      ],
+      "rarity": "Rara",
+      "text": "Alcance.\nAo entrar, cause 2 de dano a um monstro na frente inimiga.\nRessonância — Com Presença de Chama 4, cause 3 em vez disso.",
+      "fx": {
+        "enter": [
+          {
+            "op": "damage",
+            "n": 2,
+            "target": "enemy_front",
+            "resonance": {
+              "presence": {
+                "Chama": 4
+              },
+              "n": 3
+            }
+          }
+        ]
+      },
+      "scene": "A majestic white and copper gryphon with cracked sunstone armor and golden wings, landing on a mountain ledge.",
+      "role": "Alcance.\nAo entrar, cause 2 de dano a um monstro na frente inimiga.\nRessonância — Com Presença de Chama 4, cause 3 em vez disso.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 15
+    },
+    {
+      "id": "TDP-016",
+      "name": "Vigia dos Braseiros",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 1
+      },
+      "force": 1,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": true,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Suporte: no seu Despertar, um monstro seu na frente ganha +1 de Força até o encerramento.",
+      "fx": {
+        "support_dawn": [
+          {
+            "op": "boost",
+            "n": 1,
+            "target": "own_front"
+          }
+        ]
+      },
+      "scene": "A weathered camp keeper in red and brown cloth tending a portable bronze brazier, sparks rising.",
+      "role": "Suporte: no seu Despertar, um monstro seu na frente ganha +1 de Força até o encerramento.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 16
+    },
+    {
+      "id": "TDP-017",
+      "name": "Corrida das Lanternas",
+      "type": "Magia",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 1,
+      "presence": {
+        "Chama": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Um monstro seu na frente ganha +1 de Força até o encerramento.\nRessonância — Com Presença de Chama 3, ele também ganha Ímpeto até o encerramento.",
+      "fx": {
+        "cast": [
+          {
+            "op": "boost",
+            "n": 1,
+            "target": "own_front",
+            "resonance": {
+              "presence": {
+                "Chama": 3
+              },
+              "haste": true
+            }
+          }
+        ]
+      },
+      "scene": "Three bright expedition lanterns tracing a fast sweeping ribbon of fire along a rocky path.",
+      "role": "Um monstro seu na frente ganha +1 de Força até o encerramento.\nRessonância — Com Presença de Chama 3, ele também ganha Ímpeto até o encerramento.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 17
+    },
+    {
+      "id": "TDP-018",
+      "name": "Clarão do Desfiladeiro",
+      "type": "Magia",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Cause 2 de dano a um monstro inimigo.\nRessonância — Com Presença de Chama 3, cause 3 em vez disso.",
+      "fx": {
+        "cast": [
+          {
+            "op": "damage",
+            "n": 2,
+            "target": "enemy_monster",
+            "resonance": {
+              "presence": {
+                "Chama": 3
+              },
+              "n": 3
+            }
+          }
+        ]
+      },
+      "scene": "A concentrated orange flash ricocheting between two dark canyon pillars, fragments illuminated in midair.",
+      "role": "Cause 2 de dano a um monstro inimigo.\nRessonância — Com Presença de Chama 3, cause 3 em vez disso.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 18
+    },
+    {
+      "id": "TDP-019",
+      "name": "Fôlego da Montanha",
+      "type": "Magia",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 4,
+      "presence": {
+        "Chama": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Cause 2 de dano ao mago rival.\nRessonância — Com Presença de Chama 4, cause 3 em vez disso.",
+      "fx": {
+        "cast": [
+          {
+            "op": "face",
+            "n": 2,
+            "target": "enemy",
+            "resonance": {
+              "presence": {
+                "Chama": 4
+              },
+              "n": 3
+            }
+          }
+        ]
+      },
+      "scene": "A dormant mountain exhaling a measured plume of golden fire shaped like a great beast breath.",
+      "role": "Cause 2 de dano ao mago rival.\nRessonância — Com Presença de Chama 4, cause 3 em vez disso.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 19
+    },
+    {
+      "id": "TDP-020",
+      "name": "Farol do Primeiro Marco",
+      "type": "Encantamento",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "No seu Despertar, um monstro seu na frente ganha +1 de Força até o encerramento.",
+      "fx": {
+        "enchant_dawn": [
+          {
+            "op": "boost",
+            "n": 1,
+            "target": "own_front"
+          }
+        ]
+      },
+      "scene": "A squat old stone watchtower with a warm beacon above the first expedition marker, winding path below.",
+      "role": "No seu Despertar, um monstro seu na frente ganha +1 de Força até o encerramento.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 20
+    },
+    {
+      "id": "TDP-021",
+      "name": "Estilhaço de Obsidiana",
+      "type": "Prenúncio",
+      "schools": [
+        "Chama"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "support": false,
+      "vigil": 2,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Condição: quando um monstro inimigo atacar seu mago.\nEfeito: cause 2 de dano ao atacante antes do combate.\nRessonância — Com Presença de Chama 3, cause 3 em vez disso.",
+      "fx": {
+        "trigger": "face_attack",
+        "trap": [
+          {
+            "op": "damage",
+            "n": 2,
+            "target": "attacker",
+            "resonance": {
+              "presence": {
+                "Chama": 3
+              },
+              "n": 3
+            }
+          }
+        ]
+      },
+      "scene": "A hidden jagged obsidian splinter bursting with amber sparks beside a traveler protective ward.",
+      "role": "Condição: quando um monstro inimigo atacar seu mago.\nEfeito: cause 2 de dano ao atacante antes do combate.\nRessonância — Com Presença de Chama 3, cause 3 em vez disso.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 21
+    },
+    {
+      "id": "TDP-022",
+      "name": "Marco Incandescente",
+      "type": "Prenúncio",
+      "schools": [
+        "Chama"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "support": false,
+      "vigil": 1,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Condição: quando o rival sacrificar uma carta.\nEfeito: remova 2 marcadores de duração daquela fonte.",
+      "fx": {
+        "trigger": "sacrifice",
+        "trap": [
+          {
+            "op": "source_damage",
+            "n": 2,
+            "target": "event_source"
+          }
+        ]
+      },
+      "scene": "A boundary stone glowing red from within, two fiery fractures opening through its engraved rings.",
+      "role": "Condição: quando o rival sacrificar uma carta.\nEfeito: remova 2 marcadores de duração daquela fonte.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 22
+    },
+    {
+      "id": "TDP-023",
+      "name": "Tatu das Pedras Mansas",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 1,
+      "presence": {
+        "Raiz": 1
+      },
+      "force": 0,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 4
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Guardião"
+      ],
+      "rarity": "Comum",
+      "text": "Guardião.",
+      "fx": {},
+      "scene": "A small friendly armored armadillo with smooth mossy pebble plates curled protectively before a seedling.",
+      "role": "Guardião.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 23
+    },
+    {
+      "id": "TDP-024",
+      "name": "Besouro do Musgo Dourado",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 2,
+      "presence": {
+        "Raiz": 1
+      },
+      "force": 2,
+      "vigor": 2,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Ao morrer durante o seu turno, cure 1 de dano de cada monstro seu.",
+      "fx": {
+        "death": [
+          {
+            "op": "heal_all",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "scene": "A broad golden moss beetle lifting its iridescent shell to release luminous green spores.",
+      "role": "Ao morrer durante o seu turno, cure 1 de dano de cada monstro seu.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 24
+    },
+    {
+      "id": "TDP-025",
+      "name": "Aru, Guardião das Passagens",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 5,
+      "presence": {
+        "Raiz": 2
+      },
+      "force": 2,
+      "vigor": 5,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Guardião"
+      ],
+      "rarity": "Rara",
+      "text": "Guardião.\nAo entrar, cure até 1 de dano de um monstro seu na frente.\nRessonância — Com Presença de Raiz 3, cure até 2 em vez disso.",
+      "fx": {
+        "enter": [
+          {
+            "op": "heal",
+            "n": 1,
+            "target": "own_front",
+            "up_to": true,
+            "resonance": {
+              "presence": {
+                "Raiz": 3
+              },
+              "n": 2
+            }
+          }
+        ]
+      },
+      "scene": "Aru, a broad-shouldered brown-skinned adult guardian with braided dark hair, living root shield and a green traveling cloak, standing calmly.",
+      "role": "Guardião.\nAo entrar, cure até 1 de dano de um monstro seu na frente.\nRessonância — Com Presença de Raiz 3, cure até 2 em vez disso.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 25
+    },
+    {
+      "id": "TDP-026",
+      "name": "Pantera das Copas",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 3,
+      "presence": {
+        "Raiz": 2
+      },
+      "force": 3,
+      "vigor": 2,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Emboscada"
+      ],
+      "rarity": "Comum",
+      "text": "Emboscada.",
+      "fx": {},
+      "scene": "An emerald-spotted black jungle panther descending from a high branch, vines around its long tail.",
+      "role": "Emboscada.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 26
+    },
+    {
+      "id": "TDP-027",
+      "name": "Seiva de Travessia",
+      "type": "Magia",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 1,
+      "presence": {
+        "Raiz": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 4
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Ganhe 2 de Vida.\nRessonância — Com Presença de Raiz 3, ganhe 3 em vez disso.",
+      "fx": {
+        "cast": [
+          {
+            "op": "life",
+            "n": 2,
+            "target": "own",
+            "resonance": {
+              "presence": {
+                "Raiz": 3
+              },
+              "n": 3
+            }
+          }
+        ]
+      },
+      "scene": "A leaf cup filled with radiant green sap, roots cradling it over a worn stepping stone.",
+      "role": "Ganhe 2 de Vida.\nRessonância — Com Presença de Raiz 3, ganhe 3 em vez disso.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 27
+    },
+    {
+      "id": "TDP-028",
+      "name": "Peso da Manada",
+      "type": "Magia",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 2,
+      "presence": {
+        "Raiz": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Um monstro seu ganha +2 de Força até o encerramento.\nRessonância — Com Presença de Raiz 3, ele ganha +3 em vez disso.",
+      "fx": {
+        "cast": [
+          {
+            "op": "boost",
+            "n": 2,
+            "target": "own_monster",
+            "resonance": {
+              "presence": {
+                "Raiz": 3
+              },
+              "n": 3
+            }
+          }
+        ]
+      },
+      "scene": "A luminous green hoofprint striking stone, silhouettes of antlered migrating beasts echoing behind it.",
+      "role": "Um monstro seu ganha +2 de Força até o encerramento.\nRessonância — Com Presença de Raiz 3, ele ganha +3 em vez disso.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 28
+    },
+    {
+      "id": "TDP-029",
+      "name": "Ponte das Raízes Vivas",
+      "type": "Encantamento",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 2,
+      "presence": {
+        "Raiz": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "No seu encerramento, cure até 1 de dano de um monstro seu na frente.\nRessonância — Com Presença de Raiz 3, cure até 2 em vez disso.",
+      "fx": {
+        "enchant_end": [
+          {
+            "op": "heal",
+            "n": 1,
+            "target": "own_front",
+            "up_to": true,
+            "resonance": {
+              "presence": {
+                "Raiz": 3
+              },
+              "n": 2
+            }
+          }
+        ]
+      },
+      "scene": "A graceful bridge formed entirely of thick living roots joining two mossy stone cliffs.",
+      "role": "No seu encerramento, cure até 1 de dano de um monstro seu na frente.\nRessonância — Com Presença de Raiz 3, cure até 2 em vez disso.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 29
+    },
+    {
+      "id": "TDP-030",
+      "name": "Manto de Cipós",
+      "type": "Prenúncio",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": 2,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Condição: quando um monstro seu na retaguarda for atacado.\nEfeito: cure até 2 de dano do defensor antes do combate.",
+      "fx": {
+        "trigger": "back_attacked",
+        "trap": [
+          {
+            "op": "heal",
+            "n": 2,
+            "target": "defender",
+            "up_to": true
+          }
+        ]
+      },
+      "scene": "A protective cloak woven from fresh vines wrapping around a cracked wooden shield.",
+      "role": "Condição: quando um monstro seu na retaguarda for atacado.\nEfeito: cure até 2 de dano do defensor antes do combate.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 30
+    },
+    {
+      "id": "TDP-031",
+      "name": "Memória das Sementes",
+      "type": "Prenúncio",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": 3,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Condição: quando um monstro seu morrer no turno rival.\nEfeito: você pode devolver um Monstro de custo 2 ou menos do seu descarte à mão.",
+      "fx": {
+        "trigger": "own_death",
+        "trap": [
+          {
+            "op": "recover",
+            "n": 0,
+            "target": "own_discard",
+            "max_cost": 2,
+            "optional": true
+          }
+        ]
+      },
+      "scene": "A broken seed pod on dark soil releasing a translucent green outline of a returning woodland creature.",
+      "role": "Condição: quando um monstro seu morrer no turno rival.\nEfeito: você pode devolver um Monstro de custo 2 ou menos do seu descarte à mão.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 31
+    },
+    {
+      "id": "TDP-032",
+      "name": "Mariposa dos Nomes",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 1,
+      "presence": {
+        "Sombra": 1
+      },
+      "force": 1,
+      "vigor": 1,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Ao entrar, olhe a carta do topo do seu baralho. Você pode colocá-la no fundo.",
+      "fx": {
+        "enter": [
+          {
+            "op": "scry",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "scene": "A large dusky purple moth with tiny luminous rune-like markings on its wings, perched on an unmarked stone.",
+      "role": "Ao entrar, olhe a carta do topo do seu baralho. Você pode colocá-la no fundo.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 32
+    },
+    {
+      "id": "TDP-033",
+      "name": "Rastreadora do Crepúsculo",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 3,
+      "presence": {
+        "Sombra": 1
+      },
+      "force": 2,
+      "vigor": 2,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Emboscada"
+      ],
+      "rarity": "Incomum",
+      "text": "Emboscada.\nAo morrer durante o seu turno, compre 1 carta.",
+      "fx": {
+        "death": [
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "scene": "An adult woman tracker with a short charcoal cape and violet lantern, crouching to examine strange tracks.",
+      "role": "Emboscada.\nAo morrer durante o seu turno, compre 1 carta.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 33
+    },
+    {
+      "id": "TDP-034",
+      "name": "Guardião dos Nomes Calados",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 5,
+      "presence": {
+        "Sombra": 3
+      },
+      "force": 3,
+      "vigor": 5,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Rara",
+      "text": "Enquanto você tiver 3 ou mais Cinzas, este monstro tem Guardião.",
+      "fx": {
+        "conditional_guard": 3
+      },
+      "scene": "A tall silent guardian made of dark basalt slabs, violet light in its chest and blank stone tablets on its shoulders.",
+      "role": "Enquanto você tiver 3 ou mais Cinzas, este monstro tem Guardião.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 34
+    },
+    {
+      "id": "TDP-035",
+      "name": "Escriba das Pedras Mudas",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 3,
+      "presence": {
+        "Sombra": 1
+      },
+      "force": 1,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": true,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Suporte: no seu encerramento, se você tiver 2 ou menos cartas na mão, compre 1 carta.",
+      "fx": {
+        "support_end": [
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own",
+            "hand_max": 2
+          }
+        ]
+      },
+      "scene": "An elderly scribe in a violet shawl carefully copying faint markings from a floating black stone tablet.",
+      "role": "Suporte: no seu encerramento, se você tiver 2 ou menos cartas na mão, compre 1 carta.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 35
+    },
+    {
+      "id": "TDP-036",
+      "name": "Chamado sob a Terra",
+      "type": "Magia",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 2,
+      "presence": {
+        "Sombra": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Devolva um Monstro de custo 2 ou menos do seu descarte à mão.\nRessonância — Com Presença de Sombra 3, o limite é 4.",
+      "fx": {
+        "cast": [
+          {
+            "op": "recover",
+            "n": 0,
+            "target": "own_discard",
+            "max_cost": 2,
+            "resonance": {
+              "presence": {
+                "Sombra": 3
+              },
+              "max_cost": 4
+            }
+          }
+        ]
+      },
+      "scene": "A violet thread of memory rising through a split in earth, forming the gentle outline of a small beast.",
+      "role": "Devolva um Monstro de custo 2 ou menos do seu descarte à mão.\nRessonância — Com Presença de Sombra 3, o limite é 4.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 36
+    },
+    {
+      "id": "TDP-037",
+      "name": "Tributo de Nomes",
+      "type": "Magia",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 2,
+      "presence": {
+        "Sombra": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Como custo adicional, mova 2 Cinzas suas para o descarte.\nCause 3 de dano a um monstro inimigo.",
+      "fx": {
+        "cast": [
+          {
+            "op": "damage",
+            "n": 3,
+            "target": "enemy_monster"
+          }
+        ]
+      },
+      "scene": "Two dark memory stones dissolving into purple embers that converge into a sharp arc of force.",
+      "role": "Como custo adicional, mova 2 Cinzas suas para o descarte.\nCause 3 de dano a um monstro inimigo.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "ash_cost": 2,
+      "state": "published-1.0",
+      "number": 37
+    },
+    {
+      "id": "TDP-038",
+      "name": "Inventário dos Ausentes",
+      "type": "Magia",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 3,
+      "presence": {
+        "Sombra": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Compre 2 cartas e perca 1 de Vida.",
+      "fx": {
+        "cast": [
+          {
+            "op": "draw",
+            "n": 2,
+            "target": "own"
+          },
+          {
+            "op": "lose_life",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "scene": "A travelers ledger with two blank pages illuminated by ghostly violet handprints, no readable writing.",
+      "role": "Compre 2 cartas e perca 1 de Vida.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 38
+    },
+    {
+      "id": "TDP-039",
+      "name": "Ossuário do Caminho",
+      "type": "Encantamento",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 3,
+      "presence": {
+        "Sombra": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "No seu encerramento, se um monstro seu morreu neste turno, ganhe 1 de Vida e olhe a carta do topo do seu baralho. Você pode colocá-la no fundo.",
+      "fx": {
+        "enchant_end": [
+          {
+            "op": "life",
+            "n": 1,
+            "target": "own",
+            "requires_death": true
+          },
+          {
+            "op": "scry",
+            "n": 1,
+            "target": "own",
+            "requires_death": true
+          }
+        ]
+      },
+      "scene": "A small respectful roadside memorial of pale bones and blank stones, a purple candle burning at its center.",
+      "role": "No seu encerramento, se um monstro seu morreu neste turno, ganhe 1 de Vida e olhe a carta do topo do seu baralho. Você pode colocá-la no fundo.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 39
+    },
+    {
+      "id": "TDP-040",
+      "name": "Ecos sob a Ponte",
+      "type": "Prenúncio",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": 2,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Condição: quando um monstro seu com dano for atacado.\nEfeito: cause 2 de dano ao atacante antes do combate.",
+      "fx": {
+        "trigger": "wounded_attacked",
+        "trap": [
+          {
+            "op": "damage",
+            "n": 2,
+            "target": "attacker"
+          }
+        ]
+      },
+      "scene": "Two shadowy echoes rising from beneath an old stone bridge to surround an intruding silhouette.",
+      "role": "Condição: quando um monstro seu com dano for atacado.\nEfeito: cause 2 de dano ao atacante antes do combate.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 40
+    },
+    {
+      "id": "TDP-041",
+      "name": "Dívida do Primeiro Marco",
+      "type": "Prenúncio",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 2
+      },
+      "support": false,
+      "vigil": 1,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Condição: quando o rival conjurar uma Magia.\nEfeito: compre 1 carta e perca 1 de Vida.\nRessonância — Com Presença de Sombra 3, compre 2 em vez de 1.",
+      "fx": {
+        "trigger": "magic",
+        "trap": [
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own",
+            "resonance": {
+              "presence": {
+                "Sombra": 3
+              },
+              "n": 2
+            }
+          },
+          {
+            "op": "lose_life",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "scene": "A bronze expedition seal split open by violet light, two spectral paper slips emerging without readable text.",
+      "role": "Condição: quando o rival conjurar uma Magia.\nEfeito: compre 1 carta e perca 1 de Vida.\nRessonância — Com Presença de Sombra 3, compre 2 em vez de 1.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 41
+    },
+    {
+      "id": "TDP-042",
+      "name": "Lontra das Nascentes",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 1,
+      "presence": {
+        "Maré": 1
+      },
+      "force": 1,
+      "vigor": 2,
+      "essence": {
+        "generation": 1,
+        "duration": 4
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "",
+      "fx": {},
+      "scene": "A bright-eyed river otter balancing a smooth blue pebble on its paws beside a clear spring.",
+      "role": "",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 42
+    },
+    {
+      "id": "TDP-043",
+      "name": "Arqueira dos Juncos",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Maré": 1
+      },
+      "force": 2,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Alcance"
+      ],
+      "rarity": "Comum",
+      "text": "Alcance.",
+      "fx": {},
+      "scene": "An adult marsh archer with a blue reed cloak and curved wooden bow, drawing an arrow of clear water.",
+      "role": "Alcance.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 43
+    },
+    {
+      "id": "TDP-044",
+      "name": "Serpente das Águas Fundas",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 6,
+      "presence": {
+        "Maré": 3
+      },
+      "force": 3,
+      "vigor": 6,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Alcance"
+      ],
+      "rarity": "Rara",
+      "text": "Alcance.\nAo entrar, devolva um monstro inimigo de custo 2 ou menos à mão.\nRessonância — Com Presença de Maré 4, o limite é 4.",
+      "fx": {
+        "enter": [
+          {
+            "op": "bounce",
+            "n": 0,
+            "target": "enemy_monster",
+            "max_cost": 2,
+            "resonance": {
+              "presence": {
+                "Maré": 4
+              },
+              "max_cost": 4
+            }
+          }
+        ]
+      },
+      "scene": "An enormous sapphire river serpent coiling above a deep spring, translucent fins and ancient stone reflections.",
+      "role": "Alcance.\nAo entrar, devolva um monstro inimigo de custo 2 ou menos à mão.\nRessonância — Com Presença de Maré 4, o limite é 4.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 44
+    },
+    {
+      "id": "TDP-045",
+      "name": "Mapa das Correntes",
+      "type": "Magia",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 1,
+      "presence": {
+        "Maré": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Olhe as 2 cartas do topo do seu baralho. Coloque quantas quiser no fundo e devolva as demais ao topo, na ordem que escolher.",
+      "fx": {
+        "cast": [
+          {
+            "op": "survey",
+            "n": 2,
+            "target": "own"
+          }
+        ]
+      },
+      "scene": "A rolled parchment map whose rivers become flowing blue water curling above its surface, no readable writing.",
+      "role": "Olhe as 2 cartas do topo do seu baralho. Coloque quantas quiser no fundo e devolva as demais ao topo, na ordem que escolher.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 45
+    },
+    {
+      "id": "TDP-046",
+      "name": "Maré sobre o Entreposto",
+      "type": "Magia",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Maré": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Devolva um Encantamento inimigo de custo 4 ou menos à mão do dono.",
+      "fx": {
+        "cast": [
+          {
+            "op": "bounce_enchant",
+            "n": 0,
+            "target": "enemy_enchant",
+            "max_cost": 4
+          }
+        ]
+      },
+      "scene": "A curling wave washing around an empty wooden expedition checkpoint, carrying a small bronze ward away.",
+      "role": "Devolva um Encantamento inimigo de custo 4 ou menos à mão do dono.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 46
+    },
+    {
+      "id": "TDP-047",
+      "name": "Travessia pelas Estrelas",
+      "type": "Magia",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 4,
+      "presence": {
+        "Maré": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Rara",
+      "text": "Compre 2 cartas.\nRessonância — Com Presença de Maré 3, compre 3 em vez disso.",
+      "fx": {
+        "cast": [
+          {
+            "op": "draw",
+            "n": 2,
+            "target": "own",
+            "resonance": {
+              "presence": {
+                "Maré": 3
+              },
+              "n": 3
+            }
+          }
+        ]
+      },
+      "scene": "A narrow river reflecting a constellation, three glowing stepping stones leading toward the horizon.",
+      "role": "Compre 2 cartas.\nRessonância — Com Presença de Maré 3, compre 3 em vez disso.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 47
+    },
+    {
+      "id": "TDP-048",
+      "name": "Cais da Nascente Clara",
+      "type": "Encantamento",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Maré": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Uma vez no seu turno, depois de reposicionar um monstro, cure até 1 de dano de um monstro seu na frente e ganhe 1 de Vida.",
+      "fx": {
+        "reposition": [
+          {
+            "op": "heal",
+            "n": 1,
+            "target": "own_front",
+            "up_to": true
+          },
+          {
+            "op": "life",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "scene": "A peaceful wooden landing at a turquoise spring, reed ropes and a small resting boat.",
+      "role": "Uma vez no seu turno, depois de reposicionar um monstro, cure até 1 de dano de um monstro seu na frente e ganhe 1 de Vida.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 48
+    },
+    {
+      "id": "TDP-049",
+      "name": "Caminho Submerso",
+      "type": "Prenúncio",
+      "schools": [
+        "Maré"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": 2,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Condição: quando o rival conjurar um monstro de custo 5 ou mais.\nEfeito: você pode devolver um monstro inimigo da frente de custo 3 ou menos à mão.",
+      "fx": {
+        "trigger": "big_monster",
+        "trap": [
+          {
+            "op": "bounce",
+            "n": 0,
+            "target": "enemy_front",
+            "max_cost": 3,
+            "optional": true
+          }
+        ]
+      },
+      "scene": "A stone path sinking just below a sheet of blue water, a travelers reflection turning back.",
+      "role": "Condição: quando o rival conjurar um monstro de custo 5 ou mais.\nEfeito: você pode devolver um monstro inimigo da frente de custo 3 ou menos à mão.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 49
+    },
+    {
+      "id": "TDP-050",
+      "name": "Espelho da Água Quieta",
+      "type": "Prenúncio",
+      "schools": [
+        "Maré"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": 1,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Condição: quando um monstro inimigo atacar seu mago.\nEfeito: devolva o atacante à mão se ele tiver custo 3 ou menos.",
+      "fx": {
+        "trigger": "face_attack",
+        "trap": [
+          {
+            "op": "bounce",
+            "n": 0,
+            "target": "attacker",
+            "max_cost": 3
+          }
+        ]
+      },
+      "scene": "A circular mirror of still water standing vertically between two stones, reflecting an approaching beast backward.",
+      "role": "Condição: quando um monstro inimigo atacar seu mago.\nEfeito: devolva o atacante à mão se ele tiver custo 3 ou menos.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 50
+    },
+    {
+      "id": "TDP-051",
+      "name": "Bastião da Manada",
+      "type": "Monstro",
+      "schools": [
+        "Chama",
+        "Raiz"
+      ],
+      "cost": 4,
+      "presence": {
+        "Chama": 1,
+        "Raiz": 2
+      },
+      "force": 3,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Guardião"
+      ],
+      "rarity": "Incomum",
+      "text": "Guardião.\nRessonância — Ao entrar, com Presença de Chama 2 e Raiz 2, outro monstro seu na frente ganha +1 de Força até o encerramento.",
+      "fx": {
+        "enter": [
+          {
+            "op": "boost",
+            "n": 1,
+            "target": "own_front",
+            "exclude_self": true,
+            "presence_min": {
+              "Chama": 2,
+              "Raiz": 2
+            }
+          }
+        ]
+      },
+      "scene": "A huge russet bison with root-entwined stone horns and ember-orange shoulder markings, protecting a migration trail.",
+      "role": "Guardião.\nRessonância — Ao entrar, com Presença de Chama 2 e Raiz 2, outro monstro seu na frente ganha +1 de Força até o encerramento.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 51
+    },
+    {
+      "id": "TDP-052",
+      "name": "Fogueira do Vale Vivo",
+      "type": "Encantamento",
+      "schools": [
+        "Chama",
+        "Raiz"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 1,
+        "Raiz": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Monstros de Raiz na sua frente têm Ímpeto.",
+      "fx": {
+        "aura": {
+          "school": "Raiz",
+          "keyword": "Ímpeto"
+        }
+      },
+      "scene": "A campfire whose orange flames weave through living green roots without burning them, shelter stones around it.",
+      "role": "Monstros de Raiz na sua frente têm Ímpeto.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 52
+    },
+    {
+      "id": "TDP-053",
+      "name": "Mael, Chefe do Primeiro Marco",
+      "type": "Monstro",
+      "schools": [
+        "Chama",
+        "Sombra"
+      ],
+      "cost": 5,
+      "presence": {
+        "Chama": 2,
+        "Sombra": 2
+      },
+      "force": 4,
+      "vigor": 4,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Rara",
+      "text": "Ao entrar, você pode gastar 2 Cinzas para causar 2 de dano a um monstro na frente inimiga.\nRessonância — Com Presença de Chama 2 e Sombra 2, cause 3 em vez disso.",
+      "fx": {
+        "enter": [
+          {
+            "op": "spend_damage",
+            "n": 2,
+            "target": "enemy_front",
+            "ashes": 2,
+            "resonance": {
+              "presence": {
+                "Chama": 2,
+                "Sombra": 2
+              },
+              "n": 3
+            }
+          }
+        ]
+      },
+      "scene": "Mael, a stern adult expedition commander in a copper breastplate and charcoal-red cloak, gripping a warm lantern and dark seal, pragmatic not monstrous.",
+      "role": "Ao entrar, você pode gastar 2 Cinzas para causar 2 de dano a um monstro na frente inimiga.\nRessonância — Com Presença de Chama 2 e Sombra 2, cause 3 em vez disso.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 53
+    },
+    {
+      "id": "TDP-054",
+      "name": "Cervo das Nascentes Antigas",
+      "type": "Monstro",
+      "schools": [
+        "Raiz",
+        "Maré"
+      ],
+      "cost": 5,
+      "presence": {
+        "Raiz": 2,
+        "Maré": 1
+      },
+      "force": 2,
+      "vigor": 5,
+      "essence": {
+        "generation": 1,
+        "duration": 4
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Guardião"
+      ],
+      "rarity": "Rara",
+      "text": "Guardião.\nAo entrar, cure 1 de dano de cada monstro seu.\nRessonância — Com Presença de Raiz 2 e Maré 2, cure 2 em vez disso.",
+      "fx": {
+        "enter": [
+          {
+            "op": "heal_all",
+            "n": 1,
+            "target": "own",
+            "resonance": {
+              "presence": {
+                "Raiz": 2,
+                "Maré": 2
+              },
+              "n": 2
+            }
+          }
+        ]
+      },
+      "scene": "A majestic moss-green stag with translucent turquoise antlers, tiny waterfalls running between its roots and hooves.",
+      "role": "Guardião.\nAo entrar, cure 1 de dano de cada monstro seu.\nRessonância — Com Presença de Raiz 2 e Maré 2, cure 2 em vez disso.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 54
+    },
+    {
+      "id": "TDP-055",
+      "name": "Guardião da Última Semente",
+      "type": "Monstro",
+      "schools": [
+        "Raiz",
+        "Sombra"
+      ],
+      "cost": 4,
+      "presence": {
+        "Raiz": 1,
+        "Sombra": 2
+      },
+      "force": 2,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Ao morrer durante o seu turno, você pode devolver outro Monstro de custo 2 ou menos do seu descarte à mão.",
+      "fx": {
+        "death": [
+          {
+            "op": "recover",
+            "n": 0,
+            "target": "own_discard",
+            "max_cost": 2,
+            "optional": true,
+            "exclude_self": true
+          }
+        ]
+      },
+      "scene": "A solemn wooden sentinel with dark violet vines, sheltering one luminous green seed in its hollow chest.",
+      "role": "Ao morrer durante o seu turno, você pode devolver outro Monstro de custo 2 ou menos do seu descarte à mão.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 55
+    },
+    {
+      "id": "TDP-056",
+      "name": "Pacto das Raízes Profundas",
+      "type": "Magia",
+      "schools": [
+        "Raiz",
+        "Sombra"
+      ],
+      "cost": 3,
+      "presence": {
+        "Raiz": 1,
+        "Sombra": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Comum",
+      "text": "Cure 1 de dano de cada monstro seu. Depois, você pode gastar 2 outras Cinzas para devolver um Monstro de custo 2 ou menos das suas Cinzas à mão.",
+      "fx": {
+        "cast": [
+          {
+            "op": "heal_all",
+            "n": 1,
+            "target": "own"
+          },
+          {
+            "op": "recover_ashes",
+            "n": 0,
+            "target": "own_ashes",
+            "max_cost": 2,
+            "ashes": 2,
+            "optional": true
+          }
+        ]
+      },
+      "scene": "Green roots and violet memory threads forming a protective knot around a buried stone seed.",
+      "role": "Cure 1 de dano de cada monstro seu. Depois, você pode gastar 2 outras Cinzas para devolver um Monstro de custo 2 ou menos das suas Cinzas à mão.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 56
+    },
+    {
+      "id": "TDP-057",
+      "name": "Corredora das Águas Quentes",
+      "type": "Monstro",
+      "schools": [
+        "Chama",
+        "Maré"
+      ],
+      "cost": 4,
+      "presence": {
+        "Chama": 1,
+        "Maré": 1
+      },
+      "force": 3,
+      "vigor": 3,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Alcance"
+      ],
+      "rarity": "Incomum",
+      "text": "Alcance.\nAo entrar, outro monstro seu na frente ganha +1 de Força até o encerramento.\nRessonância — Com Presença de Chama 2 e Maré 2, ele também ganha Ímpeto até o encerramento.",
+      "fx": {
+        "enter": [
+          {
+            "op": "boost",
+            "n": 1,
+            "target": "own_front",
+            "exclude_self": true,
+            "resonance": {
+              "presence": {
+                "Chama": 2,
+                "Maré": 2
+              },
+              "haste": true
+            }
+          }
+        ]
+      },
+      "scene": "An athletic adult courier in coral and blue cloth leaping between hot spring stones, a ribbon of steaming water behind her.",
+      "role": "Alcance.\nAo entrar, outro monstro seu na frente ganha +1 de Força até o encerramento.\nRessonância — Com Presença de Chama 2 e Maré 2, ele também ganha Ímpeto até o encerramento.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 57
+    },
+    {
+      "id": "TDP-058",
+      "name": "Fornalha das Correntes",
+      "type": "Encantamento",
+      "schools": [
+        "Chama",
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 1,
+        "Maré": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Incomum",
+      "text": "Quando você conjurar sua primeira Magia de Maré no turno, um monstro seu na frente ganha +1 de Força até o encerramento.",
+      "fx": {
+        "magic_school": "Maré",
+        "first_magic": [
+          {
+            "op": "boost",
+            "n": 1,
+            "target": "own_front"
+          }
+        ]
+      },
+      "scene": "A compact bronze water furnace at a spring, blue channels cooling a warm orange crystal, no modern machinery.",
+      "role": "Quando você conjurar sua primeira Magia de Maré no turno, um monstro seu na frente ganha +1 de Força até o encerramento.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 58
+    },
+    {
+      "id": "TDP-059",
+      "name": "Tecelã das Marés Escuras",
+      "type": "Monstro",
+      "schools": [
+        "Sombra",
+        "Maré"
+      ],
+      "cost": 4,
+      "presence": {
+        "Sombra": 1,
+        "Maré": 2
+      },
+      "force": 2,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Alcance"
+      ],
+      "rarity": "Rara",
+      "text": "Alcance.\nAo entrar, você pode olhar um Prenúncio do Véu inimigo. Depois, olhe as 2 cartas do topo do seu baralho e organize-as no topo ou no fundo.",
+      "fx": {
+        "enter": [
+          {
+            "op": "peek",
+            "n": 0,
+            "target": "enemy_veil",
+            "optional": true
+          },
+          {
+            "op": "survey",
+            "n": 2,
+            "target": "own"
+          }
+        ]
+      },
+      "scene": "An adult weaver in indigo robes manipulating blue water and violet threads around a small dark mirror, composed expression.",
+      "role": "Alcance.\nAo entrar, você pode olhar um Prenúncio do Véu inimigo. Depois, olhe as 2 cartas do topo do seu baralho e organize-as no topo ou no fundo.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 59
+    },
+    {
+      "id": "TDP-060",
+      "name": "Porta do Crepúsculo",
+      "type": "Encantamento",
+      "schools": [
+        "Sombra",
+        "Maré"
+      ],
+      "cost": 4,
+      "presence": {
+        "Sombra": 1,
+        "Maré": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "rarity": "Rara",
+      "text": "No seu encerramento, você pode devolver um monstro seu de custo 2 ou menos à mão. Se você reposicionou neste turno, olhe a carta do topo do seu baralho; você pode colocá-la no fundo.",
+      "fx": {
+        "enchant_end": [
+          {
+            "op": "bounce",
+            "n": 0,
+            "target": "own_monster",
+            "max_cost": 2,
+            "optional": true
+          },
+          {
+            "op": "scry",
+            "n": 1,
+            "target": "own",
+            "requires_reposition": true
+          }
+        ]
+      },
+      "scene": "An ancient archway half blue water and half violet dusk, a small safe path visible through its center.",
+      "role": "No seu encerramento, você pode devolver um monstro seu de custo 2 ou menos à mão. Se você reposicionou neste turno, olhe a carta do topo do seu baralho; você pode colocá-la no fundo.",
+      "flavor": "As passagens lembram quem aprende a atravessá-las.",
+      "state": "published-1.0",
+      "number": 60
+    }
+  ]
+}

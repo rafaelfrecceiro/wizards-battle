@@ -1,0 +1,18 @@
+{
+  "source": "arte/direcoes/b/prancha.png",
+  "source_sha256": "3e3276632ea78618dd00cf92ab4b7f8db1ec0b296a215c57bedfb4c7a00335b3",
+  "box": [
+    1055,
+    750,
+    1193,
+    891
+  ],
+  "source_school": null,
+  "target_school": null,
+  "polygon": null,
+  "native_size": [
+    138,
+    141
+  ],
+  "method": "Existing illustrated Sombra moon, selected by source color and traced into a PDF component; native transparent render, no generic substitute."
+}

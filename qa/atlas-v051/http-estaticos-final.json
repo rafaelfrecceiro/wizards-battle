@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-10-23T17:57:22.837Z",
+  "health": {
+    "ok": true,
+    "name": "Wizards Battle",
+    "version": "wb-0.5.0/rules-escolas-v1/ac500ad45d98/7e65b53aa899",
+    "sessions": 0
+  },
+  "checks": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 388,
+      "identical": true,
+      "sha256": "80d2069cf4960a7c7cfe2f4ce6bf023774a7cb4a38fd3a326e63bb41eb74b37c"
+    },
+    {
+      "file": "atlas-preview.html",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 473,
+      "identical": true,
+      "sha256": "35d8c81d6101ab45c441a76a694c4b8914ede3bd39bbcd6dab9d5b7f334840fc"
+    },
+    {
+      "file": "arte/atlas-tabuleiro.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 2634389,
+      "identical": true,
+      "sha256": "fa76e01791c1dc9ea67d004be04ed7ee119a603bcce700f68bb489376f8dc437"
+    },
+    {
+      "file": "arte/atlas-maga.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 2537110,
+      "identical": true,
+      "sha256": "7b0b6bd1af2b55a501d02ce44a6b8b805ff9b5321d6b7d7c1480bf00c88cb180"
+    },
+    {
+      "file": "arte/atlas-automato.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 2579483,
+      "identical": true,
+      "sha256": "97f207385c074206cf7c7139d3a61696c6b417186efc1c0486c84981168c41ce"
+    },
+    {
+      "file": "assets/index-CwTfMMU8.js",
+      "status": 200,
+      "type": "text/javascript",
+      "bytes": 342264,
+      "identical": true,
+      "sha256": "d990064c9d526522e1807fb61f2d827457c2728dcedf95181b64f38f9f6e60f2"
+    },
+    {
+      "file": "assets/main-Cm6cJ822.js",
+      "status": 200,
+      "type": "text/javascript",
+      "bytes": 345917,
+      "identical": true,
+      "sha256": "ca8a3e1924e9a9a21c5524de390ac521bf319531ada3e72afeb7d8064ac18257"
+    },
+    {
+      "file": "assets/main-DGRbSCcG.css",
+      "status": 200,
+      "type": "text/css",
+      "bytes": 75316,
+      "identical": true,
+      "sha256": "033f0f77f8746ed97894d3d4e897ac61df05fedfc138a8f8c609ef5ab1f1fa7c"
+    },
+    {
+      "file": "assets/atlasPreview-CzNFeiSM.js",
+      "status": 200,
+      "type": "text/javascript",
+      "bytes": 12770,
+      "identical": true,
+      "sha256": "16c29258b546b4775a626ea7bfc7cd084981d93d3bf879ec614f10c06377d7bc"
+    }
+  ]
+}

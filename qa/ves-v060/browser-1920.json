@@ -1,0 +1,23 @@
+{
+  "decks": [
+    "Queimada",
+    "Pira",
+    "Vapor",
+    "Decomposição",
+    "Estações",
+    "Ilusão"
+  ],
+  "document": [
+    1920,
+    1080
+  ],
+  "nan": false,
+  "panel": {
+    "height": 874,
+    "scrollHeight": 874
+  },
+  "viewport": [
+    1920,
+    1080
+  ]
+}

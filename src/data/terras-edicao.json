@@ -1,0 +1,499 @@
+{
+  "edition": {
+    "code": "TDP",
+    "name": "As Terras Despertas",
+    "order": 2,
+    "cardCount": 60,
+    "symbol": "terras-awakening",
+    "theme": "Feras, expedições e santuários de um vale vivo; poderes despertam com a Presença no campo.",
+    "mechanics": [
+      "Ressonância",
+      "Presença",
+      "Suporte",
+      "Cinzas"
+    ],
+    "experimental": false
+  },
+  "printings": [
+    {
+      "id": "TD-P01",
+      "cardId": "TD-P01",
+      "edition": "TDP",
+      "number": 1,
+      "rarity": "uncommon",
+      "designNote": "Investida preparada; o próprio Lince não recebe o efeito."
+    },
+    {
+      "id": "TD-P02",
+      "cardId": "TD-P02",
+      "edition": "TDP",
+      "number": 2,
+      "rarity": "common",
+      "designNote": "Defensor simples para sustentar uma formação; referência de corpo sem Ressonância."
+    },
+    {
+      "id": "TD-P03",
+      "cardId": "TD-P03",
+      "edition": "TDP",
+      "number": 3,
+      "rarity": "uncommon",
+      "designNote": "Converte um recurso finito em pressão imediata; pagamento opcional na habilidade, não na conjuração."
+    },
+    {
+      "id": "TD-P04",
+      "cardId": "TD-P04",
+      "edition": "TDP",
+      "number": 4,
+      "rarity": "uncommon",
+      "designNote": "Alcance e retorno preparado de um aliado pequeno; diferença de custo/corpo em relação ao Lanceiro das Correntes e à Condutora do Refluxo."
+    },
+    {
+      "id": "TD-P05",
+      "cardId": "TD-P05",
+      "edition": "TDP",
+      "number": 5,
+      "rarity": "uncommon",
+      "designNote": "Recompensa manter o campo, mas não traz de volta aliados destruídos."
+    },
+    {
+      "id": "TD-P06",
+      "cardId": "TD-P06",
+      "edition": "TDP",
+      "number": 6,
+      "rarity": "uncommon",
+      "designNote": "Seleção de compras para preparar a próxima jogada; não compra cartas nem gera energia."
+    },
+    {
+      "id": "TD-P07",
+      "cardId": "TD-P07",
+      "edition": "TDP",
+      "number": 7,
+      "rarity": "rare",
+      "designNote": "Recuperação seletiva com gasto real; a carta recuperada não pode pagar o próprio efeito. O custo 5 exclui a Catadora do limite 4."
+    },
+    {
+      "id": "TD-P08",
+      "cardId": "TD-P08",
+      "edition": "TDP",
+      "number": 8,
+      "rarity": "uncommon",
+      "designNote": "Apoio híbrido de seleção, sem compra automática; cada cópia tem um gatilho de encerramento."
+    },
+    {
+      "id": "TD-P09",
+      "cardId": "TD-P09",
+      "edition": "TDP",
+      "number": 9,
+      "rarity": "common",
+      "designNote": "Resposta acessível que funciona sem Presença alta; não atinge monstros de Suporte."
+    },
+    {
+      "id": "TD-P10",
+      "cardId": "TD-P10",
+      "edition": "TDP",
+      "number": 10,
+      "rarity": "common",
+      "designNote": "Ganha tempo e retira Presença, mas permite ao rival rejogar e avançar Escola novamente."
+    },
+    {
+      "id": "TD-P11",
+      "cardId": "TD-P11",
+      "edition": "TDP",
+      "number": 11,
+      "rarity": "common",
+      "designNote": "Recuperação distribuída para um campo ferido; distingue-se da cura concentrada de Passagem Viva e da cura recorrente de Jardim nas Engrenagens."
+    },
+    {
+      "id": "TD-P12",
+      "cardId": "TD-P12",
+      "edition": "TDP",
+      "number": 12,
+      "rarity": "common",
+      "designNote": "Exemplo direto de Ressonância; comparação editorial com A Última Descarga de VES ainda precisa de playtest."
+    },
+    {
+      "id": "TDP-013",
+      "cardId": "TDP-013",
+      "edition": "TDP",
+      "number": 13,
+      "rarity": "common",
+      "designNote": "Ímpeto."
+    },
+    {
+      "id": "TDP-014",
+      "cardId": "TDP-014",
+      "edition": "TDP",
+      "number": 14,
+      "rarity": "uncommon",
+      "designNote": "Ao entrar, cause 1 de dano a um monstro na frente inimiga.\nRessonância — Com Presença de Chama 3, cause 2 em vez disso."
+    },
+    {
+      "id": "TDP-015",
+      "cardId": "TDP-015",
+      "edition": "TDP",
+      "number": 15,
+      "rarity": "rare",
+      "designNote": "Alcance.\nAo entrar, cause 2 de dano a um monstro na frente inimiga.\nRessonância — Com Presença de Chama 4, cause 3 em vez disso."
+    },
+    {
+      "id": "TDP-016",
+      "cardId": "TDP-016",
+      "edition": "TDP",
+      "number": 16,
+      "rarity": "common",
+      "designNote": "Suporte: no seu Despertar, um monstro seu na frente ganha +1 de Força até o encerramento."
+    },
+    {
+      "id": "TDP-017",
+      "cardId": "TDP-017",
+      "edition": "TDP",
+      "number": 17,
+      "rarity": "common",
+      "designNote": "Um monstro seu na frente ganha +1 de Força até o encerramento.\nRessonância — Com Presença de Chama 3, ele também ganha Ímpeto até o encerramento."
+    },
+    {
+      "id": "TDP-018",
+      "cardId": "TDP-018",
+      "edition": "TDP",
+      "number": 18,
+      "rarity": "common",
+      "designNote": "Cause 2 de dano a um monstro inimigo.\nRessonância — Com Presença de Chama 3, cause 3 em vez disso."
+    },
+    {
+      "id": "TDP-019",
+      "cardId": "TDP-019",
+      "edition": "TDP",
+      "number": 19,
+      "rarity": "uncommon",
+      "designNote": "Cause 2 de dano ao mago rival.\nRessonância — Com Presença de Chama 4, cause 3 em vez disso."
+    },
+    {
+      "id": "TDP-020",
+      "cardId": "TDP-020",
+      "edition": "TDP",
+      "number": 20,
+      "rarity": "common",
+      "designNote": "No seu Despertar, um monstro seu na frente ganha +1 de Força até o encerramento."
+    },
+    {
+      "id": "TDP-021",
+      "cardId": "TDP-021",
+      "edition": "TDP",
+      "number": 21,
+      "rarity": "common",
+      "designNote": "Condição: quando um monstro inimigo atacar seu mago.\nEfeito: cause 2 de dano ao atacante antes do combate.\nRessonância — Com Presença de Chama 3, cause 3 em vez disso."
+    },
+    {
+      "id": "TDP-022",
+      "cardId": "TDP-022",
+      "edition": "TDP",
+      "number": 22,
+      "rarity": "common",
+      "designNote": "Condição: quando o rival sacrificar uma carta.\nEfeito: remova 2 marcadores de duração daquela fonte."
+    },
+    {
+      "id": "TDP-023",
+      "cardId": "TDP-023",
+      "edition": "TDP",
+      "number": 23,
+      "rarity": "common",
+      "designNote": "Guardião."
+    },
+    {
+      "id": "TDP-024",
+      "cardId": "TDP-024",
+      "edition": "TDP",
+      "number": 24,
+      "rarity": "uncommon",
+      "designNote": "Ao morrer durante o seu turno, cure 1 de dano de cada monstro seu."
+    },
+    {
+      "id": "TDP-025",
+      "cardId": "TDP-025",
+      "edition": "TDP",
+      "number": 25,
+      "rarity": "rare",
+      "designNote": "Guardião.\nAo entrar, cure até 1 de dano de um monstro seu na frente.\nRessonância — Com Presença de Raiz 3, cure até 2 em vez disso."
+    },
+    {
+      "id": "TDP-026",
+      "cardId": "TDP-026",
+      "edition": "TDP",
+      "number": 26,
+      "rarity": "common",
+      "designNote": "Emboscada."
+    },
+    {
+      "id": "TDP-027",
+      "cardId": "TDP-027",
+      "edition": "TDP",
+      "number": 27,
+      "rarity": "common",
+      "designNote": "Ganhe 2 de Vida.\nRessonância — Com Presença de Raiz 3, ganhe 3 em vez disso."
+    },
+    {
+      "id": "TDP-028",
+      "cardId": "TDP-028",
+      "edition": "TDP",
+      "number": 28,
+      "rarity": "uncommon",
+      "designNote": "Um monstro seu ganha +2 de Força até o encerramento.\nRessonância — Com Presença de Raiz 3, ele ganha +3 em vez disso."
+    },
+    {
+      "id": "TDP-029",
+      "cardId": "TDP-029",
+      "edition": "TDP",
+      "number": 29,
+      "rarity": "common",
+      "designNote": "No seu encerramento, cure até 1 de dano de um monstro seu na frente.\nRessonância — Com Presença de Raiz 3, cure até 2 em vez disso."
+    },
+    {
+      "id": "TDP-030",
+      "cardId": "TDP-030",
+      "edition": "TDP",
+      "number": 30,
+      "rarity": "common",
+      "designNote": "Condição: quando um monstro seu na retaguarda for atacado.\nEfeito: cure até 2 de dano do defensor antes do combate."
+    },
+    {
+      "id": "TDP-031",
+      "cardId": "TDP-031",
+      "edition": "TDP",
+      "number": 31,
+      "rarity": "common",
+      "designNote": "Condição: quando um monstro seu morrer no turno rival.\nEfeito: você pode devolver um Monstro de custo 2 ou menos do seu descarte à mão."
+    },
+    {
+      "id": "TDP-032",
+      "cardId": "TDP-032",
+      "edition": "TDP",
+      "number": 32,
+      "rarity": "common",
+      "designNote": "Ao entrar, olhe a carta do topo do seu baralho. Você pode colocá-la no fundo."
+    },
+    {
+      "id": "TDP-033",
+      "cardId": "TDP-033",
+      "edition": "TDP",
+      "number": 33,
+      "rarity": "uncommon",
+      "designNote": "Emboscada.\nAo morrer durante o seu turno, compre 1 carta."
+    },
+    {
+      "id": "TDP-034",
+      "cardId": "TDP-034",
+      "edition": "TDP",
+      "number": 34,
+      "rarity": "rare",
+      "designNote": "Enquanto você tiver 3 ou mais Cinzas, este monstro tem Guardião."
+    },
+    {
+      "id": "TDP-035",
+      "cardId": "TDP-035",
+      "edition": "TDP",
+      "number": 35,
+      "rarity": "uncommon",
+      "designNote": "Suporte: no seu encerramento, se você tiver 2 ou menos cartas na mão, compre 1 carta."
+    },
+    {
+      "id": "TDP-036",
+      "cardId": "TDP-036",
+      "edition": "TDP",
+      "number": 36,
+      "rarity": "common",
+      "designNote": "Devolva um Monstro de custo 2 ou menos do seu descarte à mão.\nRessonância — Com Presença de Sombra 3, o limite é 4."
+    },
+    {
+      "id": "TDP-037",
+      "cardId": "TDP-037",
+      "edition": "TDP",
+      "number": 37,
+      "rarity": "common",
+      "designNote": "Como custo adicional, mova 2 Cinzas suas para o descarte.\nCause 3 de dano a um monstro inimigo."
+    },
+    {
+      "id": "TDP-038",
+      "cardId": "TDP-038",
+      "edition": "TDP",
+      "number": 38,
+      "rarity": "uncommon",
+      "designNote": "Compre 2 cartas e perca 1 de Vida."
+    },
+    {
+      "id": "TDP-039",
+      "cardId": "TDP-039",
+      "edition": "TDP",
+      "number": 39,
+      "rarity": "uncommon",
+      "designNote": "No seu encerramento, se um monstro seu morreu neste turno, ganhe 1 de Vida e olhe a carta do topo do seu baralho. Você pode colocá-la no fundo."
+    },
+    {
+      "id": "TDP-040",
+      "cardId": "TDP-040",
+      "edition": "TDP",
+      "number": 40,
+      "rarity": "common",
+      "designNote": "Condição: quando um monstro seu com dano for atacado.\nEfeito: cause 2 de dano ao atacante antes do combate."
+    },
+    {
+      "id": "TDP-041",
+      "cardId": "TDP-041",
+      "edition": "TDP",
+      "number": 41,
+      "rarity": "common",
+      "designNote": "Condição: quando o rival conjurar uma Magia.\nEfeito: compre 1 carta e perca 1 de Vida.\nRessonância — Com Presença de Sombra 3, compre 2 em vez de 1."
+    },
+    {
+      "id": "TDP-042",
+      "cardId": "TDP-042",
+      "edition": "TDP",
+      "number": 42,
+      "rarity": "common",
+      "designNote": "Corpo acessível para desenvolver o campo e sustentar as fontes."
+    },
+    {
+      "id": "TDP-043",
+      "cardId": "TDP-043",
+      "edition": "TDP",
+      "number": 43,
+      "rarity": "common",
+      "designNote": "Alcance."
+    },
+    {
+      "id": "TDP-044",
+      "cardId": "TDP-044",
+      "edition": "TDP",
+      "number": 44,
+      "rarity": "rare",
+      "designNote": "Alcance.\nAo entrar, devolva um monstro inimigo de custo 2 ou menos à mão.\nRessonância — Com Presença de Maré 4, o limite é 4."
+    },
+    {
+      "id": "TDP-045",
+      "cardId": "TDP-045",
+      "edition": "TDP",
+      "number": 45,
+      "rarity": "common",
+      "designNote": "Olhe as 2 cartas do topo do seu baralho. Coloque quantas quiser no fundo e devolva as demais ao topo, na ordem que escolher."
+    },
+    {
+      "id": "TDP-046",
+      "cardId": "TDP-046",
+      "edition": "TDP",
+      "number": 46,
+      "rarity": "common",
+      "designNote": "Devolva um Encantamento inimigo de custo 4 ou menos à mão do dono."
+    },
+    {
+      "id": "TDP-047",
+      "cardId": "TDP-047",
+      "edition": "TDP",
+      "number": 47,
+      "rarity": "rare",
+      "designNote": "Compre 2 cartas.\nRessonância — Com Presença de Maré 3, compre 3 em vez disso."
+    },
+    {
+      "id": "TDP-048",
+      "cardId": "TDP-048",
+      "edition": "TDP",
+      "number": 48,
+      "rarity": "uncommon",
+      "designNote": "Uma vez no seu turno, depois de reposicionar um monstro, cure até 1 de dano de um monstro seu na frente e ganhe 1 de Vida."
+    },
+    {
+      "id": "TDP-049",
+      "cardId": "TDP-049",
+      "edition": "TDP",
+      "number": 49,
+      "rarity": "common",
+      "designNote": "Condição: quando o rival conjurar um monstro de custo 5 ou mais.\nEfeito: você pode devolver um monstro inimigo da frente de custo 3 ou menos à mão."
+    },
+    {
+      "id": "TDP-050",
+      "cardId": "TDP-050",
+      "edition": "TDP",
+      "number": 50,
+      "rarity": "uncommon",
+      "designNote": "Condição: quando um monstro inimigo atacar seu mago.\nEfeito: devolva o atacante à mão se ele tiver custo 3 ou menos."
+    },
+    {
+      "id": "TDP-051",
+      "cardId": "TDP-051",
+      "edition": "TDP",
+      "number": 51,
+      "rarity": "uncommon",
+      "designNote": "Guardião.\nRessonância — Ao entrar, com Presença de Chama 2 e Raiz 2, outro monstro seu na frente ganha +1 de Força até o encerramento."
+    },
+    {
+      "id": "TDP-052",
+      "cardId": "TDP-052",
+      "edition": "TDP",
+      "number": 52,
+      "rarity": "uncommon",
+      "designNote": "Monstros de Raiz na sua frente têm Ímpeto."
+    },
+    {
+      "id": "TDP-053",
+      "cardId": "TDP-053",
+      "edition": "TDP",
+      "number": 53,
+      "rarity": "rare",
+      "designNote": "Ao entrar, você pode gastar 2 Cinzas para causar 2 de dano a um monstro na frente inimiga.\nRessonância — Com Presença de Chama 2 e Sombra 2, cause 3 em vez disso."
+    },
+    {
+      "id": "TDP-054",
+      "cardId": "TDP-054",
+      "edition": "TDP",
+      "number": 54,
+      "rarity": "rare",
+      "designNote": "Guardião.\nAo entrar, cure 1 de dano de cada monstro seu.\nRessonância — Com Presença de Raiz 2 e Maré 2, cure 2 em vez disso."
+    },
+    {
+      "id": "TDP-055",
+      "cardId": "TDP-055",
+      "edition": "TDP",
+      "number": 55,
+      "rarity": "common",
+      "designNote": "Ao morrer durante o seu turno, você pode devolver outro Monstro de custo 2 ou menos do seu descarte à mão."
+    },
+    {
+      "id": "TDP-056",
+      "cardId": "TDP-056",
+      "edition": "TDP",
+      "number": 56,
+      "rarity": "common",
+      "designNote": "Cure 1 de dano de cada monstro seu. Depois, você pode gastar 2 outras Cinzas para devolver um Monstro de custo 2 ou menos das suas Cinzas à mão."
+    },
+    {
+      "id": "TDP-057",
+      "cardId": "TDP-057",
+      "edition": "TDP",
+      "number": 57,
+      "rarity": "uncommon",
+      "designNote": "Alcance.\nAo entrar, outro monstro seu na frente ganha +1 de Força até o encerramento.\nRessonância — Com Presença de Chama 2 e Maré 2, ele também ganha Ímpeto até o encerramento."
+    },
+    {
+      "id": "TDP-058",
+      "cardId": "TDP-058",
+      "edition": "TDP",
+      "number": 58,
+      "rarity": "uncommon",
+      "designNote": "Quando você conjurar sua primeira Magia de Maré no turno, um monstro seu na frente ganha +1 de Força até o encerramento."
+    },
+    {
+      "id": "TDP-059",
+      "cardId": "TDP-059",
+      "edition": "TDP",
+      "number": 59,
+      "rarity": "rare",
+      "designNote": "Alcance.\nAo entrar, você pode olhar um Prenúncio do Véu inimigo. Depois, olhe as 2 cartas do topo do seu baralho e organize-as no topo ou no fundo."
+    },
+    {
+      "id": "TDP-060",
+      "cardId": "TDP-060",
+      "edition": "TDP",
+      "number": 60,
+      "rarity": "rare",
+      "designNote": "No seu encerramento, você pode devolver um monstro seu de custo 2 ou menos à mão. Se você reposicionou neste turno, olhe a carta do topo do seu baralho; você pode colocá-la no fundo."
+    }
+  ]
+}

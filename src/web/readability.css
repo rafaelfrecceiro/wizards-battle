@@ -1,0 +1,596 @@
+/* Revisão 0.2.1: o campo usa a altura liberada pela mão recolhida. */
+:root {
+  --hand-peek: 72px;
+  --hand-expanded: 242px;
+  --hand-w: 136px;
+  --hand-h: 190px;
+  --card-h: clamp(100px, calc((100dvh - 380px) / 4), 184px);
+  --card-w: calc(var(--card-h) * 0.716);
+}
+.in-game {
+  min-height: 700px;
+}
+.arena {
+  height: calc(100dvh - 66px);
+  min-height: 634px;
+  grid-template-rows: 70px minmax(0, 1fr) 82px var(--hand-peek);
+}
+.battlefield {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.half {
+  grid-template-columns: clamp(210px, 16vw, 250px) minmax(400px, 1fr) clamp(
+      205px,
+      16vw,
+      240px
+    );
+  gap: 18px;
+}
+.formation {
+  grid-template-columns: 133px 1fr;
+}
+.formation-slots {
+  gap: 28px;
+}
+.zone-label strong {
+  font-size: 14px;
+  color: #eee0c6;
+}
+.zone-label small {
+  font-size: 11px;
+  color: #c0b6c9;
+  line-height: 1.35;
+}
+.zone-label em {
+  font-size: 12px;
+  color: #d8c8b5;
+}
+.zone-label > button {
+  width: 21px;
+  height: 21px;
+  font-size: 13px;
+}
+.formation > .zone-label > button {
+  right: 10px;
+  top: -11px;
+}
+.zone-icon {
+  font-size: 24px;
+}
+.vacant > small {
+  font-size: 11px;
+  color: #b9adba;
+}
+.vacant {
+  border-color: #b1a28d55;
+}
+.player-name > b {
+  font-size: 22px;
+}
+.player-name > span {
+  font-size: 12px;
+  color: #c8bdcf;
+}
+.school small {
+  font-size: 10px;
+  color: #c2b6c8;
+  bottom: -2px;
+}
+.school {
+  padding-bottom: 14px;
+}
+.school > b {
+  font-size: 18px;
+}
+.energy-orb small {
+  font-size: 10px;
+  color: #b4d8dd;
+}
+.variant-chip,
+.masthead nav > button {
+  font-size: 12px;
+}
+.version {
+  font-size: 10px;
+}
+.source-entry b {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #e1d5c3;
+}
+.source-entry small {
+  font-size: 11px;
+  color: #cfb994;
+}
+.source-entry {
+  gap: 10px;
+}
+.game-card.source {
+  width: 43px;
+  height: 60px;
+}
+.source-empty p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+.source-empty small {
+  font-size: 11px;
+  line-height: 1.4;
+  color: #b7aabd;
+}
+.sacrifice-hint {
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  line-height: 1.4;
+}
+.pile-row b {
+  font-size: 14px;
+}
+.pile-row small {
+  font-size: 10px;
+  color: #c4b8c8;
+}
+.pile-row {
+  gap: 5px;
+  padding-top: 8px;
+}
+.ritual-empty small {
+  font-size: 11px;
+  color: #b6a6be;
+}
+.game-card.small,
+.card-back {
+  width: 49px;
+  height: 69px;
+}
+.card-back small {
+  font-size: 10px;
+  color: #dfcaa1;
+}
+.duration-counter {
+  font-size: 15px;
+  min-width: 25px;
+}
+.battle-name {
+  font-size: 11px;
+  bottom: 23px;
+  padding: 4px;
+}
+.combat-stats {
+  font-size: 17px;
+  min-width: 64px;
+  bottom: -5px;
+}
+.keywords {
+  width: 27px;
+  height: 27px;
+  font-size: 19px;
+}
+.attacked {
+  font-size: 10px;
+}
+.turn-indicator,
+.phase-track > span {
+  font-size: 12px;
+}
+.phase-track i {
+  font-size: 10px;
+  width: 19px;
+  height: 19px;
+}
+.last-event {
+  font-size: 11px;
+  max-width: 290px;
+  color: #d5c5b0;
+}
+.spell-drop b {
+  font-size: 13px;
+}
+.spell-drop small {
+  font-size: 11px;
+  color: #c0b0cc;
+}
+.phase-action > .action-btn {
+  font-size: 14px;
+}
+.your-header .player-bar {
+  min-width: 560px;
+}
+.action-btn {
+  font-size: 13px;
+}
+.action-toast,
+.error-toast {
+  font-size: 14px;
+}
+.decision-panel > p,
+.decision-cards strong {
+  font-size: 14px;
+}
+.decision-cards span {
+  font-size: 12px;
+}
+.decision-top {
+  font-size: 12px;
+}
+.history-drawer p {
+  font-size: 14px;
+}
+.history-drawer small {
+  font-size: 12px;
+}
+
+/* A gaveta não reduz o campo ao abrir: sobrepõe sua metade inferior. */
+.hand-area {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--hand-expanded);
+  margin: 0;
+  z-index: 42;
+  transform: translateY(calc(100% - var(--hand-peek)));
+  transition:
+    transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    background 200ms;
+  background: linear-gradient(0deg, #15131cf8, #191722ed 70%, #211b2677);
+  border-radius: 14px 14px 0 0;
+}
+.hand-area.expanded,
+.hand-area:focus-within {
+  transform: translateY(0);
+  background: linear-gradient(0deg, #15131cfa, #191722ed 70%, #211b2699);
+}
+.hand-heading {
+  height: 34px;
+  padding: 8px 20px;
+  gap: 18px;
+}
+.hand-heading > span:first-child {
+  font-size: 11px;
+}
+.hand-heading > span:nth-child(2) {
+  font-size: 12px;
+  color: #d1c3d8;
+}
+.hand-heading > button {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.hand-fan {
+  height: calc(100% - 34px);
+  padding-top: 8px;
+}
+.hand-position {
+  margin: 0 -6px;
+}
+.hand-position:hover,
+.hand-position:focus-within {
+  transform: translateY(-12px) rotate(0);
+}
+.hand-position .game-card.hand {
+  width: var(--hand-w);
+  height: var(--hand-h);
+}
+
+/* Prévia local: arte grande intacta e regra em texto legível ao lado. */
+.card-inspector {
+  width: 330px;
+  font-size: 15px;
+  padding: 16px;
+}
+.card-inspector h3 {
+  font-size: 23px;
+  line-height: 1.25;
+}
+.card-inspector p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #e0d5e5;
+}
+.support-note,
+.blocked {
+  font-size: 13px;
+  line-height: 1.5;
+}
+.card-inspector .zoom-art img {
+  max-height: 48dvh;
+  object-fit: contain;
+}
+.card-inspector.hand-preview {
+  width: clamp(540px, 42vw, 660px);
+  right: auto;
+  top: auto;
+  bottom: calc(var(--hand-expanded) + 12px);
+  max-height: calc(100dvh - var(--hand-expanded) - 90px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 18px;
+  z-index: 85;
+  overflow: auto;
+  box-shadow: 0 20px 65px #000b;
+  animation: none;
+}
+.hand-preview .zoom-art {
+  align-self: start;
+}
+.hand-preview .zoom-art img {
+  width: 100%;
+  max-height: calc(100dvh - var(--hand-expanded) - 126px);
+  height: auto;
+  object-fit: contain;
+}
+.preview-details {
+  min-width: 0;
+}
+.hand-preview h3 {
+  margin-top: 6px;
+}
+.hand-preview .close-inspector {
+  top: 4px;
+  right: 4px;
+}
+.inspector-actions .action-btn {
+  font-size: 13px;
+}
+.inspector-actions .text-btn {
+  font-size: 12px;
+}
+.card-inspector .close-inspector {
+  width: 27px;
+  height: 27px;
+  font-size: 20px;
+}
+
+/* Mira de ataque: a origem continua visível, sem carta flutuante sobre o alvo. */
+.game-card.aiming {
+  opacity: 1;
+  outline: 2px solid #f0ce8f;
+  outline-offset: 3px;
+  box-shadow: 0 0 22px #e5a56588;
+}
+.attack-line line {
+  stroke-width: 3.5;
+  stroke-dasharray: none;
+}
+.committed-link {
+  animation: attack-connect 650ms ease-out both;
+}
+.committed-link line {
+  stroke-width: 5;
+  filter: drop-shadow(0 0 8px #e9a557);
+}
+@keyframes attack-connect {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media (max-width: 1250px) {
+  .arena {
+    grid-template-rows: 66px minmax(0, 1fr) 76px var(--hand-peek);
+  }
+  .half {
+    grid-template-columns: 195px minmax(345px, 1fr) 185px;
+    gap: 10px;
+  }
+  .formation {
+    grid-template-columns: 112px 1fr;
+    padding: 2px 4px;
+  }
+  .formation-slots {
+    gap: 18px;
+  }
+  .zone-label strong {
+    font-size: 13px;
+  }
+  .zone-label small {
+    font-size: 10px;
+  }
+  .source-entry b {
+    font-size: 11px;
+  }
+  .source-entry small {
+    font-size: 10px;
+  }
+  .game-card.small,
+  .card-back {
+    width: 41px;
+    height: 58px;
+  }
+  .player-name > span {
+    font-size: 11px;
+  }
+  .your-header .player-bar {
+    min-width: 490px;
+  }
+  .source-empty small,
+  .ritual-empty small {
+    font-size: 10px;
+  }
+  .masthead nav {
+    gap: 13px;
+  }
+  .variant-chip {
+    font-size: 11px;
+  }
+}
+@media (max-height: 800px) {
+  :root {
+    --hand-expanded: 210px;
+    --hand-w: 118px;
+    --hand-h: 165px;
+    --hand-peek: 66px;
+    --card-h: 100px;
+    --card-w: 71.6px;
+  }
+  .arena {
+    height: calc(100dvh - 54px);
+    grid-template-rows: 62px minmax(0, 1fr) 68px var(--hand-peek);
+    min-height: 646px;
+  }
+  .card-inspector.hand-preview {
+    width: 540px;
+  }
+  .card-inspector {
+    top: 64px;
+    width: 310px;
+  }
+  .card-inspector p {
+    font-size: 15px;
+  }
+  .game-card.small,
+  .card-back {
+    width: 37px;
+    height: 52px;
+  }
+  .hand-heading > span:nth-child(2) {
+    font-size: 11px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hand-area,
+  .hand-position {
+    transition: none !important;
+  }
+  .committed-link {
+    animation: none;
+  }
+}
+.guide-zones p {
+  font-size: 14px;
+}
+.guide-zones h3 {
+  font-size: 21px;
+}
+.guide-intro,
+.help-panel p {
+  font-size: 16px;
+}
+.guide-footer p {
+  font-size: 13px;
+}
+.guide-footer b {
+  font-size: 15px;
+}
+.life {
+  font-size: 20px;
+  min-width: 34px;
+}
+.hand-preview.pinned .preview-details {
+  overflow: auto;
+  max-height: calc(100dvh - var(--hand-expanded) - 126px);
+}
+
+/* A ampliação nasce sobre a carta apontada; hover não captura o ponteiro. */
+.card-inspector.board-preview {
+  right: auto;
+  bottom: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
+  max-height: calc(100dvh - 96px);
+  animation: none;
+  z-index: 85;
+  box-shadow: 0 20px 65px #000b;
+}
+.board-preview .zoom-art img {
+  max-height: calc(100dvh - 132px);
+  object-fit: contain;
+}
+.board-preview h3 {
+  margin-top: 4px;
+}
+.keyword-badges {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  z-index: 2;
+}
+.keyword-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 7px;
+  border: 1px solid #b8c28d;
+  border-radius: 12px;
+  background: #293e33f5;
+  box-shadow: 0 2px 6px #0008;
+  color: #f2f1d4;
+  font-size: 11px;
+  line-height: 1.15;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.keyword-badge > span {
+  font-size: 14px;
+}
+.active-abilities {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #b9c38b44;
+}
+.active-abilities h4 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #c7d3a7;
+}
+.ability-detail + .ability-detail {
+  margin-top: 14px;
+}
+.ability-detail strong {
+  color: #e4eccb;
+  font-size: 16px;
+}
+.card-inspector .ability-detail p {
+  margin: 4px 0 6px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ability-detail small {
+  display: block;
+  color: #c7d3a7;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.live-stats {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #e9d6b1;
+}
+@media (max-width: 700px) {
+  .card-inspector.board-preview {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .board-preview .zoom-art img {
+    max-height: 45dvh;
+  }
+}
+
+.card-inspector.pointer-preview {
+  right: auto;
+  bottom: auto;
+  max-height: calc(100dvh - 96px);
+  animation: none;
+}
+.card-inspector.following-pointer {
+  pointer-events: none;
+}
+.card-inspector.pointer-preview .zoom-art img {
+  max-height: calc(100dvh - 132px);
+}
+.card-inspector.pointer-preview .preview-details {
+  max-height: none;
+  overflow: visible;
+}

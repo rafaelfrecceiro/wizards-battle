@@ -1,0 +1,31 @@
+{
+  "ui": "0.2.3",
+  "health": {
+    "ok": true,
+    "name": "Wizards Battle",
+    "version": "wb-0.2.0/rules-0.3-trigger-order/ac500ad45d98/7e65b53aa899",
+    "sessions": 3
+  },
+  "assets": [
+    {
+      "arquivo": "/assets/index-DNVnECKd.js",
+      "status": 200,
+      "bytes": 254935,
+      "sha256": "e53333b217e75b14ce5b91a7cefef1a8fe8cada21c4919995a7a8b2172164709",
+      "igualAoBuild": true
+    },
+    {
+      "arquivo": "/assets/index-DwzGRY5O.css",
+      "status": 200,
+      "bytes": 35321,
+      "sha256": "d55404bb5583c4fc140acc323f1f31b0bb190e3c911d892ec12c08ce0db7d82b",
+      "igualAoBuild": true
+    }
+  ],
+  "marcadoresDaRevisao": true,
+  "testes": {
+    "total": 60,
+    "aprovados": 60,
+    "falhas": 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "sourceVersion": "wb-0.2.0/rules-0.3-trigger-order/ac500ad45d98/7e65b53aa899",
+  "requests": 53,
+  "actions": 50,
+  "turns": 10,
+  "originalViewEqualsRestored": true,
+  "replayEqualsRestored": true,
+  "isolatedQaSession": true
+}

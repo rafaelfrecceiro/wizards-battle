@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "requests": 8,
+  "lan": "http://192.168.15.27:4183",
+  "remote": "https://pretty-packet-fleece-thermal.trycloudflare.com",
+  "checks": [
+    "criação LAN",
+    "entrada HTTPS",
+    "Origem pública autorizada",
+    "mão do outro jogador oculta",
+    "ação HTTPS sincronizada na LAN",
+    "resultado consistente",
+    "replay final pelo túnel"
+  ]
+}

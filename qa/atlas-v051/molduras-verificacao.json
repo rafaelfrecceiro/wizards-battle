@@ -1,0 +1,68 @@
+{
+  "page": [
+    1280,
+    720
+  ],
+  "panels": [
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0)",
+      "shadow": "none"
+    }
+  ],
+  "rituals": [
+    {
+      "height": 64,
+      "scrollHeight": 64,
+      "scrollWidth": 205,
+      "width": 205
+    },
+    {
+      "height": 64,
+      "scrollHeight": 64,
+      "scrollWidth": 205,
+      "width": 205
+    },
+    {
+      "height": 64,
+      "scrollHeight": 64,
+      "scrollWidth": 205,
+      "width": 205
+    },
+    {
+      "height": 64,
+      "scrollHeight": 64,
+      "scrollWidth": 205,
+      "width": 205
+    }
+  ],
+  "viewport": [
+    1280,
+    720
+  ]
+}

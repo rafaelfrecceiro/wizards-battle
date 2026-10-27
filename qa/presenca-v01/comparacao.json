@@ -1,0 +1,352 @@
+{
+  "status": "proposta-modelada-nao-implementada-nas-partidas",
+  "scenario": "Eco dos Soterrados sacrificado no turno 1; Despertar próprio no turno 3; Silenciar o Motor sacrificado; tentativa de Catadora de Lamparinas; Despertar seguinte.",
+  "steps": [
+    "Eco vira fonte",
+    "Despertar: captura 2",
+    "Novo sacrifício: captura 3",
+    "Tentar conjurar Catadora",
+    "Próximo Despertar"
+  ],
+  "policies": {
+    "base": {
+      "name": "Regra atual",
+      "note": "Presença depende do campo e de fontes ativas."
+    },
+    "extended": {
+      "name": "Duração integral",
+      "note": "Variante existente. A fonte gera uma vez a mais; Cinzas chegam depois."
+    },
+    "links": {
+      "name": "Vínculos de escola",
+      "note": "Proposta: cada fonte criada deixa +1 permanente por escola; fontes não contam novamente. Energia/Cinzas seguem a base."
+    }
+  },
+  "traces": {
+    "wait": {
+      "base": [
+        {
+          "energy": 2,
+          "shadow": 1,
+          "sources": 1,
+          "ashes": 0,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 2,
+          "shadow": 0,
+          "sources": 0,
+          "ashes": 1,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": false
+        },
+        {
+          "energy": 4,
+          "shadow": 0,
+          "sources": 0,
+          "ashes": 2,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": false
+        },
+        {
+          "energy": 4,
+          "shadow": 0,
+          "sources": 0,
+          "ashes": 2,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": false
+        },
+        {
+          "energy": 0,
+          "shadow": 0,
+          "sources": 0,
+          "ashes": 2,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": false
+        }
+      ],
+      "extended": [
+        {
+          "energy": 2,
+          "shadow": 1,
+          "sources": 1,
+          "ashes": 0,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 2,
+          "shadow": 1,
+          "sources": 1,
+          "ashes": 0,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 4,
+          "shadow": 2,
+          "sources": 2,
+          "ashes": 0,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 4,
+          "shadow": 2,
+          "sources": 2,
+          "ashes": 0,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 4,
+          "shadow": 0,
+          "sources": 0,
+          "ashes": 2,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": false
+        }
+      ],
+      "links": [
+        {
+          "energy": 2,
+          "shadow": 1,
+          "sources": 1,
+          "ashes": 0,
+          "links": 1,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 2,
+          "shadow": 1,
+          "sources": 0,
+          "ashes": 1,
+          "links": 1,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 4,
+          "shadow": 2,
+          "sources": 0,
+          "ashes": 2,
+          "links": 2,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 4,
+          "shadow": 2,
+          "sources": 0,
+          "ashes": 2,
+          "links": 2,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 0,
+          "shadow": 2,
+          "sources": 0,
+          "ashes": 2,
+          "links": 2,
+          "monsters": 0,
+          "canCastCatadora": false
+        }
+      ]
+    },
+    "cast": {
+      "base": [
+        {
+          "energy": 2,
+          "shadow": 1,
+          "sources": 1,
+          "ashes": 0,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 2,
+          "shadow": 0,
+          "sources": 0,
+          "ashes": 1,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": false
+        },
+        {
+          "energy": 4,
+          "shadow": 0,
+          "sources": 0,
+          "ashes": 2,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": false
+        },
+        {
+          "energy": 4,
+          "shadow": 0,
+          "sources": 0,
+          "ashes": 2,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": false
+        },
+        {
+          "energy": 0,
+          "shadow": 0,
+          "sources": 0,
+          "ashes": 2,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": false
+        }
+      ],
+      "extended": [
+        {
+          "energy": 2,
+          "shadow": 1,
+          "sources": 1,
+          "ashes": 0,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 2,
+          "shadow": 1,
+          "sources": 1,
+          "ashes": 0,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 4,
+          "shadow": 2,
+          "sources": 2,
+          "ashes": 0,
+          "links": 0,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 2,
+          "shadow": 3,
+          "sources": 2,
+          "ashes": 0,
+          "links": 0,
+          "monsters": 1,
+          "canCastCatadora": false
+        },
+        {
+          "energy": 4,
+          "shadow": 1,
+          "sources": 0,
+          "ashes": 2,
+          "links": 0,
+          "monsters": 1,
+          "canCastCatadora": false
+        }
+      ],
+      "links": [
+        {
+          "energy": 2,
+          "shadow": 1,
+          "sources": 1,
+          "ashes": 0,
+          "links": 1,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 2,
+          "shadow": 1,
+          "sources": 0,
+          "ashes": 1,
+          "links": 1,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 4,
+          "shadow": 2,
+          "sources": 0,
+          "ashes": 2,
+          "links": 2,
+          "monsters": 0,
+          "canCastCatadora": true
+        },
+        {
+          "energy": 2,
+          "shadow": 3,
+          "sources": 0,
+          "ashes": 2,
+          "links": 2,
+          "monsters": 1,
+          "canCastCatadora": false
+        },
+        {
+          "energy": 0,
+          "shadow": 3,
+          "sources": 0,
+          "ashes": 2,
+          "links": 2,
+          "monsters": 1,
+          "canCastCatadora": false
+        }
+      ]
+    }
+  },
+  "shortSources": [
+    {
+      "deck": "Queimada",
+      "total": 40,
+      "durationOneCopies": 7
+    },
+    {
+      "deck": "Pira",
+      "total": 40,
+      "durationOneCopies": 13
+    },
+    {
+      "deck": "Vapor",
+      "total": 40,
+      "durationOneCopies": 7
+    },
+    {
+      "deck": "Decomposição",
+      "total": 40,
+      "durationOneCopies": 2
+    },
+    {
+      "deck": "Estações",
+      "total": 40,
+      "durationOneCopies": 0
+    },
+    {
+      "deck": "Ilusão",
+      "total": 40,
+      "durationOneCopies": 2
+    }
+  ],
+  "catalogueCards": 80,
+  "limitations": [
+    "modelo isolado e determinístico",
+    "vínculos não implementados no motor/bot de partidas",
+    "sem avaliação de vitória/diversão humana",
+    "comparação cobre transições básicas de fontes e Catadora; outras interações exigem testes"
+  ]
+}

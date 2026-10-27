@@ -1,0 +1,7 @@
+{
+  "engine/engine.ts": "2b6c77fac99d5ae78c4ba6cea33020cf25876b9f63774b4e2e624c584b0573ad",
+  "engine/decks.ts": "fc0fbebfefb07c6e34892f6af50fe3f44bc1c6a2d05397043ec364b71fa15f87",
+  "data/cartas.json": "ac500ad45d989a82a5f55b58bbb5c217b964797592e76f320887213c13757614",
+  "data/baralhos.json": "7e65b53aa899e4f838d6c2e7ed4a9779add8b2e12532fd0f01227cb719d68ec5",
+  "data/identity.json": "af60b54375026d75e6c8659e9eb2280da23d9aa078537435fac660e10f60a83b"
+}

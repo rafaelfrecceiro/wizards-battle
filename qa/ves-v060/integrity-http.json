@@ -1,0 +1,371 @@
+{
+  "data": {
+    "data/cartas.json": {
+      "before": "ac500ad45d989a82a5f55b58bbb5c217b964797592e76f320887213c13757614",
+      "now": "ac500ad45d989a82a5f55b58bbb5c217b964797592e76f320887213c13757614",
+      "equal": true
+    },
+    "data/baralhos.json": {
+      "before": "7e65b53aa899e4f838d6c2e7ed4a9779add8b2e12532fd0f01227cb719d68ec5",
+      "now": "7e65b53aa899e4f838d6c2e7ed4a9779add8b2e12532fd0f01227cb719d68ec5",
+      "equal": true
+    },
+    "data/identity.json": {
+      "before": "af60b54375026d75e6c8659e9eb2280da23d9aa078537435fac660e10f60a83b",
+      "now": "af60b54375026d75e6c8659e9eb2280da23d9aa078537435fac660e10f60a83b",
+      "equal": true
+    }
+  },
+  "originalArts": [
+    {
+      "id": "VES-001",
+      "equal": true
+    },
+    {
+      "id": "VES-002",
+      "equal": true
+    },
+    {
+      "id": "VES-003",
+      "equal": true
+    },
+    {
+      "id": "VES-004",
+      "equal": true
+    },
+    {
+      "id": "VES-005",
+      "equal": true
+    },
+    {
+      "id": "VES-006",
+      "equal": true
+    },
+    {
+      "id": "VES-007",
+      "equal": true
+    },
+    {
+      "id": "VES-008",
+      "equal": true
+    },
+    {
+      "id": "VES-009",
+      "equal": true
+    },
+    {
+      "id": "VES-010",
+      "equal": true
+    },
+    {
+      "id": "VES-011",
+      "equal": true
+    },
+    {
+      "id": "VES-012",
+      "equal": true
+    },
+    {
+      "id": "VES-013",
+      "equal": true
+    },
+    {
+      "id": "VES-014",
+      "equal": true
+    },
+    {
+      "id": "VES-015",
+      "equal": true
+    },
+    {
+      "id": "VES-016",
+      "equal": true
+    },
+    {
+      "id": "VES-017",
+      "equal": true
+    },
+    {
+      "id": "VES-018",
+      "equal": true
+    },
+    {
+      "id": "VES-019",
+      "equal": true
+    },
+    {
+      "id": "VES-020",
+      "equal": true
+    },
+    {
+      "id": "VES-021",
+      "equal": true
+    },
+    {
+      "id": "VES-022",
+      "equal": true
+    },
+    {
+      "id": "VES-023",
+      "equal": true
+    },
+    {
+      "id": "VES-024",
+      "equal": true
+    },
+    {
+      "id": "VES-025",
+      "equal": true
+    },
+    {
+      "id": "VES-026",
+      "equal": true
+    },
+    {
+      "id": "VES-027",
+      "equal": true
+    },
+    {
+      "id": "VES-028",
+      "equal": true
+    },
+    {
+      "id": "VES-029",
+      "equal": true
+    },
+    {
+      "id": "VES-030",
+      "equal": true
+    },
+    {
+      "id": "VES-031",
+      "equal": true
+    },
+    {
+      "id": "VES-032",
+      "equal": true
+    },
+    {
+      "id": "VES-033",
+      "equal": true
+    },
+    {
+      "id": "VES-034",
+      "equal": true
+    },
+    {
+      "id": "VES-035",
+      "equal": true
+    },
+    {
+      "id": "VES-036",
+      "equal": true
+    },
+    {
+      "id": "VES-037",
+      "equal": true
+    },
+    {
+      "id": "VES-038",
+      "equal": true
+    },
+    {
+      "id": "VES-039",
+      "equal": true
+    },
+    {
+      "id": "VES-040",
+      "equal": true
+    },
+    {
+      "id": "VES-041",
+      "equal": true
+    },
+    {
+      "id": "VES-042",
+      "equal": true
+    },
+    {
+      "id": "VES-043",
+      "equal": true
+    },
+    {
+      "id": "VES-044",
+      "equal": true
+    },
+    {
+      "id": "VES-045",
+      "equal": true
+    },
+    {
+      "id": "VES-046",
+      "equal": true
+    },
+    {
+      "id": "VES-047",
+      "equal": true
+    },
+    {
+      "id": "VES-048",
+      "equal": true
+    },
+    {
+      "id": "VES-049",
+      "equal": true
+    },
+    {
+      "id": "VES-050",
+      "equal": true
+    },
+    {
+      "id": "VES-051",
+      "equal": true
+    },
+    {
+      "id": "VES-052",
+      "equal": true
+    },
+    {
+      "id": "VES-053",
+      "equal": true
+    },
+    {
+      "id": "VES-054",
+      "equal": true
+    },
+    {
+      "id": "VES-055",
+      "equal": true
+    },
+    {
+      "id": "VES-056",
+      "equal": true
+    },
+    {
+      "id": "VES-057",
+      "equal": true
+    },
+    {
+      "id": "VES-058",
+      "equal": true
+    },
+    {
+      "id": "VES-059",
+      "equal": true
+    },
+    {
+      "id": "VES-060",
+      "equal": true
+    },
+    {
+      "id": "VES-061",
+      "equal": true
+    },
+    {
+      "id": "VES-062",
+      "equal": true
+    },
+    {
+      "id": "VES-063",
+      "equal": true
+    },
+    {
+      "id": "VES-064",
+      "equal": true
+    },
+    {
+      "id": "VES-065",
+      "equal": true
+    },
+    {
+      "id": "VES-066",
+      "equal": true
+    },
+    {
+      "id": "VES-067",
+      "equal": true
+    },
+    {
+      "id": "VES-068",
+      "equal": true
+    },
+    {
+      "id": "VES-069",
+      "equal": true
+    },
+    {
+      "id": "VES-070",
+      "equal": true
+    },
+    {
+      "id": "VES-071",
+      "equal": true
+    },
+    {
+      "id": "VES-072",
+      "equal": true
+    },
+    {
+      "id": "VES-073",
+      "equal": true
+    },
+    {
+      "id": "VES-074",
+      "equal": true
+    },
+    {
+      "id": "VES-075",
+      "equal": true
+    },
+    {
+      "id": "VES-076",
+      "equal": true
+    },
+    {
+      "id": "VES-077",
+      "equal": true
+    },
+    {
+      "id": "VES-078",
+      "equal": true
+    },
+    {
+      "id": "VES-079",
+      "equal": true
+    },
+    {
+      "id": "VES-080",
+      "equal": true
+    }
+  ],
+  "static": [
+    {
+      "file": "index.html",
+      "equal": true,
+      "bytes": 388
+    },
+    {
+      "file": "assets/main-DbOQdKK_.js",
+      "equal": true,
+      "bytes": 347368
+    },
+    {
+      "file": "assets/main-0HUI4fBY.css",
+      "equal": true,
+      "bytes": 75652
+    }
+  ],
+  "oldServer": {
+    "ok": true,
+    "name": "Wizards Battle",
+    "version": "wb-0.5.0/rules-escolas-v1/ac500ad45d98/7e65b53aa899",
+    "sessions": 0
+  },
+  "newServer": {
+    "ok": true,
+    "name": "Wizards Battle",
+    "version": "wb-0.6.0/rules-ves-complete/ac500ad45d98/7e65b53aa899",
+    "sessions": 9
+  },
+  "legacyEngine": "projetos\\wizards-battle\\src\\engine\\legacy\\engine-v05.ts"
+}

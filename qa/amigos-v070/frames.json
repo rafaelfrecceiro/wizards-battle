@@ -1,0 +1,14 @@
+{
+  "method": "requestAnimationFrame opt-in, janela móvel de 180 amostras; inclui animações CSS e atualização de reposicionamento remoto, sem profiler GPU/latência ponta a ponta",
+  "sample": {
+    "frames": 11460,
+    "animationFrames": 11457,
+    "samples": 180,
+    "meanMs": 16.665555555555652,
+    "p95Ms": 16.800000000017462,
+    "maxMs": 17.199999999982538,
+    "width": 1280,
+    "height": 720,
+    "hidden": false
+  }
+}

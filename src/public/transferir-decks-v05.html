@@ -1,0 +1,7 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Transferência local de decks</title><script>
+addEventListener('message',event=>{
+  if(location.origin!=='http://127.0.0.1:4181'||event.origin!=='http://127.0.0.1:4182'||event.source!==parent||event.data?.type!=='wb-read-decks'||typeof event.data.nonce!=='string')return;
+  let raw=null;try{raw=localStorage.getItem('wb-decks-v1')}catch{}
+  parent.postMessage({type:'wb-decks-v05',nonce:event.data.nonce,raw},event.origin);
+});
+</script><p>Cópia explícita de listas. Sessões e partidas não são transferidas.</p></html>

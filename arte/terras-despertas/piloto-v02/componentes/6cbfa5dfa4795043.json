@@ -1,0 +1,50 @@
+{
+  "source": "arte\\referencia-fixa\\prototipo-aprovado.png",
+  "box": [
+    539,
+    141,
+    934,
+    204
+  ],
+  "source_school": "Chama",
+  "target_school": "Raiz",
+  "polygon": [
+    [
+      541,
+      143
+    ],
+    [
+      932,
+      143
+    ],
+    [
+      895,
+      182
+    ],
+    [
+      642,
+      182
+    ],
+    [
+      625,
+      202
+    ],
+    [
+      564,
+      202
+    ],
+    [
+      548,
+      186
+    ],
+    [
+      541,
+      172
+    ]
+  ],
+  "native_size": [
+    395,
+    63
+  ],
+  "method": "PDF vector component rendered once with PDFium at native 1 px/pt, transparent background; original PNG unmodified"
+}

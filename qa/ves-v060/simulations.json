@@ -1,0 +1,3623 @@
+{
+  "version": "wb-0.6.0/rules-ves-complete/ac500ad45d98/7e65b53aa899",
+  "method": "Bot heurístico, 21 pares incluindo espelhos × 3 variantes × 2 seeds × 2 primeiros jogadores. Não mede diversão ou equilíbrio humano.",
+  "games": 252,
+  "finished": 252,
+  "uniqueCast": 74,
+  "missingCast": [
+    "VES-008",
+    "VES-015",
+    "VES-029",
+    "VES-050",
+    "VES-061",
+    "VES-069"
+  ],
+  "maxTurns": 65,
+  "elapsedMs": 36049,
+  "casts": {
+    "VES-036": 278,
+    "VES-022": 62,
+    "VES-011": 286,
+    "VES-003": 86,
+    "VES-002": 256,
+    "VES-025": 193,
+    "VES-006": 62,
+    "VES-009": 153,
+    "VES-043": 18,
+    "VES-040": 159,
+    "VES-044": 91,
+    "VES-034": 50,
+    "VES-032": 136,
+    "VES-046": 87,
+    "VES-045": 111,
+    "VES-042": 75,
+    "VES-035": 66,
+    "VES-007": 29,
+    "VES-037": 15,
+    "VES-047": 225,
+    "VES-017": 55,
+    "VES-048": 203,
+    "VES-031": 50,
+    "VES-072": 6,
+    "VES-055": 32,
+    "VES-054": 29,
+    "VES-057": 83,
+    "VES-033": 41,
+    "VES-016": 79,
+    "VES-012": 16,
+    "VES-062": 130,
+    "VES-067": 30,
+    "VES-059": 19,
+    "VES-058": 285,
+    "VES-001": 23,
+    "VES-026": 13,
+    "VES-018": 159,
+    "VES-064": 212,
+    "VES-065": 25,
+    "VES-021": 84,
+    "VES-056": 45,
+    "VES-068": 82,
+    "VES-052": 78,
+    "VES-014": 82,
+    "VES-080": 68,
+    "VES-053": 38,
+    "VES-004": 49,
+    "VES-005": 46,
+    "VES-027": 12,
+    "VES-028": 15,
+    "VES-020": 1,
+    "VES-049": 1,
+    "VES-079": 27,
+    "VES-051": 17,
+    "VES-019": 42,
+    "VES-030": 10,
+    "VES-066": 19,
+    "VES-073": 15,
+    "VES-075": 8,
+    "VES-076": 4,
+    "VES-060": 10,
+    "VES-041": 7,
+    "VES-023": 3,
+    "VES-039": 1,
+    "VES-070": 4,
+    "VES-038": 3,
+    "VES-071": 4,
+    "VES-078": 1,
+    "VES-077": 4,
+    "VES-024": 3,
+    "VES-063": 2,
+    "VES-074": 2,
+    "VES-010": 1,
+    "VES-013": 1
+  },
+  "results": [
+    {
+      "config": {
+        "seed": 606000,
+        "decks": [
+          "Queimada",
+          "Queimada"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 101
+    },
+    {
+      "config": {
+        "seed": 606001,
+        "decks": [
+          "Queimada",
+          "Queimada"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 55,
+      "actions": 209
+    },
+    {
+      "config": {
+        "seed": 606010,
+        "decks": [
+          "Queimada",
+          "Queimada"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 57,
+      "actions": 232
+    },
+    {
+      "config": {
+        "seed": 606011,
+        "decks": [
+          "Queimada",
+          "Queimada"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 84
+    },
+    {
+      "config": {
+        "seed": 606100,
+        "decks": [
+          "Queimada",
+          "Pira"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 28,
+      "actions": 122
+    },
+    {
+      "config": {
+        "seed": 606101,
+        "decks": [
+          "Queimada",
+          "Pira"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 11,
+      "actions": 60
+    },
+    {
+      "config": {
+        "seed": 606110,
+        "decks": [
+          "Queimada",
+          "Pira"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 12,
+      "actions": 57
+    },
+    {
+      "config": {
+        "seed": 606111,
+        "decks": [
+          "Queimada",
+          "Pira"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 18,
+      "actions": 91
+    },
+    {
+      "config": {
+        "seed": 606200,
+        "decks": [
+          "Queimada",
+          "Vapor"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 107
+    },
+    {
+      "config": {
+        "seed": 606201,
+        "decks": [
+          "Queimada",
+          "Vapor"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 25,
+      "actions": 108
+    },
+    {
+      "config": {
+        "seed": 606210,
+        "decks": [
+          "Queimada",
+          "Vapor"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 47,
+      "actions": 209
+    },
+    {
+      "config": {
+        "seed": 606211,
+        "decks": [
+          "Queimada",
+          "Vapor"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 33,
+      "actions": 146
+    },
+    {
+      "config": {
+        "seed": 606300,
+        "decks": [
+          "Queimada",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 90
+    },
+    {
+      "config": {
+        "seed": 606301,
+        "decks": [
+          "Queimada",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 28,
+      "actions": 124
+    },
+    {
+      "config": {
+        "seed": 606310,
+        "decks": [
+          "Queimada",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 77
+    },
+    {
+      "config": {
+        "seed": 606311,
+        "decks": [
+          "Queimada",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 46,
+      "actions": 195
+    },
+    {
+      "config": {
+        "seed": 606400,
+        "decks": [
+          "Queimada",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 17,
+      "actions": 82
+    },
+    {
+      "config": {
+        "seed": 606401,
+        "decks": [
+          "Queimada",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 79
+    },
+    {
+      "config": {
+        "seed": 606410,
+        "decks": [
+          "Queimada",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 16,
+      "actions": 80
+    },
+    {
+      "config": {
+        "seed": 606411,
+        "decks": [
+          "Queimada",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 75
+    },
+    {
+      "config": {
+        "seed": 606500,
+        "decks": [
+          "Queimada",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 32,
+      "actions": 138
+    },
+    {
+      "config": {
+        "seed": 606501,
+        "decks": [
+          "Queimada",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 18,
+      "actions": 108
+    },
+    {
+      "config": {
+        "seed": 606510,
+        "decks": [
+          "Queimada",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 29,
+      "actions": 120
+    },
+    {
+      "config": {
+        "seed": 606511,
+        "decks": [
+          "Queimada",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 25,
+      "actions": 107
+    },
+    {
+      "config": {
+        "seed": 607100,
+        "decks": [
+          "Pira",
+          "Pira"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 90
+    },
+    {
+      "config": {
+        "seed": 607101,
+        "decks": [
+          "Pira",
+          "Pira"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 71
+    },
+    {
+      "config": {
+        "seed": 607110,
+        "decks": [
+          "Pira",
+          "Pira"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 9,
+      "actions": 46
+    },
+    {
+      "config": {
+        "seed": 607111,
+        "decks": [
+          "Pira",
+          "Pira"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 41,
+      "actions": 155
+    },
+    {
+      "config": {
+        "seed": 607200,
+        "decks": [
+          "Pira",
+          "Vapor"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 60
+    },
+    {
+      "config": {
+        "seed": 607201,
+        "decks": [
+          "Pira",
+          "Vapor"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 97
+    },
+    {
+      "config": {
+        "seed": 607210,
+        "decks": [
+          "Pira",
+          "Vapor"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 22,
+      "actions": 101
+    },
+    {
+      "config": {
+        "seed": 607211,
+        "decks": [
+          "Pira",
+          "Vapor"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 28,
+      "actions": 131
+    },
+    {
+      "config": {
+        "seed": 607300,
+        "decks": [
+          "Pira",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 60
+    },
+    {
+      "config": {
+        "seed": 607301,
+        "decks": [
+          "Pira",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 12,
+      "actions": 63
+    },
+    {
+      "config": {
+        "seed": 607310,
+        "decks": [
+          "Pira",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 64
+    },
+    {
+      "config": {
+        "seed": 607311,
+        "decks": [
+          "Pira",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 18,
+      "actions": 82
+    },
+    {
+      "config": {
+        "seed": 607400,
+        "decks": [
+          "Pira",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 83
+    },
+    {
+      "config": {
+        "seed": 607401,
+        "decks": [
+          "Pira",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 18,
+      "actions": 87
+    },
+    {
+      "config": {
+        "seed": 607410,
+        "decks": [
+          "Pira",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 35,
+      "actions": 150
+    },
+    {
+      "config": {
+        "seed": 607411,
+        "decks": [
+          "Pira",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 73
+    },
+    {
+      "config": {
+        "seed": 607500,
+        "decks": [
+          "Pira",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 14,
+      "actions": 68
+    },
+    {
+      "config": {
+        "seed": 607501,
+        "decks": [
+          "Pira",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 17,
+      "actions": 75
+    },
+    {
+      "config": {
+        "seed": 607510,
+        "decks": [
+          "Pira",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 61
+    },
+    {
+      "config": {
+        "seed": 607511,
+        "decks": [
+          "Pira",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 95
+    },
+    {
+      "config": {
+        "seed": 608200,
+        "decks": [
+          "Vapor",
+          "Vapor"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 16,
+      "actions": 82
+    },
+    {
+      "config": {
+        "seed": 608201,
+        "decks": [
+          "Vapor",
+          "Vapor"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 12,
+      "actions": 68
+    },
+    {
+      "config": {
+        "seed": 608210,
+        "decks": [
+          "Vapor",
+          "Vapor"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 96
+    },
+    {
+      "config": {
+        "seed": 608211,
+        "decks": [
+          "Vapor",
+          "Vapor"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 11,
+      "actions": 59
+    },
+    {
+      "config": {
+        "seed": 608300,
+        "decks": [
+          "Vapor",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 78
+    },
+    {
+      "config": {
+        "seed": 608301,
+        "decks": [
+          "Vapor",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 32,
+      "actions": 134
+    },
+    {
+      "config": {
+        "seed": 608310,
+        "decks": [
+          "Vapor",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 89
+    },
+    {
+      "config": {
+        "seed": 608311,
+        "decks": [
+          "Vapor",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 12,
+      "actions": 63
+    },
+    {
+      "config": {
+        "seed": 608400,
+        "decks": [
+          "Vapor",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 24,
+      "actions": 116
+    },
+    {
+      "config": {
+        "seed": 608401,
+        "decks": [
+          "Vapor",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 36,
+      "actions": 169
+    },
+    {
+      "config": {
+        "seed": 608410,
+        "decks": [
+          "Vapor",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 62
+    },
+    {
+      "config": {
+        "seed": 608411,
+        "decks": [
+          "Vapor",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 17,
+      "actions": 87
+    },
+    {
+      "config": {
+        "seed": 608500,
+        "decks": [
+          "Vapor",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 72
+    },
+    {
+      "config": {
+        "seed": 608501,
+        "decks": [
+          "Vapor",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 18,
+      "actions": 94
+    },
+    {
+      "config": {
+        "seed": 608510,
+        "decks": [
+          "Vapor",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 61
+    },
+    {
+      "config": {
+        "seed": 608511,
+        "decks": [
+          "Vapor",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 58,
+      "actions": 233
+    },
+    {
+      "config": {
+        "seed": 609300,
+        "decks": [
+          "Decomposição",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 17,
+      "actions": 79
+    },
+    {
+      "config": {
+        "seed": 609301,
+        "decks": [
+          "Decomposição",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 20,
+      "actions": 91
+    },
+    {
+      "config": {
+        "seed": 609310,
+        "decks": [
+          "Decomposição",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 22,
+      "actions": 101
+    },
+    {
+      "config": {
+        "seed": 609311,
+        "decks": [
+          "Decomposição",
+          "Decomposição"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 63
+    },
+    {
+      "config": {
+        "seed": 609400,
+        "decks": [
+          "Decomposição",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 24,
+      "actions": 112
+    },
+    {
+      "config": {
+        "seed": 609401,
+        "decks": [
+          "Decomposição",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 119
+    },
+    {
+      "config": {
+        "seed": 609410,
+        "decks": [
+          "Decomposição",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 20,
+      "actions": 90
+    },
+    {
+      "config": {
+        "seed": 609411,
+        "decks": [
+          "Decomposição",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 30,
+      "actions": 153
+    },
+    {
+      "config": {
+        "seed": 609500,
+        "decks": [
+          "Decomposição",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 14,
+      "actions": 66
+    },
+    {
+      "config": {
+        "seed": 609501,
+        "decks": [
+          "Decomposição",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 22,
+      "actions": 100
+    },
+    {
+      "config": {
+        "seed": 609510,
+        "decks": [
+          "Decomposição",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 14,
+      "actions": 73
+    },
+    {
+      "config": {
+        "seed": 609511,
+        "decks": [
+          "Decomposição",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 86
+    },
+    {
+      "config": {
+        "seed": 610400,
+        "decks": [
+          "Estações",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 16,
+      "actions": 102
+    },
+    {
+      "config": {
+        "seed": 610401,
+        "decks": [
+          "Estações",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 120
+    },
+    {
+      "config": {
+        "seed": 610410,
+        "decks": [
+          "Estações",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 23,
+      "actions": 107
+    },
+    {
+      "config": {
+        "seed": 610411,
+        "decks": [
+          "Estações",
+          "Estações"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 65,
+      "actions": 253
+    },
+    {
+      "config": {
+        "seed": 610500,
+        "decks": [
+          "Estações",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 14,
+      "actions": 75
+    },
+    {
+      "config": {
+        "seed": 610501,
+        "decks": [
+          "Estações",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 107
+    },
+    {
+      "config": {
+        "seed": 610510,
+        "decks": [
+          "Estações",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 17,
+      "actions": 84
+    },
+    {
+      "config": {
+        "seed": 610511,
+        "decks": [
+          "Estações",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 126
+    },
+    {
+      "config": {
+        "seed": 611500,
+        "decks": [
+          "Ilusão",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 85
+    },
+    {
+      "config": {
+        "seed": 611501,
+        "decks": [
+          "Ilusão",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 25,
+      "actions": 126
+    },
+    {
+      "config": {
+        "seed": 611510,
+        "decks": [
+          "Ilusão",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 61
+    },
+    {
+      "config": {
+        "seed": 611511,
+        "decks": [
+          "Ilusão",
+          "Ilusão"
+        ],
+        "variant": "base-0.3",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 30,
+      "actions": 142
+    },
+    {
+      "config": {
+        "seed": 606000,
+        "decks": [
+          "Queimada",
+          "Queimada"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 20,
+      "actions": 95
+    },
+    {
+      "config": {
+        "seed": 606001,
+        "decks": [
+          "Queimada",
+          "Queimada"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 96
+    },
+    {
+      "config": {
+        "seed": 606010,
+        "decks": [
+          "Queimada",
+          "Queimada"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 53,
+      "actions": 212
+    },
+    {
+      "config": {
+        "seed": 606011,
+        "decks": [
+          "Queimada",
+          "Queimada"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 122
+    },
+    {
+      "config": {
+        "seed": 606100,
+        "decks": [
+          "Queimada",
+          "Pira"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 24,
+      "actions": 109
+    },
+    {
+      "config": {
+        "seed": 606101,
+        "decks": [
+          "Queimada",
+          "Pira"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 28,
+      "actions": 128
+    },
+    {
+      "config": {
+        "seed": 606110,
+        "decks": [
+          "Queimada",
+          "Pira"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 43,
+      "actions": 169
+    },
+    {
+      "config": {
+        "seed": 606111,
+        "decks": [
+          "Queimada",
+          "Pira"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 35,
+      "actions": 167
+    },
+    {
+      "config": {
+        "seed": 606200,
+        "decks": [
+          "Queimada",
+          "Vapor"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 109
+    },
+    {
+      "config": {
+        "seed": 606201,
+        "decks": [
+          "Queimada",
+          "Vapor"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 45,
+      "actions": 181
+    },
+    {
+      "config": {
+        "seed": 606210,
+        "decks": [
+          "Queimada",
+          "Vapor"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 35,
+      "actions": 178
+    },
+    {
+      "config": {
+        "seed": 606211,
+        "decks": [
+          "Queimada",
+          "Vapor"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 101
+    },
+    {
+      "config": {
+        "seed": 606300,
+        "decks": [
+          "Queimada",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 23,
+      "actions": 127
+    },
+    {
+      "config": {
+        "seed": 606301,
+        "decks": [
+          "Queimada",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 40,
+      "actions": 170
+    },
+    {
+      "config": {
+        "seed": 606310,
+        "decks": [
+          "Queimada",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 88
+    },
+    {
+      "config": {
+        "seed": 606311,
+        "decks": [
+          "Queimada",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 28,
+      "actions": 157
+    },
+    {
+      "config": {
+        "seed": 606400,
+        "decks": [
+          "Queimada",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 83
+    },
+    {
+      "config": {
+        "seed": 606401,
+        "decks": [
+          "Queimada",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 33,
+      "actions": 144
+    },
+    {
+      "config": {
+        "seed": 606410,
+        "decks": [
+          "Queimada",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 105
+    },
+    {
+      "config": {
+        "seed": 606411,
+        "decks": [
+          "Queimada",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 36,
+      "actions": 186
+    },
+    {
+      "config": {
+        "seed": 606500,
+        "decks": [
+          "Queimada",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 49,
+      "actions": 189
+    },
+    {
+      "config": {
+        "seed": 606501,
+        "decks": [
+          "Queimada",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 14,
+      "actions": 89
+    },
+    {
+      "config": {
+        "seed": 606510,
+        "decks": [
+          "Queimada",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 37,
+      "actions": 167
+    },
+    {
+      "config": {
+        "seed": 606511,
+        "decks": [
+          "Queimada",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 24,
+      "actions": 112
+    },
+    {
+      "config": {
+        "seed": 607100,
+        "decks": [
+          "Pira",
+          "Pira"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 61
+    },
+    {
+      "config": {
+        "seed": 607101,
+        "decks": [
+          "Pira",
+          "Pira"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 27,
+      "actions": 119
+    },
+    {
+      "config": {
+        "seed": 607110,
+        "decks": [
+          "Pira",
+          "Pira"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 23,
+      "actions": 95
+    },
+    {
+      "config": {
+        "seed": 607111,
+        "decks": [
+          "Pira",
+          "Pira"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 27,
+      "actions": 119
+    },
+    {
+      "config": {
+        "seed": 607200,
+        "decks": [
+          "Pira",
+          "Vapor"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 42,
+      "actions": 174
+    },
+    {
+      "config": {
+        "seed": 607201,
+        "decks": [
+          "Pira",
+          "Vapor"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 83
+    },
+    {
+      "config": {
+        "seed": 607210,
+        "decks": [
+          "Pira",
+          "Vapor"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 48,
+      "actions": 199
+    },
+    {
+      "config": {
+        "seed": 607211,
+        "decks": [
+          "Pira",
+          "Vapor"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 27,
+      "actions": 135
+    },
+    {
+      "config": {
+        "seed": 607300,
+        "decks": [
+          "Pira",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 76
+    },
+    {
+      "config": {
+        "seed": 607301,
+        "decks": [
+          "Pira",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 10,
+      "actions": 64
+    },
+    {
+      "config": {
+        "seed": 607310,
+        "decks": [
+          "Pira",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 9,
+      "actions": 52
+    },
+    {
+      "config": {
+        "seed": 607311,
+        "decks": [
+          "Pira",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 16,
+      "actions": 84
+    },
+    {
+      "config": {
+        "seed": 607400,
+        "decks": [
+          "Pira",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 48,
+      "actions": 195
+    },
+    {
+      "config": {
+        "seed": 607401,
+        "decks": [
+          "Pira",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 98
+    },
+    {
+      "config": {
+        "seed": 607410,
+        "decks": [
+          "Pira",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 13,
+      "actions": 74
+    },
+    {
+      "config": {
+        "seed": 607411,
+        "decks": [
+          "Pira",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 17,
+      "actions": 96
+    },
+    {
+      "config": {
+        "seed": 607500,
+        "decks": [
+          "Pira",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 22,
+      "actions": 102
+    },
+    {
+      "config": {
+        "seed": 607501,
+        "decks": [
+          "Pira",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 29,
+      "actions": 134
+    },
+    {
+      "config": {
+        "seed": 607510,
+        "decks": [
+          "Pira",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 64
+    },
+    {
+      "config": {
+        "seed": 607511,
+        "decks": [
+          "Pira",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 31,
+      "actions": 135
+    },
+    {
+      "config": {
+        "seed": 608200,
+        "decks": [
+          "Vapor",
+          "Vapor"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 16,
+      "actions": 88
+    },
+    {
+      "config": {
+        "seed": 608201,
+        "decks": [
+          "Vapor",
+          "Vapor"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 24,
+      "actions": 121
+    },
+    {
+      "config": {
+        "seed": 608210,
+        "decks": [
+          "Vapor",
+          "Vapor"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 106
+    },
+    {
+      "config": {
+        "seed": 608211,
+        "decks": [
+          "Vapor",
+          "Vapor"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 34,
+      "actions": 165
+    },
+    {
+      "config": {
+        "seed": 608300,
+        "decks": [
+          "Vapor",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 23,
+      "actions": 124
+    },
+    {
+      "config": {
+        "seed": 608301,
+        "decks": [
+          "Vapor",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 26,
+      "actions": 118
+    },
+    {
+      "config": {
+        "seed": 608310,
+        "decks": [
+          "Vapor",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 17,
+      "actions": 81
+    },
+    {
+      "config": {
+        "seed": 608311,
+        "decks": [
+          "Vapor",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 12,
+      "actions": 68
+    },
+    {
+      "config": {
+        "seed": 608400,
+        "decks": [
+          "Vapor",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 28,
+      "actions": 129
+    },
+    {
+      "config": {
+        "seed": 608401,
+        "decks": [
+          "Vapor",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 16,
+      "actions": 87
+    },
+    {
+      "config": {
+        "seed": 608410,
+        "decks": [
+          "Vapor",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 88
+    },
+    {
+      "config": {
+        "seed": 608411,
+        "decks": [
+          "Vapor",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 17,
+      "actions": 90
+    },
+    {
+      "config": {
+        "seed": 608500,
+        "decks": [
+          "Vapor",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 95
+    },
+    {
+      "config": {
+        "seed": 608501,
+        "decks": [
+          "Vapor",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 20,
+      "actions": 109
+    },
+    {
+      "config": {
+        "seed": 608510,
+        "decks": [
+          "Vapor",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 63
+    },
+    {
+      "config": {
+        "seed": 608511,
+        "decks": [
+          "Vapor",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 31,
+      "actions": 139
+    },
+    {
+      "config": {
+        "seed": 609300,
+        "decks": [
+          "Decomposição",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 35,
+      "actions": 136
+    },
+    {
+      "config": {
+        "seed": 609301,
+        "decks": [
+          "Decomposição",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 100
+    },
+    {
+      "config": {
+        "seed": 609310,
+        "decks": [
+          "Decomposição",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 20,
+      "actions": 96
+    },
+    {
+      "config": {
+        "seed": 609311,
+        "decks": [
+          "Decomposição",
+          "Decomposição"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 11,
+      "actions": 56
+    },
+    {
+      "config": {
+        "seed": 609400,
+        "decks": [
+          "Decomposição",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 37,
+      "actions": 160
+    },
+    {
+      "config": {
+        "seed": 609401,
+        "decks": [
+          "Decomposição",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 40,
+      "actions": 180
+    },
+    {
+      "config": {
+        "seed": 609410,
+        "decks": [
+          "Decomposição",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 16,
+      "actions": 80
+    },
+    {
+      "config": {
+        "seed": 609411,
+        "decks": [
+          "Decomposição",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 85
+    },
+    {
+      "config": {
+        "seed": 609500,
+        "decks": [
+          "Decomposição",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 12,
+      "actions": 63
+    },
+    {
+      "config": {
+        "seed": 609501,
+        "decks": [
+          "Decomposição",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 40,
+      "actions": 194
+    },
+    {
+      "config": {
+        "seed": 609510,
+        "decks": [
+          "Decomposição",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 14,
+      "actions": 78
+    },
+    {
+      "config": {
+        "seed": 609511,
+        "decks": [
+          "Decomposição",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 91
+    },
+    {
+      "config": {
+        "seed": 610400,
+        "decks": [
+          "Estações",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 111
+    },
+    {
+      "config": {
+        "seed": 610401,
+        "decks": [
+          "Estações",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 102
+    },
+    {
+      "config": {
+        "seed": 610410,
+        "decks": [
+          "Estações",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 25,
+      "actions": 120
+    },
+    {
+      "config": {
+        "seed": 610411,
+        "decks": [
+          "Estações",
+          "Estações"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 55,
+      "actions": 227
+    },
+    {
+      "config": {
+        "seed": 610500,
+        "decks": [
+          "Estações",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 12,
+      "actions": 71
+    },
+    {
+      "config": {
+        "seed": 610501,
+        "decks": [
+          "Estações",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 89
+    },
+    {
+      "config": {
+        "seed": 610510,
+        "decks": [
+          "Estações",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 102
+    },
+    {
+      "config": {
+        "seed": 610511,
+        "decks": [
+          "Estações",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 17,
+      "actions": 97
+    },
+    {
+      "config": {
+        "seed": 611500,
+        "decks": [
+          "Ilusão",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 22,
+      "actions": 102
+    },
+    {
+      "config": {
+        "seed": 611501,
+        "decks": [
+          "Ilusão",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 16,
+      "actions": 87
+    },
+    {
+      "config": {
+        "seed": 611510,
+        "decks": [
+          "Ilusão",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 101
+    },
+    {
+      "config": {
+        "seed": 611511,
+        "decks": [
+          "Ilusão",
+          "Ilusão"
+        ],
+        "variant": "fontes-estendidas",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 9,
+      "actions": 51
+    },
+    {
+      "config": {
+        "seed": 606000,
+        "decks": [
+          "Queimada",
+          "Queimada"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 39,
+      "actions": 158
+    },
+    {
+      "config": {
+        "seed": 606001,
+        "decks": [
+          "Queimada",
+          "Queimada"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 14,
+      "actions": 74
+    },
+    {
+      "config": {
+        "seed": 606010,
+        "decks": [
+          "Queimada",
+          "Queimada"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 64,
+      "actions": 231
+    },
+    {
+      "config": {
+        "seed": 606011,
+        "decks": [
+          "Queimada",
+          "Queimada"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 37,
+      "actions": 168
+    },
+    {
+      "config": {
+        "seed": 606100,
+        "decks": [
+          "Queimada",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 106
+    },
+    {
+      "config": {
+        "seed": 606101,
+        "decks": [
+          "Queimada",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 15,
+      "actions": 75
+    },
+    {
+      "config": {
+        "seed": 606110,
+        "decks": [
+          "Queimada",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 47,
+      "actions": 191
+    },
+    {
+      "config": {
+        "seed": 606111,
+        "decks": [
+          "Queimada",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 92
+    },
+    {
+      "config": {
+        "seed": 606200,
+        "decks": [
+          "Queimada",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 23,
+      "actions": 112
+    },
+    {
+      "config": {
+        "seed": 606201,
+        "decks": [
+          "Queimada",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 20,
+      "actions": 95
+    },
+    {
+      "config": {
+        "seed": 606210,
+        "decks": [
+          "Queimada",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 22,
+      "actions": 113
+    },
+    {
+      "config": {
+        "seed": 606211,
+        "decks": [
+          "Queimada",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 107
+    },
+    {
+      "config": {
+        "seed": 606300,
+        "decks": [
+          "Queimada",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 29,
+      "actions": 136
+    },
+    {
+      "config": {
+        "seed": 606301,
+        "decks": [
+          "Queimada",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 20,
+      "actions": 100
+    },
+    {
+      "config": {
+        "seed": 606310,
+        "decks": [
+          "Queimada",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 22,
+      "actions": 108
+    },
+    {
+      "config": {
+        "seed": 606311,
+        "decks": [
+          "Queimada",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 31,
+      "actions": 137
+    },
+    {
+      "config": {
+        "seed": 606400,
+        "decks": [
+          "Queimada",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 17,
+      "actions": 90
+    },
+    {
+      "config": {
+        "seed": 606401,
+        "decks": [
+          "Queimada",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 51,
+      "actions": 208
+    },
+    {
+      "config": {
+        "seed": 606410,
+        "decks": [
+          "Queimada",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 101
+    },
+    {
+      "config": {
+        "seed": 606411,
+        "decks": [
+          "Queimada",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 103
+    },
+    {
+      "config": {
+        "seed": 606500,
+        "decks": [
+          "Queimada",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 89
+    },
+    {
+      "config": {
+        "seed": 606501,
+        "decks": [
+          "Queimada",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 16,
+      "actions": 94
+    },
+    {
+      "config": {
+        "seed": 606510,
+        "decks": [
+          "Queimada",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 17,
+      "actions": 96
+    },
+    {
+      "config": {
+        "seed": 606511,
+        "decks": [
+          "Queimada",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 35,
+      "actions": 146
+    },
+    {
+      "config": {
+        "seed": 607100,
+        "decks": [
+          "Pira",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 44,
+      "actions": 167
+    },
+    {
+      "config": {
+        "seed": 607101,
+        "decks": [
+          "Pira",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 25,
+      "actions": 105
+    },
+    {
+      "config": {
+        "seed": 607110,
+        "decks": [
+          "Pira",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 14,
+      "actions": 68
+    },
+    {
+      "config": {
+        "seed": 607111,
+        "decks": [
+          "Pira",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 92
+    },
+    {
+      "config": {
+        "seed": 607200,
+        "decks": [
+          "Pira",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 27,
+      "actions": 120
+    },
+    {
+      "config": {
+        "seed": 607201,
+        "decks": [
+          "Pira",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 96
+    },
+    {
+      "config": {
+        "seed": 607210,
+        "decks": [
+          "Pira",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 20,
+      "actions": 96
+    },
+    {
+      "config": {
+        "seed": 607211,
+        "decks": [
+          "Pira",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 35,
+      "actions": 166
+    },
+    {
+      "config": {
+        "seed": 607300,
+        "decks": [
+          "Pira",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 13,
+      "actions": 67
+    },
+    {
+      "config": {
+        "seed": 607301,
+        "decks": [
+          "Pira",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 14,
+      "actions": 70
+    },
+    {
+      "config": {
+        "seed": 607310,
+        "decks": [
+          "Pira",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 56
+    },
+    {
+      "config": {
+        "seed": 607311,
+        "decks": [
+          "Pira",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 20,
+      "actions": 90
+    },
+    {
+      "config": {
+        "seed": 607400,
+        "decks": [
+          "Pira",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 73
+    },
+    {
+      "config": {
+        "seed": 607401,
+        "decks": [
+          "Pira",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 36,
+      "actions": 165
+    },
+    {
+      "config": {
+        "seed": 607410,
+        "decks": [
+          "Pira",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 56
+    },
+    {
+      "config": {
+        "seed": 607411,
+        "decks": [
+          "Pira",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 43,
+      "actions": 184
+    },
+    {
+      "config": {
+        "seed": 607500,
+        "decks": [
+          "Pira",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 88
+    },
+    {
+      "config": {
+        "seed": 607501,
+        "decks": [
+          "Pira",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 26,
+      "actions": 110
+    },
+    {
+      "config": {
+        "seed": 607510,
+        "decks": [
+          "Pira",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 60
+    },
+    {
+      "config": {
+        "seed": 607511,
+        "decks": [
+          "Pira",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 109
+    },
+    {
+      "config": {
+        "seed": 608200,
+        "decks": [
+          "Vapor",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 40,
+      "actions": 205
+    },
+    {
+      "config": {
+        "seed": 608201,
+        "decks": [
+          "Vapor",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 12,
+      "actions": 71
+    },
+    {
+      "config": {
+        "seed": 608210,
+        "decks": [
+          "Vapor",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 38,
+      "actions": 170
+    },
+    {
+      "config": {
+        "seed": 608211,
+        "decks": [
+          "Vapor",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 44,
+      "actions": 236
+    },
+    {
+      "config": {
+        "seed": 608300,
+        "decks": [
+          "Vapor",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 116
+    },
+    {
+      "config": {
+        "seed": 608301,
+        "decks": [
+          "Vapor",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 30,
+      "actions": 137
+    },
+    {
+      "config": {
+        "seed": 608310,
+        "decks": [
+          "Vapor",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 89
+    },
+    {
+      "config": {
+        "seed": 608311,
+        "decks": [
+          "Vapor",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 16,
+      "actions": 82
+    },
+    {
+      "config": {
+        "seed": 608400,
+        "decks": [
+          "Vapor",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 22,
+      "actions": 110
+    },
+    {
+      "config": {
+        "seed": 608401,
+        "decks": [
+          "Vapor",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 32,
+      "actions": 154
+    },
+    {
+      "config": {
+        "seed": 608410,
+        "decks": [
+          "Vapor",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 60
+    },
+    {
+      "config": {
+        "seed": 608411,
+        "decks": [
+          "Vapor",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 22,
+      "actions": 112
+    },
+    {
+      "config": {
+        "seed": 608500,
+        "decks": [
+          "Vapor",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 11,
+      "actions": 59
+    },
+    {
+      "config": {
+        "seed": 608501,
+        "decks": [
+          "Vapor",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 50,
+      "actions": 246
+    },
+    {
+      "config": {
+        "seed": 608510,
+        "decks": [
+          "Vapor",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 13,
+      "actions": 76
+    },
+    {
+      "config": {
+        "seed": 608511,
+        "decks": [
+          "Vapor",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 26,
+      "actions": 127
+    },
+    {
+      "config": {
+        "seed": 609300,
+        "decks": [
+          "Decomposição",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 34,
+      "actions": 152
+    },
+    {
+      "config": {
+        "seed": 609301,
+        "decks": [
+          "Decomposição",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 18,
+      "actions": 87
+    },
+    {
+      "config": {
+        "seed": 609310,
+        "decks": [
+          "Decomposição",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 24,
+      "actions": 102
+    },
+    {
+      "config": {
+        "seed": 609311,
+        "decks": [
+          "Decomposição",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 25,
+      "actions": 115
+    },
+    {
+      "config": {
+        "seed": 609400,
+        "decks": [
+          "Decomposição",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 46,
+      "actions": 182
+    },
+    {
+      "config": {
+        "seed": 609401,
+        "decks": [
+          "Decomposição",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 121
+    },
+    {
+      "config": {
+        "seed": 609410,
+        "decks": [
+          "Decomposição",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 14,
+      "actions": 73
+    },
+    {
+      "config": {
+        "seed": 609411,
+        "decks": [
+          "Decomposição",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 26,
+      "actions": 123
+    },
+    {
+      "config": {
+        "seed": 609500,
+        "decks": [
+          "Decomposição",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 32,
+      "actions": 150
+    },
+    {
+      "config": {
+        "seed": 609501,
+        "decks": [
+          "Decomposição",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 27,
+      "actions": 133
+    },
+    {
+      "config": {
+        "seed": 609510,
+        "decks": [
+          "Decomposição",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 14,
+      "actions": 79
+    },
+    {
+      "config": {
+        "seed": 609511,
+        "decks": [
+          "Decomposição",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 91
+    },
+    {
+      "config": {
+        "seed": 610400,
+        "decks": [
+          "Estações",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 105
+    },
+    {
+      "config": {
+        "seed": 610401,
+        "decks": [
+          "Estações",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 120
+    },
+    {
+      "config": {
+        "seed": 610410,
+        "decks": [
+          "Estações",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 23,
+      "actions": 112
+    },
+    {
+      "config": {
+        "seed": 610411,
+        "decks": [
+          "Estações",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 27,
+      "actions": 136
+    },
+    {
+      "config": {
+        "seed": 610500,
+        "decks": [
+          "Estações",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 37,
+      "actions": 161
+    },
+    {
+      "config": {
+        "seed": 610501,
+        "decks": [
+          "Estações",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 116
+    },
+    {
+      "config": {
+        "seed": 610510,
+        "decks": [
+          "Estações",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 17,
+      "actions": 90
+    },
+    {
+      "config": {
+        "seed": 610511,
+        "decks": [
+          "Estações",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 0,
+      "turns": 28,
+      "actions": 137
+    },
+    {
+      "config": {
+        "seed": 611500,
+        "decks": [
+          "Ilusão",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 1,
+      "turns": 22,
+      "actions": 99
+    },
+    {
+      "config": {
+        "seed": 611501,
+        "decks": [
+          "Ilusão",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 17,
+      "actions": 97
+    },
+    {
+      "config": {
+        "seed": 611510,
+        "decks": [
+          "Ilusão",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 103
+    },
+    {
+      "config": {
+        "seed": 611511,
+        "decks": [
+          "Ilusão",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1
+      },
+      "winner": 1,
+      "turns": 31,
+      "actions": 149
+    }
+  ]
+}

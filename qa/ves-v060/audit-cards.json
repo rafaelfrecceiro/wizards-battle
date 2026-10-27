@@ -1,0 +1,1250 @@
+[
+  {
+    "id": "VES-001",
+    "name": "Nara, Mecânica do Pulso",
+    "printedContract": "Ao entrar, cause 1 de dano a um monstro na frente inimiga. Adicione 1 marcador de duração a uma fonte sua.",
+    "tests": [
+      {
+        "name": "VES-001 — Nara, Mecânica do Pulso",
+        "status": "passed"
+      },
+      {
+        "name": "VES-001 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-002",
+    "name": "Vigia da Caldeira",
+    "printedContract": "Corpo, escola, custo e Essência; sem efeito adicional.",
+    "tests": [
+      {
+        "name": "VES-002 — Vigia da Caldeira",
+        "status": "passed"
+      },
+      {
+        "name": "VES-002 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-003",
+    "name": "Ivo, Jardineiro das Fendas",
+    "printedContract": "Suporte: no seu Despertar, remova 1 marcador de dano de um monstro seu na frente.",
+    "tests": [
+      {
+        "name": "VES-003 — Ivo, Jardineiro das Fendas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-003 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-004",
+    "name": "Eco dos Soterrados",
+    "printedContract": "Suporte: no seu Encerramento, se você tiver 3 ou mais Cinzas, cause 1 de dano ao mago rival.",
+    "tests": [
+      {
+        "name": "VES-004 — Eco dos Soterrados",
+        "status": "passed"
+      },
+      {
+        "name": "VES-004 — não concede bônus com condição ausente",
+        "status": "passed"
+      },
+      {
+        "name": "VES-004 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-005",
+    "name": "Comporta de Emergência",
+    "printedContract": "Condição: quando o rival conjurar um monstro de custo 5 ou mais. Efeito: devolva um monstro inimigo da frente de custo 2 ou menos para a mão do dono.",
+    "tests": [
+      {
+        "name": "VES-005 — Comporta de Emergência",
+        "status": "passed"
+      },
+      {
+        "name": "VES-005 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-006",
+    "name": "A Última Descarga",
+    "printedContract": "Cause 3 de dano a um monstro na frente inimiga.",
+    "tests": [
+      {
+        "name": "VES-006 — A Última Descarga",
+        "status": "passed"
+      },
+      {
+        "name": "VES-006 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-007",
+    "name": "Jardim nas Engrenagens",
+    "printedContract": "No seu Despertar, remova 1 marcador de dano de cada monstro seu na retaguarda.",
+    "tests": [
+      {
+        "name": "VES-007 — Jardim nas Engrenagens",
+        "status": "passed"
+      },
+      {
+        "name": "VES-007 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-008",
+    "name": "Raízes sobre Cinzas",
+    "printedContract": "Remova até 2 marcadores de dano de um monstro seu. Se você tiver 3 ou mais Cinzas, remova até 4 em vez disso.",
+    "tests": [
+      {
+        "name": "VES-008 — Raízes sobre Cinzas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-008 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-009",
+    "name": "Faísca Desgarrada",
+    "printedContract": "Ímpeto.",
+    "tests": [
+      {
+        "name": "VES-009 — Faísca Desgarrada",
+        "status": "passed"
+      },
+      {
+        "name": "VES-009 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-010",
+    "name": "Mestre das Fornalhas",
+    "printedContract": "Suporte: monstros de Chama na sua frente ganham +1 de Força.",
+    "tests": [
+      {
+        "name": "VES-010 — Mestre das Fornalhas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-010 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-011",
+    "name": "Broto das Fissuras",
+    "printedContract": "Corpo, escola, custo e Essência; sem efeito adicional.",
+    "tests": [
+      {
+        "name": "VES-011 — Broto das Fissuras",
+        "status": "passed"
+      },
+      {
+        "name": "VES-011 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-012",
+    "name": "Guardião do Viaduto",
+    "printedContract": "Guardião.",
+    "tests": [
+      {
+        "name": "VES-012 — Guardião do Viaduto",
+        "status": "passed"
+      },
+      {
+        "name": "VES-012 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-013",
+    "name": "Passagem Viva",
+    "printedContract": "Remova até 2 marcadores de dano de um monstro seu.",
+    "tests": [
+      {
+        "name": "VES-013 — Passagem Viva",
+        "status": "passed"
+      },
+      {
+        "name": "VES-013 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-014",
+    "name": "Vulto da Fuligem",
+    "printedContract": "Corpo, escola, custo e Essência; sem efeito adicional.",
+    "tests": [
+      {
+        "name": "VES-014 — Vulto da Fuligem",
+        "status": "passed"
+      },
+      {
+        "name": "VES-014 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-015",
+    "name": "Vigia dos Túneis",
+    "printedContract": "Alcance.",
+    "tests": [
+      {
+        "name": "VES-015 — Vigia dos Túneis",
+        "status": "passed"
+      },
+      {
+        "name": "VES-015 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-016",
+    "name": "Silenciar o Motor",
+    "printedContract": "Remova 2 marcadores de duração de uma fonte inimiga.",
+    "tests": [
+      {
+        "name": "VES-016 — Silenciar o Motor",
+        "status": "passed"
+      },
+      {
+        "name": "VES-016 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-017",
+    "name": "Fenda Preparada",
+    "printedContract": "Condição: quando o rival sacrificar uma carta. Efeito: remova 1 marcador de duração daquela fonte.",
+    "tests": [
+      {
+        "name": "VES-017 — Fenda Preparada",
+        "status": "passed"
+      },
+      {
+        "name": "VES-017 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-018",
+    "name": "Aprendiz das Comportas",
+    "printedContract": "Corpo, escola, custo e Essência; sem efeito adicional.",
+    "tests": [
+      {
+        "name": "VES-018 — Aprendiz das Comportas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-018 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-019",
+    "name": "Leitora das Correntes",
+    "printedContract": "Suporte: no seu Despertar, olhe a carta do topo do seu baralho. Você pode colocá-la no fundo.",
+    "tests": [
+      {
+        "name": "VES-019 — Leitora das Correntes",
+        "status": "passed"
+      },
+      {
+        "name": "VES-019 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-020",
+    "name": "Sentinela dos Canais",
+    "printedContract": "Ao entrar, devolva um monstro inimigo da frente de custo 2 ou menos para a mão do dono.",
+    "tests": [
+      {
+        "name": "VES-020 — Sentinela dos Canais",
+        "status": "passed"
+      },
+      {
+        "name": "VES-020 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-021",
+    "name": "Recuo pelas Águas",
+    "printedContract": "Devolva um monstro da frente inimiga para a mão do dono.",
+    "tests": [
+      {
+        "name": "VES-021 — Recuo pelas Águas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-021 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-022",
+    "name": "Retorno da Chama",
+    "printedContract": "Condição: quando um monstro inimigo atacar. Efeito: ele sofre 2 de dano antes do combate.",
+    "tests": [
+      {
+        "name": "VES-022 — Retorno da Chama",
+        "status": "passed"
+      },
+      {
+        "name": "VES-022 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-023",
+    "name": "Bastião da Passagem",
+    "printedContract": "Guardião.",
+    "tests": [
+      {
+        "name": "VES-023 — Bastião da Passagem",
+        "status": "passed"
+      },
+      {
+        "name": "VES-023 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-024",
+    "name": "Pacto dos Nomes",
+    "printedContract": "No seu Despertar, você pode olhar um Prenúncio do Véu inimigo. Se você tiver 3 ou mais Cinzas, cause 1 de dano ao mago rival.",
+    "tests": [
+      {
+        "name": "VES-024 — Pacto dos Nomes",
+        "status": "passed"
+      },
+      {
+        "name": "VES-024 — não concede bônus com condição ausente",
+        "status": "passed"
+      },
+      {
+        "name": "VES-024 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-025",
+    "name": "Corredor das Brasas",
+    "printedContract": "Ímpeto.",
+    "tests": [
+      {
+        "name": "VES-025 — Corredor das Brasas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-025 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-026",
+    "name": "Operária do Regulador",
+    "printedContract": "Suporte: no seu Despertar, cause 1 de dano a um monstro na frente inimiga.",
+    "tests": [
+      {
+        "name": "VES-026 — Operária do Regulador",
+        "status": "passed"
+      },
+      {
+        "name": "VES-026 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-027",
+    "name": "Falcão de Escória",
+    "printedContract": "Alcance.",
+    "tests": [
+      {
+        "name": "VES-027 — Falcão de Escória",
+        "status": "passed"
+      },
+      {
+        "name": "VES-027 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-028",
+    "name": "Demolidor do Pulso",
+    "printedContract": "Ao entrar, remova 1 marcador de duração de uma fonte inimiga.",
+    "tests": [
+      {
+        "name": "VES-028 — Demolidor do Pulso",
+        "status": "passed"
+      },
+      {
+        "name": "VES-028 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-029",
+    "name": "Titã das Fornalhas",
+    "printedContract": "Ao entrar, cause 2 de dano a um monstro na frente inimiga.",
+    "tests": [
+      {
+        "name": "VES-029 — Titã das Fornalhas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-029 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-030",
+    "name": "Bombeira de Brasa",
+    "printedContract": "Suporte: sua primeira Magia de Chama no turno custa 1 a menos (mínimo 1; desconto não cumulativo).",
+    "tests": [
+      {
+        "name": "VES-030 — Bombeira de Brasa",
+        "status": "passed"
+      },
+      {
+        "name": "VES-030 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-031",
+    "name": "Estouro do Conduíte",
+    "printedContract": "Cause 2 de dano a um monstro na frente inimiga. Se ela estiver vazia, cause 1 de dano ao mago rival.",
+    "tests": [
+      {
+        "name": "VES-031 — Estouro do Conduíte",
+        "status": "passed"
+      },
+      {
+        "name": "VES-031 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-032",
+    "name": "Turno de Emergência",
+    "printedContract": "Compre 2 cartas. Você perde 1 de Vida.",
+    "tests": [
+      {
+        "name": "VES-032 — Turno de Emergência",
+        "status": "passed"
+      },
+      {
+        "name": "VES-032 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-033",
+    "name": "Ritmo das Fornalhas",
+    "printedContract": "No seu Encerramento, se você conjurou ou armou 2 ou mais cartas neste turno, cause 1 de dano ao mago rival.",
+    "tests": [
+      {
+        "name": "VES-033 — Ritmo das Fornalhas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-033 — não concede bônus com condição ausente",
+        "status": "passed"
+      },
+      {
+        "name": "VES-033 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-034",
+    "name": "Conduítes Abertos",
+    "printedContract": "Monstros de Chama na sua frente têm Ímpeto.",
+    "tests": [
+      {
+        "name": "VES-034 — Conduítes Abertos",
+        "status": "passed"
+      },
+      {
+        "name": "VES-034 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-035",
+    "name": "Faísca de Reserva",
+    "printedContract": "Condição: quando um monstro inimigo atacar seu mago. Efeito: cause 1 de dano ao atacante. Compre 1 carta.",
+    "tests": [
+      {
+        "name": "VES-035 — Faísca de Reserva",
+        "status": "passed"
+      },
+      {
+        "name": "VES-035 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-036",
+    "name": "Carregador de Raízes",
+    "printedContract": "Corpo, escola, custo e Essência; sem efeito adicional.",
+    "tests": [
+      {
+        "name": "VES-036 — Carregador de Raízes",
+        "status": "passed"
+      },
+      {
+        "name": "VES-036 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-037",
+    "name": "Batedora dos Jardins",
+    "printedContract": "Emboscada.",
+    "tests": [
+      {
+        "name": "VES-037 — Batedora dos Jardins",
+        "status": "passed"
+      },
+      {
+        "name": "VES-037 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-038",
+    "name": "Arco Vivo",
+    "printedContract": "Corpo, escola, custo e Essência; sem efeito adicional.",
+    "tests": [
+      {
+        "name": "VES-038 — Arco Vivo",
+        "status": "passed"
+      },
+      {
+        "name": "VES-038 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-039",
+    "name": "Ancião da Travessia",
+    "printedContract": "Guardião.",
+    "tests": [
+      {
+        "name": "VES-039 — Ancião da Travessia",
+        "status": "passed"
+      },
+      {
+        "name": "VES-039 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-040",
+    "name": "Cuidadora das Fendas",
+    "printedContract": "Suporte: monstros de Raiz na sua frente com dano ganham +1 de Força.",
+    "tests": [
+      {
+        "name": "VES-040 — Cuidadora das Fendas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-040 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-041",
+    "name": "Cronista do Horto",
+    "printedContract": "Suporte: no seu Despertar, se você tiver um Guardião na frente, compre 1 carta.",
+    "tests": [
+      {
+        "name": "VES-041 — Cronista do Horto",
+        "status": "passed"
+      },
+      {
+        "name": "VES-041 — não concede bônus com condição ausente",
+        "status": "passed"
+      },
+      {
+        "name": "VES-041 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-042",
+    "name": "Seiva de Socorro",
+    "printedContract": "Remova até 3 marcadores de dano de um monstro seu. Compre 1 carta.",
+    "tests": [
+      {
+        "name": "VES-042 — Seiva de Socorro",
+        "status": "passed"
+      },
+      {
+        "name": "VES-042 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-043",
+    "name": "Chamado dos Abrigos",
+    "printedContract": "Devolva um Monstro de custo 3 ou menos do seu descarte para a sua mão.",
+    "tests": [
+      {
+        "name": "VES-043 — Chamado dos Abrigos",
+        "status": "passed"
+      },
+      {
+        "name": "VES-043 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-044",
+    "name": "Horto dos Refugiados",
+    "printedContract": "No seu Despertar, se você tiver um monstro na frente, ganhe 1 de Vida.",
+    "tests": [
+      {
+        "name": "VES-044 — Horto dos Refugiados",
+        "status": "passed"
+      },
+      {
+        "name": "VES-044 — não concede bônus com condição ausente",
+        "status": "passed"
+      },
+      {
+        "name": "VES-044 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-045",
+    "name": "Socorro nas Raízes",
+    "printedContract": "Condição: quando um monstro seu com dano for atacado. Efeito: remova até 2 marcadores de dano dele antes do combate.",
+    "tests": [
+      {
+        "name": "VES-045 — Socorro nas Raízes",
+        "status": "passed"
+      },
+      {
+        "name": "VES-045 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-046",
+    "name": "Abrigo Preparado",
+    "printedContract": "Condição: quando o rival conjurar uma Magia. Efeito: remova até 2 marcadores de dano de um monstro seu.",
+    "tests": [
+      {
+        "name": "VES-046 — Abrigo Preparado",
+        "status": "passed"
+      },
+      {
+        "name": "VES-046 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-047",
+    "name": "Catadora de Lamparinas",
+    "printedContract": "Ao entrar, se você tiver 3 ou mais Cinzas, compre 1 carta.",
+    "tests": [
+      {
+        "name": "VES-047 — Catadora de Lamparinas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-047 — não concede bônus com condição ausente",
+        "status": "passed"
+      },
+      {
+        "name": "VES-047 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-048",
+    "name": "Guia dos Túneis",
+    "printedContract": "Suporte: monstros de Sombra na sua frente têm Alcance.",
+    "tests": [
+      {
+        "name": "VES-048 — Guia dos Túneis",
+        "status": "passed"
+      },
+      {
+        "name": "VES-048 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-049",
+    "name": "Ceifador das Válvulas",
+    "printedContract": "Alcance.",
+    "tests": [
+      {
+        "name": "VES-049 — Ceifador das Válvulas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-049 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-050",
+    "name": "Memória da Primeira Queda",
+    "printedContract": "Ao entrar, você pode mover 2 Cinzas suas para o descarte. Se fizer isso, cause 2 de dano a um monstro inimigo.",
+    "tests": [
+      {
+        "name": "VES-050 — Memória da Primeira Queda",
+        "status": "passed"
+      },
+      {
+        "name": "VES-050 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-051",
+    "name": "Arquivista da Fuligem",
+    "printedContract": "Suporte: no seu Despertar, se você tiver 3 ou mais Cinzas e até 3 cartas na mão, compre 1 carta.",
+    "tests": [
+      {
+        "name": "VES-051 — Arquivista da Fuligem",
+        "status": "passed"
+      },
+      {
+        "name": "VES-051 — não concede bônus com condição ausente",
+        "status": "passed"
+      },
+      {
+        "name": "VES-051 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-052",
+    "name": "Portador dos Nomes",
+    "printedContract": "Ao morrer durante o seu turno, compre 1 carta.",
+    "tests": [
+      {
+        "name": "VES-052 — Portador dos Nomes",
+        "status": "passed"
+      },
+      {
+        "name": "VES-052 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-053",
+    "name": "Apagar o Selo",
+    "printedContract": "Destrua um Encantamento inimigo.",
+    "tests": [
+      {
+        "name": "VES-053 — Apagar o Selo",
+        "status": "passed"
+      },
+      {
+        "name": "VES-053 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-054",
+    "name": "Resgate de Memórias",
+    "printedContract": "Custo adicional: mova 2 Cinzas suas para o descarte. Compre 2 cartas.",
+    "tests": [
+      {
+        "name": "VES-054 — Resgate de Memórias",
+        "status": "passed"
+      },
+      {
+        "name": "VES-054 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-055",
+    "name": "Vigília dos Ausentes",
+    "printedContract": "No seu Encerramento, se um monstro seu morreu neste turno, cause 1 de dano ao mago rival.",
+    "tests": [
+      {
+        "name": "VES-055 — Vigília dos Ausentes",
+        "status": "passed"
+      },
+      {
+        "name": "VES-055 — não concede bônus com condição ausente",
+        "status": "passed"
+      },
+      {
+        "name": "VES-055 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-056",
+    "name": "Último Recado",
+    "printedContract": "No seu Encerramento, se um monstro seu morreu neste turno, compre 1 carta.",
+    "tests": [
+      {
+        "name": "VES-056 — Último Recado",
+        "status": "passed"
+      },
+      {
+        "name": "VES-056 — não concede bônus com condição ausente",
+        "status": "passed"
+      },
+      {
+        "name": "VES-056 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-057",
+    "name": "Selo de Fuligem",
+    "printedContract": "Condição: quando o rival conjurar um Encantamento de custo 3 ou menos. Efeito: destrua aquele Encantamento.",
+    "tests": [
+      {
+        "name": "VES-057 — Selo de Fuligem",
+        "status": "passed"
+      },
+      {
+        "name": "VES-057 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-058",
+    "name": "Ajustadora dos Canais",
+    "printedContract": "Ao entrar, olhe a carta do topo do seu baralho. Você pode colocá-la no fundo.",
+    "tests": [
+      {
+        "name": "VES-058 — Ajustadora dos Canais",
+        "status": "passed"
+      },
+      {
+        "name": "VES-058 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-059",
+    "name": "Lanceiro das Correntes",
+    "printedContract": "Alcance.",
+    "tests": [
+      {
+        "name": "VES-059 — Lanceiro das Correntes",
+        "status": "passed"
+      },
+      {
+        "name": "VES-059 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-060",
+    "name": "Condutora do Refluxo",
+    "printedContract": "Ao entrar, você pode devolver um monstro seu de custo 2 ou menos para a sua mão.",
+    "tests": [
+      {
+        "name": "VES-060 — Condutora do Refluxo",
+        "status": "passed"
+      },
+      {
+        "name": "VES-060 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-061",
+    "name": "Serpente dos Aquedutos",
+    "printedContract": "Ao entrar, devolva um Encantamento inimigo para a mão do dono.",
+    "tests": [
+      {
+        "name": "VES-061 — Serpente dos Aquedutos",
+        "status": "passed"
+      },
+      {
+        "name": "VES-061 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-062",
+    "name": "Guardiã da Cisterna",
+    "printedContract": "Suporte: antes de perder energia no seu Encerramento, guarde até 1 para o seu próximo turno. O limite total é 1 por turno.",
+    "tests": [
+      {
+        "name": "VES-062 — Guardiã da Cisterna",
+        "status": "passed"
+      },
+      {
+        "name": "VES-062 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-063",
+    "name": "Cartógrafa das Águas",
+    "printedContract": "Suporte: no seu Despertar, se você tiver 2 ou mais fontes, compre 1 carta.",
+    "tests": [
+      {
+        "name": "VES-063 — Cartógrafa das Águas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-063 — não concede bônus com condição ausente",
+        "status": "passed"
+      },
+      {
+        "name": "VES-063 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-064",
+    "name": "Pulso Regulamentado",
+    "printedContract": "Adicione 1 marcador de duração a uma fonte sua. Compre 1 carta.",
+    "tests": [
+      {
+        "name": "VES-064 — Pulso Regulamentado",
+        "status": "passed"
+      },
+      {
+        "name": "VES-064 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-065",
+    "name": "Revelar a Comporta",
+    "printedContract": "Dissipe um Prenúncio do Véu inimigo: revele-o e mova-o para as Cinzas do dono.",
+    "tests": [
+      {
+        "name": "VES-065 — Revelar a Comporta",
+        "status": "passed"
+      },
+      {
+        "name": "VES-065 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-066",
+    "name": "Rotas Alternadas",
+    "printedContract": "Uma vez no seu turno, depois de reposicionar um monstro, compre 1 carta.",
+    "tests": [
+      {
+        "name": "VES-066 — Rotas Alternadas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-066 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-067",
+    "name": "Compasso das Correntes",
+    "printedContract": "Quando você conjurar sua primeira Magia de Maré no turno, adicione 1 marcador de duração a uma fonte sua.",
+    "tests": [
+      {
+        "name": "VES-067 — Compasso das Correntes",
+        "status": "passed"
+      },
+      {
+        "name": "VES-067 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-068",
+    "name": "Rota de Escape",
+    "printedContract": "Condição: quando um monstro seu na retaguarda for atacado. Efeito: devolva-o para a sua mão. O ataque termina.",
+    "tests": [
+      {
+        "name": "VES-068 — Rota de Escape",
+        "status": "passed"
+      },
+      {
+        "name": "VES-068 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-069",
+    "name": "Enxertado das Fornalhas",
+    "printedContract": "Ao entrar, você pode destruir outro monstro seu. Se fizer isso, cause 2 de dano a um monstro inimigo.",
+    "tests": [
+      {
+        "name": "VES-069 — Enxertado das Fornalhas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-069 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-070",
+    "name": "Abrir a Travessia",
+    "printedContract": "Custo adicional: destrua um monstro seu. Cause 3 de dano a um monstro na frente inimiga. Ganhe 2 de Vida.",
+    "tests": [
+      {
+        "name": "VES-070 — Abrir a Travessia",
+        "status": "passed"
+      },
+      {
+        "name": "VES-070 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-071",
+    "name": "Fênix do Motor",
+    "printedContract": "Ímpeto. Ao entrar, você pode mover 2 Cinzas suas para o descarte. Se fizer isso, cause 2 de dano a um monstro inimigo.",
+    "tests": [
+      {
+        "name": "VES-071 — Fênix do Motor",
+        "status": "passed"
+      },
+      {
+        "name": "VES-071 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-072",
+    "name": "Detonar as Cinzas",
+    "printedContract": "Custo adicional: mova 2 Cinzas suas para o descarte. Cause 3 de dano ao mago rival.",
+    "tests": [
+      {
+        "name": "VES-072 — Detonar as Cinzas",
+        "status": "passed"
+      },
+      {
+        "name": "VES-072 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-073",
+    "name": "Corredora de Vapor",
+    "printedContract": "Ímpeto.",
+    "tests": [
+      {
+        "name": "VES-073 — Corredora de Vapor",
+        "status": "passed"
+      },
+      {
+        "name": "VES-073 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-074",
+    "name": "Avanço Pressurizado",
+    "printedContract": "Um monstro seu ganha Ímpeto e +1 de Força até o fim deste turno.",
+    "tests": [
+      {
+        "name": "VES-074 — Avanço Pressurizado",
+        "status": "passed"
+      },
+      {
+        "name": "VES-074 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-075",
+    "name": "Guardião do Depósito",
+    "printedContract": "Enquanto você tiver 3 ou mais Cinzas, este monstro tem Guardião.",
+    "tests": [
+      {
+        "name": "VES-075 — Guardião do Depósito",
+        "status": "passed"
+      },
+      {
+        "name": "VES-075 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-076",
+    "name": "Reconstruir os Nomes",
+    "printedContract": "Devolva um Monstro do seu descarte para a sua mão. Ganhe 2 de Vida.",
+    "tests": [
+      {
+        "name": "VES-076 — Reconstruir os Nomes",
+        "status": "passed"
+      },
+      {
+        "name": "VES-076 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-077",
+    "name": "Curadora das Estações",
+    "printedContract": "Guardião. Suporte: no seu Despertar, remova 1 marcador de dano de cada monstro seu.",
+    "tests": [
+      {
+        "name": "VES-077 — Curadora das Estações",
+        "status": "passed"
+      },
+      {
+        "name": "VES-077 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-078",
+    "name": "Canais do Recomeço",
+    "printedContract": "No seu Encerramento, se você reposicionou um monstro neste turno, remova até 2 marcadores de dano de um monstro seu e ganhe 2 de Vida.",
+    "tests": [
+      {
+        "name": "VES-078 — Canais do Recomeço",
+        "status": "passed"
+      },
+      {
+        "name": "VES-078 — não concede bônus com condição ausente",
+        "status": "passed"
+      },
+      {
+        "name": "VES-078 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-079",
+    "name": "Intérprete dos Reflexos",
+    "printedContract": "Alcance. Ao entrar, olhe um Prenúncio do Véu inimigo.",
+    "tests": [
+      {
+        "name": "VES-079 — Intérprete dos Reflexos",
+        "status": "passed"
+      },
+      {
+        "name": "VES-079 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "id": "VES-080",
+    "name": "Reflexo dos Ausentes",
+    "printedContract": "Devolva um monstro da retaguarda inimiga para a mão do dono. Se você tiver 3 ou mais Cinzas, compre 1 carta.",
+    "tests": [
+      {
+        "name": "VES-080 — Reflexo dos Ausentes",
+        "status": "passed"
+      },
+      {
+        "name": "VES-080 — não concede bônus com condição ausente",
+        "status": "passed"
+      },
+      {
+        "name": "VES-080 — fonte, energia, requisito e atomicidade",
+        "status": "passed"
+      }
+    ]
+  }
+]

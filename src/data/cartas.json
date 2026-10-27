@@ -1,0 +1,2774 @@
+{
+  "title": "O Coração de Véspera",
+  "version": "0.3",
+  "date": "2026-10-19",
+  "state": "prototipo-balanceamento-inicial",
+  "scope": "80 cartas diferentes; versão para impressão e playtest, não produto final homologado.",
+  "cards": [
+    {
+      "id": "VES-001",
+      "name": "Nara, Mecânica do Pulso",
+      "type": "Monstro",
+      "schools": [
+        "Chama",
+        "Maré"
+      ],
+      "cost": 4,
+      "presence": {
+        "Chama": 2,
+        "Maré": 1
+      },
+      "force": 2,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 2
+      },
+      "text": "Ao entrar, cause 1 de dano a um monstro na frente inimiga. Adicione 1 marcador de duração a uma fonte sua.",
+      "support": false,
+      "vigil": null,
+      "scene": "Mecânica de cabelos cacheados presos e avental de trabalho, sobre passarela rachada, desvia uma descarga laranja para um regulador de água turquesa.",
+      "role": "Prolongar fonte e controlar o campo; protagonista que conhece a rede.",
+      "phase": 1,
+      "state": "prototipo-0.3",
+      "fx": {
+        "enter": [
+          {
+            "op": "damage",
+            "n": 1,
+            "target": "enemy_front"
+          },
+          {
+            "op": "extend",
+            "n": 1,
+            "target": "own_source"
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-002",
+      "name": "Vigia da Caldeira",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 2,
+      "presence": {
+        "Chama": 1
+      },
+      "force": 2,
+      "vigor": 3,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "text": "",
+      "support": false,
+      "vigil": null,
+      "scene": "Sentinela de cerâmica refratária e brasa com mãos de pinça protege uma oficina vazia; seu braseiro repete o anel partido do motor.",
+      "role": "Corpo simples para a frente; fonte curta de energia imediata.",
+      "phase": 2,
+      "state": "prototipo-0.3",
+      "fx": {},
+      "keywords": []
+    },
+    {
+      "id": "VES-003",
+      "name": "Ivo, Jardineiro das Fendas",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 3,
+      "presence": {
+        "Raiz": 2
+      },
+      "force": 1,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Suporte: no seu Despertar, remova 1 marcador de dano de um monstro seu na frente.",
+      "support": true,
+      "vigil": null,
+      "scene": "Jardineiro de barba grisalha e capa de trabalho verde ajoelhado; raízes costuram uma ponte e sustentam a evacuação.",
+      "role": "Suporte que recupera a frente, com pouca força ofensiva.",
+      "phase": 2,
+      "state": "prototipo-0.3",
+      "fx": {
+        "support_dawn": [
+          {
+            "op": "heal",
+            "n": 1,
+            "target": "own_front"
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-004",
+      "name": "Eco dos Soterrados",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 3,
+      "presence": {
+        "Sombra": 2
+      },
+      "force": 2,
+      "vigor": 2,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "text": "Suporte: no seu Encerramento, se você tiver 3 ou mais Cinzas, cause 1 de dano ao mago rival.",
+      "support": true,
+      "vigil": null,
+      "scene": "Três silhuetas de trabalhadores em cinza e fumaça violeta, com lamparinas e ferramentas, emergem sob a fundação do motor.",
+      "role": "Cinzas alimentam pressão contínua; memória coletiva dos custos da extração.",
+      "phase": 2,
+      "state": "prototipo-0.3",
+      "fx": {
+        "support_end": [
+          {
+            "op": "face",
+            "n": 1,
+            "target": "enemy",
+            "ashes_min": 3
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-005",
+      "name": "Comporta de Emergência",
+      "type": "Prenúncio",
+      "schools": [
+        "Maré"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Condição: quando o rival conjurar um monstro de custo 5 ou mais.\nEfeito: devolva um monstro inimigo da frente de custo 2 ou menos para a mão do dono.",
+      "support": false,
+      "vigil": 3,
+      "scene": "Uma criatura pesada racha a ponte e aciona uma comporta de cerâmica; a onda varre uma pequena sentinela de brasa.",
+      "role": "Resposta preparada contra desenvolvimento do campo, limitada a um alvo pequeno.",
+      "phase": 3,
+      "state": "prototipo-0.3",
+      "fx": {
+        "trigger": "big_monster",
+        "trap": [
+          {
+            "op": "bounce",
+            "n": 0,
+            "target": "enemy_front",
+            "max_cost": 2
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-006",
+      "name": "A Última Descarga",
+      "type": "Magia",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "text": "Cause 3 de dano a um monstro na frente inimiga.",
+      "support": false,
+      "vigil": null,
+      "scene": "Nara abre um conduíte e a energia do motor explode contra uma passagem ocupada; ao fundo, a saída permanece aberta.",
+      "role": "Remoção direta de frente; acontecimento do clímax.",
+      "phase": 4,
+      "state": "prototipo-0.3",
+      "fx": {
+        "cast": [
+          {
+            "op": "damage",
+            "n": 3,
+            "target": "enemy_front"
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-007",
+      "name": "Jardim nas Engrenagens",
+      "type": "Encantamento",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 2,
+      "presence": {
+        "Raiz": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "No seu Despertar, remova 1 marcador de dano de cada monstro seu na retaguarda.",
+      "support": false,
+      "vigil": null,
+      "scene": "Máquinas já paradas viram abrigo entre raízes e pequenos brotos; as pessoas vivem ao redor das antigas engrenagens.",
+      "role": "Manutenção da retaguarda contra dano persistente.",
+      "phase": 4,
+      "state": "prototipo-0.3",
+      "fx": {
+        "enchant_dawn": [
+          {
+            "op": "heal_all",
+            "n": 1,
+            "target": "own_back"
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-008",
+      "name": "Raízes sobre Cinzas",
+      "type": "Magia",
+      "schools": [
+        "Raiz",
+        "Sombra"
+      ],
+      "cost": 2,
+      "presence": {
+        "Raiz": 1,
+        "Sombra": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "text": "Remova até 2 marcadores de dano de um monstro seu. Se você tiver 3 ou mais Cinzas, remova até 4 em vez disso.",
+      "support": false,
+      "vigil": null,
+      "scene": "Ivo conduz raízes por um depósito de fuligem enquanto um Eco ilumina uma rota antes esquecida.",
+      "role": "Cura com limiar público de Cinzas; alternativa de sustentação.",
+      "phase": 4,
+      "state": "prototipo-0.3",
+      "fx": {
+        "cast": [
+          {
+            "op": "heal",
+            "n": 2,
+            "target": "own_monster",
+            "ashes_bonus": 2
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-009",
+      "name": "Faísca Desgarrada",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 1,
+      "presence": {
+        "Chama": 1
+      },
+      "force": 1,
+      "vigor": 1,
+      "essence": {
+        "generation": 2,
+        "duration": 3
+      },
+      "text": "Ímpeto.",
+      "support": false,
+      "vigil": null,
+      "scene": "Pequeno ser de fogo escapa de uma fissura num conduíte cerâmico, deixando pegadas luminosas no piso.",
+      "role": "Agressão simples de abertura; primeira manifestação das falhas.",
+      "phase": 1,
+      "state": "prototipo-0.3",
+      "fx": {},
+      "keywords": [
+        "Ímpeto"
+      ]
+    },
+    {
+      "id": "VES-010",
+      "name": "Mestre das Fornalhas",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 5,
+      "presence": {
+        "Chama": 4
+      },
+      "force": 3,
+      "vigor": 4,
+      "essence": {
+        "generation": 3,
+        "duration": 1
+      },
+      "text": "Suporte: monstros de Chama na sua frente ganham +1 de Força.",
+      "support": true,
+      "vigil": null,
+      "scene": "Conjurador trabalhador com máscara de cerâmica ventila várias fornalhas por gestos largos atrás da linha de sentinelas.",
+      "role": "Amplifica a frente pela retaguarda; escolha entre suporte e fonte explosiva.",
+      "phase": 3,
+      "state": "prototipo-0.3",
+      "fx": {
+        "aura": {
+          "school": "Chama",
+          "force": 1
+        }
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-011",
+      "name": "Broto das Fissuras",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 1,
+      "presence": {
+        "Raiz": 1
+      },
+      "force": 1,
+      "vigor": 2,
+      "essence": {
+        "generation": 1,
+        "duration": 4
+      },
+      "text": "",
+      "support": false,
+      "vigil": null,
+      "scene": "Criatura pequena de raízes e pedra atravessa o pavimento rompido junto da mão de um resgatador.",
+      "role": "Abertura e fonte duradoura; sinal de vida nas rachaduras.",
+      "phase": 1,
+      "state": "prototipo-0.3",
+      "fx": {},
+      "keywords": []
+    },
+    {
+      "id": "VES-012",
+      "name": "Guardião do Viaduto",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 5,
+      "presence": {
+        "Raiz": 3
+      },
+      "force": 3,
+      "vigor": 6,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Guardião.",
+      "support": false,
+      "vigil": null,
+      "scene": "Grande ser de raízes envolvendo pedra mantém um arco de ponte no lugar enquanto protege a travessia.",
+      "role": "Defensor da frente; ancora a evacuação.",
+      "phase": 3,
+      "state": "prototipo-0.3",
+      "fx": {},
+      "keywords": [
+        "Guardião"
+      ]
+    },
+    {
+      "id": "VES-013",
+      "name": "Passagem Viva",
+      "type": "Magia",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 1,
+      "presence": {
+        "Raiz": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 3
+      },
+      "text": "Remova até 2 marcadores de dano de um monstro seu.",
+      "support": false,
+      "vigil": null,
+      "scene": "Raízes sustentam um ferido sobre a mesma ponte de Ivo; a passagem recém-aberta evita uma queda.",
+      "role": "Cura básica de baixo custo; resgate local.",
+      "phase": 2,
+      "state": "prototipo-0.3",
+      "fx": {
+        "cast": [
+          {
+            "op": "heal",
+            "n": 2,
+            "target": "own_monster"
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-014",
+      "name": "Vulto da Fuligem",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 1,
+      "presence": {
+        "Sombra": 1
+      },
+      "force": 1,
+      "vigor": 2,
+      "essence": {
+        "generation": 2,
+        "duration": 3
+      },
+      "text": "",
+      "support": false,
+      "vigil": null,
+      "scene": "Pequeno vulto com a silhueta de um antigo aprendiz de manutenção observa uma placa coberta de cinzas.",
+      "role": "Entrada econômica de Sombra, presença e fonte longa.",
+      "phase": 1,
+      "state": "prototipo-0.3",
+      "fx": {},
+      "keywords": []
+    },
+    {
+      "id": "VES-015",
+      "name": "Vigia dos Túneis",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 5,
+      "presence": {
+        "Sombra": 3
+      },
+      "force": 4,
+      "vigor": 3,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "text": "Alcance.",
+      "support": false,
+      "vigil": null,
+      "scene": "Vulto de fuligem empunha uma antiga ferramenta longa entre dutos; sua lamparina destaca resgatadores distantes.",
+      "role": "Acesso à retaguarda rival; corpo frágil que ameaça suportes.",
+      "phase": 3,
+      "state": "prototipo-0.3",
+      "fx": {},
+      "keywords": [
+        "Alcance"
+      ]
+    },
+    {
+      "id": "VES-016",
+      "name": "Silenciar o Motor",
+      "type": "Magia",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 2,
+      "presence": {
+        "Sombra": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "text": "Remova 2 marcadores de duração de uma fonte inimiga.",
+      "support": false,
+      "vigil": null,
+      "scene": "Mãos de sombra abafam um regulador pulsante; a luz de um trecho da cidade se apaga.",
+      "role": "Desgaste de fontes; sabotagem de um nó disputado.",
+      "phase": 3,
+      "state": "prototipo-0.3",
+      "fx": {
+        "cast": [
+          {
+            "op": "source_damage",
+            "n": 2,
+            "target": "enemy_source"
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-017",
+      "name": "Fenda Preparada",
+      "type": "Prenúncio",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Condição: quando o rival sacrificar uma carta.\nEfeito: remova 1 marcador de duração daquela fonte.",
+      "support": false,
+      "vigil": 3,
+      "scene": "Marca de fuligem escondida sob um conector rompe o fluxo quando uma nova carga entra no sistema.",
+      "role": "Interação com sacrifício; usa gatilho já sugerido no GDD.",
+      "phase": 3,
+      "state": "prototipo-0.3",
+      "fx": {
+        "trigger": "sacrifice",
+        "trap": [
+          {
+            "op": "source_damage",
+            "n": 1,
+            "target": "event_source"
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-018",
+      "name": "Aprendiz das Comportas",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 1,
+      "presence": {
+        "Maré": 1
+      },
+      "force": 1,
+      "vigor": 2,
+      "essence": {
+        "generation": 2,
+        "duration": 3
+      },
+      "text": "",
+      "support": false,
+      "vigil": null,
+      "scene": "Jovem operador humano guia um arco de água entre pequenos reguladores, diante dos canais ainda intactos.",
+      "role": "Abertura de Maré e fonte estável; escala humana do incidente.",
+      "phase": 1,
+      "state": "prototipo-0.3",
+      "fx": {},
+      "keywords": []
+    },
+    {
+      "id": "VES-019",
+      "name": "Leitora das Correntes",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Maré": 2
+      },
+      "force": 1,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Suporte: no seu Despertar, olhe a carta do topo do seu baralho. Você pode colocá-la no fundo.",
+      "support": true,
+      "vigil": null,
+      "scene": "Conjuradora acompanha reflexos do motor num tanque de água e aponta rotas aos resgatadores.",
+      "role": "Seleção de compra e planejamento; suporte frágil em ataque.",
+      "phase": 2,
+      "state": "prototipo-0.3",
+      "fx": {
+        "support_dawn": [
+          {
+            "op": "scry",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-020",
+      "name": "Sentinela dos Canais",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 5,
+      "presence": {
+        "Maré": 3
+      },
+      "force": 3,
+      "vigor": 5,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Ao entrar, devolva um monstro inimigo da frente de custo 2 ou menos para a mão do dono.",
+      "support": false,
+      "vigil": null,
+      "scene": "Entidade de água sustentada por anéis de cerâmica expulsa uma pequena criatura de um canal de evacuação.",
+      "role": "Corpo médio e controle de alvo pequeno.",
+      "phase": 3,
+      "state": "prototipo-0.3",
+      "fx": {
+        "enter": [
+          {
+            "op": "bounce",
+            "n": 0,
+            "target": "enemy_front",
+            "max_cost": 2
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-021",
+      "name": "Recuo pelas Águas",
+      "type": "Magia",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Maré": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 2
+      },
+      "text": "Devolva um monstro da frente inimiga para a mão do dono.",
+      "support": false,
+      "vigil": null,
+      "scene": "Uma corrente reversa separa combatentes na ponte e os carrega para longe do regulador.",
+      "role": "Controle de frente sem dano nem morte.",
+      "phase": 3,
+      "state": "prototipo-0.3",
+      "fx": {
+        "cast": [
+          {
+            "op": "bounce",
+            "n": 0,
+            "target": "enemy_front"
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-022",
+      "name": "Retorno da Chama",
+      "type": "Prenúncio",
+      "schools": [
+        "Chama"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Condição: quando um monstro inimigo atacar.\nEfeito: ele sofre 2 de dano antes do combate.",
+      "support": false,
+      "vigil": 3,
+      "scene": "Um conduíte previamente marcado libera uma língua de fogo diante de um atacante; o anel partido marca a armadilha.",
+      "role": "Punição de ataque e defesa preparada de Chama.",
+      "phase": 3,
+      "state": "prototipo-0.3",
+      "fx": {
+        "trigger": "attack",
+        "trap": [
+          {
+            "op": "damage",
+            "n": 2,
+            "target": "attacker"
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-023",
+      "name": "Bastião da Passagem",
+      "type": "Monstro",
+      "schools": [
+        "Chama",
+        "Raiz"
+      ],
+      "cost": 4,
+      "presence": {
+        "Chama": 2,
+        "Raiz": 1
+      },
+      "force": 3,
+      "vigor": 4,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "text": "Guardião.",
+      "support": false,
+      "vigil": null,
+      "scene": "Uma criatura de raízes vivas envolve uma carapaça cerâmica incandescente e protege o último trecho da ponte.",
+      "role": "Híbrida Queimada; defesa durante a última descarga.",
+      "phase": 4,
+      "state": "prototipo-0.3",
+      "fx": {},
+      "keywords": [
+        "Guardião"
+      ]
+    },
+    {
+      "id": "VES-024",
+      "name": "Pacto dos Nomes",
+      "type": "Encantamento",
+      "schools": [
+        "Sombra",
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Sombra": 1,
+        "Maré": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "No seu Despertar, você pode olhar um Prenúncio do Véu inimigo. Se você tiver 3 ou mais Cinzas, cause 1 de dano ao mago rival.",
+      "support": false,
+      "vigil": null,
+      "scene": "A Leitora escuta um Eco; nomes esquecidos aparecem como reflexos numa lâmina de água, indicando defesas escondidas.",
+      "role": "Híbrida Ilusão; informação sem dissipação automática.",
+      "phase": 3,
+      "state": "prototipo-0.3",
+      "fx": {
+        "enchant_dawn": [
+          {
+            "op": "peek",
+            "n": 1,
+            "target": "enemy_veil"
+          },
+          {
+            "op": "face",
+            "n": 1,
+            "target": "enemy",
+            "ashes_min": 3
+          }
+        ]
+      },
+      "keywords": []
+    },
+    {
+      "id": "VES-025",
+      "name": "Corredor das Brasas",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 2,
+      "presence": {
+        "Chama": 1
+      },
+      "force": 2,
+      "vigor": 1,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "text": "Ímpeto.",
+      "scene": "Mensageiro de fogo atravessa uma ponte carregando um aviso da primeira fissura.",
+      "role": "Mensageiro de fogo atravessa uma ponte carregando um aviso da primeira fissura.",
+      "phase": 1,
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Ímpeto"
+      ],
+      "fx": {},
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-026",
+      "name": "Operária do Regulador",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 2
+      },
+      "force": 1,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Suporte: no seu Despertar, cause 1 de dano a um monstro na frente inimiga.",
+      "scene": "Operária regula um jato de brasa atrás das sentinelas.",
+      "role": "Operária regula um jato de brasa atrás das sentinelas.",
+      "phase": 3,
+      "support": true,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "support_dawn": [
+          {
+            "op": "damage",
+            "n": 1,
+            "target": "enemy_front"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-027",
+      "name": "Falcão de Escória",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 2
+      },
+      "force": 2,
+      "vigor": 2,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "text": "Alcance.",
+      "scene": "Ave de cerâmica e escória sai de um conduíte e cruza os telhados.",
+      "role": "Ave de cerâmica e escória sai de um conduíte e cruza os telhados.",
+      "phase": 2,
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Alcance"
+      ],
+      "fx": {},
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-028",
+      "name": "Demolidor do Pulso",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 4,
+      "presence": {
+        "Chama": 3
+      },
+      "force": 4,
+      "vigor": 3,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "text": "Ao entrar, remova 1 marcador de duração de uma fonte inimiga.",
+      "scene": "Sentinela pesada quebra uma válvula do motor.",
+      "role": "Sentinela pesada quebra uma válvula do motor.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enter": [
+          {
+            "op": "source_damage",
+            "n": 1,
+            "target": "enemy_source"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-029",
+      "name": "Titã das Fornalhas",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 7,
+      "presence": {
+        "Chama": 4
+      },
+      "force": 6,
+      "vigor": 5,
+      "essence": {
+        "generation": 3,
+        "duration": 1
+      },
+      "text": "Ao entrar, cause 2 de dano a um monstro na frente inimiga.",
+      "scene": "Enorme criatura de brasa emerge das fornalhas, distinta do colosso enterrado.",
+      "role": "Enorme criatura de brasa emerge das fornalhas, distinta do colosso enterrado.",
+      "phase": 4,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enter": [
+          {
+            "op": "damage",
+            "n": 2,
+            "target": "enemy_front"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-030",
+      "name": "Bombeira de Brasa",
+      "type": "Monstro",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 2
+      },
+      "force": 1,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Suporte: sua primeira Magia de Chama no turno custa 1 a menos (mínimo 1; desconto não cumulativo).",
+      "scene": "Conjuradora encaminha a primeira descarga para ajudar os resgatadores.",
+      "role": "Conjuradora encaminha a primeira descarga para ajudar os resgatadores.",
+      "phase": 3,
+      "support": true,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "discount": "Chama"
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-031",
+      "name": "Estouro do Conduíte",
+      "type": "Magia",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 2,
+      "presence": {
+        "Chama": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "text": "Cause 2 de dano a um monstro na frente inimiga. Se ela estiver vazia, cause 1 de dano ao mago rival.",
+      "scene": "Uma junta cerâmica se rompe diante dos combatentes.",
+      "role": "Uma junta cerâmica se rompe diante dos combatentes.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "damage_or_face",
+            "n": 2,
+            "target": "enemy_front",
+            "face_n": 1
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-032",
+      "name": "Turno de Emergência",
+      "type": "Magia",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 2,
+      "presence": {
+        "Chama": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Compre 2 cartas. Você perde 1 de Vida.",
+      "scene": "Nara e trabalhadores mantêm o motor ligado por mais um turno de trabalho.",
+      "role": "Nara e trabalhadores mantêm o motor ligado por mais um turno de trabalho.",
+      "phase": 2,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "draw",
+            "n": 2,
+            "target": "own"
+          },
+          {
+            "op": "lose_life",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-033",
+      "name": "Ritmo das Fornalhas",
+      "type": "Encantamento",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 2,
+      "presence": {
+        "Chama": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "No seu Encerramento, se você conjurou ou armou 2 ou mais cartas neste turno, cause 1 de dano ao mago rival.",
+      "scene": "Fornalhas respondem em sequência ao batimento do motor.",
+      "role": "Fornalhas respondem em sequência ao batimento do motor.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enchant_end": [
+          {
+            "op": "face",
+            "n": 1,
+            "target": "enemy",
+            "casts_min": 2
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-034",
+      "name": "Conduítes Abertos",
+      "type": "Encantamento",
+      "schools": [
+        "Chama"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "text": "Monstros de Chama na sua frente têm Ímpeto.",
+      "scene": "Caminhos de energia aberta iluminam a linha de sentinelas.",
+      "role": "Caminhos de energia aberta iluminam a linha de sentinelas.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "aura": {
+          "school": "Chama",
+          "keyword": "Ímpeto"
+        }
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-035",
+      "name": "Faísca de Reserva",
+      "type": "Prenúncio",
+      "schools": [
+        "Chama"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Condição: quando um monstro inimigo atacar seu mago.\nEfeito: cause 1 de dano ao atacante. Compre 1 carta.",
+      "scene": "Uma brasa escondida na defesa final surpreende o perseguidor.",
+      "role": "Uma brasa escondida na defesa final surpreende o perseguidor.",
+      "phase": 3,
+      "support": false,
+      "vigil": 3,
+      "keywords": [],
+      "fx": {
+        "trigger": "face_attack",
+        "trap": [
+          {
+            "op": "damage",
+            "n": 1,
+            "target": "attacker"
+          },
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-036",
+      "name": "Carregador de Raízes",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 2,
+      "presence": {
+        "Raiz": 1
+      },
+      "force": 2,
+      "vigor": 2,
+      "essence": {
+        "generation": 1,
+        "duration": 4
+      },
+      "text": "",
+      "scene": "Criatura de raízes carrega uma plataforma de evacuação.",
+      "role": "Criatura de raízes carrega uma plataforma de evacuação.",
+      "phase": 2,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {},
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-037",
+      "name": "Batedora dos Jardins",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 3,
+      "presence": {
+        "Raiz": 2
+      },
+      "force": 2,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Emboscada.",
+      "scene": "Batedora humana encontra um caminho entre jardins suspensos.",
+      "role": "Batedora humana encontra um caminho entre jardins suspensos.",
+      "phase": 2,
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Emboscada"
+      ],
+      "fx": {},
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-038",
+      "name": "Arco Vivo",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 4,
+      "presence": {
+        "Raiz": 3
+      },
+      "force": 3,
+      "vigor": 5,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "",
+      "scene": "Criatura de pedra e raízes forma um arco sobre a fenda.",
+      "role": "Criatura de pedra e raízes forma um arco sobre a fenda.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {},
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-039",
+      "name": "Ancião da Travessia",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 6,
+      "presence": {
+        "Raiz": 4
+      },
+      "force": 4,
+      "vigor": 6,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "text": "Guardião.",
+      "scene": "Grande ser vegetal sustenta a última ponte enquanto a cidade se separa.",
+      "role": "Grande ser vegetal sustenta a última ponte enquanto a cidade se separa.",
+      "phase": 4,
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Guardião"
+      ],
+      "fx": {},
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-040",
+      "name": "Cuidadora das Fendas",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 2,
+      "presence": {
+        "Raiz": 1
+      },
+      "force": 1,
+      "vigor": 2,
+      "essence": {
+        "generation": 1,
+        "duration": 4
+      },
+      "text": "Suporte: monstros de Raiz na sua frente com dano ganham +1 de Força.",
+      "scene": "Curandeira prende talas de raiz nas criaturas feridas.",
+      "role": "Curandeira prende talas de raiz nas criaturas feridas.",
+      "phase": 2,
+      "support": true,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "aura": {
+          "school": "Raiz",
+          "force": 1,
+          "wounded": true
+        }
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-041",
+      "name": "Cronista do Horto",
+      "type": "Monstro",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 5,
+      "presence": {
+        "Raiz": 3
+      },
+      "force": 2,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 2
+      },
+      "text": "Suporte: no seu Despertar, se você tiver um Guardião na frente, compre 1 carta.",
+      "scene": "Cronista registra os nomes dos resgatados atrás de um guardião.",
+      "role": "Cronista registra os nomes dos resgatados atrás de um guardião.",
+      "phase": 3,
+      "support": true,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "support_dawn": [
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own",
+            "requires_guardian": true
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-042",
+      "name": "Seiva de Socorro",
+      "type": "Magia",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 2,
+      "presence": {
+        "Raiz": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Remova até 3 marcadores de dano de um monstro seu. Compre 1 carta.",
+      "scene": "Seiva preenche as fissuras de uma criatura ferida na ponte.",
+      "role": "Seiva preenche as fissuras de uma criatura ferida na ponte.",
+      "phase": 2,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "heal",
+            "n": 3,
+            "target": "own_monster"
+          },
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-043",
+      "name": "Chamado dos Abrigos",
+      "type": "Magia",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 3,
+      "presence": {
+        "Raiz": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Devolva um Monstro de custo 3 ou menos do seu descarte para a sua mão.",
+      "scene": "Ivo chama de volta um resgatador ferido que já havia deixado a travessia.",
+      "role": "Ivo chama de volta um resgatador ferido que já havia deixado a travessia.",
+      "phase": 4,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "recover",
+            "n": 1,
+            "target": "own_discard",
+            "max_cost": 3
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-044",
+      "name": "Horto dos Refugiados",
+      "type": "Encantamento",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": 2,
+      "presence": {
+        "Raiz": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "No seu Despertar, se você tiver um monstro na frente, ganhe 1 de Vida.",
+      "scene": "Moradores cultivam um abrigo nas máquinas paradas.",
+      "role": "Moradores cultivam um abrigo nas máquinas paradas.",
+      "phase": 4,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enchant_dawn": [
+          {
+            "op": "life",
+            "n": 1,
+            "target": "own",
+            "requires_front": true
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-045",
+      "name": "Socorro nas Raízes",
+      "type": "Prenúncio",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Condição: quando um monstro seu com dano for atacado.\nEfeito: remova até 2 marcadores de dano dele antes do combate.",
+      "scene": "Raízes preparadas sustentam um defensor ferido.",
+      "role": "Raízes preparadas sustentam um defensor ferido.",
+      "phase": 3,
+      "support": false,
+      "vigil": 3,
+      "keywords": [],
+      "fx": {
+        "trigger": "wounded_attacked",
+        "trap": [
+          {
+            "op": "heal",
+            "n": 2,
+            "target": "defender"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-046",
+      "name": "Abrigo Preparado",
+      "type": "Prenúncio",
+      "schools": [
+        "Raiz"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Condição: quando o rival conjurar uma Magia.\nEfeito: remova até 2 marcadores de dano de um monstro seu.",
+      "scene": "Um teto de raízes fecha-se sobre os feridos quando um feitiço ilumina a rua.",
+      "role": "Um teto de raízes fecha-se sobre os feridos quando um feitiço ilumina a rua.",
+      "phase": 3,
+      "support": false,
+      "vigil": 3,
+      "keywords": [],
+      "fx": {
+        "trigger": "magic",
+        "trap": [
+          {
+            "op": "heal",
+            "n": 2,
+            "target": "own_monster"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-047",
+      "name": "Catadora de Lamparinas",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 2,
+      "presence": {
+        "Sombra": 1
+      },
+      "force": 2,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Ao entrar, se você tiver 3 ou mais Cinzas, compre 1 carta.",
+      "scene": "Catadora encontra uma lamparina ainda acesa sob a fuligem.",
+      "role": "Catadora encontra uma lamparina ainda acesa sob a fuligem.",
+      "phase": 2,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enter": [
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own",
+            "ashes_min": 3
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-048",
+      "name": "Guia dos Túneis",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 2,
+      "presence": {
+        "Sombra": 1
+      },
+      "force": 1,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Suporte: monstros de Sombra na sua frente têm Alcance.",
+      "scene": "Guia feito de fuligem revela passagens que contornam a linha inimiga.",
+      "role": "Guia feito de fuligem revela passagens que contornam a linha inimiga.",
+      "phase": 3,
+      "support": true,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "aura": {
+          "school": "Sombra",
+          "keyword": "Alcance"
+        }
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-049",
+      "name": "Ceifador das Válvulas",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 4,
+      "presence": {
+        "Sombra": 3
+      },
+      "force": 3,
+      "vigor": 3,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "text": "Alcance.",
+      "scene": "Figura de fumaça usa uma longa ferramenta para alcançar um regulador distante.",
+      "role": "Figura de fumaça usa uma longa ferramenta para alcançar um regulador distante.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Alcance"
+      ],
+      "fx": {},
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-050",
+      "name": "Memória da Primeira Queda",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 6,
+      "presence": {
+        "Sombra": 4
+      },
+      "force": 5,
+      "vigor": 4,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "text": "Ao entrar, você pode mover 2 Cinzas suas para o descarte. Se fizer isso, cause 2 de dano a um monstro inimigo.",
+      "scene": "Um grande eco recompõe a silhueta de uma antiga torre desabada.",
+      "role": "Um grande eco recompõe a silhueta de uma antiga torre desabada.",
+      "phase": 4,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enter": [
+          {
+            "op": "spend_damage",
+            "n": 2,
+            "target": "enemy_monster",
+            "ashes": 2
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-051",
+      "name": "Arquivista da Fuligem",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 5,
+      "presence": {
+        "Sombra": 3
+      },
+      "force": 2,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 2
+      },
+      "text": "Suporte: no seu Despertar, se você tiver 3 ou mais Cinzas e até 3 cartas na mão, compre 1 carta.",
+      "scene": "Arquivista recupera registros de trabalhadores em folhas de cinza.",
+      "role": "Arquivista recupera registros de trabalhadores em folhas de cinza.",
+      "phase": 3,
+      "support": true,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "support_dawn": [
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own",
+            "ashes_min": 3,
+            "hand_max": 3
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-052",
+      "name": "Portador dos Nomes",
+      "type": "Monstro",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 3,
+      "presence": {
+        "Sombra": 2
+      },
+      "force": 2,
+      "vigor": 2,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Ao morrer durante o seu turno, compre 1 carta.",
+      "scene": "Figura humana leva placas com nomes de soterrados para fora do motor.",
+      "role": "Figura humana leva placas com nomes de soterrados para fora do motor.",
+      "phase": 2,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "death": [
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-053",
+      "name": "Apagar o Selo",
+      "type": "Magia",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 2,
+      "presence": {
+        "Sombra": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "text": "Destrua um Encantamento inimigo.",
+      "scene": "Mãos de fuligem apagam as runas que sustentam uma estrutura mágica.",
+      "role": "Mãos de fuligem apagam as runas que sustentam uma estrutura mágica.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "destroy_enchant",
+            "n": 1,
+            "target": "enemy_enchant"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-054",
+      "name": "Resgate de Memórias",
+      "type": "Magia",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 2,
+      "presence": {
+        "Sombra": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Custo adicional: mova 2 Cinzas suas para o descarte. Compre 2 cartas.",
+      "scene": "Ecos oferecem duas placas antigas para revelar um caminho esquecido.",
+      "role": "Ecos oferecem duas placas antigas para revelar um caminho esquecido.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "draw",
+            "n": 2,
+            "target": "own"
+          }
+        ]
+      },
+      "state": "prototipo-0.3",
+      "ash_cost": 2
+    },
+    {
+      "id": "VES-055",
+      "name": "Vigília dos Ausentes",
+      "type": "Encantamento",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 3,
+      "presence": {
+        "Sombra": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "No seu Encerramento, se um monstro seu morreu neste turno, cause 1 de dano ao mago rival.",
+      "scene": "Lamparinas dos ausentes acendem quando uma figura cai na ponte.",
+      "role": "Lamparinas dos ausentes acendem quando uma figura cai na ponte.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enchant_end": [
+          {
+            "op": "face",
+            "n": 1,
+            "target": "enemy",
+            "requires_death": true
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-056",
+      "name": "Último Recado",
+      "type": "Encantamento",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": 3,
+      "presence": {
+        "Sombra": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "No seu Encerramento, se um monstro seu morreu neste turno, compre 1 carta.",
+      "scene": "Uma lamparina deixada por um defensor revela sua última mensagem.",
+      "role": "Uma lamparina deixada por um defensor revela sua última mensagem.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enchant_end": [
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own",
+            "requires_death": true
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-057",
+      "name": "Selo de Fuligem",
+      "type": "Prenúncio",
+      "schools": [
+        "Sombra"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Condição: quando o rival conjurar um Encantamento de custo 3 ou menos.\nEfeito: destrua aquele Encantamento.",
+      "scene": "Uma marca escondida de fuligem desfaz o selo recém-traçado.",
+      "role": "Uma marca escondida de fuligem desfaz o selo recém-traçado.",
+      "phase": 3,
+      "support": false,
+      "vigil": 3,
+      "keywords": [],
+      "fx": {
+        "trigger": "small_enchant",
+        "trap": [
+          {
+            "op": "destroy_enchant",
+            "n": 1,
+            "target": "event_enchant"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-058",
+      "name": "Ajustadora dos Canais",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 2,
+      "presence": {
+        "Maré": 1
+      },
+      "force": 2,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Ao entrar, olhe a carta do topo do seu baralho. Você pode colocá-la no fundo.",
+      "scene": "Operadora lê os reflexos do motor numa comporta de bairro.",
+      "role": "Operadora lê os reflexos do motor numa comporta de bairro.",
+      "phase": 1,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enter": [
+          {
+            "op": "scry",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-059",
+      "name": "Lanceiro das Correntes",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Maré": 2
+      },
+      "force": 2,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Alcance.",
+      "scene": "Conjurador estende uma lança de água sobre a ponte para alcançar a retaguarda.",
+      "role": "Conjurador estende uma lança de água sobre a ponte para alcançar a retaguarda.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Alcance"
+      ],
+      "fx": {},
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-060",
+      "name": "Condutora do Refluxo",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 4,
+      "presence": {
+        "Maré": 3
+      },
+      "force": 3,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Ao entrar, você pode devolver um monstro seu de custo 2 ou menos para a sua mão.",
+      "scene": "Uma condutora recolhe um resgatador por uma corrente reversa.",
+      "role": "Uma condutora recolhe um resgatador por uma corrente reversa.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enter": [
+          {
+            "op": "bounce",
+            "n": 0,
+            "target": "own_monster",
+            "max_cost": 2,
+            "optional": true
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-061",
+      "name": "Serpente dos Aquedutos",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 6,
+      "presence": {
+        "Maré": 4
+      },
+      "force": 4,
+      "vigor": 5,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "text": "Ao entrar, devolva um Encantamento inimigo para a mão do dono.",
+      "scene": "Serpente de água envolve um aqueduto e arranca o selo mágico da estrutura.",
+      "role": "Serpente de água envolve um aqueduto e arranca o selo mágico da estrutura.",
+      "phase": 4,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enter": [
+          {
+            "op": "bounce_enchant",
+            "n": 1,
+            "target": "enemy_enchant"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-062",
+      "name": "Guardiã da Cisterna",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 2,
+      "presence": {
+        "Maré": 1
+      },
+      "force": 1,
+      "vigor": 2,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Suporte: antes de perder energia no seu Encerramento, guarde até 1 para o seu próximo turno. O limite total é 1 por turno.",
+      "scene": "Uma guardiã conserva um pequeno pulso de luz dentro de uma cisterna.",
+      "role": "Uma guardiã conserva um pequeno pulso de luz dentro de uma cisterna.",
+      "phase": 3,
+      "support": true,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "store": 1
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-063",
+      "name": "Cartógrafa das Águas",
+      "type": "Monstro",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 5,
+      "presence": {
+        "Maré": 3
+      },
+      "force": 2,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 2
+      },
+      "text": "Suporte: no seu Despertar, se você tiver 2 ou mais fontes, compre 1 carta.",
+      "scene": "Cartógrafa desenha rotas fluviais ligando os reguladores ainda ativos.",
+      "role": "Cartógrafa desenha rotas fluviais ligando os reguladores ainda ativos.",
+      "phase": 3,
+      "support": true,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "support_dawn": [
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own",
+            "sources_min": 2
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-064",
+      "name": "Pulso Regulamentado",
+      "type": "Magia",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 2,
+      "presence": {
+        "Maré": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 2
+      },
+      "text": "Adicione 1 marcador de duração a uma fonte sua. Compre 1 carta.",
+      "scene": "Uma válvula de água amortece um batimento sem extrair energia adicional agora.",
+      "role": "Uma válvula de água amortece um batimento sem extrair energia adicional agora.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "extend",
+            "n": 1,
+            "target": "own_source"
+          },
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-065",
+      "name": "Revelar a Comporta",
+      "type": "Magia",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 2,
+      "presence": {
+        "Maré": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Dissipe um Prenúncio do Véu inimigo: revele-o e mova-o para as Cinzas do dono.",
+      "scene": "Água luminosa expõe a defesa escondida sob uma ponte.",
+      "role": "Água luminosa expõe a defesa escondida sob uma ponte.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "dissipate",
+            "n": 1,
+            "target": "enemy_veil"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-066",
+      "name": "Rotas Alternadas",
+      "type": "Encantamento",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Maré": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Uma vez no seu turno, depois de reposicionar um monstro, compre 1 carta.",
+      "scene": "Passarelas de água conectam as duas linhas de evacuação.",
+      "role": "Passarelas de água conectam as duas linhas de evacuação.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "reposition": [
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-067",
+      "name": "Compasso das Correntes",
+      "type": "Encantamento",
+      "schools": [
+        "Maré"
+      ],
+      "cost": 2,
+      "presence": {
+        "Maré": 2
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Quando você conjurar sua primeira Magia de Maré no turno, adicione 1 marcador de duração a uma fonte sua.",
+      "scene": "Canais e reguladores respondem ao primeiro gesto de uma conjuração.",
+      "role": "Canais e reguladores respondem ao primeiro gesto de uma conjuração.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "first_magic": [
+          {
+            "op": "extend",
+            "n": 1,
+            "target": "own_source"
+          }
+        ],
+        "magic_school": "Maré"
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-068",
+      "name": "Rota de Escape",
+      "type": "Prenúncio",
+      "schools": [
+        "Maré"
+      ],
+      "cost": null,
+      "presence": {},
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Condição: quando um monstro seu na retaguarda for atacado.\nEfeito: devolva-o para a sua mão. O ataque termina.",
+      "scene": "Uma corrente preparada retira uma curandeira da linha de alcance inimiga.",
+      "role": "Uma corrente preparada retira uma curandeira da linha de alcance inimiga.",
+      "phase": 3,
+      "support": false,
+      "vigil": 3,
+      "keywords": [],
+      "fx": {
+        "trigger": "back_attacked",
+        "trap": [
+          {
+            "op": "bounce",
+            "n": 0,
+            "target": "defender"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-069",
+      "name": "Enxertado das Fornalhas",
+      "type": "Monstro",
+      "schools": [
+        "Chama",
+        "Raiz"
+      ],
+      "cost": 5,
+      "presence": {
+        "Chama": 2,
+        "Raiz": 2
+      },
+      "force": 4,
+      "vigor": 4,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "text": "Ao entrar, você pode destruir outro monstro seu. Se fizer isso, cause 2 de dano a um monstro inimigo.",
+      "scene": "Uma criatura de raízes absorve uma carapaça de sentinela abandonada.",
+      "role": "Uma criatura de raízes absorve uma carapaça de sentinela abandonada.",
+      "phase": 4,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enter": [
+          {
+            "op": "sac_damage",
+            "n": 2,
+            "target": "enemy_monster"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-070",
+      "name": "Abrir a Travessia",
+      "type": "Magia",
+      "schools": [
+        "Chama",
+        "Raiz"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 1,
+        "Raiz": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Custo adicional: destrua um monstro seu. Cause 3 de dano a um monstro na frente inimiga. Ganhe 2 de Vida.",
+      "scene": "Um defensor derruba o arco antigo para abrir uma passagem segura.",
+      "role": "Um defensor derruba o arco antigo para abrir uma passagem segura.",
+      "phase": 4,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "damage",
+            "n": 3,
+            "target": "enemy_front"
+          },
+          {
+            "op": "life",
+            "n": 2,
+            "target": "own"
+          }
+        ]
+      },
+      "state": "prototipo-0.3",
+      "sac_cost": true
+    },
+    {
+      "id": "VES-071",
+      "name": "Fênix do Motor",
+      "type": "Monstro",
+      "schools": [
+        "Chama",
+        "Sombra"
+      ],
+      "cost": 4,
+      "presence": {
+        "Chama": 2,
+        "Sombra": 1
+      },
+      "force": 3,
+      "vigor": 3,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "text": "Ímpeto. Ao entrar, você pode mover 2 Cinzas suas para o descarte. Se fizer isso, cause 2 de dano a um monstro inimigo.",
+      "scene": "Uma fênix de brasa e fuligem nasce acima do coração exposto.",
+      "role": "Uma fênix de brasa e fuligem nasce acima do coração exposto.",
+      "phase": 4,
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Ímpeto"
+      ],
+      "fx": {
+        "enter": [
+          {
+            "op": "spend_damage",
+            "n": 2,
+            "target": "enemy_monster",
+            "ashes": 2
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-072",
+      "name": "Detonar as Cinzas",
+      "type": "Magia",
+      "schools": [
+        "Chama",
+        "Sombra"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 1,
+        "Sombra": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 2,
+        "duration": 1
+      },
+      "text": "Custo adicional: mova 2 Cinzas suas para o descarte. Cause 3 de dano ao mago rival.",
+      "scene": "Duas cargas de fuligem do motor queimam numa explosão controlada.",
+      "role": "Duas cargas de fuligem do motor queimam numa explosão controlada.",
+      "phase": 4,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "face",
+            "n": 3,
+            "target": "enemy"
+          }
+        ]
+      },
+      "state": "prototipo-0.3",
+      "ash_cost": 2
+    },
+    {
+      "id": "VES-073",
+      "name": "Corredora de Vapor",
+      "type": "Monstro",
+      "schools": [
+        "Chama",
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Chama": 1,
+        "Maré": 1
+      },
+      "force": 2,
+      "vigor": 3,
+      "essence": {
+        "generation": 2,
+        "duration": 2
+      },
+      "text": "Ímpeto.",
+      "scene": "Mensageira usa jatos de vapor e água para cruzar a ponte rachada.",
+      "role": "Mensageira usa jatos de vapor e água para cruzar a ponte rachada.",
+      "phase": 2,
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Ímpeto"
+      ],
+      "fx": {},
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-074",
+      "name": "Avanço Pressurizado",
+      "type": "Magia",
+      "schools": [
+        "Chama",
+        "Maré"
+      ],
+      "cost": 2,
+      "presence": {
+        "Chama": 1,
+        "Maré": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Um monstro seu ganha Ímpeto e +1 de Força até o fim deste turno.",
+      "scene": "Nara libera um jato que impulsiona um aliado pela passagem.",
+      "role": "Nara libera um jato que impulsiona um aliado pela passagem.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "boost",
+            "n": 1,
+            "target": "own_monster",
+            "haste": true
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-075",
+      "name": "Guardião do Depósito",
+      "type": "Monstro",
+      "schools": [
+        "Raiz",
+        "Sombra"
+      ],
+      "cost": 4,
+      "presence": {
+        "Raiz": 1,
+        "Sombra": 1
+      },
+      "force": 3,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Enquanto você tiver 3 ou mais Cinzas, este monstro tem Guardião.",
+      "scene": "Raízes cobertas de cinza formam um defensor diante das placas dos soterrados.",
+      "role": "Raízes cobertas de cinza formam um defensor diante das placas dos soterrados.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "conditional_guard": 3
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-076",
+      "name": "Reconstruir os Nomes",
+      "type": "Magia",
+      "schools": [
+        "Raiz",
+        "Sombra"
+      ],
+      "cost": 3,
+      "presence": {
+        "Raiz": 1,
+        "Sombra": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Devolva um Monstro do seu descarte para a sua mão. Ganhe 2 de Vida.",
+      "scene": "Ivo e os Ecos devolvem um nome e um abrigo aos sobreviventes.",
+      "role": "Ivo e os Ecos devolvem um nome e um abrigo aos sobreviventes.",
+      "phase": 4,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "recover",
+            "n": 1,
+            "target": "own_discard"
+          },
+          {
+            "op": "life",
+            "n": 2,
+            "target": "own"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-077",
+      "name": "Curadora das Estações",
+      "type": "Monstro",
+      "schools": [
+        "Raiz",
+        "Maré"
+      ],
+      "cost": 4,
+      "presence": {
+        "Raiz": 2,
+        "Maré": 1
+      },
+      "force": 3,
+      "vigor": 4,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Guardião. Suporte: no seu Despertar, remova 1 marcador de dano de cada monstro seu.",
+      "scene": "Curadora conduz seiva e água entre os defensores na última travessia.",
+      "role": "Curadora conduz seiva e água entre os defensores na última travessia.",
+      "phase": 4,
+      "support": true,
+      "vigil": null,
+      "keywords": [
+        "Guardião"
+      ],
+      "fx": {
+        "support_dawn": [
+          {
+            "op": "heal_all",
+            "n": 1,
+            "target": "own_monster"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-078",
+      "name": "Canais do Recomeço",
+      "type": "Encantamento",
+      "schools": [
+        "Raiz",
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Raiz": 1,
+        "Maré": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "No seu Encerramento, se você reposicionou um monstro neste turno, remova até 2 marcadores de dano de um monstro seu e ganhe 2 de Vida.",
+      "scene": "Jardins e canais são ligados pela primeira vez sem o motor.",
+      "role": "Jardins e canais são ligados pela primeira vez sem o motor.",
+      "phase": 4,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "enchant_end": [
+          {
+            "op": "heal",
+            "n": 2,
+            "target": "own_monster",
+            "requires_reposition": true
+          },
+          {
+            "op": "life",
+            "n": 2,
+            "target": "own",
+            "requires_reposition": true
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-079",
+      "name": "Intérprete dos Reflexos",
+      "type": "Monstro",
+      "schools": [
+        "Sombra",
+        "Maré"
+      ],
+      "cost": 3,
+      "presence": {
+        "Sombra": 1,
+        "Maré": 1
+      },
+      "force": 3,
+      "vigor": 3,
+      "essence": {
+        "generation": 1,
+        "duration": 3
+      },
+      "text": "Alcance. Ao entrar, olhe um Prenúncio do Véu inimigo.",
+      "scene": "Um conjurador escuta os Ecos refletidos na água e aponta uma defesa escondida.",
+      "role": "Um conjurador escuta os Ecos refletidos na água e aponta uma defesa escondida.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [
+        "Alcance"
+      ],
+      "fx": {
+        "enter": [
+          {
+            "op": "peek",
+            "n": 1,
+            "target": "enemy_veil"
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    },
+    {
+      "id": "VES-080",
+      "name": "Reflexo dos Ausentes",
+      "type": "Magia",
+      "schools": [
+        "Sombra",
+        "Maré"
+      ],
+      "cost": 2,
+      "presence": {
+        "Sombra": 1,
+        "Maré": 1
+      },
+      "force": null,
+      "vigor": null,
+      "essence": {
+        "generation": 1,
+        "duration": 2
+      },
+      "text": "Devolva um monstro da retaguarda inimiga para a mão do dono. Se você tiver 3 ou mais Cinzas, compre 1 carta.",
+      "scene": "Um reflexo de fuligem engole a silhueta de um suporte inimigo.",
+      "role": "Um reflexo de fuligem engole a silhueta de um suporte inimigo.",
+      "phase": 3,
+      "support": false,
+      "vigil": null,
+      "keywords": [],
+      "fx": {
+        "cast": [
+          {
+            "op": "bounce",
+            "n": 0,
+            "target": "enemy_back"
+          },
+          {
+            "op": "draw",
+            "n": 1,
+            "target": "own",
+            "ashes_min": 3
+          }
+        ]
+      },
+      "state": "prototipo-0.3"
+    }
+  ]
+}

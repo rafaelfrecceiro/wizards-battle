@@ -1,0 +1,75 @@
+{
+  "ui": "0.3.0",
+  "health": {
+    "ok": true,
+    "name": "Wizards Battle",
+    "version": "wb-0.2.0/rules-0.3-trigger-order/ac500ad45d98/7e65b53aa899",
+    "sessions": 3
+  },
+  "assets": [
+    {
+      "path": "/assets/index-DPE_CV1Q.js",
+      "status": 200,
+      "bytes": 321441,
+      "igualAoBuild": true
+    },
+    {
+      "path": "/assets/index-zbnwWxia.css",
+      "status": 200,
+      "bytes": 42437,
+      "igualAoBuild": true
+    }
+  ],
+  "raridades": {
+    "common": 40,
+    "uncommon": 28,
+    "rare": 12
+  },
+  "baralhos": [
+    {
+      "name": "Queimada",
+      "common": 24,
+      "uncommon": 12,
+      "rare": 4
+    },
+    {
+      "name": "Pira",
+      "common": 23,
+      "uncommon": 12,
+      "rare": 5
+    },
+    {
+      "name": "Vapor",
+      "common": 27,
+      "uncommon": 11,
+      "rare": 2
+    },
+    {
+      "name": "Decomposição",
+      "common": 23,
+      "uncommon": 15,
+      "rare": 2
+    },
+    {
+      "name": "Estações",
+      "common": 29,
+      "uncommon": 7,
+      "rare": 4
+    },
+    {
+      "name": "Ilusão",
+      "common": 22,
+      "uncommon": 12,
+      "rare": 6
+    }
+  ],
+  "artesOriginais": {
+    "verificadas": 80,
+    "todasComMesmoSha256": true
+  },
+  "testes": {
+    "total": 71,
+    "aprovados": 71,
+    "falhas": 0
+  }
+}

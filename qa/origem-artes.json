@@ -1,0 +1,727 @@
+{
+  "source": "C:\\Users\\rafaf\\Documents\\Projects\\Pessoal\\Hub\\GamesCodex\\ideias\\duelo-de-magos\\output\\pdf\\Vespera-80-cartas-A4.pdf",
+  "sha256": "691054cc8d2c54a91f3daacd73793aca0272aff1a94da64e8f0d77c78acacb9a",
+  "method": "PDFium render at 3 px/pt, crop by original card placement; PNG, no redraw",
+  "cards": [
+    {
+      "id": "VES-001",
+      "file": "VES-001.png",
+      "sha256": "c6defe9d06a6f614f01eafa5898ceb9275b79ed1b4fdff875a3c0ce957e3178e",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-002",
+      "file": "VES-002.png",
+      "sha256": "f9ea17e4aa3ffa32f4a1daacc606073e2b0ae5eeba90fa882a89bc13e9737394",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-003",
+      "file": "VES-003.png",
+      "sha256": "dca2abfa633bbed5281834e396094d6d3d094a5309b4ff3c34e97c333cf5ea71",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-004",
+      "file": "VES-004.png",
+      "sha256": "e9acdc943d1956a455c9deaa68928240b3f897de2f15a0e671ae6faf16d85cd5",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-005",
+      "file": "VES-005.png",
+      "sha256": "ad954dbddd87e8abf04624394e48dcd555857e0f8c7efd0291e6f45187895063",
+      "size": [
+        534,
+        748
+      ]
+    },
+    {
+      "id": "VES-006",
+      "file": "VES-006.png",
+      "sha256": "49ce6950080b36e1d427439abedda4f742699ebf066257e24d478742aa63b19a",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-007",
+      "file": "VES-007.png",
+      "sha256": "dc42c57e709e3b1126cf8d6eda5caf205ef069f93ed475359e3a9f2f6ab1cee9",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-008",
+      "file": "VES-008.png",
+      "sha256": "97d05ccd8c150fe23de05ed165183d4637530b7f1106201c3e5105686112fa3e",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-009",
+      "file": "VES-009.png",
+      "sha256": "335b95cfe19e4245a66357c532d2c945723c4c484e6af2dbb625821b0071a0e7",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-010",
+      "file": "VES-010.png",
+      "sha256": "1e838cfb7df6d4edcb0389452c94304a67320379385c7ed1d21791540d9f3436",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-011",
+      "file": "VES-011.png",
+      "sha256": "9e3eaba6e9f0a59cb9d68068b56910bf984d5d46bd0ef706a09d2872db8ea1c7",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-012",
+      "file": "VES-012.png",
+      "sha256": "f1c9edd315f60307d30073f829188e5cf0eb2221a599d3b68ad601e49ae9eca3",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-013",
+      "file": "VES-013.png",
+      "sha256": "0049c181e23f27351a52833da4ef2f0578ad895ac37cc527946d2435c7d04855",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-014",
+      "file": "VES-014.png",
+      "sha256": "e7647840ea9991a370de2156f0af1e73308066f1ef8a2a504803338816e61072",
+      "size": [
+        534,
+        748
+      ]
+    },
+    {
+      "id": "VES-015",
+      "file": "VES-015.png",
+      "sha256": "d98bc97d824c8925205fbba8ae48e5b11958c833803da564b5b93c2180e3c9b8",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-016",
+      "file": "VES-016.png",
+      "sha256": "ac65ba220e5177fd555c9d539a8a7b56f3666da2abc402a19a26e1c1a02c4b80",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-017",
+      "file": "VES-017.png",
+      "sha256": "a9ed305ddcdd32c835ac7aeae51da95d4a719874f33a9d5bd7b6983171c6d631",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-018",
+      "file": "VES-018.png",
+      "sha256": "87f77192095f9e3e00922287c4b45245a1689661b765bb69b83fef0be9becb1f",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-019",
+      "file": "VES-019.png",
+      "sha256": "cade01ef095e15b262208b55c4290eae124319ea422c5077cbfc976ac62e3852",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-020",
+      "file": "VES-020.png",
+      "sha256": "7f208410398f2cca5b89dae5118fae0fb1263da0a56798f007caca012ef5d1bb",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-021",
+      "file": "VES-021.png",
+      "sha256": "e102f17b81ae77f4581ca412d95cf700f56f5a43c079ba61856fa53e94932d82",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-022",
+      "file": "VES-022.png",
+      "sha256": "80c7f6cf36edab761442fa93ed687b9d36198fe5f8e84eba9aee3b4ed9d4fbff",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-023",
+      "file": "VES-023.png",
+      "sha256": "ae61f4dadff4b63e2d98aa771bec5b54d94282735545ac56dced9bfb1b88ad5f",
+      "size": [
+        534,
+        748
+      ]
+    },
+    {
+      "id": "VES-024",
+      "file": "VES-024.png",
+      "sha256": "f2a909af6d6cd932cfd35ad78e9156ba4b745e64ccff207f8a4025f32c73e896",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-025",
+      "file": "VES-025.png",
+      "sha256": "4e71736b255ff77beeebae4bbdf1e264c404881f1439339be6384a3f5a2dbffd",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-026",
+      "file": "VES-026.png",
+      "sha256": "822e0fc0d3151ab362b7e4d485a69c2c15d5c82041fb03c2347cb82381e1b2d9",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-027",
+      "file": "VES-027.png",
+      "sha256": "5d27d86a539e0ee48812c2bdfc5b6cd0d6541e7d16c4884e1ce386eb8f78d885",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-028",
+      "file": "VES-028.png",
+      "sha256": "8f4c5d3e430d32d730681d196845b61422d670b38f8fa671725132a34397726d",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-029",
+      "file": "VES-029.png",
+      "sha256": "a23df470f22d31831ec68814796ac667b56885a0737f372d6bd9176ed9574063",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-030",
+      "file": "VES-030.png",
+      "sha256": "ed9e649f4302543616e899f9cd46537150b9d891197fee1a93141f9a69440d5c",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-031",
+      "file": "VES-031.png",
+      "sha256": "369bc94a69dc5eb7330b3c16fffea76117234f83ce039bfdfa63c1d017025efb",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-032",
+      "file": "VES-032.png",
+      "sha256": "e5be874fe4278c5602b5289fda3c9d3fd94d049f5014e72ec21b0d5fbed4a373",
+      "size": [
+        534,
+        748
+      ]
+    },
+    {
+      "id": "VES-033",
+      "file": "VES-033.png",
+      "sha256": "c9f174befbd4a3196bcddcc119709a70ff881af0e81218e8a769fcfc6e1281f9",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-034",
+      "file": "VES-034.png",
+      "sha256": "dec9fa62bf92a0f257f25e1f1cce2006cfff95e15b1d23e926bf576d9cf899d0",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-035",
+      "file": "VES-035.png",
+      "sha256": "a0376f0ff40d146045f961bccc3ee67488b3b061e72006b2d2b23f8d1cbd8030",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-036",
+      "file": "VES-036.png",
+      "sha256": "71a0ed0d6250d8177653e01b7a573092e1ec77a0cd307ea96ab2a73f64d5a4d7",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-037",
+      "file": "VES-037.png",
+      "sha256": "3855e94afdf365d2e02df50deaf43f163e7ef94470de0b322e8a0fbe84fd85fb",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-038",
+      "file": "VES-038.png",
+      "sha256": "f90cb1e58696b0524287dd16f7fd8d5f58720474679f26e49728445b1a577ce8",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-039",
+      "file": "VES-039.png",
+      "sha256": "2ad9dfe14651171adf77dddc1db6214e021083a62e5427bc1b0cb771c7a2f307",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-040",
+      "file": "VES-040.png",
+      "sha256": "77211b85762684b573cd810ae1771860dae124d7bbf0f9750ec17c284df1c896",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-041",
+      "file": "VES-041.png",
+      "sha256": "d26690117e55ea46e1fe4ec63da75d70b85f0a767870a4b972b99a8a0714b0df",
+      "size": [
+        534,
+        748
+      ]
+    },
+    {
+      "id": "VES-042",
+      "file": "VES-042.png",
+      "sha256": "155b24fbea42ec5c56128f5c64bca6a18e10d395c6dcf0613dd549cc0018b11c",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-043",
+      "file": "VES-043.png",
+      "sha256": "0693a9a13f53c859a3bdddad38930cc061d95b6f34b6d2b2475745e1fa03b44c",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-044",
+      "file": "VES-044.png",
+      "sha256": "3ccdb70b2ff28596cab169c5805835a3b8c570e788932aec1908e9b97281d418",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-045",
+      "file": "VES-045.png",
+      "sha256": "7fdd3fce2fefc862942fc8c6dee84f5f53b9e667a28ced08837865b9629ec04a",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-046",
+      "file": "VES-046.png",
+      "sha256": "c634dc7482b107e190f3444cbe8cb8418fde0c1fa1aeea869bc4fc1429e0fbdd",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-047",
+      "file": "VES-047.png",
+      "sha256": "adebd25f8e20c8c3e4cfc2d8c2a5a77720b25ae5657dedae688d757b0a89c09f",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-048",
+      "file": "VES-048.png",
+      "sha256": "0688ad5ce4c2231300fd88d6f3768d31a7d510654f49e55f68408aee8a38fed4",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-049",
+      "file": "VES-049.png",
+      "sha256": "d2360abafcd1587853f9c679d022656d1b1916c155f5281eb91374f0798ef46d",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-050",
+      "file": "VES-050.png",
+      "sha256": "7ad863d9c9fdabe8534dce6845764a05a373c76f4d4de8c8be64643587e598e3",
+      "size": [
+        534,
+        748
+      ]
+    },
+    {
+      "id": "VES-051",
+      "file": "VES-051.png",
+      "sha256": "3cd0426128a38e3648b532b841f472689fd0e3b3dc8bc230e24b3d5525be151b",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-052",
+      "file": "VES-052.png",
+      "sha256": "82fd012b62e7ffbc3090a8ae1eeb1c81caa938f46520288b259ded13fd83bb82",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-053",
+      "file": "VES-053.png",
+      "sha256": "e85e7207528e5e139f0ca8df6a7886b55f7f05c398b88dd83cfbe1a361894fe8",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-054",
+      "file": "VES-054.png",
+      "sha256": "07a6fdc5d480f28d7f6180f8de0bee27d0489728b4430d6883d4614787a7a3ac",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-055",
+      "file": "VES-055.png",
+      "sha256": "1bb43f8da1399d8ac5bfda3f52005c8efdfc88230479e27f85b64811ccf2efe4",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-056",
+      "file": "VES-056.png",
+      "sha256": "511be63608ec636d2aebfe0917dbd95f22a9dcd097c605301409bc8393222632",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-057",
+      "file": "VES-057.png",
+      "sha256": "202142b63c2d0bad523c77c3ac3128a48055e75c8c6d12052cf08b9034508a26",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-058",
+      "file": "VES-058.png",
+      "sha256": "a6028b416c4305b9a7a10593063c7a6e29bb59e4e02fe26973c5d58755d74ce2",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-059",
+      "file": "VES-059.png",
+      "sha256": "b6ebe8be6c4a282c59d43aaa477917ec692389b88022b04a64a91470d59abf5f",
+      "size": [
+        534,
+        748
+      ]
+    },
+    {
+      "id": "VES-060",
+      "file": "VES-060.png",
+      "sha256": "8ae2df70194c0c8bf1ef134a5fd243170b6bea23dd20bf6e7ac38efe1157885e",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-061",
+      "file": "VES-061.png",
+      "sha256": "23c19ca15a2013f576703a86cc30b71341d2d072aeb2ccdfd7a5088a0606f8c6",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-062",
+      "file": "VES-062.png",
+      "sha256": "863aa739f8b388b2cb66fd4208685d11ca22bb82662882a0558972c7990d4161",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-063",
+      "file": "VES-063.png",
+      "sha256": "89212d9acaa8595d2c7b015d6b2a202854920a9aacacf2f222234fb8e88392e1",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-064",
+      "file": "VES-064.png",
+      "sha256": "d22a720460df8149b83e6aed324aa7892763f285cb3c4541d4b8f278561614d5",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-065",
+      "file": "VES-065.png",
+      "sha256": "e87cfad4f55c61c267e46f587d1ea15693b3a2347ee0aecbca0b6d7122a02dd6",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-066",
+      "file": "VES-066.png",
+      "sha256": "c9374f3b42e0da27535d7f620182d5fc499702242d2b0b0e3f2bd01c5c9a1715",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-067",
+      "file": "VES-067.png",
+      "sha256": "4306b3de4ea61f2d01bb71eb8c362c000445bfab9acc590176dc4b0d8d163fb2",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-068",
+      "file": "VES-068.png",
+      "sha256": "3af3d13aa30a30b8eea16dca0cac2ec2850ec462488439f20f6259484fbe9856",
+      "size": [
+        534,
+        748
+      ]
+    },
+    {
+      "id": "VES-069",
+      "file": "VES-069.png",
+      "sha256": "a920a330d32b42547b62545d7ffcef3bb5f4476006bdef1372f63a5c71fc13bb",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-070",
+      "file": "VES-070.png",
+      "sha256": "c517145d0384460cfbb5fd4c4122d7e92fad0387d18d2203bf91a469f98e42d3",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-071",
+      "file": "VES-071.png",
+      "sha256": "2f0d8724443a76da55addede7b672c39ca2e50cbc044b6e91bd2f864296c2dcb",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-072",
+      "file": "VES-072.png",
+      "sha256": "30cf0164790bfb801d2857566232490110136b431c3c60285b587a5455cb2046",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-073",
+      "file": "VES-073.png",
+      "sha256": "cd4bd01da5f93dbcb16c1d6e4a65575801df039ac367d9f75fa07488b07ebb77",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-074",
+      "file": "VES-074.png",
+      "sha256": "5cfa225eed0e517be82c81d387f219814409a5700c8f4808e1ec755b944a7ca3",
+      "size": [
+        534,
+        747
+      ]
+    },
+    {
+      "id": "VES-075",
+      "file": "VES-075.png",
+      "sha256": "4f00290fe21f51741c5c8fb6a0c845106b670909f59cccc33e116d06ff883f34",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-076",
+      "file": "VES-076.png",
+      "sha256": "8cdb8354b12e48ff229cfc190e9cdc5c9f83410188f1b27d5720c4aac7b839ae",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-077",
+      "file": "VES-077.png",
+      "sha256": "c712b93a20146985dfb1211e22832967e7f35adfaa43f7858e649fddd96f8aab",
+      "size": [
+        534,
+        748
+      ]
+    },
+    {
+      "id": "VES-078",
+      "file": "VES-078.png",
+      "sha256": "03acc93774267a18946c41e2a9e2d0e3d2691c4f475067df519aaea3afe5815f",
+      "size": [
+        535,
+        748
+      ]
+    },
+    {
+      "id": "VES-079",
+      "file": "VES-079.png",
+      "sha256": "0c2392fa5d1c7a483adfa1ce231a966e9af848a34211ab398b9fbf318dc849e4",
+      "size": [
+        535,
+        747
+      ]
+    },
+    {
+      "id": "VES-080",
+      "file": "VES-080.png",
+      "sha256": "680ad2ded1904aaecd135d13d5073924f0cd5658e567311386cce0d07b0ff6ee",
+      "size": [
+        534,
+        747
+      ]
+    }
+  ]
+}

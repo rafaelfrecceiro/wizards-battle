@@ -1,0 +1,17 @@
+{
+  "version": "wb-0.6.0/rules-ves-complete/ac500ad45d98/7e65b53aa899",
+  "checks": [
+    "rejeição de lista incompleta/ilegal/desconhecida/não habilitada",
+    "oponente validado",
+    "duelo com lista personalizada",
+    "snapshot independente do editor",
+    "privacidade e replay bloqueado durante duelo",
+    "partida completa contra bot",
+    "replay determinístico idêntico ao servidor"
+  ],
+  "requests": 164,
+  "steps": 155,
+  "turns": 35,
+  "winner": 1,
+  "actions": 155
+}

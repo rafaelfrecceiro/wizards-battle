@@ -1,0 +1,17 @@
+{
+  "version": "wb-0.4.0/rules-0.3-custom-decks/ac500ad45d98/7e65b53aa899",
+  "checks": [
+    "rejeição de lista incompleta/ilegal/desconhecida/não habilitada",
+    "oponente validado",
+    "duelo com lista personalizada",
+    "snapshot independente do editor",
+    "privacidade e replay bloqueado durante duelo",
+    "partida completa contra bot",
+    "replay determinístico idêntico ao servidor"
+  ],
+  "requests": 131,
+  "steps": 121,
+  "turns": 27,
+  "winner": 1,
+  "actions": 121
+}

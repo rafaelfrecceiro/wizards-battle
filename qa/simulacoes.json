@@ -1,0 +1,369 @@
+{
+  "method": "40 partidas bot heurístico × bot, 20 por variante; seeds fixas; não mede força estratégica ou diversão humana",
+  "results": [
+    {
+      "variant": "base-0.3",
+      "seed": 220000,
+      "turns": 32,
+      "actions": 131,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220001,
+      "turns": 22,
+      "actions": 109,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220002,
+      "turns": 28,
+      "actions": 116,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220003,
+      "turns": 32,
+      "actions": 133,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220004,
+      "turns": 12,
+      "actions": 58,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220005,
+      "turns": 29,
+      "actions": 131,
+      "winner": 1,
+      "winnerDeck": "Queimada"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220006,
+      "turns": 31,
+      "actions": 128,
+      "winner": 0,
+      "winnerDeck": "Queimada"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220007,
+      "turns": 22,
+      "actions": 96,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220008,
+      "turns": 22,
+      "actions": 95,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220009,
+      "turns": 24,
+      "actions": 108,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220010,
+      "turns": 19,
+      "actions": 86,
+      "winner": 0,
+      "winnerDeck": "Queimada"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220011,
+      "turns": 49,
+      "actions": 196,
+      "winner": 1,
+      "winnerDeck": "Queimada"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220012,
+      "turns": 26,
+      "actions": 115,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220013,
+      "turns": 58,
+      "actions": 210,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220014,
+      "turns": 18,
+      "actions": 85,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220015,
+      "turns": 18,
+      "actions": 80,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220016,
+      "turns": 14,
+      "actions": 68,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220017,
+      "turns": 25,
+      "actions": 112,
+      "winner": 1,
+      "winnerDeck": "Queimada"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220018,
+      "turns": 9,
+      "actions": 46,
+      "winner": 0,
+      "winnerDeck": "Queimada"
+    },
+    {
+      "variant": "base-0.3",
+      "seed": 220019,
+      "turns": 32,
+      "actions": 130,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220000,
+      "turns": 24,
+      "actions": 111,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220001,
+      "turns": 24,
+      "actions": 119,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220002,
+      "turns": 32,
+      "actions": 132,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220003,
+      "turns": 34,
+      "actions": 148,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220004,
+      "turns": 33,
+      "actions": 138,
+      "winner": 0,
+      "winnerDeck": "Queimada"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220005,
+      "turns": 22,
+      "actions": 113,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220006,
+      "turns": 26,
+      "actions": 118,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220007,
+      "turns": 32,
+      "actions": 132,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220008,
+      "turns": 11,
+      "actions": 57,
+      "winner": 0,
+      "winnerDeck": "Queimada"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220009,
+      "turns": 30,
+      "actions": 147,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220010,
+      "turns": 17,
+      "actions": 83,
+      "winner": 0,
+      "winnerDeck": "Queimada"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220011,
+      "turns": 41,
+      "actions": 192,
+      "winner": 1,
+      "winnerDeck": "Queimada"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220012,
+      "turns": 24,
+      "actions": 110,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220013,
+      "turns": 29,
+      "actions": 127,
+      "winner": 1,
+      "winnerDeck": "Queimada"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220014,
+      "turns": 32,
+      "actions": 135,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220015,
+      "turns": 16,
+      "actions": 77,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220016,
+      "turns": 12,
+      "actions": 65,
+      "winner": 1,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220017,
+      "turns": 43,
+      "actions": 171,
+      "winner": 0,
+      "winnerDeck": "Pira"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220018,
+      "turns": 21,
+      "actions": 100,
+      "winner": 0,
+      "winnerDeck": "Queimada"
+    },
+    {
+      "variant": "fontes-estendidas",
+      "seed": 220019,
+      "turns": 45,
+      "actions": 181,
+      "winner": 1,
+      "winnerDeck": "Queimada"
+    }
+  ],
+  "casts": {
+    "VES-002": 87,
+    "VES-032": 48,
+    "VES-025": 66,
+    "VES-036": 37,
+    "VES-035": 23,
+    "VES-057": 14,
+    "VES-044": 25,
+    "VES-016": 10,
+    "VES-055": 4,
+    "VES-045": 14,
+    "VES-003": 26,
+    "VES-040": 36,
+    "VES-047": 48,
+    "VES-052": 17,
+    "VES-051": 6,
+    "VES-022": 27,
+    "VES-048": 34,
+    "VES-011": 36,
+    "VES-037": 12,
+    "VES-042": 6,
+    "VES-046": 6,
+    "VES-031": 8,
+    "VES-009": 44,
+    "VES-004": 9,
+    "VES-017": 6,
+    "VES-056": 17,
+    "VES-043": 6,
+    "VES-034": 19,
+    "VES-041": 10,
+    "VES-007": 4,
+    "VES-006": 22,
+    "VES-053": 7,
+    "VES-033": 10,
+    "VES-026": 2,
+    "VES-028": 4,
+    "VES-072": 1,
+    "VES-012": 3,
+    "VES-054": 3,
+    "VES-027": 1,
+    "VES-069": 2,
+    "VES-070": 1,
+    "VES-023": 1
+  }
+}

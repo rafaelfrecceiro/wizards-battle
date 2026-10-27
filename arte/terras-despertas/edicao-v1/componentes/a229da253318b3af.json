@@ -1,0 +1,50 @@
+{
+  "source": "arte\\referencia-fixa\\prototipo-aprovado.png",
+  "box": [
+    39,
+    872,
+    459,
+    936
+  ],
+  "source_school": "Raiz",
+  "target_school": "Raiz",
+  "polygon": [
+    [
+      41,
+      874
+    ],
+    [
+      457,
+      874
+    ],
+    [
+      419,
+      913
+    ],
+    [
+      141,
+      913
+    ],
+    [
+      124,
+      934
+    ],
+    [
+      64,
+      934
+    ],
+    [
+      48,
+      919
+    ],
+    [
+      41,
+      903
+    ]
+  ],
+  "native_size": [
+    420,
+    64
+  ],
+  "method": "PDF vector component rendered once with PDFium at native 1 px/pt, transparent background; original PNG unmodified"
+}

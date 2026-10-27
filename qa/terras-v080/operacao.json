@@ -1,0 +1,19 @@
+{
+  "vesImagesChecked": 80,
+  "vesImagesChanged": [],
+  "servers": [
+    {
+      "port": 4183,
+      "appVersion": "0.7.0",
+      "rulesVersion": "wb-0.7.0/rules-ves-friends/ac500ad45d98/7e65b53aa899"
+    },
+    {
+      "port": 4184,
+      "appVersion": "0.8.0",
+      "rulesVersion": "wb-0.8.0/rules-terras-pilot-02/ac500ad45d98/7e65b53aa899/522260ac54af/66929d1d5a72"
+    }
+  ],
+  "launcher": "Iniciar-Terras-Despertas.ps1 -Rede executado desde porta vazia",
+  "build": "dist-v08",
+  "save": "saves/rooms-terras-v1.sqlite"
+}

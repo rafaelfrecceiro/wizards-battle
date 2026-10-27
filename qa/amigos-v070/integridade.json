@@ -1,0 +1,406 @@
+{
+  "count": 80,
+  "allEqual": true,
+  "cards": [
+    {
+      "file": "VES-001.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-002.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-003.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-004.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-005.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-006.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-007.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-008.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-009.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-010.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-011.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-012.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-013.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-014.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-015.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-016.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-017.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-018.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-019.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-020.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-021.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-022.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-023.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-024.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-025.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-026.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-027.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-028.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-029.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-030.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-031.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-032.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-033.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-034.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-035.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-036.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-037.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-038.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-039.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-040.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-041.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-042.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-043.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-044.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-045.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-046.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-047.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-048.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-049.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-050.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-051.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-052.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-053.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-054.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-055.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-056.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-057.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-058.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-059.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-060.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-061.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-062.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-063.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-064.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-065.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-066.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-067.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-068.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-069.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-070.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-071.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-072.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-073.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-074.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-075.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-076.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-077.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-078.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-079.png",
+      "sameV06": true,
+      "sameV07": true
+    },
+    {
+      "file": "VES-080.png",
+      "sameV06": true,
+      "sameV07": true
+    }
+  ]
+}

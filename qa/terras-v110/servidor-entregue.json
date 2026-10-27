@@ -1,0 +1,23 @@
+{
+  "current": {
+    "ok": true,
+    "name": "Wizards Battle",
+    "version": "wb-0.11.0/rules-terras-complete-01/ac500ad45d98/7e65b53aa899/d6d94759a5c8/d78efce249da",
+    "sessions": 0,
+    "appVersion": "0.11.0"
+  },
+  "prior": {
+    "ok": true,
+    "name": "Wizards Battle",
+    "version": "wb-0.10.0/rules-feedback-01/ac500ad45d98/7e65b53aa899/522260ac54af/66929d1d5a72",
+    "sessions": 1,
+    "appVersion": "0.10.0"
+  },
+  "htmlStatus": 200,
+  "entry": "/assets/main-CrgfGbu3.js",
+  "fullEditionInBundle": true,
+  "newNamedCardInBundle": true,
+  "actualSymbolInBundle": true,
+  "completeCollectionInBundle": true,
+  "oldRoomPreserved": true
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "port": 4183,
+    "health": null
+  },
+  {
+    "port": 4184,
+    "health": {
+      "ok": true,
+      "name": "Wizards Battle",
+      "version": "wb-0.8.0/rules-terras-pilot-02/ac500ad45d98/7e65b53aa899/522260ac54af/66929d1d5a72",
+      "sessions": 2,
+      "appVersion": "0.8.0"
+    }
+  },
+  {
+    "port": 4185,
+    "health": null
+  }
+]

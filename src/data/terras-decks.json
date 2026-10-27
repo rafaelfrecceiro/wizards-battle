@@ -1,0 +1,512 @@
+[
+  {
+    "name": "Terras — Manada do Vale",
+    "cards": [
+      {
+        "id": "TDP-013",
+        "copies": 2
+      },
+      {
+        "id": "TDP-014",
+        "copies": 2
+      },
+      {
+        "id": "TD-P01",
+        "copies": 2
+      },
+      {
+        "id": "TDP-016",
+        "copies": 2
+      },
+      {
+        "id": "TDP-023",
+        "copies": 2
+      },
+      {
+        "id": "TDP-024",
+        "copies": 2
+      },
+      {
+        "id": "TD-P02",
+        "copies": 2
+      },
+      {
+        "id": "TDP-026",
+        "copies": 2
+      },
+      {
+        "id": "TDP-025",
+        "copies": 2
+      },
+      {
+        "id": "TDP-051",
+        "copies": 2
+      },
+      {
+        "id": "TDP-052",
+        "copies": 2
+      },
+      {
+        "id": "TDP-029",
+        "copies": 2
+      },
+      {
+        "id": "TD-P12",
+        "copies": 2
+      },
+      {
+        "id": "TDP-017",
+        "copies": 2
+      },
+      {
+        "id": "TDP-028",
+        "copies": 2
+      },
+      {
+        "id": "TD-P11",
+        "copies": 2
+      },
+      {
+        "id": "TDP-027",
+        "copies": 2
+      },
+      {
+        "id": "TDP-018",
+        "copies": 2
+      },
+      {
+        "id": "TDP-021",
+        "copies": 2
+      },
+      {
+        "id": "TDP-030",
+        "copies": 2
+      }
+    ]
+  },
+  {
+    "name": "Terras — Nomes e Brasas",
+    "cards": [
+      {
+        "id": "TDP-013",
+        "copies": 2
+      },
+      {
+        "id": "TDP-014",
+        "copies": 2
+      },
+      {
+        "id": "TDP-015",
+        "copies": 2
+      },
+      {
+        "id": "TDP-016",
+        "copies": 2
+      },
+      {
+        "id": "TDP-032",
+        "copies": 2
+      },
+      {
+        "id": "TDP-033",
+        "copies": 2
+      },
+      {
+        "id": "TDP-034",
+        "copies": 2
+      },
+      {
+        "id": "TDP-035",
+        "copies": 2
+      },
+      {
+        "id": "TD-P03",
+        "copies": 2
+      },
+      {
+        "id": "TD-P07",
+        "copies": 2
+      },
+      {
+        "id": "TDP-053",
+        "copies": 2
+      },
+      {
+        "id": "TDP-039",
+        "copies": 2
+      },
+      {
+        "id": "TDP-020",
+        "copies": 2
+      },
+      {
+        "id": "TD-P09",
+        "copies": 2
+      },
+      {
+        "id": "TDP-037",
+        "copies": 2
+      },
+      {
+        "id": "TDP-038",
+        "copies": 2
+      },
+      {
+        "id": "TDP-019",
+        "copies": 2
+      },
+      {
+        "id": "TDP-021",
+        "copies": 2
+      },
+      {
+        "id": "TDP-040",
+        "copies": 2
+      },
+      {
+        "id": "TDP-041",
+        "copies": 2
+      }
+    ]
+  },
+  {
+    "name": "Terras — Nascentes Vivas",
+    "cards": [
+      {
+        "id": "TDP-023",
+        "copies": 2
+      },
+      {
+        "id": "TDP-024",
+        "copies": 2
+      },
+      {
+        "id": "TD-P02",
+        "copies": 2
+      },
+      {
+        "id": "TD-P05",
+        "copies": 2
+      },
+      {
+        "id": "TDP-025",
+        "copies": 2
+      },
+      {
+        "id": "TDP-026",
+        "copies": 2
+      },
+      {
+        "id": "TDP-042",
+        "copies": 2
+      },
+      {
+        "id": "TDP-043",
+        "copies": 2
+      },
+      {
+        "id": "TD-P04",
+        "copies": 2
+      },
+      {
+        "id": "TD-P06",
+        "copies": 2
+      },
+      {
+        "id": "TDP-044",
+        "copies": 2
+      },
+      {
+        "id": "TDP-054",
+        "copies": 2
+      },
+      {
+        "id": "TD-P08",
+        "copies": 2
+      },
+      {
+        "id": "TDP-048",
+        "copies": 2
+      },
+      {
+        "id": "TD-P11",
+        "copies": 2
+      },
+      {
+        "id": "TDP-045",
+        "copies": 2
+      },
+      {
+        "id": "TDP-047",
+        "copies": 2
+      },
+      {
+        "id": "TDP-027",
+        "copies": 2
+      },
+      {
+        "id": "TDP-031",
+        "copies": 2
+      },
+      {
+        "id": "TDP-050",
+        "copies": 2
+      }
+    ]
+  },
+  {
+    "name": "Terras — Última Semente",
+    "cards": [
+      {
+        "id": "TDP-023",
+        "copies": 2
+      },
+      {
+        "id": "TDP-024",
+        "copies": 2
+      },
+      {
+        "id": "TDP-026",
+        "copies": 2
+      },
+      {
+        "id": "TD-P05",
+        "copies": 2
+      },
+      {
+        "id": "TDP-032",
+        "copies": 2
+      },
+      {
+        "id": "TDP-033",
+        "copies": 2
+      },
+      {
+        "id": "TDP-034",
+        "copies": 2
+      },
+      {
+        "id": "TDP-035",
+        "copies": 2
+      },
+      {
+        "id": "TD-P07",
+        "copies": 2
+      },
+      {
+        "id": "TDP-055",
+        "copies": 2
+      },
+      {
+        "id": "TDP-029",
+        "copies": 2
+      },
+      {
+        "id": "TDP-039",
+        "copies": 2
+      },
+      {
+        "id": "TDP-056",
+        "copies": 2
+      },
+      {
+        "id": "TDP-036",
+        "copies": 2
+      },
+      {
+        "id": "TD-P11",
+        "copies": 2
+      },
+      {
+        "id": "TDP-028",
+        "copies": 2
+      },
+      {
+        "id": "TDP-031",
+        "copies": 2
+      },
+      {
+        "id": "TDP-040",
+        "copies": 2
+      },
+      {
+        "id": "TDP-030",
+        "copies": 2
+      },
+      {
+        "id": "TDP-041",
+        "copies": 2
+      }
+    ]
+  },
+  {
+    "name": "Terras — Correntes de Brasa",
+    "cards": [
+      {
+        "id": "TDP-013",
+        "copies": 2
+      },
+      {
+        "id": "TDP-014",
+        "copies": 2
+      },
+      {
+        "id": "TDP-015",
+        "copies": 2
+      },
+      {
+        "id": "TD-P01",
+        "copies": 2
+      },
+      {
+        "id": "TDP-042",
+        "copies": 2
+      },
+      {
+        "id": "TDP-043",
+        "copies": 2
+      },
+      {
+        "id": "TD-P04",
+        "copies": 2
+      },
+      {
+        "id": "TD-P06",
+        "copies": 2
+      },
+      {
+        "id": "TDP-057",
+        "copies": 2
+      },
+      {
+        "id": "TDP-058",
+        "copies": 2
+      },
+      {
+        "id": "TDP-020",
+        "copies": 2
+      },
+      {
+        "id": "TDP-048",
+        "copies": 2
+      },
+      {
+        "id": "TDP-017",
+        "copies": 2
+      },
+      {
+        "id": "TDP-018",
+        "copies": 2
+      },
+      {
+        "id": "TDP-019",
+        "copies": 2
+      },
+      {
+        "id": "TDP-045",
+        "copies": 2
+      },
+      {
+        "id": "TDP-046",
+        "copies": 2
+      },
+      {
+        "id": "TDP-047",
+        "copies": 2
+      },
+      {
+        "id": "TDP-022",
+        "copies": 2
+      },
+      {
+        "id": "TDP-049",
+        "copies": 2
+      }
+    ]
+  },
+  {
+    "name": "Terras — Caminhos do Crepúsculo",
+    "cards": [
+      {
+        "id": "TDP-032",
+        "copies": 2
+      },
+      {
+        "id": "TDP-033",
+        "copies": 2
+      },
+      {
+        "id": "TDP-034",
+        "copies": 2
+      },
+      {
+        "id": "TD-P03",
+        "copies": 2
+      },
+      {
+        "id": "TD-P07",
+        "copies": 2
+      },
+      {
+        "id": "TDP-042",
+        "copies": 2
+      },
+      {
+        "id": "TDP-043",
+        "copies": 2
+      },
+      {
+        "id": "TD-P04",
+        "copies": 2
+      },
+      {
+        "id": "TD-P06",
+        "copies": 2
+      },
+      {
+        "id": "TDP-059",
+        "copies": 2
+      },
+      {
+        "id": "TDP-060",
+        "copies": 2
+      },
+      {
+        "id": "TDP-039",
+        "copies": 2
+      },
+      {
+        "id": "TDP-036",
+        "copies": 2
+      },
+      {
+        "id": "TDP-038",
+        "copies": 2
+      },
+      {
+        "id": "TD-P10",
+        "copies": 2
+      },
+      {
+        "id": "TDP-045",
+        "copies": 2
+      },
+      {
+        "id": "TDP-040",
+        "copies": 2
+      },
+      {
+        "id": "TDP-041",
+        "copies": 2
+      },
+      {
+        "id": "TDP-049",
+        "copies": 2
+      },
+      {
+        "id": "TDP-050",
+        "copies": 2
+      }
+    ]
+  }
+]

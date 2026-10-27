@@ -1,0 +1,45 @@
+{
+  "method": "Frames de layout reais; viewport externo IAB permaneceu 1280x720 apesar do override.",
+  "measurements": [
+    {
+      "target": {
+        "width": 1366,
+        "height": 768
+      },
+      "layout": {
+        "height": 768,
+        "scroll": 0,
+        "scrollHeight": 768,
+        "scrollWidth": 1366,
+        "width": 1366
+      },
+      "frames": "{\"frames\":750,\"animationFrames\":0,\"samples\":180,\"meanMs\":16.666666666666668,\"p95Ms\":17.299999999999272,\"maxMs\":17.5,\"width\":1366,\"height\":768,\"hidden\":false}"
+    },
+    {
+      "target": {
+        "width": 1920,
+        "height": 900
+      },
+      "layout": {
+        "height": 900,
+        "scroll": 0,
+        "scrollHeight": 900,
+        "scrollWidth": 1920,
+        "width": 1920
+      }
+    },
+    {
+      "target": {
+        "width": 1920,
+        "height": 1080
+      },
+      "layout": {
+        "height": 1080,
+        "scroll": 0,
+        "scrollHeight": 1080,
+        "scrollWidth": 1920,
+        "width": 1920
+      }
+    }
+  ]
+}

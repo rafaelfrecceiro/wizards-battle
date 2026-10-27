@@ -1,0 +1,21 @@
+{
+  "assets": [
+    {
+      "path": "/index.html",
+      "bytes": 388,
+      "equal": true
+    },
+    {
+      "path": "/assets/main-gQ8V9tzU.js",
+      "bytes": 347368,
+      "equal": true
+    },
+    {
+      "path": "/assets/main-Bgr98EA8.css",
+      "bytes": 75400,
+      "equal": true
+    }
+  ],
+  "oldCssAvailable": 200,
+  "opaqueSurfaces": true
+}

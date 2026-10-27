@@ -1,0 +1,35 @@
+{
+  "health": {
+    "ok": true,
+    "name": "Wizards Battle",
+    "version": "wb-0.5.0/rules-escolas-v1/ac500ad45d98/7e65b53aa899",
+    "sessions": 0
+  },
+  "checks": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "identical": true
+    },
+    {
+      "file": "atlas-preview.html",
+      "status": 200,
+      "identical": true
+    },
+    {
+      "file": "assets/main-CFSuCZ8j.js",
+      "status": 200,
+      "identical": true
+    },
+    {
+      "file": "assets/main-0HUI4fBY.css",
+      "status": 200,
+      "identical": true
+    },
+    {
+      "file": "assets/atlasPreview-0V6nTtyr.js",
+      "status": 200,
+      "identical": true
+    }
+  ]
+}

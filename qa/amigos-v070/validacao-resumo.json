@@ -1,0 +1,13 @@
+{
+  "fullSuite": {
+    "total": 329,
+    "passed": 329
+  },
+  "finalPolish": {
+    "total": 44,
+    "passed": 44
+  },
+  "distinctScenarios": 330,
+  "allPassed": true,
+  "note": "Relatórios se sobrepõem. A checagem final cobre arquivos de UI/movimento alterados após a regressão completa e inclui um teste novo de revanche."
+}

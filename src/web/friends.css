@@ -1,0 +1,15 @@
+.friends-tools {display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 14px;background:#182326;color:#f0e0c0;border-bottom:1px solid #a5814c;font-size:13px;position:relative;z-index:6}
+.friends-tools input {min-width:180px;flex:1;background:#10191c;color:#f7e9cf;border:1px solid #97764c;padding:7px}
+.friends-tools button,.friends-wait button {background:#263338;color:#f5dfb1;border:1px solid #b08c54;padding:8px 12px;border-radius:4px}
+.friends-wait {position:fixed;inset:0;z-index:12;display:grid;place-items:center;background:#101b20 url('/arte/santuario-home.png') center/cover}
+.friends-wait section {background:#182326;border:2px solid #b08c54;box-shadow:0 12px 50px #000;padding:28px;width:min(620px,94vw);max-height:94dvh;overflow:auto;color:#f5e4c1}
+.friends-wait h1 {font-size:28px}.friends-wait label {display:block;margin:16px 0}.friends-wait input {width:100%;padding:12px;background:#10191c;color:#f5e4c1;border:1px solid #b08c54}
+.friends-wait code {overflow-wrap:anywhere}.friends-wait button {margin:6px}.connection-state {color:#ffcf88}
+.atlas > .friends-tools {position:absolute;left:3%;top:0.3%;max-width:66%;padding:3px 8px;background:#182326;border:1px solid #a5814c;font-size:11px;z-index:29}
+.app:not(.atlas) > .friends-tools {position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:15}
+.lobby-panel .friends-mode {padding:12px;background:#182326;border:1px solid #a5814c;margin:12px 0;color:#f5e4c1}
+.lobby-panel .friends-mode input {width:100%;padding:10px;background:#10191c;color:#f5e4c1;border:1px solid #a5814c}
+.atlas button:focus-visible {outline:3px solid #ffe0a2;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.atlas *, .atlas *::before, .atlas *::after {animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+html:has(.app.atlas), body:has(.app.atlas) {overflow:clip}

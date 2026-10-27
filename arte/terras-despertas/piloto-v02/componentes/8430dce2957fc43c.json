@@ -1,0 +1,17 @@
+{
+  "source": "arte\\referencia-fixa\\prototipo-aprovado.png",
+  "box": [
+    60,
+    603,
+    470,
+    626
+  ],
+  "source_school": "Chama",
+  "target_school": "Maré",
+  "polygon": null,
+  "native_size": [
+    410,
+    23
+  ],
+  "method": "PDF vector component rendered once with PDFium at native 1 px/pt, transparent background; original PNG unmodified"
+}

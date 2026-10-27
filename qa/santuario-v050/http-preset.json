@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "saúde",
+    "autorização",
+    "origem",
+    "ação inválida atômica",
+    "replay bloqueado antes do fim",
+    "privacidade durante partida inteira",
+    "partida completa via HTTP",
+    "replay ao encerrar"
+  ],
+  "requests": 111,
+  "steps": 102,
+  "turns": 24,
+  "winner": 0,
+  "actions": 102
+}

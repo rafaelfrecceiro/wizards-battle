@@ -1,0 +1,1710 @@
+{
+  "success": true,
+  "version": "wb-0.8.0/rules-terras-pilot-02/ac500ad45d98/7e65b53aa899/522260ac54af/66929d1d5a72",
+  "games": 108,
+  "elapsedMs": 35346,
+  "method": "3 modelos Terras × 9 adversários × 2 posições de assento × 2 iniciativas. Bot heurístico: valida regras, não equilíbrio humano.",
+  "pilotCast": 12,
+  "missingPilot": [],
+  "casts": {
+    "VES-009": 105,
+    "VES-035": 30,
+    "VES-011": 156,
+    "VES-002": 62,
+    "VES-036": 158,
+    "VES-040": 97,
+    "TD-P12": 68,
+    "VES-045": 40,
+    "TD-P01": 38,
+    "VES-026": 7,
+    "VES-032": 55,
+    "VES-044": 12,
+    "VES-023": 1,
+    "TD-P05": 12,
+    "VES-006": 18,
+    "VES-025": 99,
+    "TD-P02": 32,
+    "VES-010": 2,
+    "VES-042": 27,
+    "VES-046": 32,
+    "VES-034": 33,
+    "VES-043": 7,
+    "VES-022": 39,
+    "VES-047": 87,
+    "VES-048": 63,
+    "VES-004": 15,
+    "VES-054": 12,
+    "VES-056": 12,
+    "VES-016": 22,
+    "VES-031": 16,
+    "VES-041": 3,
+    "VES-033": 17,
+    "TD-P11": 17,
+    "VES-051": 4,
+    "VES-068": 12,
+    "VES-058": 75,
+    "VES-062": 54,
+    "VES-001": 2,
+    "VES-064": 108,
+    "VES-030": 2,
+    "VES-027": 13,
+    "VES-021": 15,
+    "VES-018": 74,
+    "VES-005": 8,
+    "VES-019": 7,
+    "VES-060": 2,
+    "VES-067": 2,
+    "VES-007": 14,
+    "VES-052": 20,
+    "VES-053": 5,
+    "VES-065": 6,
+    "VES-038": 14,
+    "VES-059": 4,
+    "VES-066": 7,
+    "VES-003": 10,
+    "VES-014": 9,
+    "VES-079": 1,
+    "VES-080": 7,
+    "VES-017": 19,
+    "TD-P06": 47,
+    "TD-P08": 39,
+    "VES-055": 11,
+    "TD-P09": 3,
+    "TD-P07": 6,
+    "TD-P03": 10,
+    "VES-070": 1,
+    "VES-078": 1,
+    "VES-077": 3,
+    "VES-057": 8,
+    "TD-P10": 13,
+    "VES-076": 2,
+    "VES-069": 1,
+    "VES-072": 1,
+    "TD-P04": 1,
+    "VES-049": 3,
+    "VES-073": 1,
+    "VES-071": 1
+  },
+  "results": [
+    {
+      "config": {
+        "seed": 808000,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Queimada"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 21,
+      "actions": 91
+    },
+    {
+      "config": {
+        "seed": 808001,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Queimada"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 26,
+      "actions": 114
+    },
+    {
+      "config": {
+        "seed": 808010,
+        "decks": [
+          "Queimada",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 85
+    },
+    {
+      "config": {
+        "seed": 808011,
+        "decks": [
+          "Queimada",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 41,
+      "actions": 152
+    },
+    {
+      "config": {
+        "seed": 808100,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 24,
+      "actions": 111
+    },
+    {
+      "config": {
+        "seed": 808101,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 103
+    },
+    {
+      "config": {
+        "seed": 808110,
+        "decks": [
+          "Pira",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 18,
+      "actions": 92
+    },
+    {
+      "config": {
+        "seed": 808111,
+        "decks": [
+          "Pira",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 36,
+      "actions": 139
+    },
+    {
+      "config": {
+        "seed": 808200,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 25,
+      "actions": 128
+    },
+    {
+      "config": {
+        "seed": 808201,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 49,
+      "actions": 230
+    },
+    {
+      "config": {
+        "seed": 808210,
+        "decks": [
+          "Vapor",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 13,
+      "actions": 76
+    },
+    {
+      "config": {
+        "seed": 808211,
+        "decks": [
+          "Vapor",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 52,
+      "actions": 201
+    },
+    {
+      "config": {
+        "seed": 808300,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 29,
+      "actions": 141
+    },
+    {
+      "config": {
+        "seed": 808301,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 35,
+      "actions": 145
+    },
+    {
+      "config": {
+        "seed": 808310,
+        "decks": [
+          "Decomposição",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 12,
+      "actions": 60
+    },
+    {
+      "config": {
+        "seed": 808311,
+        "decks": [
+          "Decomposição",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 66
+    },
+    {
+      "config": {
+        "seed": 808400,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 30,
+      "actions": 133
+    },
+    {
+      "config": {
+        "seed": 808401,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 51,
+      "actions": 217
+    },
+    {
+      "config": {
+        "seed": 808410,
+        "decks": [
+          "Estações",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 100
+    },
+    {
+      "config": {
+        "seed": 808411,
+        "decks": [
+          "Estações",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 14,
+      "actions": 70
+    },
+    {
+      "config": {
+        "seed": 808500,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 27,
+      "actions": 121
+    },
+    {
+      "config": {
+        "seed": 808501,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 41,
+      "actions": 170
+    },
+    {
+      "config": {
+        "seed": 808510,
+        "decks": [
+          "Ilusão",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 24,
+      "actions": 116
+    },
+    {
+      "config": {
+        "seed": 808511,
+        "decks": [
+          "Ilusão",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 100
+    },
+    {
+      "config": {
+        "seed": 808600,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 70
+    },
+    {
+      "config": {
+        "seed": 808601,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 62
+    },
+    {
+      "config": {
+        "seed": 808610,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 27,
+      "actions": 113
+    },
+    {
+      "config": {
+        "seed": 808611,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 50,
+      "actions": 199
+    },
+    {
+      "config": {
+        "seed": 808700,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 108
+    },
+    {
+      "config": {
+        "seed": 808701,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 53,
+      "actions": 253
+    },
+    {
+      "config": {
+        "seed": 808710,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 32,
+      "actions": 149
+    },
+    {
+      "config": {
+        "seed": 808711,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 104
+    },
+    {
+      "config": {
+        "seed": 808800,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 16,
+      "actions": 72
+    },
+    {
+      "config": {
+        "seed": 808801,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 39,
+      "actions": 165
+    },
+    {
+      "config": {
+        "seed": 808810,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 13,
+      "actions": 71
+    },
+    {
+      "config": {
+        "seed": 808811,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 14,
+      "actions": 70
+    },
+    {
+      "config": {
+        "seed": 818000,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Queimada"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 46,
+      "actions": 213
+    },
+    {
+      "config": {
+        "seed": 818001,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Queimada"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 27,
+      "actions": 134
+    },
+    {
+      "config": {
+        "seed": 818010,
+        "decks": [
+          "Queimada",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 98
+    },
+    {
+      "config": {
+        "seed": 818011,
+        "decks": [
+          "Queimada",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 40,
+      "actions": 217
+    },
+    {
+      "config": {
+        "seed": 818100,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 41,
+      "actions": 176
+    },
+    {
+      "config": {
+        "seed": 818101,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 12,
+      "actions": 67
+    },
+    {
+      "config": {
+        "seed": 818110,
+        "decks": [
+          "Pira",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 42,
+      "actions": 173
+    },
+    {
+      "config": {
+        "seed": 818111,
+        "decks": [
+          "Pira",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 116
+    },
+    {
+      "config": {
+        "seed": 818200,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 31,
+      "actions": 144
+    },
+    {
+      "config": {
+        "seed": 818201,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 24,
+      "actions": 127
+    },
+    {
+      "config": {
+        "seed": 818210,
+        "decks": [
+          "Vapor",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 74
+    },
+    {
+      "config": {
+        "seed": 818211,
+        "decks": [
+          "Vapor",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 16,
+      "actions": 82
+    },
+    {
+      "config": {
+        "seed": 818300,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 23,
+      "actions": 122
+    },
+    {
+      "config": {
+        "seed": 818301,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 22,
+      "actions": 111
+    },
+    {
+      "config": {
+        "seed": 818310,
+        "decks": [
+          "Decomposição",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 24,
+      "actions": 142
+    },
+    {
+      "config": {
+        "seed": 818311,
+        "decks": [
+          "Decomposição",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 19,
+      "actions": 93
+    },
+    {
+      "config": {
+        "seed": 818400,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 107
+    },
+    {
+      "config": {
+        "seed": 818401,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 22,
+      "actions": 110
+    },
+    {
+      "config": {
+        "seed": 818410,
+        "decks": [
+          "Estações",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 17,
+      "actions": 102
+    },
+    {
+      "config": {
+        "seed": 818411,
+        "decks": [
+          "Estações",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 30,
+      "actions": 142
+    },
+    {
+      "config": {
+        "seed": 818500,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 29,
+      "actions": 154
+    },
+    {
+      "config": {
+        "seed": 818501,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 24,
+      "actions": 116
+    },
+    {
+      "config": {
+        "seed": 818510,
+        "decks": [
+          "Ilusão",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 34,
+      "actions": 186
+    },
+    {
+      "config": {
+        "seed": 818511,
+        "decks": [
+          "Ilusão",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 47,
+      "actions": 205
+    },
+    {
+      "config": {
+        "seed": 818600,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 28,
+      "actions": 134
+    },
+    {
+      "config": {
+        "seed": 818601,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 11,
+      "actions": 63
+    },
+    {
+      "config": {
+        "seed": 818610,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 13,
+      "actions": 73
+    },
+    {
+      "config": {
+        "seed": 818611,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 35,
+      "actions": 172
+    },
+    {
+      "config": {
+        "seed": 818700,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 121
+    },
+    {
+      "config": {
+        "seed": 818701,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 29,
+      "actions": 175
+    },
+    {
+      "config": {
+        "seed": 818710,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 34,
+      "actions": 182
+    },
+    {
+      "config": {
+        "seed": 818711,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 46,
+      "actions": 255
+    },
+    {
+      "config": {
+        "seed": 818800,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 27,
+      "actions": 145
+    },
+    {
+      "config": {
+        "seed": 818801,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 25,
+      "actions": 109
+    },
+    {
+      "config": {
+        "seed": 818810,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 48,
+      "actions": 203
+    },
+    {
+      "config": {
+        "seed": 818811,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 20,
+      "actions": 105
+    },
+    {
+      "config": {
+        "seed": 828000,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Queimada"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 29,
+      "actions": 127
+    },
+    {
+      "config": {
+        "seed": 828001,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Queimada"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 17,
+      "actions": 83
+    },
+    {
+      "config": {
+        "seed": 828010,
+        "decks": [
+          "Queimada",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 25,
+      "actions": 108
+    },
+    {
+      "config": {
+        "seed": 828011,
+        "decks": [
+          "Queimada",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 18,
+      "actions": 87
+    },
+    {
+      "config": {
+        "seed": 828100,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 30,
+      "actions": 139
+    },
+    {
+      "config": {
+        "seed": 828101,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Pira"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 64,
+      "actions": 229
+    },
+    {
+      "config": {
+        "seed": 828110,
+        "decks": [
+          "Pira",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 93
+    },
+    {
+      "config": {
+        "seed": 828111,
+        "decks": [
+          "Pira",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 9,
+      "actions": 51
+    },
+    {
+      "config": {
+        "seed": 828200,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 74
+    },
+    {
+      "config": {
+        "seed": 828201,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Vapor"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 30,
+      "actions": 125
+    },
+    {
+      "config": {
+        "seed": 828210,
+        "decks": [
+          "Vapor",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 25,
+      "actions": 117
+    },
+    {
+      "config": {
+        "seed": 828211,
+        "decks": [
+          "Vapor",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 29,
+      "actions": 133
+    },
+    {
+      "config": {
+        "seed": 828300,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 13,
+      "actions": 65
+    },
+    {
+      "config": {
+        "seed": 828301,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Decomposição"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 16,
+      "actions": 78
+    },
+    {
+      "config": {
+        "seed": 828310,
+        "decks": [
+          "Decomposição",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 70,
+      "actions": 238
+    },
+    {
+      "config": {
+        "seed": 828311,
+        "decks": [
+          "Decomposição",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 9,
+      "actions": 50
+    },
+    {
+      "config": {
+        "seed": 828400,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 27,
+      "actions": 125
+    },
+    {
+      "config": {
+        "seed": 828401,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Estações"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 23,
+      "actions": 108
+    },
+    {
+      "config": {
+        "seed": 828410,
+        "decks": [
+          "Estações",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 19,
+      "actions": 103
+    },
+    {
+      "config": {
+        "seed": 828411,
+        "decks": [
+          "Estações",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 21,
+      "actions": 112
+    },
+    {
+      "config": {
+        "seed": 828500,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 13,
+      "actions": 72
+    },
+    {
+      "config": {
+        "seed": 828501,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Ilusão"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 18,
+      "actions": 89
+    },
+    {
+      "config": {
+        "seed": 828510,
+        "decks": [
+          "Ilusão",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 17,
+      "actions": 87
+    },
+    {
+      "config": {
+        "seed": 828511,
+        "decks": [
+          "Ilusão",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 25,
+      "actions": 112
+    },
+    {
+      "config": {
+        "seed": 828600,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 47,
+      "actions": 176
+    },
+    {
+      "config": {
+        "seed": 828601,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Manada do Vale"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 66,
+      "actions": 233
+    },
+    {
+      "config": {
+        "seed": 828610,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 28,
+      "actions": 119
+    },
+    {
+      "config": {
+        "seed": 828611,
+        "decks": [
+          "Terras — Manada do Vale",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 9,
+      "actions": 52
+    },
+    {
+      "config": {
+        "seed": 828700,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 30,
+      "actions": 138
+    },
+    {
+      "config": {
+        "seed": 828701,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Nascentes Vivas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 32,
+      "actions": 145
+    },
+    {
+      "config": {
+        "seed": 828710,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 22,
+      "actions": 104
+    },
+    {
+      "config": {
+        "seed": 828711,
+        "decks": [
+          "Terras — Nascentes Vivas",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 31,
+      "actions": 134
+    },
+    {
+      "config": {
+        "seed": 828800,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 27,
+      "actions": 116
+    },
+    {
+      "config": {
+        "seed": 828801,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 20,
+      "actions": 97
+    },
+    {
+      "config": {
+        "seed": 828810,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 0,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 0,
+      "turns": 15,
+      "actions": 76
+    },
+    {
+      "config": {
+        "seed": 828811,
+        "decks": [
+          "Terras — Nomes e Brasas",
+          "Terras — Nomes e Brasas"
+        ],
+        "variant": "escolas-v1",
+        "first": 1,
+        "cardPool": "terras-pilot-v1"
+      },
+      "winner": 1,
+      "turns": 13,
+      "actions": 65
+    }
+  ]
+}
