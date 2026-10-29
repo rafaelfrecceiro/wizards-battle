@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, "Segoe UI", sans-serif;
+  font-family: var(--wb-font-ui);
   color: #ece6d5;
   background: #101119;
   font-synthesis: none;
@@ -80,8 +80,7 @@ button {
   color: #e8d9b7;
   text-decoration: none;
   font:
-    21px Georgia,
-    serif;
+    21px var(--wb-font-display);
   letter-spacing: 2.5px;
 }
 .brand > span {
@@ -148,8 +147,7 @@ button {
 }
 .lobby h1 {
   font:
-    64px/1.08 Georgia,
-    serif;
+    64px/1.08 var(--wb-font-display);
   margin: 24px 0;
   color: #f2e8ce;
   letter-spacing: -1.5px;
@@ -190,8 +188,7 @@ button {
 }
 .lobby-panel h2 {
   font:
-    34px Georgia,
-    serif;
+    34px var(--wb-font-display);
   margin: 16px 0 12px;
 }
 .lobby-panel > p {
@@ -224,8 +221,7 @@ button {
 }
 .deck-choice strong {
   font:
-    22px Georgia,
-    serif;
+    22px var(--wb-font-display);
   display: block;
 }
 .deck-choice small {
@@ -348,8 +344,7 @@ select {
   left: 50%;
   transform: translateX(-50%);
   font:
-    700 16px Georgia,
-    serif;
+    700 16px var(--wb-font-display);
   background: #43282d;
   border: 1px solid #c48678;
   border-radius: 15px;
@@ -363,8 +358,7 @@ select {
 }
 .player-name > b {
   font:
-    19px Georgia,
-    serif;
+    19px var(--wb-font-display);
   display: block;
   color: #f0e5d0;
 }
@@ -576,8 +570,7 @@ select {
   height: 15px;
   padding: 0;
   font:
-    10px Georgia,
-    serif;
+    10px var(--wb-font-display);
 }
 .formation > .zone-label {
   display: grid;
@@ -999,8 +992,7 @@ select {
 }
 .board-inscription {
   font:
-    11px Georgia,
-    serif;
+    11px var(--wb-font-display);
   letter-spacing: 5px;
   color: #c8ae785c;
 }
@@ -1252,8 +1244,7 @@ select {
 }
 .card-inspector h3 {
   font:
-    18px/1.3 Georgia,
-    serif;
+    18px/1.3 var(--wb-font-display);
   margin: 13px 0 8px;
   color: #f0e3c4;
 }
@@ -1340,8 +1331,7 @@ select {
   z-index: 1500;
   pointer-events: none;
   font:
-    700 34px Georgia,
-    serif;
+    700 34px var(--wb-font-display);
   text-shadow:
     0 3px 5px #000,
     0 0 12px #000;
@@ -1380,8 +1370,7 @@ select {
 }
 .mulligan-banner h3 {
   font:
-    23px Georgia,
-    serif;
+    23px var(--wb-font-display);
   margin: 10px 0;
 }
 .mulligan-banner p {
@@ -1429,8 +1418,7 @@ select {
 }
 .decision-panel h2 {
   font:
-    29px Georgia,
-    serif;
+    29px var(--wb-font-display);
   margin: 15px 0 10px;
 }
 .decision-panel > p {
@@ -1503,8 +1491,7 @@ select {
 }
 .history-drawer h3 {
   font:
-    21px Georgia,
-    serif;
+    21px var(--wb-font-display);
   margin: 0 0 15px;
 }
 .history-drawer > div button {
@@ -1561,8 +1548,7 @@ select {
 }
 .help-panel h2 {
   font:
-    36px Georgia,
-    serif;
+    36px var(--wb-font-display);
   margin: 15px 0;
 }
 .help-panel p {
@@ -1588,8 +1574,7 @@ select {
 }
 .guide h2 {
   font:
-    35px Georgia,
-    serif;
+    35px var(--wb-font-display);
   margin: 15px 0;
 }
 .guide-intro {
@@ -1617,8 +1602,7 @@ select {
 }
 .guide-zones h3 {
   font:
-    19px Georgia,
-    serif;
+    19px var(--wb-font-display);
   margin: 0 0 5px;
 }
 .guide-zones p {
@@ -1653,8 +1637,7 @@ select {
 }
 .end-panel h1 {
   font:
-    56px Georgia,
-    serif;
+    56px var(--wb-font-display);
   color: #efdcad;
   margin: 15px 0;
 }

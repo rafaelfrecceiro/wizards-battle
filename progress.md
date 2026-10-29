@@ -1,18 +1,26 @@
 # Progresso — Wizards Battle
 
 - Fase: desenvolvimento
-- Atualização: 27/10/2026
+- Atualização: 29/10/2026
 - Objetivo atual: As Terras Despertas completa0.11/4187 entregue; receber playtest dos seis decks novos e leitura do selo. Energia acumulada, feedback causal, VES e sala0.10 preservados.
 - Código: `C:/Users/rafaf/Documents/Projects/Pessoal/Hub/GamesCodex/projetos/wizards-battle/src`.
 - Stack confirmada: Node 24.19.0, TypeScript 5.9.3, React 19.3.1, Vite 8.3.5, Vitest 4.1.12; lockfile em src/package-lock.json.
 
 Fonte única de execução. [GDD](GDD.md) · [Decisões](decisoes.md) · [Spec](specs/WB-001.md).
 
+## Auditoria de UI/HUD — 29/10/2026
+
+| ID | Tarefa | Estado | Evidência |
+| --- | --- | --- | --- |
+| WB-26 | Auditoria de layout/HUD/UI e plano de polimento | correções A + tokens D1 implementados; mockup B/C1 aguardando escolha | 29/10, usuário escolheu “Correções + mockup”. Novos `src/web/tokens.css` e `polish.css` (camada final só com tokens). Em `main.tsx`: Grimório substitui os seis botões; faixa de debug só aparece em duelo com amigo; vagas sem “Vaga livre”; fontes vazias só com glifo e tooltip; dica de sacrifício só durante o arrasto; “Como jogar?” da mão removido. Avisos movidos para o eixo central; troca de mão em ardósia/latão, acima do campo; títulos e contadores longe da moldura; piso de ~12 px; zeros de Escola/Presença esmaecidos; eixo mostra “Sua decisão/Vez do rival” e fases centralizadas. Testes ajustados ao Grimório (+1 teste novo; mock de terras-ui passa a devolver a mesa nas consultas). Typecheck/build aprovados; **541/541 testes**. Capturas reais 1920×1080 e 1366×768 em qa/ui-auditoria-v011/depois-A. Mockup em [arte/direcoes/mesa-v2](arte/direcoes/mesa-v2/README.md) com três pares tipográficos. Build em dist-v11 (4187 recarrega a UI; servidor não reiniciado). Pendente: texto “+N energia” das fontes aliadas encosta na divisória com campo cheio em 1080p. |
+| WB-27 | Mesa v2 e par tipográfico C (WB-D30) | implementada; aceite humano em movimento pendente | Usuário: “Par C + fichas”. Alegreya SC/Sans 5.3.0 (OFL-1.1) empacotadas via @fontsource, sem CDN; tokens e todos os CSS sem Georgia/Segoe fixos. Novo `src/web/mesa-v2.css`: ardósia sobre a área jogável; magos e fontes na coluna esquerda; Escola/Presença como placas por escola na direita, acesas pelas escolas de cartas conjuráveis; rituais em painéis de pergaminho; quatro faixas com fichas de 142×196 px em 1080p (recorte da arte, nome em fita, selos de Força/Vigor, coral = ferido, dourado = reforçado); eixo com mostrador de vez; engrenagem de turno pulsando quando só resta avançar; “Conjurar magia” só com carta selecionada ou em arrasto; `overflow:clip` na arena. `main.tsx`: placas separadas da barra do mago, classes `wanted`/`boosted`/`has-selection`/`only-action`. **542/542 testes**, typecheck e build dist-v11. Capturas reais em qa/ui-auditoria-v011/mesa-v2: fixture cheia 1080/1366, preparação, coleção, partida real turno 2 e decisão de descarte; sem scroll de página. Limites: fontes com mais de 6 medalhões rolam dentro do painel em 1366; nomes longos truncam na fita; sem vídeo/FPS e sem teste de arrasto real nesta rodada. |
+| WB-26a | (histórico) primeira entrega da auditoria | análise entregue | [Relatório e 14 capturas](qa/ui-auditoria-v011/README.md). Instância isolada 4197 com save temporário; Playwright 1920×1080 com home, preparação, mulligan, turnos 1–3 contra o bot, mão/prévia, menus, coleção, e fixture cheia também em 1366×768. Achados: identidade quebrada fora da home, tipografia de sistema, cartas de campo ~104×145 px, laterais vazias, 32 contadores de Escola/Presença, turno pouco visível, defeitos de corte/contraste (D1–D5). Propostas A–D são refinamento do Atlas C, não decisões aceitas. Sem FPS/vídeo; D8 a confirmar. 4187 e saves reais não tocados. |
+
 ## Publicação Git — 27/10/2026
 
 | ID | Tarefa | Estado | Evidência |
 | --- | --- | --- | --- |
-| WB-25 | Publicar no GitHub e manter sincronizado | concluida; sincronização recorrente ativa | Commit inicial 208b6e5 publicado em origin/main, upstream configurado. 2.191 arquivos; saves/logs/dependências/builds/segredos excluídos. npm test: 540/540 em 19 arquivos; npm run typecheck aprovado em 27/10/2026. Automação horária ativa: sincronizar-wizards-battle-com-github; exige ambiente local disponível. Divergências/falhas geram aviso, sem force-push. |
+| WB-25 | Publicar no GitHub e manter sincronizado | concluida; novos commits sob confirmação | Commit inicial 208b6e5 publicado em origin/main, upstream configurado. 2.191 arquivos; saves/logs/dependências/builds/segredos excluídos. npm test: 540/540 em 19 arquivos; npm run typecheck aprovado em 27/10/2026. Automação sincronizar-wizards-battle-com-github pausada conforme WB-D29. Após novas alterações, perguntar se o usuário deseja commitar/publicar; aguardar confirmação. Divergências/falhas geram aviso, sem force-push. |
 
 ## Entrega atual — WB-24 / WB-D27, 24/10/2026
 

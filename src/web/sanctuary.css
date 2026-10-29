@@ -14,7 +14,7 @@
 .sanctuary-decks{left:7%;top:54%;width:23%;height:14%}
 .sanctuary-collection{left:74%;top:61%;width:22%;height:15%}
 .sanctuary-guide{left:73%;top:23%;width:23%;height:15%}
-.sanctuary-active-deck{position:absolute;left:38.8%;top:84.5%;width:23.5%;height:4.8%;display:flex;align-items:center;justify-content:space-between;gap:10px;background:linear-gradient(100deg,#211a17,#100f10);border:1px solid #8b663c;box-shadow:inset 0 0 0 1px #30251c;color:#f1dfb7;padding:0 1%;font:clamp(10px,1.08cqw,20px) Georgia,serif;clip-path:polygon(3% 0,97% 0,100% 50%,97% 100%,3% 100%,0 50%)}
+.sanctuary-active-deck{position:absolute;left:38.8%;top:84.5%;width:23.5%;height:4.8%;display:flex;align-items:center;justify-content:space-between;gap:10px;background:linear-gradient(100deg,#211a17,#100f10);border:1px solid #8b663c;box-shadow:inset 0 0 0 1px #30251c;color:#f1dfb7;padding:0 1%;font:clamp(10px,1.08cqw,20px) var(--wb-font-display);clip-path:polygon(3% 0,97% 0,100% 50%,97% 100%,3% 100%,0 50%)}
 .sanctuary-active-deck>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sanctuary-active-deck em{font:inherit;white-space:nowrap;color:#e0b973}.sanctuary-active-deck:hover{background:#3f2a19}
 .sanctuary-version{position:absolute;bottom:9px;right:14px;color:#e9cd99b0;font-size:10px;letter-spacing:.15em;text-shadow:0 1px 3px #000;background:#13171c85;padding:5px 9px;border-radius:3px}
 .sanctuary-setup-overlay{background:#0b1219;backdrop-filter:none;padding:20px}

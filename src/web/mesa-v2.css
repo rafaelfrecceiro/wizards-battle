@@ -1,0 +1,185 @@
+/* WB-D30 · Mesa v2 (mockup arte/direcoes/mesa-v2): reorganização do Atlas C.
+   Coordenadas em --u (1% da largura do palco 16:9; 19,2 px em 1920×1080), tiradas do mockup.
+   Os invólucros viram display:contents e cada zona é posicionada sobre a arena;
+   as zonas que recebem drop/feedback (formações, fontes, rituais, magos, mão) continuam sendo caixas reais. */
+
+.app.atlas{
+  --tw:calc(var(--u)*7.4);           /* ficha de campo: 142 px em 1080p */
+  --th:calc(var(--tw)*1.38);
+  --col-l:calc(var(--u)*3.75);       /* coluna esquerda */
+  --col-w:calc(var(--u)*14.2);
+  --lane-l:calc(var(--u)*18.65);     /* faixas */
+  --lane-r:calc(var(--u)*18.65);
+  --lane-h:calc(var(--u)*10.62);
+  --hand-w:clamp(118px,calc(var(--u)*8.9),172px);
+  --hand-h:calc(var(--hand-w)*1.396);
+  --hand-expanded:calc(var(--hand-h) + 30px);
+  --hand-peek:calc(var(--u)*5.2);
+}
+
+/* Superfície de ardósia sobre a área jogável; a moldura pintada continua visível nas bordas */
+.atlas .arena{display:block;position:relative;overflow:clip}
+.atlas .arena:before{content:"";position:absolute;z-index:0;left:calc(var(--u)*3);right:calc(var(--u)*3);top:calc(var(--u)*2.2);bottom:calc(var(--u)*2.1);border-radius:10px;pointer-events:none;
+  background:
+    radial-gradient(circle at 50% 47%,transparent 0 calc(var(--u)*12.4),#d8b47729 calc(var(--u)*12.45) calc(var(--u)*12.55),transparent calc(var(--u)*12.6) calc(var(--u)*17.2),#d8b47729 calc(var(--u)*17.25) calc(var(--u)*17.35),transparent calc(var(--u)*17.4)),
+    radial-gradient(ellipse at 50% 50%,#1d3446 0%,#14222e 55%,#0e1821 100%);
+  box-shadow:inset 0 0 0 2px #0a1117,inset 0 0 0 4px #8d6a36,inset 0 0 0 5px #0a1117,inset 0 0 60px #000a,0 0 30px #000c}
+.atlas .rival-header,.atlas .your-header,.atlas .battlefield,.atlas .half,.atlas .formations,.atlas .rituals{display:contents}
+
+/* Jogadores na coluna esquerda */
+.atlas .player-bar,.atlas .your-header .player-bar,.atlas .rival-header .player-bar{position:absolute;z-index:3;left:var(--col-l);width:var(--col-w);height:calc(var(--u)*5.8);align-self:auto;
+  display:grid;grid-template-columns:calc(var(--u)*5) auto auto 1fr;grid-template-rows:auto auto;column-gap:calc(var(--u)*.6);row-gap:calc(var(--u)*.3);align-items:center;padding:0;border-radius:calc(var(--u)*3) 8px 8px calc(var(--u)*3)}
+.atlas .rival-header .player-bar{top:calc(var(--u)*2.9)}
+.atlas .your-header .player-bar{top:calc(var(--u)*42.2)}
+.atlas .portrait{grid-row:1/3;grid-column:1;width:calc(var(--u)*5);height:calc(var(--u)*5);border-radius:50%;background:radial-gradient(circle,#2c4250,#0b1219);box-shadow:0 0 0 3px var(--wb-brass-300),0 0 0 5px #0b1219,0 0 0 7px var(--wb-brass-700),0 6px 16px #000c;overflow:hidden}
+.atlas .portrait img{filter:none}
+.atlas .player-name{grid-column:2/5;grid-row:1;align-self:end;padding:0}
+.atlas .player-name>b{display:block;font:700 var(--wb-fs-xl)/1 var(--wb-font-display);color:var(--wb-brass-100)}
+.atlas .player-name>span{display:block;font:var(--wb-fs-sm) var(--wb-font-ui);color:var(--wb-text-muted)}
+.atlas .life{grid-column:2;grid-row:2;width:calc(var(--u)*2.7);height:calc(var(--u)*3.1);font:700 var(--wb-fs-xl) var(--wb-font-display)}
+.atlas .energy-orb{grid-column:3;grid-row:2;width:calc(var(--u)*3);height:calc(var(--u)*3);font-family:var(--wb-font-display)}
+.atlas .energy-orb>b{font:700 var(--wb-fs-xl) var(--wb-font-display)}
+.atlas .energy-orb>small{bottom:auto;top:50%;left:calc(100% + 8px);transform:translateY(-50%);letter-spacing:.1em;color:#9fe6f2}
+.atlas .player-bar.valid-drop{border-radius:calc(var(--u)*3) 8px 8px calc(var(--u)*3)}
+
+/* Fontes: medalhões em painel de pergaminho */
+.atlas .source-well{position:absolute;z-index:2;left:var(--col-l);width:var(--col-w);height:calc(var(--u)*13);display:flex;flex-direction:column;padding:calc(var(--u)*.7) calc(var(--u)*.7) calc(var(--u)*.5);border-radius:8px;
+  background:linear-gradient(160deg,#e8d6b1,#cdb88f);box-shadow:inset 0 0 0 1px #7a5a2c,inset 0 0 22px #6d4d2244,0 4px 14px #0008;color:var(--wb-ink-900)}
+.atlas .rival-half .source-well{top:calc(var(--u)*9.4);padding-top:calc(var(--u)*.7)}
+.atlas .ally-half .source-well{top:calc(var(--u)*28.4)}
+.atlas .source-well>.zone-label,.atlas .ritual-zone>.zone-label{display:flex;align-items:baseline;gap:6px;margin:0}
+.atlas .source-well>.zone-label .zone-icon,.atlas .source-well>.zone-label small,.atlas .ritual-zone>.zone-label .zone-icon,.atlas .ritual-zone>.zone-label small{display:none}
+.atlas .source-well>.zone-label strong,.atlas .ritual-zone>.zone-label strong{font:500 var(--wb-fs-lg) var(--wb-font-display);text-transform:none;letter-spacing:.03em;color:var(--wb-ink-700)}
+.atlas .source-well>.zone-label em,.atlas .ritual-zone>.zone-label em{margin-left:auto;font:600 var(--wb-fs-xs) var(--wb-font-ui);color:var(--wb-ink-500)}
+.atlas .source-cards{flex:1;display:flex;flex-wrap:wrap;align-content:flex-start;gap:calc(var(--u)*.55) calc(var(--u)*.75);margin:calc(var(--u)*.4) 0 0;padding:6px 4px;overflow:auto;scrollbar-width:thin}
+.atlas .source-entry{position:relative;flex:0 0 auto;width:calc(var(--u)*3.3);gap:0}
+.atlas .source-entry>span{position:absolute;inset:0;pointer-events:none}
+.atlas .source-entry>span b{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.atlas .source-entry>span small{position:absolute;top:-4px;right:-6px;margin:0;padding:1px 6px;font:700 var(--wb-fs-xs) var(--wb-font-ui);color:#fff3d2;background:var(--wb-slate-700);border:1px solid var(--wb-brass-300);border-radius:10px;white-space:nowrap}
+.atlas .source-entry>span small{font-size:0}
+.atlas .source-entry>span small:before{content:attr(data-gen)}
+.atlas .game-card.source{width:calc(var(--u)*3.2);height:calc(var(--u)*3.2);border-radius:50%;border:3px solid var(--wb-brass-500);box-shadow:0 0 0 2px #f3e5c4,0 0 0 4px #7a5a2c,0 3px 8px #0007;overflow:visible;background:#efe3c8}
+.atlas .game-card.source .card-face{position:absolute;inset:0;border-radius:50%;overflow:hidden}
+.atlas .game-card.source .card-face img{position:absolute;width:calc(var(--u)*6.9);height:auto;max-width:none;left:calc(var(--u)*-1.85);top:calc(var(--u)*-2.9)}
+.atlas .game-card.source .card-face>:not(img){display:none}
+.atlas .game-card.source .duration-counter{right:-6px;bottom:-6px;min-width:0;width:calc(var(--u)*1.3);height:calc(var(--u)*1.3);padding:0;display:grid;place-items:center;border-radius:50%;font:700 var(--wb-fs-xs) var(--wb-font-ui)}
+.atlas .game-card.source .duration-counter small{display:none}
+.atlas .pile-row{margin-top:auto;border-top:1px solid #78603f55;padding:calc(var(--u)*.4) calc(var(--u)*.3) 0}
+.atlas .pile-row>button b{font:700 var(--wb-fs-lg) var(--wb-font-display)}
+
+/* Faixas e fichas de campo */
+.atlas .formation{position:absolute;z-index:1;left:var(--lane-l);right:var(--lane-r);height:var(--lane-h);display:flex;align-items:center;justify-content:center;padding:0;border:0;border-top:1px solid #d8b47724;border-bottom:1px solid #d8b47724;border-radius:0;background:none}
+.atlas .formation+.formation{border-top-color:#d8b47724}
+.atlas .rival-half .formation.back{top:calc(var(--u)*3.44)}
+.atlas .rival-half .formation.front{top:calc(var(--u)*14.27)}
+.atlas .ally-half .formation.front{top:calc(var(--u)*28.33)}
+.atlas .ally-half .formation.back{top:calc(var(--u)*39.17)}
+.atlas .formation>.zone-label{position:absolute;left:calc(var(--u)*.5);top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;display:flex;align-items:center;gap:8px;padding:0;background:none;clip-path:none;min-height:0}
+.atlas .formation>.zone-label strong{font:500 var(--wb-fs-sm) var(--wb-font-display);letter-spacing:.24em;color:#d8b477b0;text-transform:none}
+.atlas .formation>.zone-label em{font:600 var(--wb-fs-xs) var(--wb-font-ui);color:#d8b47788;margin:0}
+.atlas .formation>.zone-label small,.atlas .formation>.zone-label .zone-icon{display:none}
+.atlas .formation>.zone-label>button{transform:rotate(180deg);background:#0b1219;color:#d8b477;border-color:#d8b47766}
+.atlas .formation-slots{display:flex;align-items:center;justify-content:center;gap:calc(var(--u)*1.35)}
+.atlas .vacant{width:var(--tw);height:var(--th);border-radius:8px}
+.atlas .vacant>span{font-size:calc(var(--u)*1.6)}
+
+.atlas .game-card.battle{position:relative;width:var(--tw);height:var(--th);border:2px solid var(--wb-brass-300);border-radius:8px;background:#efe3c8;box-shadow:0 0 0 2px #0b1219,0 8px 16px #000b;overflow:visible}
+.atlas .game-card.battle .card-face{position:absolute;inset:0 0 calc(var(--u)*1.75) 0;border-radius:6px 6px 0 0;overflow:hidden}
+.atlas .game-card.battle .card-face img{position:absolute;max-width:none;width:calc(var(--tw)*1.62);height:auto;left:calc(var(--tw)*-.31);top:calc(var(--tw)*-.455)}
+.atlas .game-card.battle .card-face>:not(img){display:none}
+.atlas .game-card.battle .battle-name{position:absolute;left:0;right:0;bottom:0;top:auto;height:calc(var(--u)*1.75);display:block;padding:calc(var(--u)*.42) calc(var(--u)*1.6) 0;font:600 var(--wb-fs-xs)/1.2 var(--wb-font-ui);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--wb-text);background:linear-gradient(#1e303c,#101a23);border-top:1px solid var(--wb-brass-500);border-radius:0 0 6px 6px}
+.atlas .game-card.battle .combat-stats{position:absolute;left:-10px;right:-10px;bottom:-12px;top:auto;transform:none;width:auto;min-width:0;display:flex;justify-content:space-between;padding:0;border:0;background:none;box-shadow:none;pointer-events:none;z-index:2}
+.atlas .combat-stats>i{display:none}
+.atlas .combat-stats>b{width:calc(var(--u)*2);height:calc(var(--u)*2);display:grid;place-items:center;font:700 var(--wb-fs-lg) var(--wb-font-display);color:#fff4d8;border:2px solid var(--wb-brass-100);box-shadow:0 3px 6px #000a}
+.atlas .combat-stats>b:first-child{border-radius:50%;background:radial-gradient(circle at 35% 30%,#d9a347,#7a4a17)}
+.atlas .combat-stats>b:last-child{border-radius:8px 8px 50% 50%;background:radial-gradient(circle at 35% 30%,#c0533f,#5b1f22)}
+.atlas .combat-stats>b.wounded{color:#ffd0c2;box-shadow:0 0 0 3px #ed927788,0 3px 6px #000a}
+.atlas .combat-stats>b.boosted{color:#fff1b8;box-shadow:0 0 0 3px #f0c87888,0 3px 6px #000a}
+.atlas .game-card.battle .keyword-badges{top:-11px;right:-9px}
+.atlas .game-card.battle .keyword-badge{font:700 var(--wb-fs-xs) var(--wb-font-ui);border-radius:11px;padding:2px 8px}
+.atlas .game-card.battle:hover,.atlas .game-card.battle:focus-visible{outline:2px solid var(--wb-brass-100);outline-offset:3px;box-shadow:0 0 0 2px #0b1219,0 0 22px #f0c87866,0 8px 16px #000b}
+.atlas .game-card.battle.exhausted .card-face{filter:saturate(.55) brightness(.82)}
+
+/* Eixo do turno */
+.atlas .equator{position:absolute;z-index:4;left:var(--lane-l);right:var(--lane-r);top:calc(var(--u)*25.1);height:calc(var(--u)*2.9);display:flex;justify-content:center;align-items:center;gap:0;padding:0;margin:0;background:none;border:0;overflow:visible}
+.atlas .equator:before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:linear-gradient(90deg,transparent,#d8b477 15%,#f3dca6 50%,#d8b477 85%,transparent)}
+.atlas .turn-indicator,.atlas .phase-track{position:relative;height:calc(var(--u)*2.6);display:flex;align-items:center;background:linear-gradient(var(--wb-slate-600),var(--wb-slate-800));border:1px solid var(--wb-brass-300);box-shadow:0 4px 16px #000b}
+.atlas .turn-indicator{gap:calc(var(--u)*.7);padding:0 calc(var(--u)*.9) 0 calc(var(--u)*.5);border-right:0;border-radius:30px 0 0 30px}
+.atlas .phase-track{gap:calc(var(--u)*.8);padding:0 calc(var(--u)*1.2) 0 calc(var(--u)*.4);border-left:0;border-radius:0 30px 30px 0}
+.atlas .turn-dot{width:calc(var(--u)*1.75);height:calc(var(--u)*1.75);border-radius:50%;border:2px solid var(--wb-brass-300);background:radial-gradient(circle,#2c4250,#0b1219);position:relative;box-shadow:none;transition:transform .5s cubic-bezier(.3,1.4,.5,1)}
+.atlas .turn-dot:after{content:"";position:absolute;left:50%;top:50%;width:3px;height:45%;margin-left:-1.5px;background:var(--wb-accent);border-radius:2px;transform-origin:50% 0;transform:rotate(180deg);box-shadow:0 0 6px var(--wb-accent)}
+.atlas .turn-dot.mine:after{transform:rotate(0deg)}
+.atlas .turn-indicator>b{position:absolute;right:calc(100% + var(--u)*1.2);padding:2px 10px;font:600 var(--wb-fs-sm) var(--wb-font-ui);color:var(--wb-text-muted);white-space:nowrap;background:var(--wb-slate-800);border:1px solid #b18b4a66;border-radius:12px}
+.atlas .turn-indicator>span:last-child{font:500 var(--wb-fs-lg) var(--wb-font-display);letter-spacing:.05em;color:var(--wb-text-muted)}
+.atlas .turn-indicator:has(.turn-dot.mine)>span:last-child{color:var(--wb-accent)}
+.atlas .phase-track>span{font:600 var(--wb-fs-sm) var(--wb-font-ui);color:#8d9da3}
+.atlas .phase-track .current{font:700 var(--wb-fs-sm) var(--wb-font-ui);color:var(--wb-brass-100)}
+.atlas .phase-track .current:before{content:"◆ ";color:var(--wb-accent)}
+
+/* Escola/Presença: uma coluna por escola (Presença em cima, Escola embaixo) */
+.atlas .school-plates{position:absolute;z-index:3;right:calc(var(--u)*3.75);width:var(--col-w);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:calc(var(--u)*.35)}
+.atlas .school-plates.rival{top:calc(var(--u)*2.9)}
+.atlas .school-plates.ally{top:calc(var(--u)*39.9)}
+.atlas .school-plates .school-progression,.atlas .school-plates .school-presence,.atlas .school-plates .school-presence.has-progression{display:contents}
+.atlas .school-plates .school-progression>small,.atlas .school-plates .presence-label{display:none}
+.atlas .school-plates .school{flex-direction:column;justify-content:center;gap:2px;padding:calc(var(--u)*.4) 2px;background:linear-gradient(var(--wb-slate-600),var(--wb-slate-800));border:1px solid #b18b4a88;opacity:1}
+.atlas .school-plates .school.chama{grid-column:1}.atlas .school-plates .school.raiz{grid-column:2}.atlas .school-plates .school.sombra{grid-column:3}.atlas .school-plates .school.maré{grid-column:4}
+.atlas .school-plates .school-presence .school{grid-row:1;border-bottom:0;border-radius:10px 10px 0 0}
+.atlas .school-plates .school-progression .school{grid-row:2;flex-direction:row;padding-top:2px;border-top:1px solid #b18b4a33;border-radius:0 0 10px 10px}
+.atlas .school-plates .school-presence:not(.has-progression) .school{border-bottom:1px solid #b18b4a88;border-radius:10px}
+.atlas .school-plates .school-presence .school .atlas-school-icon{width:calc(var(--u)*1.6);height:calc(var(--u)*1.6)}
+.atlas .school-plates .school-presence .school b{font:700 var(--wb-fs-xl)/1 var(--wb-font-display);color:#fff1d4}
+.atlas .school-plates .school-progression .school .atlas-school-icon{display:none}
+.atlas .school-plates .school-progression .school:before{content:"Escola";font:var(--wb-fs-xs) var(--wb-font-ui);color:var(--wb-text-muted)}
+.atlas .school-plates .school-progression .school b{font:700 var(--wb-fs-sm) var(--wb-font-ui);color:var(--wb-text)}
+.atlas .school-plates .school.chama{color:#f08a4b}.atlas .school-plates .school.raiz{color:#7fc66b}.atlas .school-plates .school.sombra{color:#b89be6}.atlas .school-plates .school.maré{color:#5fc3dc}
+.atlas .school-plates .school:has(>b[data-value="0"]){opacity:1}
+.atlas .school-plates .school:has(>b[data-value="0"])>*{opacity:.42}
+.atlas .school-plates .school.wanted{border-color:currentColor;box-shadow:0 0 14px color-mix(in srgb,currentColor 45%,transparent)}
+.atlas .school-plates .school.wanted>*{opacity:1}
+
+/* Rituais na coluna direita */
+.atlas .ritual-zone{position:absolute;z-index:2;right:calc(var(--u)*3.75);width:var(--col-w);height:calc(var(--u)*6.4);padding:calc(var(--u)*.5) calc(var(--u)*.7);display:flex;flex-direction:column;background:linear-gradient(160deg,#e8d6b1,#cdb88f);box-shadow:inset 0 0 0 1px #7a5a2c,0 4px 14px #0008;color:var(--wb-ink-900)}
+.atlas .ritual-zone:first-child{border-radius:8px 8px 0 0}
+.atlas .ritual-zone:last-child{border-radius:0 0 8px 8px;border-top:1px solid #7a5a2c55}
+.atlas .rival-half .ritual-zone:first-child{top:calc(var(--u)*9.4)}
+.atlas .rival-half .ritual-zone:last-child{top:calc(var(--u)*15.8)}
+.atlas .ally-half .ritual-zone:first-child{top:calc(var(--u)*26.6)}
+.atlas .ally-half .ritual-zone:last-child{top:calc(var(--u)*33)}
+.atlas .ritual-cards{justify-content:flex-start;gap:calc(var(--u)*.45);padding:calc(var(--u)*.3) 0 0}
+.atlas .game-card.small,.atlas .ritual-zone .card-back,.atlas .ritual-vacant{width:calc(var(--u)*3.2);height:calc(var(--u)*4.45)}
+.atlas .ritual-zone .card-back>span{font-size:var(--wb-fs-lg)}
+
+/* Mão e mão rival */
+.atlas .hand-area{left:calc(var(--u)*21);right:calc(var(--u)*21);background:none}
+.atlas .hand-area.expanded,.atlas .hand-area:focus-within{background:linear-gradient(0deg,#0b1219f2,#0b1219cc 70%,#0b121900)}
+.atlas .hand-heading{justify-content:flex-start}
+.atlas .rival-hand{position:absolute;z-index:3;top:calc(var(--u)*-1.3);left:50%;width:auto;height:calc(var(--u)*3.4);transform:translateX(-50%);display:flex;gap:4px;overflow:visible}
+.atlas .tiny-back{width:calc(var(--u)*1.8);height:calc(var(--u)*2.5);margin:0;transform:none;font-size:var(--wb-fs-xs)}
+
+/* Botão de turno: engrenagem */
+.atlas .your-header .phase-action,.atlas .phase-action{position:absolute;z-index:44;right:calc(var(--u)*1.8);bottom:calc(var(--u)*1.15);width:calc(var(--u)*8.5);height:calc(var(--u)*8.5);margin:0;display:grid;place-items:center;border-radius:50%;
+  background:radial-gradient(circle at 40% 35%,#8a5f2a,#3a2614 60%,#20160d);border:3px solid var(--wb-brass-300);
+  box-shadow:0 0 0 6px #0b1219,0 0 0 9px var(--wb-brass-700),0 0 0 11px #0b1219,0 10px 26px #000d}
+.atlas .phase-action:before{content:"";position:absolute;inset:calc(var(--u)*-.95);border-radius:50%;pointer-events:none;background:repeating-conic-gradient(var(--wb-brass-500) 0 6deg,transparent 6deg 15deg);
+  mask:radial-gradient(circle,transparent 0 calc(var(--u)*4.75),#000 calc(var(--u)*4.8) calc(var(--u)*5.15),transparent calc(var(--u)*5.2))}
+.atlas .phase-action>.action-btn{width:100%;height:100%;padding:calc(var(--u)*1);display:grid;place-items:center;text-align:center;white-space:normal;text-transform:none;font:700 var(--wb-fs-lg)/1.05 var(--wb-font-display);letter-spacing:.04em;color:#fff0c5;background:none;border:0;border-radius:50%;box-shadow:none;clip-path:none}
+.atlas .phase-action>.action-btn:hover,.atlas .phase-action>.action-btn:focus-visible{background:radial-gradient(circle,#f0c87833,transparent 70%);box-shadow:none}
+.atlas .phase-action>.thinking,.atlas .phase-action>span,.atlas .phase-action>b{display:block;max-width:80%;text-align:center;font:600 var(--wb-fs-sm)/1.2 var(--wb-font-ui);color:var(--wb-text-muted)}
+.atlas .phase-action.only-action{animation:wb-gear-ready 2.2s ease-in-out infinite}
+@keyframes wb-gear-ready{50%{box-shadow:0 0 0 6px #0b1219,0 0 0 9px var(--wb-brass-300),0 0 0 11px #0b1219,0 10px 26px #000d,0 0 46px #f0b453aa}}
+@media (prefers-reduced-motion:reduce){.atlas .phase-action.only-action{animation:none;box-shadow:0 0 0 6px #0b1219,0 0 0 9px var(--wb-brass-300),0 0 0 11px #0b1219,0 0 30px #f0b45399}}
+
+/* Conjurar magia: destino que só aparece com carta em mãos */
+.atlas .spell-drop{right:calc(var(--u)*1.8);bottom:calc(var(--u)*11.2);width:calc(var(--u)*12);display:none}
+.atlas.is-dragging .spell-drop,.atlas.has-selection .spell-drop{display:flex}
+
+/* Grimório no alto da moldura */
+.atlas>.masthead{top:calc(var(--u)*.3);right:calc(var(--u)*3.4)}
+.atlas .grimoire-toggle{padding:6px 16px}
+
+/* Narrador acima da mão, sem cobrir as fichas */
+.atlas .feedback-status{bottom:calc(var(--u)*6.2)}
+
+/* Telas estreitas: o rótulo da energia fica no tooltip do orbe */
+@media (max-width:1500px){.atlas .energy-orb>small{display:none}}

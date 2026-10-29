@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mesa v2 — mockup WB-26</title>
+<!-- Somente para este estudo. Em produção as fontes escolhidas serão empacotadas no projeto (OFL), sem CDN. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500;700&family=Alegreya+Sans:wght@400;500;700&family=IM+Fell+English+SC&family=Marcellus+SC&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Mockup estático. Fixture visual, não é partida legal nem estado do servidor. */
+:root{
+  --slate-900:#0b1219;--slate-800:#101a23;--slate-700:#14212c;--slate-600:#1e303c;--slate-500:#2c4250;
+  --brass-700:#7a5a2c;--brass-500:#b18b4a;--brass-300:#d8b477;--brass-100:#f3dca6;
+  --parch:#e7d4ae;--ink:#251f15;--text:#f1e2c4;--muted:#c9b896;--accent:#f0c878;
+  --chama:#f08a4b;--raiz:#7fc66b;--sombra:#b89be6;--mare:#5fc3dc;--damage:#ed9277;--heal:#90cba2;
+  --display:"IM Fell English SC",Georgia,serif;--ui:"Alegreya Sans","Segoe UI",sans-serif;
+  --tw:142px; /* largura da ficha de campo em 1080p */
+}
+body[data-pair="b"]{--display:"Marcellus SC",Georgia,serif;--ui:"Source Sans 3","Segoe UI",sans-serif}
+body[data-pair="c"]{--display:"Alegreya SC",Georgia,serif;--ui:"Alegreya Sans","Segoe UI",sans-serif}
+body[data-pair="atual"]{--display:Georgia,serif;--ui:"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#05090d;color:var(--text);font-family:var(--ui);overflow:hidden}
+.viewport{position:fixed;inset:0;display:grid;place-items:center}
+.stage{position:relative;width:1920px;height:1080px;transform-origin:center;background:#172630 url('/arte/atlas-tabuleiro.png') center/100% 100%;overflow:hidden}
+/* Superfície única de ardósia sobre a área jogável: a moldura pintada continua visível nas bordas */
+.table{position:absolute;left:58px;top:42px;right:58px;bottom:40px;border-radius:10px;
+  background:radial-gradient(ellipse at 50% 50%,#1d3446 0%,#14222e 55%,#0e1821 100%);
+  box-shadow:inset 0 0 0 2px #0a1117,inset 0 0 0 4px #8d6a36,inset 0 0 0 5px #0a1117,inset 0 0 60px #000a,0 0 30px #000c}
+.table:before{content:"";position:absolute;inset:0;border-radius:10px;opacity:.16;pointer-events:none;
+  background:
+   radial-gradient(circle at 50% 50%,transparent 0 238px,#d8b477 239px 240px,transparent 241px 330px,#d8b477 331px 332px,transparent 333px),
+   repeating-conic-gradient(from 0deg at 50% 50%,#d8b47733 0 .4deg,transparent .4deg 15deg)}
+
+/* Colunas */
+.col{position:absolute;top:0;bottom:0}
+.col.left{left:0;width:290px}
+.col.right{right:0;width:290px}
+.lanes{position:absolute;left:300px;right:300px;top:0;bottom:0}
+
+/* Bloco do jogador (retrato + vida + energia) */
+.player{position:absolute;left:14px;right:6px;height:112px;display:grid;grid-template-columns:96px 1fr;align-items:center;gap:12px}
+.player.rival{top:14px}.player.ally{bottom:118px}
+.portrait{width:96px;height:96px;border-radius:50%;background:center/cover;border:3px solid var(--brass-300);box-shadow:0 0 0 3px #0b1219,0 0 0 5px var(--brass-700),0 6px 16px #000c}
+.player.rival .portrait{background-image:url('/arte/atlas-automato.png')}
+.player.ally .portrait{background-image:url('/arte/atlas-maga.png')}
+.player.thinking .portrait{animation:breathe 2.4s ease-in-out infinite}
+@keyframes breathe{50%{box-shadow:0 0 0 3px #0b1219,0 0 0 5px var(--brass-300),0 0 26px #f0c87888}}
+.who b{display:block;font:30px/1 var(--display);color:var(--brass-100)}
+.who small{font:15px var(--ui);color:var(--muted)}
+.vitals{display:flex;gap:12px;margin-top:8px;align-items:center}
+.life{width:52px;height:60px;display:grid;place-items:center;font:700 28px var(--display);color:#fff1d4;background:linear-gradient(135deg,#b04c3a,#4a1f24);border:2px solid #e5bd6c;border-radius:8px 8px 46% 46%;box-shadow:0 3px 8px #0009}
+.life.hit{background:linear-gradient(135deg,#c3533e,#4a1f24);box-shadow:0 0 0 2px #ed927788,0 3px 8px #0009}
+.orb{position:relative;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font:700 27px var(--display);color:#effcff;background:radial-gradient(circle at 35% 30%,#7fe0f0,#1d6d86 55%,#0c2c3a);border:2px solid #9fd8e4;box-shadow:0 0 14px #3ab9d655,0 3px 8px #0009}
+.orb-note{font:600 14px var(--ui);color:#9fe6f2;line-height:1.15}
+.orb-note small{display:block;color:var(--muted);font-weight:400}
+
+/* Medalhões de fonte */
+.wells{position:absolute;left:14px;right:10px;height:250px;padding:14px 12px;border-radius:8px;background:linear-gradient(160deg,#e8d6b1,#cdb88f);box-shadow:inset 0 0 0 1px #7a5a2c,inset 0 0 22px #6d4d2244,0 4px 14px #0008;color:var(--ink)}
+.wells.rival{top:138px}.wells.ally{bottom:244px}
+.zone-title{display:flex;align-items:baseline;justify-content:space-between;font:20px var(--display);letter-spacing:.04em;color:#3a2d1a}
+.zone-title small{font:600 13px var(--ui);color:#6a5636;letter-spacing:0}
+.medals{display:flex;flex-wrap:wrap;gap:12px 14px;margin-top:12px}
+.medal{width:76px;text-align:center}
+.medal i{position:relative;display:block;width:68px;height:68px;margin:0 auto;border-radius:50%;background-repeat:no-repeat;background-size:150px auto;background-position:-41px -62px;border:3px solid var(--ring,#b18b4a);box-shadow:0 0 0 2px #f3e5c4,0 0 0 4px #7a5a2c,0 3px 8px #0007}
+.medal i:after{content:attr(data-gen);position:absolute;right:-8px;top:-6px;font:700 13px var(--ui);color:#fff3d2;background:var(--slate-700);border:1px solid var(--brass-300);border-radius:10px;padding:1px 6px}
+.medal .pips{display:flex;justify-content:center;gap:4px;margin-top:6px}
+.medal .pips b{width:9px;height:9px;border-radius:50%;background:#2c5968;box-shadow:inset 0 0 0 1px #acc4c5}
+.medal .pips b.off{background:transparent;box-shadow:inset 0 0 0 1px #8a7553}
+.piles{position:absolute;left:12px;right:12px;bottom:12px;display:flex;justify-content:space-between;font:600 15px var(--ui);color:#3d301f}
+.piles span{display:flex;align-items:center;gap:8px}
+.piles em{font-style:normal;font:700 19px var(--display)}
+.piles svg{width:20px;height:24px;color:#8a6a35}
+
+/* Faixas e fichas de campo */
+.lane{position:absolute;left:0;right:0;height:204px;display:flex;align-items:center;justify-content:center;gap:26px}
+.lane:before{content:"";position:absolute;inset:6px 0;border-top:1px solid #d8b47724;border-bottom:1px solid #d8b47724}
+.lane .tag{position:absolute;left:10px;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;font:15px var(--display);letter-spacing:.24em;color:#d8b477aa;display:flex;align-items:center;gap:8px}
+.lane .tag b{font:600 12px var(--ui);letter-spacing:0;color:#d8b47788}
+.l1{top:24px}.l2{top:232px}.l3{top:502px}.l4{top:710px}
+.slot{width:var(--tw);height:calc(var(--tw)*1.38);border-radius:8px;border:1px dashed #d8b47733;display:grid;place-items:center;color:#d8b47733;font-size:30px}
+.token{position:relative;width:var(--tw);height:calc(var(--tw)*1.38);border-radius:8px;background:#efe3c8;border:2px solid var(--brass-300);box-shadow:0 0 0 2px #0b1219,0 8px 16px #000b;overflow:visible}
+.token .art{position:absolute;inset:0 0 34px 0;border-radius:6px 6px 0 0;
+  --sw:calc(var(--tw)*1.62);
+  background-repeat:no-repeat;background-size:var(--sw) auto;
+  background-position:calc((var(--tw) - var(--sw))/2) calc(var(--sw) * -0.281)}
+.token .band{position:absolute;left:0;right:0;top:0;height:6px;border-radius:6px 6px 0 0;background:var(--school,linear-gradient(90deg,var(--chama),var(--sombra)))}
+.token .name{position:absolute;left:0;right:0;bottom:0;height:34px;display:block;padding:9px 30px 0;font:600 13px/1.2 var(--ui);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--text);background:linear-gradient(#1e303c,#101a23);border-top:1px solid var(--brass-500);border-radius:0 0 6px 6px}
+.stat{position:absolute;bottom:-12px;width:38px;height:38px;display:grid;place-items:center;font:700 21px var(--display);color:#fff4d8;border:2px solid var(--brass-100);box-shadow:0 3px 6px #000a;z-index:2}
+.stat.atk{left:-10px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d9a347,#7a4a17)}
+.stat.hp{right:-10px;border-radius:8px 8px 50% 50%;background:radial-gradient(circle at 35% 30%,#c0533f,#5b1f22)}
+.stat.hurt{color:#ffd0c2;box-shadow:0 0 0 3px #ed927788,0 3px 6px #000a}
+.stat.buff{color:#fff1b8;box-shadow:0 0 0 3px #f0c87888,0 3px 6px #000a}
+.kw{position:absolute;top:-11px;right:-9px;display:flex;gap:4px;z-index:2}
+.kw span{font:700 12px var(--ui);color:#fff0c9;background:var(--slate-700);border:1px solid var(--brass-300);border-radius:11px;padding:2px 8px;box-shadow:0 2px 4px #0008}
+.token.ready{box-shadow:0 0 0 2px #0b1219,0 0 0 4px #9de7ca,0 0 22px #5ee6bd66,0 8px 16px #000b}
+.token.attacking{transform:translateY(-14px) scale(1.04);box-shadow:0 0 0 2px #0b1219,0 0 0 4px var(--accent),0 0 30px #f0b45399,0 14px 24px #000c}
+
+/* Eixo do turno */
+.shaft{position:absolute;left:-300px;right:-300px;top:440px;height:56px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.shaft:before{content:"";position:absolute;left:300px;right:300px;top:50%;height:2px;background:linear-gradient(90deg,transparent,#d8b477 15%,#f3dca6 50%,#d8b477 85%,transparent)}
+.pointer{grid-column:2;position:relative;display:flex;align-items:center;gap:18px;padding:8px 26px;background:linear-gradient(var(--slate-600),var(--slate-800));border:1px solid var(--brass-300);border-radius:30px;box-shadow:inset 0 0 0 3px #0b1219,0 4px 16px #000b}
+.pointer .dial{width:34px;height:34px;border-radius:50%;border:2px solid var(--brass-300);background:radial-gradient(circle,#2c4250,#0b1219);position:relative}
+.pointer .dial:after{content:"";position:absolute;left:50%;top:50%;width:3px;height:15px;background:var(--accent);transform-origin:50% 0;transform:translate(-50%,0) rotate(0deg);border-radius:2px;box-shadow:0 0 6px var(--accent)}
+.pointer b{font:22px var(--display);color:var(--accent);letter-spacing:.06em}
+.pointer .phases{display:flex;gap:12px;font:600 14px var(--ui);color:#8d9da3}
+.pointer .phases .on{color:var(--brass-100)}
+.pointer .phases .on:before{content:"◆ ";color:var(--accent)}
+.turnno{position:absolute;left:310px;font:600 15px var(--ui);color:var(--muted)}
+
+/* Coluna direita: Escola/Presença + rituais */
+.schools{position:absolute;left:6px;right:14px;display:flex;gap:10px}
+.schools.rival{top:20px}.schools.ally{bottom:196px}
+.school{flex:1;display:grid;grid-template-columns:54px 1fr;align-items:center;gap:8px;padding:8px 10px;border-radius:10px;background:linear-gradient(var(--slate-600),var(--slate-800));border:1px solid #b18b4a88}
+.school .ring{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;border:3px solid var(--c);background:radial-gradient(circle,#0b1219,#1e303c);color:var(--c);box-shadow:0 0 0 2px #0b1219}
+.school .ring svg{width:28px;height:28px}
+.school b{display:block;font:700 28px/1 var(--display);color:#fff1d4}
+.school small{display:block;font:12px/1.25 var(--ui);color:var(--muted);white-space:nowrap}
+.school.meets{border-color:var(--c);box-shadow:0 0 16px color-mix(in srgb,var(--c) 45%,transparent)}
+.school.meets .ring{box-shadow:0 0 0 2px #0b1219,0 0 14px var(--c)}
+.rituals{position:absolute;left:6px;right:14px;height:250px;padding:12px;border-radius:8px;background:linear-gradient(160deg,#e8d6b1,#cdb88f);box-shadow:inset 0 0 0 1px #7a5a2c,0 4px 14px #0008;color:var(--ink)}
+.rituals.rival{top:118px}.rituals.ally{bottom:290px}
+.minis{display:flex;gap:8px;margin:8px 0 10px}
+.mini{width:66px;height:92px;border-radius:5px;background:center/cover;border:1px solid #7a5a2c;box-shadow:0 2px 5px #0006}
+.mini.back{background:radial-gradient(ellipse at 45% 40%,#44344e,#172536 75%);border:2px solid #c59d53;display:grid;place-items:center;color:#e6c283;font-size:20px}
+.mini.empty{background:#0000;border:1px dashed #7a5a2c66;box-shadow:none}
+
+/* Mão e botão de turno */
+.hand{position:absolute;left:330px;right:330px;bottom:-150px;height:250px;display:flex;justify-content:center;align-items:flex-end}
+.hand img{width:172px;margin:0 -16px;border-radius:9px;box-shadow:0 -2px 14px #000c;transform:rotate(var(--r)) translateY(var(--y));transform-origin:50% 120%;transition:transform .18s}
+.hand img.lift{transform:rotate(0) translateY(-128px) scale(1.08);z-index:3;box-shadow:0 0 0 3px #9de7ca,0 10px 28px #000e}
+.hand img.playable{box-shadow:0 0 0 2px #9de7ca99,0 -2px 14px #000c}
+.endturn{position:absolute;right:34px;bottom:22px;width:164px;height:164px;border-radius:50%;display:grid;place-items:center;text-align:center;
+  background:radial-gradient(circle at 40% 35%,#8a5f2a,#3a2614 60%,#20160d);border:3px solid var(--brass-300);
+  box-shadow:0 0 0 6px #0b1219,0 0 0 9px var(--brass-700),0 0 0 11px #0b1219,0 10px 26px #000d,0 0 34px #f0b45366;color:#fff0c5;
+  font:22px/1.05 var(--display);letter-spacing:.04em;animation:ready 2.2s ease-in-out infinite}
+.endturn:before{content:"";position:absolute;inset:-18px;border-radius:50%;background:repeating-conic-gradient(var(--brass-500) 0 6deg,transparent 6deg 15deg);mask:radial-gradient(circle,transparent 0 91px,#000 92px 97px,transparent 98px);opacity:.9}
+.endturn small{display:block;font:600 13px var(--ui);color:var(--brass-100);letter-spacing:.08em;margin-top:6px}
+@keyframes ready{50%{box-shadow:0 0 0 6px #0b1219,0 0 0 9px var(--brass-300),0 0 0 11px #0b1219,0 10px 26px #000d,0 0 50px #f0b453aa}}
+.grimoire{position:absolute;right:36px;top:12px;padding:8px 18px;font:700 15px var(--display);letter-spacing:.12em;color:var(--brass-100);background:linear-gradient(var(--slate-600),var(--slate-800));border:1px solid var(--brass-300);border-radius:4px;box-shadow:inset 0 0 0 2px #0b1219}
+.rhand{position:absolute;left:50%;top:-40px;transform:translateX(-50%);display:flex;gap:6px}
+.rhand i{width:34px;height:46px;border-radius:4px;background:radial-gradient(ellipse at 45% 40%,#44344e,#172536 75%);border:2px solid #c59d53;box-shadow:0 3px 8px #000a}
+.rhand span{align-self:center;margin-left:8px;font:600 14px var(--ui);color:var(--muted)}
+
+/* Barra de controle do estudo (fora do jogo) */
+.study{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:20;display:flex;gap:6px;align-items:center;padding:6px 10px;background:#0b1219ee;border:1px solid #b18b4a;border-radius:6px;font:13px "Segoe UI",sans-serif;color:#e8d9bb}
+.study button{font:inherit;color:#f3dca6;background:#1e303c;border:1px solid #7a5a2c;border-radius:4px;padding:5px 10px;cursor:pointer}
+.study button[aria-pressed="true"]{background:#b18b4a;color:#1a140b;border-color:#f3dca6}
+.study a{color:#9de7ca}
+</style>
+</head>
+<body data-pair="a">
+<div class="viewport"><div class="stage" id="stage">
+  <div class="table">
+    <!-- Coluna esquerda: jogadores e fontes -->
+    <div class="col left">
+      <div class="player rival thinking">
+        <div class="portrait"></div>
+        <div class="who"><b>Autômato</b><small>Queimada · 4 na mão</small>
+          <div class="vitals"><div class="life">12</div><div class="orb">2</div><div class="orb-note">+3<small>próximo turno</small></div></div></div>
+      </div>
+      <section class="wells rival"><div class="zone-title">Fontes <small>2 ativas</small></div><div class="medals" id="srcRival"></div>
+        <div class="piles" id="pilesRival"></div></section>
+      <section class="wells ally"><div class="zone-title">Fontes <small>1 sacrifício por turno</small></div><div class="medals" id="srcAlly"></div>
+        <div class="piles" id="pilesAlly"></div></section>
+      <div class="player ally">
+        <div class="portrait"></div>
+        <div class="who"><b>Você</b><small>Pira · 7 na mão</small>
+          <div class="vitals"><div class="life hit">13</div><div class="orb">3</div><div class="orb-note">+3<small>próximo turno</small></div></div></div>
+      </div>
+    </div>
+
+    <!-- Centro: quatro faixas e eixo do turno -->
+    <div class="lanes">
+      <div class="rhand"><i></i><i></i><i></i><i></i></div>
+      <div class="lane l1" id="rivalBack"><div class="tag">Retaguarda <b>3/3</b></div></div>
+      <div class="lane l2" id="rivalFront"><div class="tag">Frente <b>3/3</b></div></div>
+      <div class="shaft">
+        <span class="turnno">Turno 7</span>
+        <div class="pointer"><span class="dial"></span><b>Sua vez</b>
+          <span class="phases"><span>Preparação</span><span>Principal</span><span class="on">Combate</span></span></div>
+      </div>
+      <div class="lane l3" id="allyFront"><div class="tag">Frente <b>3/3</b></div></div>
+      <div class="lane l4" id="allyBack"><div class="tag">Retaguarda <b>2/3</b></div></div>
+    </div>
+
+    <!-- Coluna direita: Escola/Presença e rituais -->
+    <div class="col right">
+      <div class="schools rival" id="schoolsRival"></div>
+      <section class="rituals rival"><div class="zone-title">Encantamentos <small>2/3</small></div>
+        <div class="minis" id="enchRival"></div>
+        <div class="zone-title">Véu <small>2/2</small></div><div class="minis"><div class="mini back">◈</div><div class="mini back">◈</div></div></section>
+      <section class="rituals ally"><div class="zone-title">Encantamentos <small>1/3</small></div>
+        <div class="minis" id="enchAlly"></div>
+        <div class="zone-title">Véu <small>1/2</small></div><div class="minis"><div class="mini" style="background-image:url('/cartas/VES-017.png')"></div><div class="mini empty"></div></div></section>
+      <div class="schools ally" id="schoolsAlly"></div>
+    </div>
+  </div>
+  <div class="grimoire">✦ Grimório</div>
+  <div class="hand" id="hand"></div>
+  <div class="endturn">Encerrar<br>turno<small>sem jogadas</small></div>
+</div></div>
+
+<div class="study" role="toolbar" aria-label="Comparar tipografia">
+  <span>Tipografia:</span>
+  <button data-pair="a" aria-pressed="true">A · Gravura</button>
+  <button data-pair="b" aria-pressed="false">B · Inscrição</button>
+  <button data-pair="c" aria-pressed="false">C · Caligrafia</button>
+  <button data-pair="atual" aria-pressed="false">Atual (Georgia)</button>
+  <span>·</span><a href="/atlas-preview.html?cheio=1" target="_blank">mesa atual</a>
+</div>
+
+<script>
+const S={Chama:'var(--chama)',Raiz:'var(--raiz)',Sombra:'var(--sombra)',Maré:'var(--mare)'};
+const ICON={
+ Chama:'<path d="M17 2c1 8 8 9 9 17 1 7-4 11-10 11S5 26 6 20c0-5 4-8 5-12 0 5 2 7 4 8 4-4 1-7 2-14Z" fill="currentColor"/>',
+ Raiz:'<path d="M17 27C4 26 3 13 6 7c8 2 10 7 11 12C15 8 23 5 28 3c1 10-2 20-11 24Z" fill="currentColor"/>',
+ Sombra:'<path d="M23 3C7 2 1 21 13 28c7 5 17-1 17-9-9 7-23-5-7-16Z" fill="currentColor"/>',
+ Maré:'<path d="M16 2C13 9 5 17 6 22c1 13 24 11 20-2-1-5-8-12-10-18Z" fill="currentColor"/>'};
+const band=s=>s.length>1?`linear-gradient(90deg,${S[s[0]]} 50%,${S[s[1]]} 50%)`:S[s[0]];
+// [id, nome, força, vigor, escolas, palavras-chave, estado]
+const field={
+ rivalBack:[['VES-040','Cuidadora das Fendas',1,2,['Raiz'],[]],['VES-023','Bastião da Passagem',3,4,['Chama','Raiz'],['Guardião']],['TD-P02','Javali das Raízes Altas',2,4,['Raiz'],['Guardião']]],
+ rivalFront:[['VES-023','Bastião da Passagem',3,2,['Chama','Raiz'],['Guardião'],'hurt'],['TD-P01','Lince da Pedra Quente',3,3,['Chama'],['Ímpeto']],['VES-023','Bastião da Passagem',3,4,['Chama','Raiz'],['Guardião']]],
+ allyFront:[['VES-002','Vigia da Caldeira',2,3,['Chama'],[],'ready'],['VES-071','Fênix do Motor',3,3,['Chama','Sombra'],['Ímpeto'],'attacking'],['VES-047','Catadora de Lamparinas',3,3,['Sombra'],['Alcance'],'buff']],
+ allyBack:[['VES-048','Guia dos Túneis',1,3,['Sombra'],['Suporte']],['TD-P03','Predador dos Nomes Vazios',3,3,['Sombra'],[]],null]};
+for(const [lane,list] of Object.entries(field)){
+  const el=document.getElementById(lane);
+  for(const c of list){
+    if(!c){el.insertAdjacentHTML('beforeend','<div class="slot">♜</div>');continue}
+    const [id,name,atk,hp,sch,kw,state]=c;
+    el.insertAdjacentHTML('beforeend',`<div class="token ${state==='ready'||state==='attacking'?state:''}" style="--school:${band(sch)}" title="${name}">
+      <div class="art" style="background-image:url('/cartas/${id}.png')"></div><div class="band"></div>
+      <div class="name">${name}</div>
+      ${kw.length?`<div class="kw">${kw.map(k=>`<span>${k}</span>`).join('')}</div>`:''}
+      <div class="stat atk ${state==='buff'?'buff':''}">${atk}</div><div class="stat hp ${state==='hurt'?'hurt':''}">${hp}</div></div>`);
+  }
+}
+const medals=(id,list)=>document.getElementById(id).innerHTML=list.map(([card,name,gen,left,total,sch])=>`<div class="medal" title="${name}: +${gen} energia, ${left} turno(s)">
+  <i data-gen="+${gen}" style="background-image:url('/cartas/${card}.png');--ring:${S[sch]}"></i>
+  <div class="pips">${Array.from({length:total},(_,k)=>`<b class="${k<left?'':'off'}"></b>`).join('')}</div></div>`).join('');
+medals('srcRival',[['VES-002','Vigia da Caldeira',2,2,3,'Chama'],['VES-040','Cuidadora das Fendas',1,1,2,'Raiz']]);
+medals('srcAlly',[['VES-002','Vigia da Caldeira',2,1,3,'Chama'],['VES-047','Catadora de Lamparinas',1,2,2,'Sombra'],['VES-025','Corredor das Brasas',1,1,1,'Chama']]);
+const pileSvg={deck:'<svg viewBox="0 0 36 42"><path d="M4 6h24v32H4Z" fill="#24323a" stroke="currentColor" stroke-width="2"/><path d="m16 15 4 6-4 6-4-6Z" fill="currentColor"/></svg>',ash:'<svg viewBox="0 0 36 42"><path d="M7 15h22l-3 23H10Z" fill="#8d8172" stroke="currentColor" stroke-width="2"/><path d="M5 12h26v5H5Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>',disc:'<svg viewBox="0 0 36 42"><path d="M10 3h22v30H10Z" fill="#263239" stroke="currentColor" stroke-width="2"/><path d="M14 9h14M14 14h14" stroke="currentColor"/></svg>'};
+const piles=(id,d,a,x)=>document.getElementById(id).innerHTML=`<span title="Baralho">${pileSvg.deck}<em>${d}</em></span><span title="Cinzas">${pileSvg.ash}<em>${a}</em></span><span title="Descarte">${pileSvg.disc}<em>${x}</em></span>`;
+piles('pilesRival',27,6,0);piles('pilesAlly',27,6,1);
+const schools=(id,list)=>document.getElementById(id).innerHTML=list.map(([n,pres,esc,meets])=>`<div class="school ${meets?'meets':''}" style="--c:${S[n]}" title="${n}: Presença ${pres} · Escola ${esc}">
+  <div class="ring"><svg viewBox="0 0 32 32">${ICON[n]}</svg></div><div><b>${pres}</b><small>Presença</small><small>Escola ${esc}</small></div></div>`).join('');
+schools('schoolsRival',[['Chama',12,4,false],['Raiz',10,4,false]]);
+schools('schoolsAlly',[['Chama',8,3,true],['Sombra',6,4,false]]);
+document.getElementById('enchRival').innerHTML=['VES-007','VES-007'].map(c=>`<div class="mini" style="background-image:url('/cartas/${c}.png')"></div>`).join('')+'<div class="mini empty"></div>';
+document.getElementById('enchAlly').innerHTML=`<div class="mini" style="background-image:url('/cartas/TD-P08.png')"></div><div class="mini empty"></div><div class="mini empty"></div>`;
+const hand=['VES-006','VES-025','TD-P05','VES-002','VES-048','TD-P12','VES-047'];
+document.getElementById('hand').innerHTML=hand.map((c,i)=>{const m=(hand.length-1)/2;return `<img src="/cartas/${c}.png" alt="" class="${i===0?'lift':''} ${[1,3].includes(i)?'playable':''}" style="--r:${(i-m)*3}deg;--y:${Math.abs(i-m)*7}px;z-index:${i===0?9:i}">`}).join('');
+// Escala o palco 1920×1080 para a janela
+const fit=()=>{const s=Math.min(innerWidth/1920,innerHeight/1080);document.getElementById('stage').style.transform=`scale(${s})`};
+addEventListener('resize',fit);fit();
+for(const b of document.querySelectorAll('.study button'))b.onclick=()=>{document.body.dataset.pair=b.dataset.pair;for(const o of document.querySelectorAll('.study button'))o.setAttribute('aria-pressed',o===b)};
+const q=new URLSearchParams(location.search).get('par');if(q)document.querySelector(`.study button[data-pair="${q}"]`)?.click();
+if(new URLSearchParams(location.search).has('limpo'))document.querySelector('.study').remove();
+</script>
+</body>
+</html>

@@ -32,6 +32,12 @@ import {
   pointerPreviewPosition,
   type PreviewAnchor,
 } from "./presentation";
+import "@fontsource/alegreya-sc/500.css";
+import "@fontsource/alegreya-sc/700.css";
+import "@fontsource/alegreya-sans/400.css";
+import "@fontsource/alegreya-sans/500.css";
+import "@fontsource/alegreya-sans/700.css";
+import "./tokens.css";
 import "./style.css";
 import "./readability.css";
 import "./collection.css";
@@ -39,6 +45,8 @@ import "./deck-manager.css";
 import "./sanctuary.css";
 import "./atlas.css";
 import './friends.css';
+import "./polish.css";
+import "./mesa-v2.css";
 import { startFrameProbe } from './qa-probe';
 import { api, invitation, key, NetworkError, remember, savedSession, type RoomInfo, type Snapshot } from './network';
 const symbols: Record<string, string> = {
@@ -76,6 +84,8 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
   const [connection, setConnection] = useState('');
   const [confirmConcede, setConfirmConcede] = useState(false);
   const [feedbackSettings,setFeedbackSettings]=useState(false);
+  const [grimoire, setGrimoire] = useState(false);
+  const grimoireRef = useRef<HTMLElement>(null);
   const revision = useRef(-1);
   const admission = useRef<{ signature: string; key: string } | null>(null);
   const waitingRef = useRef<HTMLElement>(null);
@@ -85,6 +95,17 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
   const rivalSeat = (1 - ownSeat) as 0 | 1;
   const friends = room?.mode === 'friends';
   useEffect(() => { if (room?.waiting) waitingRef.current?.focus({preventScroll:true}); }, [room?.waiting]);
+  // Grimório: fecha ao tocar fora dele, mas não ao interagir com um diálogo aberto a partir dele.
+  useEffect(() => {
+    if (!grimoire) return;
+    const close = (e: PointerEvent) => {
+      const target = e.target as Element | null;
+      if (grimoireRef.current?.contains(target) || target?.closest('[role="dialog"]')) return;
+      setGrimoire(false);
+    };
+    document.addEventListener("pointerdown", close);
+    return () => document.removeEventListener("pointerdown", close);
+  }, [grimoire]);
   function dropOptions(options: Option[], uid: string, dest: string, cardType: string) {
     return seatDropOptions(options, uid, dest, cardType, ownSeat);
   }
@@ -693,7 +714,7 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
           <>
             <span className="battle-name">{x.definition.name}</span>
             <span className="combat-stats">
-              <b>{x.power}</b>
+              <b className={x.definition.force !== null && x.power > x.definition.force ? "boosted" : ""}>{x.power}</b>
               <i> / </i>
               <b className={x.damage ? "wounded" : ""}>{x.health}</b>
             </span>
@@ -771,7 +792,7 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
               }}
             >
               <span>{available(dest) ? "＋" : zoneHelp[row].icon}</span>
-              <small>{available(dest) ? "Solte aqui" : "Vaga livre"}</small>
+              {available(dest) && <small>Solte aqui</small>}
             </button>
           ))}
         </div>
@@ -794,30 +815,19 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
               {tile(x, owner, "source")}
               <span>
                 <b>{x.definition.name}</b>
-                <small>+{x.definition.essence.generation} energia</small>
+                <small data-gen={`+${x.definition.essence.generation}`}>+{x.definition.essence.generation} energia</small>
               </span>
             </div>
           ))}
           {!p.sources.length && (
-            <div className="source-empty">
-              <span>✦</span>
-              <p>
-                {owner === ownSeat ? "Sacrifique uma carta" : "Sem fontes ativas"}
-              </p>
-              <small>
-                {owner === ownSeat
-                  ? "Arraste da mão para gerar energia"
-                  : "O poder do rival começa aqui"}
-              </small>
+            <div className="source-empty"
+              title={owner === ownSeat ? "Arraste uma carta da mão para cá: ela vira fonte de energia. 1 sacrifício por turno." : "Fontes do rival aparecem aqui."}>
+              <span aria-hidden="true">✦</span>
             </div>
           )}
         </div>
-        {owner === ownSeat && (
-          <div className="sacrifice-hint">
-            {available(dest)
-              ? "SOLTE PARA SACRIFICAR"
-              : "1 SACRIFÍCIO POR TURNO"}
-          </div>
+        {owner === ownSeat && available(dest) && (
+          <div className="sacrifice-hint">SOLTE PARA SACRIFICAR</div>
         )}
         <div className="pile-row">
           {(["deck", "ashes", "discard"] as const).map((z) => (
@@ -874,6 +884,7 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
   function player(p: PlayerView, owner: number) {
     const dest = `${owner}:mage`;
     return (
+      <>
       <div
         className={`player-bar ${owner === rivalSeat ? "rival-player" : ""}${dropClass(dest)}`}
         data-drop={dest}
@@ -898,9 +909,12 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
           title={view?.energyRule === 'reserve-v1' ? 'Reserva de energia: a sobra permanece entre turnos.' : 'Energia não gasta expira no encerramento.'}>
           <span aria-hidden="true">✦</span><b data-motion-id={`energy-${owner}`} data-resource="energy" data-value={p.energy}>{p.energy}</b><small>{view?.energyRule === 'reserve-v1' ? 'RESERVA' : 'ENERGIA'}</small>
         </div>
+      </div>
+      {/* Placas por escola (WB-D30): Presença em destaque, Escola abaixo; acende o que libera uma carta jogável. */}
+      <div className={`school-plates ${owner === rivalSeat ? "rival" : "ally"}`}>
         {view?.variant === "escolas-v1" && <div className="school-progression" aria-label={`Escola ${owner === ownSeat ? "aliada" : "inimiga"}`}>
           <small>ESCOLA</small>
-          {Object.entries(symbols).map(([name,icon]) => <div key={name} className={`school ${name.toLowerCase()}`} title={`Escola ${name}: ${p.school?.[name as keyof typeof p.school] ?? 0}. Avanço permanente por fonte ou conjuração, inclusive ao jogar novamente.`}>
+          {Object.entries(symbols).map(([name,icon]) => <div key={name} className={`school ${name.toLowerCase()}${owner === ownSeat && wantedSchools.has(name) ? " wanted" : ""}`} title={`Escola ${name}: ${p.school?.[name as keyof typeof p.school] ?? 0}. Avanço permanente por fonte ou conjuração, inclusive ao jogar novamente.`}>
             <SchoolIcon school={name}/><b data-motion-id={`school-${owner}-${name}`} data-resource="school" data-value={p.school?.[name as keyof typeof p.school] ?? 0}>{p.school?.[name as keyof typeof p.school] ?? 0}</b><small>{name}</small>
           </div>)}
         </div>}
@@ -912,7 +926,7 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
           {Object.entries(symbols).map(([name, icon]) => (
             <div
               key={name}
-              className={`school ${name.toLowerCase()}`}
+              className={`school ${name.toLowerCase()}${owner === ownSeat && wantedSchools.has(name) ? " wanted" : ""}`}
               title={`Presença de ${name}: ${p.presence[name as keyof typeof p.presence] ?? 0}`}
             >
               <SchoolIcon school={name}/>
@@ -922,6 +936,7 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
           ))}
         </div>
       </div>
+      </>
     );
   }
   function actionButton(o: Option) {
@@ -985,6 +1000,12 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
               ? "Arraste uma carta da mão para jogar ou sacrificar"
               : "O rival está jogando…";
   const hand = view?.players[ownSeat].hand ?? [];
+  // Escolas exigidas por cartas da mão que podem ser conjuradas agora (placas acesas).
+  const wantedSchools = new Set(
+    hand
+      .filter((x) => options.some((o) => o.uid === x.uid && o.action.kind === "cast"))
+      .flatMap((x) => Object.keys(x.definition.presence ?? {})),
+  );
   const inspectedPlayer =
     inspected &&
     view?.players.find((p) =>
@@ -1033,9 +1054,10 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
   );
   return (
     <div
-      className={`app ${view ? "in-game atlas" : ""} ${dragging ? "is-dragging" : ""} ${feedbackPlayer.playing?'feedback-in-progress':''}`}
+      className={`app ${view ? "in-game atlas" : ""} ${dragging ? "is-dragging" : ""} ${selected ? "has-selection" : ""} ${feedbackPlayer.playing?'feedback-in-progress':''}`}
     >
-      {view && <header className="masthead">
+      {view && <header className="masthead" ref={grimoireRef}
+        onKeyDown={(e) => { if (e.key === "Escape" && grimoire) { e.stopPropagation(); setGrimoire(false); } }}>
         <a href="#" onClick={(e) => e.preventDefault()} className="brand">
           <span>✧</span>
           <div>
@@ -1043,14 +1065,20 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
             <small>O CORAÇÃO DE VÉSPERA</small>
           </div>
         </a>
-        <nav>
-          {view && (
-            <span className="variant-chip">
+        <button className="grimoire-toggle" aria-expanded={grimoire} aria-controls="grimoire-menu"
+          onClick={() => setGrimoire(!grimoire)}>
+          <span aria-hidden="true">✦</span>Grimório
+        </button>
+        {grimoire && <nav id="grimoire-menu" aria-label="Grimório">
+          <p className="grimoire-context">
+            <b>{friends ? `Duelo com amigo · rodada ${room!.round}` : 'Duelo solo'}</b>
+            <span>{view.cardPool === 'ves' ? 'Véspera · 80 cartas' : `Véspera + As Terras Despertas · ${view.cardPool==='terras-v1'?140:92} cartas`}</span>
+            <span>
               {view.energyRule === 'reserve-v1' ? 'Energia acumulada' : view.variant === "base-0.3"
                 ? "Regras originais"
                 : view.variant === "escolas-v1" ? "Escola + Presença" : "Fontes estendidas"}
             </span>
-          )}
+          </p>
           <button onClick={() => setRules(true)}>Guia da mesa</button>
           <button
             onClick={() => {
@@ -1095,8 +1123,7 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
               Santuário
             </button>
           )}
-          <span className="version">AS TERRAS DESPERTAS · EDIÇÃO COMPLETA</span>
-        </nav>
+        </nav>}
       </header>}
       {error && (
         <div className="error-toast" role="alert">
@@ -1243,9 +1270,8 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
         </div>
       ) : (
         <>
-          {(friends || connection || view.cardPool!=='ves') && <div className="friends-tools" role="status">
+          {(friends || connection) && <div className="friends-tools" role="status">
             <span>{friends ? `Duelo com amigo · rodada ${room!.round}` : 'Duelo solo'}</span>
-            {view.cardPool!=='ves' && <span>Véspera + As Terras Despertas · {view.cardPool==='terras-v1'?140:92} cartas</span>}
             <span className="connection-state">{connection || (friends ? (room?.opponentOnline ? 'Amigo conectado' : 'Amigo desconectado · aguardando retorno') : 'Autômato')}</span>
             {friends && <button disabled={busy || view.winner !== null} onClick={()=>setConfirmConcede(true)}>Conceder duelo</button>}
           </div>}
@@ -1340,7 +1366,7 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
                   </small>
                 </div>
               </div>
-              <div className="phase-action">
+              <div className={`phase-action${mainAction && options.length === 1 ? " only-action" : ""}`}>
                 {mainAction ? (
                   actionButton(mainAction)
                 ) : view.phase === "mulligan" ? (
@@ -1372,7 +1398,6 @@ export function App({initialView=null,previewMode=false}:{initialView?:View|null
                   SUA MÃO <b>{hand.length}</b>
                 </span>
                 <span>{hint}</span>
-                <button onClick={() => setRules(true)}>Como jogar?</button>
               </div>
               <div
                 className="hand-fan"

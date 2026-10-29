@@ -6,9 +6,9 @@ import {App} from '../web/main';
 import {createGame,viewFor} from '../engine/engine';
 import {pilotDecks} from '../engine/decks';
 import {writeDeckLibrary} from '../web/deck-storage';
-let requests:Record<string,any>[];
+let requests:Record<string,any>[];let lastSnapshot:any=null;
 beforeEach(()=>{
-  localStorage.clear();sessionStorage.clear();requests=[];
+  localStorage.clear();sessionStorage.clear();requests=[];lastSnapshot=null;
   Object.defineProperty(window,'matchMedia',{configurable:true,value:()=>({matches:true,addEventListener(){},removeEventListener(){}})});
   HTMLElement.prototype.animate=vi.fn(()=>({onfinish:null}) as unknown as Animation);
   vi.stubGlobal('fetch',vi.fn(async(path:string,init?:RequestInit)=>{
@@ -17,9 +17,11 @@ beforeEach(()=>{
     if(path.endsWith('/new') || path.endsWith('/rooms/join')){
       requests.push(body);
       const game=createGame({seed:811,decks:[body.customDeck?.name??body.deck,body.opponent??'Pira'],customDecks:[body.customDeck??null,null],variant:body.variant,first:0,cardPool:body.cardPool,energyRule:body.energyRule});
-      return {ok:true,json:async()=>({token:'pilot-ui',view:viewFor(game,0),room:{mode:'solo',seat:0,waiting:false,round:1,cardPool:body.cardPool,variant:body.variant,opponentOnline:true,rematch:[false,false]}})};
+      lastSnapshot={token:'pilot-ui',view:viewFor(game,0),room:{mode:'solo',seat:0,waiting:false,round:1,cardPool:body.cardPool,variant:body.variant,opponentOnline:true,rematch:[false,false]}};
+      return {ok:true,json:async()=>lastSnapshot};
     }
-    return {ok:true,json:async()=>({view:null})};
+    // Consultas seguintes devolvem a mesa criada, como o servidor faria.
+    return {ok:true,json:async()=>lastSnapshot ?? {view:null}};
   }));
 });
 afterEach(()=>{cleanup();vi.restoreAllMocks();vi.unstubAllGlobals()});
@@ -36,7 +38,7 @@ describe('UI da edição completa',()=>{
     expect(requests).toHaveLength(0);fireEvent.click(within(setup).getByRole('button',{name:/Iniciar duelo/}));
     await screen.findByRole('main',{name:'Campo de batalha'});
     expect(requests[0].cardPool).toBe('terras-v1');expect(requests[0].deck).toBe('Terras — Nascentes Vivas');
-    expect(requests[0].energyRule).toBe('reserve-v1');expect(screen.getByText('Energia acumulada')).toBeTruthy();
+    expect(requests[0].energyRule).toBe('reserve-v1');fireEvent.click(screen.getByRole('button',{name:'Grimório'}));expect(screen.getByText('Energia acumulada')).toBeTruthy();
     expect(screen.getAllByText('RESERVA')).toHaveLength(2);
     expect(screen.getByText('Véspera + As Terras Despertas · 140 cartas')).toBeTruthy();
     expect(screen.queryByText('Amigo conectado')).toBeNull();expect(screen.getAllByText('Autômato').length).toBeGreaterThan(0);
@@ -96,7 +98,7 @@ describe('UI da edição completa',()=>{
     fireEvent.click(screen.getByRole('button',{name:/Iniciar duelo/}));
     await screen.findByRole('main',{name:'Campo de batalha'});
     expect(requests[0].energyRule).toBe('turn');expect(screen.queryByText('Energia acumulada')).toBeNull();
-    fireEvent.click(screen.getByRole('button',{name:'Guia da mesa'}));
+    fireEvent.click(screen.getByRole('button',{name:'Grimório'}));fireEvent.click(screen.getByRole('button',{name:'Guia da mesa'}));
     expect(screen.getByText('A sobra é perdida no encerramento. A Guardiã da Cisterna pode guardar até 1 para o próximo turno.')).toBeTruthy();
   });
 });

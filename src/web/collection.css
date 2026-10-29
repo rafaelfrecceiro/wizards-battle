@@ -185,8 +185,7 @@
 .collection-header h1 {
   margin: 6px 0;
   font:
-    36px/1.1 Georgia,
-    serif;
+    36px/1.1 var(--wb-font-display);
   color: #f4e3c2;
 }
 .collection-header p {
@@ -215,8 +214,7 @@
 }
 .edition-banner strong {
   font:
-    22px/1.3 Georgia,
-    serif;
+    22px/1.3 var(--wb-font-display);
   color: #f0d7a5;
 }
 .edition-banner p {
@@ -351,8 +349,7 @@
 }
 .collection-detail h2 {
   font:
-    25px/1.2 Georgia,
-    serif;
+    25px/1.2 var(--wb-font-display);
   margin: 14px 0 10px;
   color: #efdcb9;
 }

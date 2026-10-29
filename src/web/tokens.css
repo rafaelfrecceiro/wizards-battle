@@ -1,0 +1,57 @@
+/* WB-26 · Tokens da direção Atlas C / Santuário A.
+   Fonte única para cor por função, tipo, espaço, raio, sombra e camadas.
+   Novos estilos usam estes nomes; as camadas antigas migram aos poucos, sem !important novo. */
+:root{
+  /* Materiais */
+  --wb-slate-900:#0b1219;
+  --wb-slate-800:#101a23;
+  --wb-slate-700:#14212c;
+  --wb-slate-600:#1e303c;
+  --wb-slate-500:#2c4250;
+  --wb-brass-700:#7a5a2c;
+  --wb-brass-500:#b18b4a;
+  --wb-brass-300:#d8b477;
+  --wb-brass-100:#f3dca6;
+  --wb-parchment-300:#e7d4ae;
+  --wb-parchment-500:#cbbb96;
+  --wb-ink-900:#251f15;
+  --wb-ink-700:#3a2d1a;
+  --wb-ink-500:#5a4930;
+
+  /* Funções */
+  --wb-text:#f1e2c4;
+  --wb-text-muted:#c9b896;
+  --wb-text-on-parchment:var(--wb-ink-900);
+  --wb-accent:#f0c878;
+  --wb-valid:#9de7ca;
+  --wb-damage:#ed9277;
+  --wb-heal:#90cba2;
+
+  /* Tipo (WB-D30, par C · Caligrafia): Alegreya SC em títulos e números, Alegreya Sans na interface.
+    escala fluida pela unidade do tabuleiro (--u = 1% da largura útil).
+     Em 1920 px, --u = 19,2 px; os pisos protegem 1366 px. */
+  --wb-font-display:"Alegreya SC",Georgia,serif;
+  --wb-font-ui:"Alegreya Sans","Segoe UI",system-ui,sans-serif;
+  --wb-fs-xs:clamp(11px,calc(var(--u,1vw)*.64),13px);
+  --wb-fs-sm:clamp(12px,calc(var(--u,1vw)*.7),14px);
+  --wb-fs-md:clamp(13px,calc(var(--u,1vw)*.8),16px);
+  --wb-fs-lg:clamp(16px,calc(var(--u,1vw)*1.05),21px);
+  --wb-fs-xl:clamp(20px,calc(var(--u,1vw)*1.45),29px);
+
+  /* Espaço, raio, sombra */
+  --wb-space-1:4px;
+  --wb-space-2:8px;
+  --wb-space-3:12px;
+  --wb-space-4:18px;
+  --wb-space-5:26px;
+  --wb-radius:4px;
+  --wb-shadow-panel:0 14px 48px #000a;
+  --wb-shadow-raised:0 3px 10px #0009;
+
+  /* Camadas */
+  --wb-z-board:1;
+  --wb-z-hud:30;
+  --wb-z-menu:120;
+  --wb-z-modal:140;
+  --wb-z-toast:500;
+}

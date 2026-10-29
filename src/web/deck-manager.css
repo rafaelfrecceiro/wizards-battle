@@ -25,8 +25,7 @@
 }
 .deck-manager-header h1 {
   font:
-    32px/1.2 Georgia,
-    serif;
+    32px/1.2 var(--wb-font-display);
   color: #f0ddb4;
   margin: 5px 0;
 }

@@ -1,0 +1,61 @@
+/* WB-26 · Correções rápidas da mesa Atlas (auditoria qa/ui-auditoria-v011).
+   Camada final, escrita só com tokens de tokens.css. Não altera arte, frentes nem geometria do tabuleiro. */
+
+/* A2 · Grimório: um único acesso no lugar dos seis botões soltos */
+.atlas>.masthead{width:auto;right:2.4%;top:3.4%;z-index:var(--wb-z-menu);display:flex;flex-direction:column;align-items:flex-end}
+.atlas .grimoire-toggle{display:flex;align-items:center;gap:var(--wb-space-2);padding:9px 18px;font:700 var(--wb-fs-sm) var(--wb-font-display);letter-spacing:.12em;text-transform:uppercase;color:var(--wb-brass-100);border:1px solid var(--wb-brass-300);border-radius:var(--wb-radius);background:linear-gradient(var(--wb-slate-600),var(--wb-slate-800));box-shadow:inset 0 0 0 2px var(--wb-slate-900),inset 0 0 0 3px #b18b4a66,var(--wb-shadow-raised);cursor:pointer}
+.atlas .grimoire-toggle>span{color:var(--wb-accent);font-size:1.15em}
+.atlas .grimoire-toggle:hover,.atlas .grimoire-toggle[aria-expanded="true"]{color:#fff3d2;border-color:var(--wb-brass-100);box-shadow:inset 0 0 0 2px var(--wb-slate-900),inset 0 0 0 3px var(--wb-brass-500),0 0 18px #f0c8784d}
+.atlas .masthead #grimoire-menu{position:absolute;top:calc(100% + 6px);right:0;width:clamp(250px,calc(var(--u)*15),320px);display:flex;flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:0;padding:var(--wb-space-2);background:linear-gradient(160deg,var(--wb-slate-600),var(--wb-slate-800));border:1px solid var(--wb-brass-300);border-radius:var(--wb-radius);box-shadow:inset 0 0 0 3px var(--wb-slate-900),inset 0 0 0 4px #b18b4a55,var(--wb-shadow-panel)}
+.atlas .masthead #grimoire-menu>button{width:100%;text-align:left;padding:10px 12px;font:var(--wb-fs-md) var(--wb-font-display);color:var(--wb-text);background:none;border:0;border-bottom:1px solid #b18b4a2e;border-radius:0;box-shadow:none}
+.atlas .masthead #grimoire-menu>button:last-child{border-bottom:0;color:var(--wb-text-muted)}
+.atlas .masthead #grimoire-menu>button:hover,.atlas .masthead #grimoire-menu>button:focus-visible,.atlas .masthead #grimoire-menu>button[aria-pressed="true"]{background:#b18b4a26;color:#fff3d2}
+.atlas .grimoire-context{display:grid;gap:3px;margin:0 0 var(--wb-space-2);padding:4px 12px var(--wb-space-2);border-bottom:1px solid var(--wb-brass-500)}
+.atlas .grimoire-context b{font:700 var(--wb-fs-sm) var(--wb-font-display);color:var(--wb-accent)}
+.atlas .grimoire-context span{font:var(--wb-fs-xs) var(--wb-font-ui);color:var(--wb-text-muted);line-height:1.4}
+
+/* A1 · Avisos no eixo central, sem cobrir Escola/Presença do rival */
+.atlas .action-toast{top:48%;transform:translate(-50%,-50%);padding:10px 28px;font:600 var(--wb-fs-md) var(--wb-font-display);color:var(--wb-text);background:linear-gradient(var(--wb-slate-600),var(--wb-slate-800));border:1px solid var(--wb-brass-300);border-radius:var(--wb-radius);box-shadow:inset 0 0 0 2px var(--wb-slate-900),var(--wb-shadow-panel);animation:wb-toast-in .22s ease-out}
+@keyframes wb-toast-in{from{opacity:0}}
+
+/* A1 · Troca de mão legível, no kit ardósia/latão */
+.atlas .mulligan-banner{top:30%;width:min(580px,90vw);padding:var(--wb-space-5) var(--wb-space-5) var(--wb-space-4);color:var(--wb-text);background:linear-gradient(160deg,var(--wb-slate-600),var(--wb-slate-800));border:1px solid var(--wb-brass-300);border-radius:var(--wb-radius);box-shadow:inset 0 0 0 3px var(--wb-slate-900),inset 0 0 0 4px #b18b4a55,var(--wb-shadow-panel);z-index:var(--wb-z-modal)}
+.atlas .mulligan-banner>span{font:700 var(--wb-fs-xs) var(--wb-font-ui);letter-spacing:.22em;color:var(--wb-accent)}
+.atlas .mulligan-banner h3{margin:var(--wb-space-2) 0;font:var(--wb-fs-xl) var(--wb-font-display);color:var(--wb-brass-100)}
+.atlas .mulligan-banner p{margin:0;font-size:var(--wb-fs-md);color:var(--wb-text-muted)}
+.atlas .mulligan-banner>div{gap:var(--wb-space-3);margin-top:var(--wb-space-4)}
+.atlas .mulligan-banner .action-btn{justify-content:center;gap:var(--wb-space-2);min-height:48px;padding:12px 16px;font:700 var(--wb-fs-md) var(--wb-font-display);text-align:center;color:var(--wb-text);background:linear-gradient(var(--wb-slate-500),var(--wb-slate-700));border:1px solid var(--wb-brass-500);border-radius:var(--wb-radius)}
+.atlas .mulligan-banner .action-btn:first-child{color:var(--wb-ink-900);background:linear-gradient(#f0d394,var(--wb-brass-500));border-color:var(--wb-brass-100)}
+.atlas .mulligan-banner .action-btn:hover{box-shadow:0 0 18px #f0c8784d;border-color:var(--wb-brass-100)}
+
+/* A1 · Títulos e contadores longe da moldura pintada */
+.atlas .rival-half .source-well{padding-top:calc(var(--u)*1.05)}
+.atlas .source-well,.atlas .ritual-zone{padding-right:calc(var(--u)*1.4)}
+.atlas .ritual-zone{padding-top:calc(var(--u)*1.15)}
+.atlas .pile-row{padding-right:calc(var(--u)*.6)}
+
+/* A3 · Estados vazios sem texto permanente */
+.atlas .vacant{border-color:#a9b3af40;color:#d2c7ab}
+.atlas .vacant>span{opacity:.28}
+.atlas .vacant>small{font-size:var(--wb-fs-xs);color:var(--wb-valid)}
+.atlas .source-empty{display:grid;place-items:center;height:100%;padding:0}
+.atlas .source-empty>span{font-size:calc(var(--u)*2.4);color:var(--wb-ink-500);opacity:.35}
+
+/* A4 · Piso de leitura (≈12 px em 1080p) */
+.atlas .zone-label small,.atlas .zone-label em{font-size:var(--wb-fs-xs)}
+.atlas .pile-row>button small,.atlas .energy-orb>small,.atlas .sacrifice-hint,.atlas .source-entry b,.atlas .source-entry small{font-size:var(--wb-fs-xs)}
+.atlas .battle-name,.atlas .keyword-badge,.atlas .hand-heading>span:first-child{font-size:var(--wb-fs-xs)}
+.atlas .school-progression>small,.atlas .presence-label{font-size:var(--wb-fs-xs)}
+.atlas .phase-track>span,.atlas .phase-action>.thinking{font-size:var(--wb-fs-sm)}
+.atlas .energy-orb>small{bottom:-17px}
+
+/* A4 · Zeros de Escola/Presença recuam; valores ativos se destacam */
+.atlas .school:has(>b[data-value="0"]){opacity:.4}
+
+/* A5 · Um lugar por evento: narrador e Histórico; o eixo mostra só turno e fase */
+.atlas .last-event{display:none}
+.atlas .equator{display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.atlas .equator>.phase-track{justify-self:center}
+.atlas .turn-indicator{font:700 var(--wb-fs-sm) var(--wb-font-display);gap:var(--wb-space-2)}
+.atlas .turn-indicator>span:last-child{display:inline;font:var(--wb-fs-sm) var(--wb-font-ui);color:var(--wb-text-muted)}
+.atlas .turn-indicator:has(.turn-dot.mine)>span:last-child{color:var(--wb-accent)}

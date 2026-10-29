@@ -1,5 +1,13 @@
 # Direção visual — Wizards Battle
 
+## 29/10/2026 — Mesa v2 aprovada e implementada, WB-D30 / WB-27
+
+O usuário escolheu “Par C + fichas”. A tipografia vigente passa a ser Alegreya SC (títulos, números, botões) e Alegreya Sans (interface e regras), empacotadas no projeto. No campo, a carta aparece como ficha: recorte da ilustração, fita com o nome e selos de Força/Vigor; a frente impressa inteira continua na mão, no hover, na inspeção e na coleção, com os PNGs intactos. O layout da mesa segue o [mockup](arte/direcoes/mesa-v2/README.md). Capturas reais em [qa/ui-auditoria-v011/mesa-v2](qa/ui-auditoria-v011/mesa-v2). Ainda pendentes: aceite humano em movimento, preparação como cena (C3), coleção como arquivo (C4) e vocabulário de movimento (C5–C7).
+
+## 29/10/2026 — Auditoria de UI e mesa v2, WB-26
+
+Refinamento dentro do Atlas C e do Santuário A, sem nova direção. [Auditoria](qa/ui-auditoria-v011/README.md): a identidade se quebra fora da home, a tipografia é a do sistema, as cartas de campo são pequenas e as laterais ficam vazias. Correções A aplicadas: Grimório único, estados vazios sem texto, avisos no eixo, troca de mão em ardósia/latão, piso de leitura e `tokens.css` como fonte de cor/tipo/espaço. [Mockup da mesa v2](arte/direcoes/mesa-v2/README.md) com fichas de campo, medalhões de fonte, placas de Escola/Presença, eixo de turno, engrenagem de turno e três pares tipográficos OFL (A Gravura, B Inscrição, C Caligrafia). Tudo isso é proposta: a ficha de campo deixaria de mostrar a frente inteira na mesa e precisa de aprovação explícita.
+
 ## 24/10/2026 — Selo e cartas completas de As Terras Despertas, WB-D27
 
 Refinamento da direção aprovada Bestiário em Foco:48ilustrações novas em tinta/aquarela sobre marfim, com as molduras existentes. Pedido explícito para substituir a sigla por selo; novo glifo de vale, sol e raízes nativo nas60frentes e SVG nosmetadados, metalporraridade. Sem nova definição de identidade/mesa. [Pranchas/galeria/procedência/prompts](arte/terras-despertas/edicao-v1/README.md). Todas as60revisadas emcinco pranchas e3frentes individuais; VESintacta. Não alegar validação de escala/hover/mesa por navegador, indisponível noWork nesta rodada.

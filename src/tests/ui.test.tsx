@@ -39,6 +39,11 @@ async function mount() {
   render(<App />);
   await screen.findByRole("main", { name: "Campo de batalha" });
 }
+// Na mesa, Guia/Coleção/Decks/Santuário ficam dentro do Grimório (WB-26).
+function openGrimoire() {
+  const toggle = screen.getByRole("button", { name: "Grimório" });
+  if (toggle.getAttribute("aria-expanded") !== "true") fireEvent.click(toggle);
+}
 async function dragTo(x: Piece, destination: Element) {
   const card = screen.getByTestId(`card-${x.uid}`);
   dropTarget = destination;
@@ -195,8 +200,36 @@ describe("Mesa interativa — DOM simulado, sem medição de fluidez", () => {
     const option=screen.getAllByRole('button').find(b=>b.textContent?.includes('Fonte: Vigia da Caldeira'));
     expect(option).toBeDefined();fireEvent.click(option!);
     await screen.findByRole('status');expect(fetch).not.toHaveBeenCalled();
+    openGrimoire();
     fireEvent.click(screen.getByRole('button',{name:'Santuário'}));
     expect(localStorage.getItem('wb-session')).toBe('test-local');
+  });
+  it('Grimório reúne os atalhos da mesa, mostra o contexto do duelo e fecha por Esc ou toque fora',async()=>{
+    await mount();
+    expect(screen.queryByRole('button',{name:'Coleção'})).toBeNull();
+    expect(screen.queryByText('Vaga livre')).toBeNull();
+    const toggle=screen.getByRole('button',{name:'Grimório'});
+    fireEvent.click(toggle);
+    expect(toggle.getAttribute('aria-expanded')).toBe('true');
+    const menu=screen.getByRole('navigation',{name:'Grimório'});
+    for(const name of ['Guia da mesa','Coleção','Meus decks','Feedback','Histórico','Santuário'])expect(within(menu).getByRole('button',{name})).toBeTruthy();
+    expect(within(menu).getByText('Duelo solo')).toBeTruthy();
+    fireEvent.keyDown(within(menu).getByRole('button',{name:'Histórico'}),{key:'Escape'});
+    expect(screen.queryByRole('navigation',{name:'Grimório'})).toBeNull();
+    fireEvent.click(toggle);
+    fireEvent.pointerDown(document.querySelector('.battlefield')!);
+    expect(screen.queryByRole('navigation',{name:'Grimório'})).toBeNull();
+  });
+  it('mesa v2 separa placas de Escola/Presença da barra do mago e acende as escolas de cartas jogáveis',async()=>{
+    game.config.variant='escolas-v1';game.players[0].school={Chama:3};const playable=add('VES-002','hand');await mount();
+    const plates=document.querySelector('.school-plates.ally')!;
+    expect(plates).not.toBeNull();
+    expect(plates.contains(screen.getByLabelText('Presença aliada'))).toBe(true);
+    expect(plates.contains(screen.getByLabelText('Escola aliada'))).toBe(true);
+    expect(document.querySelector('.player-bar:not(.rival-player) .school-presence')).toBeNull();
+    expect(screen.getByTestId(`card-${playable.uid}`).classList.contains('playable')).toBe(true);
+    expect(document.querySelectorAll('.school-plates.ally .school.chama.wanted')).toHaveLength(2);
+    expect(document.querySelectorAll('.school-plates.rival .wanted')).toHaveLength(0);
   });
   it('Atlas preenche três vagas de encantamento e duas de Véu com dados reais, sem cartas fictícias',async()=>{
     await mount();
@@ -226,6 +259,7 @@ describe("Mesa interativa — DOM simulado, sem medição de fluidez", () => {
   });
   it("cria deck por modelo, renomeia, salva e reabre sem perder cartas", async () => {
     await mount();
+    openGrimoire();
     fireEvent.click(screen.getByRole("button", { name: "Meus decks" }));
     fireEvent.click(screen.getByRole("button", { name: "Copiar Pira" }));
     fireEvent.change(screen.getByRole("textbox", { name: "Nome do deck" }), {
@@ -239,6 +273,7 @@ describe("Mesa interativa — DOM simulado, sem medição de fluidez", () => {
     fireEvent.click(
       screen.getByRole("button", { name: "Fechar gerenciador ×" }),
     );
+    openGrimoire();
     fireEvent.click(screen.getByRole("button", { name: "Meus decks" }));
     fireEvent.click(
       screen.getByRole("button", {
@@ -255,6 +290,7 @@ describe("Mesa interativa — DOM simulado, sem medição de fluidez", () => {
   });
   it("limita três cópias, salva rascunho e mantém jogar bloqueado até completar 40", async () => {
     await mount();
+    openGrimoire();
     fireEvent.click(screen.getByRole("button", { name: "Meus decks" }));
     const dialog = screen.getByRole("dialog", { name: "Gerenciar decks" });
     fireEvent.change(
@@ -291,6 +327,7 @@ describe("Mesa interativa — DOM simulado, sem medição de fluidez", () => {
   });
   it("duplica com ID próprio e exclusão confirmada preserva o original", async () => {
     await mount();
+    openGrimoire();
     fireEvent.click(screen.getByRole("button", { name: "Meus decks" }));
     fireEvent.click(screen.getByRole("button", { name: "Copiar Pira" }));
     fireEvent.click(screen.getByRole("button", { name: "Salvar deck" }));
@@ -305,6 +342,7 @@ describe("Mesa interativa — DOM simulado, sem medição de fluidez", () => {
   });
   it("protege alterações não salvas e permite salvar rascunho ao fechar", async () => {
     await mount();
+    openGrimoire();
     fireEvent.click(screen.getByRole("button", { name: "Meus decks" }));
     fireEvent.change(screen.getByRole("textbox", { name: "Nome do deck" }), {
       target: { value: "Meu rascunho" },
@@ -330,6 +368,7 @@ describe("Mesa interativa — DOM simulado, sem medição de fluidez", () => {
   });
   it("jogar no gerenciador envia a lista salva e abre duelo com seu nome", async () => {
     await mount();
+    openGrimoire();
     fireEvent.click(screen.getByRole("button", { name: "Meus decks" }));
     fireEvent.click(screen.getByRole("button", { name: "Copiar Queimada" }));
     fireEvent.change(screen.getByRole("textbox", { name: "Nome do deck" }), {
@@ -374,6 +413,7 @@ describe("Mesa interativa — DOM simulado, sem medição de fluidez", () => {
     };
     writeDeckLibrary([saved], 0);
     await mount();
+    openGrimoire();
     fireEvent.click(screen.getByRole("button", { name: "Santuário" }));
     fireEvent.click(screen.getByRole("button", { name: "Jogar" }));
     fireEvent.change(screen.getByRole("combobox", { name: "Seus decks" }), {
@@ -409,6 +449,7 @@ describe("Mesa interativa — DOM simulado, sem medição de fluidez", () => {
   });
   it("coleção mostra as 80 cartas, filtra raras e busca nome sem acento", async () => {
     await mount();
+    openGrimoire();
     fireEvent.click(screen.getByRole("button", { name: "Coleção" }));
     const dialog = screen.getByRole("dialog", { name: "Coleção de cartas" });
     fireEvent.change(within(dialog).getByLabelText('Edição'),{target:{value:'VES'}});
@@ -442,6 +483,7 @@ describe("Mesa interativa — DOM simulado, sem medição de fluidez", () => {
   });
   it("busca vazia informa ausência de resultados e modal prende/restaura foco", async () => {
     await mount();
+    openGrimoire();
     const opener = screen.getByRole("button", { name: "Coleção" });
     opener.focus();
     fireEvent.click(opener);
