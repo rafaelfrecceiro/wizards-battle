@@ -183,3 +183,6 @@
 
 /* Telas estreitas: o rótulo da energia fica no tooltip do orbe */
 @media (max-width:1500px){.atlas .energy-orb>small{display:none}}
+
+/* Avisos logo acima da pílula de turno (eixo em 25,1u do palco), sem cobri-la */
+.atlas .action-toast{top:calc(max(0px,(100dvh - var(--u)*56.28)/2) + var(--u)*24.5);transform:translate(-50%,-100%)}

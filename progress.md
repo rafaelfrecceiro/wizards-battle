@@ -1,12 +1,18 @@
 # Progresso — Wizards Battle
 
 - Fase: desenvolvimento
-- Atualização: 29/10/2026
+- Atualização: 29/10/2026 (produção em https://wizardsbattle.freccs.com.br)
 - Objetivo atual: As Terras Despertas completa0.11/4187 entregue; receber playtest dos seis decks novos e leitura do selo. Energia acumulada, feedback causal, VES e sala0.10 preservados.
 - Código: `C:/Users/rafaf/Documents/Projects/Pessoal/Hub/GamesCodex/projetos/wizards-battle/src`.
 - Stack confirmada: Node 24.19.0, TypeScript 5.9.3, React 19.3.1, Vite 8.3.5, Vitest 4.1.12; lockfile em src/package-lock.json.
 
 Fonte única de execução. [GDD](GDD.md) · [Decisões](decisoes.md) · [Spec](specs/WB-001.md).
+
+## Hospedagem pública — 29/10/2026
+
+| ID | Tarefa | Estado | Evidência |
+| --- | --- | --- | --- |
+| WB-28 | Publicar na VPS em https://wizardsbattle.freccs.com.br | concluida | Pedido explícito do usuário; commit/push `56c67ac` confirmado por ele. VPS KingHost 191.252.209.31 (compartilhada). `/opt/wizards-battle` (clone HTTPS do repositório público), contêiner `wizards-battle` em 127.0.0.1:4200 (healthy, ~231 MB de 384 MB), volume `wizards-battle_dados` com o SQLite das salas. Apache `wizardsbattle.conf` + `wizardsbattle-le-ssl.conf` (certbot com redirect 301). Validado de fora: `/api/health` 0.11.0, home/JS gzip/cartas 200, fontes `font/woff2`, duelo solo iniciado no navegador sem erro no console; Magic Battle e InkDuels seguem 200. [DEPLOY.md](DEPLOY.md). Aviso central reposicionado acima da pílula de turno (medido 11–15 px de folga em 1920×1080, 1366×768 e 1600×1000). Pendente: salas com amigo em dois dispositivos ainda não testadas no domínio. |
 
 ## Auditoria de UI/HUD — 29/10/2026
 
