@@ -1,0 +1,10 @@
+# Só o código do jogo entra na imagem; arte, QA, saves e builds locais ficam de fora.
+*
+!src/
+src/node_modules/
+src/dist/
+src/dist-v*/
+src/coverage/
+**/*.sqlite
+**/*.sqlite-*
+**/*.log

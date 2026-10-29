@@ -1,0 +1,27 @@
+# Wizards Battle atrás do Apache + certbot da VPS. Módulos: a2enmod proxy proxy_http rewrite headers
+# 1. Salve como /etc/apache2/sites-available/wizardsbattle.conf e ative: a2ensite wizardsbattle
+# 2. apache2ctl configtest && systemctl reload apache2
+# 3. certbot --apache -d wizardsbattle.freccs.com.br
+#    (cria wizardsbattle-le-ssl.conf com estas regras na porta 443 e faz este site da porta 80 redirecionar para HTTPS)
+# O docker-compose.yml publica o contêiner só em 127.0.0.1:4200. Web, /api e salas vão para ele; não há WebSocket
+# (as salas usam polling HTTP).
+
+<VirtualHost *:80>
+    ServerName wizardsbattle.freccs.com.br
+
+    # O servidor confere Origin = Host nas ações da API: o Host original tem de chegar ao contêiner.
+    ProxyPreserveHost On
+    ProxyTimeout 120
+    RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
+
+    ProxyPass        / http://127.0.0.1:4200/
+    ProxyPassReverse / http://127.0.0.1:4200/
+
+    # O servidor Node não comprime: JS, CSS e JSON saem comprimidos pelo Apache.
+    <IfModule mod_deflate.c>
+        AddOutputFilterByType DEFLATE application/json text/javascript application/javascript text/css image/svg+xml text/html
+    </IfModule>
+
+    ErrorLog ${APACHE_LOG_DIR}/wizardsbattle-error.log
+    CustomLog ${APACHE_LOG_DIR}/wizardsbattle-access.log combined
+</VirtualHost>

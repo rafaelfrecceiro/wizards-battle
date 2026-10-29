@@ -1,0 +1,41 @@
+# Wizards Battle em produção. Passo a passo: DEPLOY.md.
+#
+#   bash deploy/atualizar.sh          # = git pull --ff-only && WB_COMMIT=<commit> docker compose up -d --build
+#
+# Publicado SÓ em 127.0.0.1 para o Apache da VPS (deploy/apache.conf.example) fazer o HTTPS.
+# As salas salvas (SQLite) ficam no volume `dados` e sobrevivem a rebuilds.
+
+services:
+  servidor:
+    build:
+      context: .
+      args:
+        WB_COMMIT: ${WB_COMMIT:-}
+    image: wizards-battle
+    container_name: wizards-battle
+    restart: unless-stopped
+    # tini como PID 1: o SIGTERM do `docker stop` chega ao Node.
+    init: true
+    environment:
+      WB_PORT: 4200
+      WB_SAVE_PATH: /dados/rooms.sqlite
+    ports:
+      - 127.0.0.1:${WB_PORTA:-4200}:4200
+    volumes:
+      - dados:/dados
+    # VPS compartilhada e com pouca RAM livre: teto explícito.
+    mem_limit: 384m
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:4200/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+
+volumes:
+  dados:

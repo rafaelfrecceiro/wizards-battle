@@ -121,6 +121,9 @@ const server = createServer(async (req, res) => {
           ".css": "text/css",
           ".png": "image/png",
           ".json": "application/json",
+          ".svg": "image/svg+xml",
+          ".woff2": "font/woff2",
+          ".woff": "font/woff",
         } as Record<string, string>
       )[extname(file)] ?? "application/octet-stream";
     res.setHeader("Content-Type", type);
